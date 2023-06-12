@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faEye} from '@fortawesome/free-solid-svg-icons';
+import '../scss/basics.scss'
 
 export default function PersonalItem({ title, detail, url }) {
   return (
@@ -10,7 +11,7 @@ export default function PersonalItem({ title, detail, url }) {
           <p>{detail}</p>
         ) : (
           <a className="button-link extended">
-            <FontAwesomeIcon icon={faEye} color='#fff' className='fa-sm'  />
+            <FontAwesomeIcon icon={faEye} color='fff' className='fa-sm color-blue'  />
             <p>{detail}</p>
           </a>
         )}

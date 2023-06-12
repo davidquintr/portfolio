@@ -1,8 +1,8 @@
-import basics from '../assets/json/basics.json'
-import Image from 'next/image'
-import davidquint from '../assets/img/davidquint-photo.png'
+import basics from "../assets/json/basics.json";
+import Image from "next/image";
+import davidquint from "../assets/img/davidquint-photo.png";
 import "../scss/person_init.scss";
-import TechItems from '../components/tecnologies_items'
+import TechItems from "../components/tecnologies_items";
 
 export default function PersonInit() {
   return (
@@ -10,15 +10,15 @@ export default function PersonInit() {
       <section className="section section-person">
         <div className="section-contain">
             <Image
-            className="section-person-img"
-            width={400}
-            height={400}
-            src={davidquint.src}
-            alt="img_ico"
+              className="section-person-img"
+              width={400}
+              height={400}
+              src={davidquint.src}
+              alt="img_ico"
             ></Image>
             <div className="section-person-details">
-            <h2>{basics.author}</h2>
-            <p dangerouslySetInnerHTML={{ __html: basics.eng.details }} />
+              <h2>{basics.author}</h2>
+              <p dangerouslySetInnerHTML={{ __html: basics.eng.details }} />
             </div>
         </div>
         <CompleteTech></CompleteTech>
@@ -27,11 +27,10 @@ export default function PersonInit() {
   );
 }
 
-
 const CompleteTech = () => {
-    return(
-        <div className='section section-tech'>
-            <TechItems></TechItems>
-        </div>
-    )
-}
+  return (
+    <div className="section section-tech">
+      <TechItems></TechItems>
+    </div>
+  );
+};

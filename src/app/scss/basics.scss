@@ -4,12 +4,13 @@
 $color-bg: #18191a;
 $color-internal: #161616;
 $color-items: #1b1d1e;
-$color-darkblue: #17222c;
-$color-blue: #334b64;
-$color-boldblue: #333f4b;
-$color-gray-text: #b1b1b1;
-$color-bluelight: #b1dbff;
+$color-darkblue: #0c1738;
+$color-blue: #3e465e;
+$color-boldblue: #262b37;
+$color-gray-text: #d0d0d0;
+$color-bluelight: #a3bbff;
+$color-opblue: #122353;
 
-$linear-gradient-bg: linear-gradient($color-bg, $color-darkblue);
+$linear-gradient-bg: linear-gradient(transparent, $color-darkblue);
 
 $br-default: 10px;

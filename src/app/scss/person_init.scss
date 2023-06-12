@@ -49,6 +49,7 @@
     }
     
     &-person{
+        background-image: $linear-gradient-bg;
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -69,9 +70,11 @@
             }
             h2, p{
                 margin: 0;
+
             }
             p{
-                color: $color-gray-text;
+                display: inline;
+                color: white;
             }
        }
 
