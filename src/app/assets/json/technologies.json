@@ -1,0 +1,106 @@
+[
+    {
+        "dim": "ai",
+        "alt": "Adobe Illustrator",
+        "url":"/tech/ai.svg"
+    },
+    {
+        "dim": "ps",
+        "alt": "Adobe Photoshop",
+        "url":"/tech/ps.svg"
+    },
+    {
+        "dim": "mv",
+        "alt": "Magix Vegas",
+        "url":"/tech/mv.svg"
+    },
+    {
+        "dim": "html",
+        "alt": "HTML",
+        "url":"/tech/html.svg"
+    },
+    {
+        "dim": "css",
+        "alt": "CSS",
+        "url":"/tech/css.svg"
+    },
+    {
+        "dim": "sass",
+        "alt": "SASS",
+        "url":"/tech/sass.svg"
+    },
+    {
+        "dim": "js",
+        "alt": "JavaScript",
+        "url":"/tech/js.svg"
+    },
+    {
+        "dim": "rjs",
+        "alt": "ReactJS",
+        "url":"/tech/react.svg"
+    },
+    {
+        "dim": "cs",
+        "alt": "C#",
+        "url":"/tech/csharp.svg"
+    },
+    {
+        "dim": "unity",
+        "alt": "Unity",
+        "url":"/tech/unity.svg"
+    },
+    {
+        "dim": "kt",
+        "alt": "Kotlin",
+        "url":"/tech/kotlin.svg",
+        "show": "false"
+    },
+    {
+        "dim": "gtk",
+        "alt": "GTK#",
+        "url":"/tech/gtk.svg",
+        "show": "false"
+    },
+    {
+        "dim": "vbnet",
+        "alt": "Visual Basic .NET",
+        "url":"/tech/vbnet.svg",
+        "show": "false"
+    },
+    {
+        "dim": "mssql",
+        "alt": "Microsoft SQL Server",
+        "url":"/tech/mssql.svg",
+        "show": "false"
+    },
+    {
+        "dim": "mysql",
+        "alt": "MySQL Server",
+        "url":"/tech/mysql.svg",
+        "show": "false"
+    },
+    {
+        "dim": "java",
+        "alt": "Java",
+        "url":"/tech/java.svg",
+        "show": "false"
+    },
+    {
+        "dim": "cpp",
+        "alt": "C++",
+        "url":"/tech/cpp.svg",
+        "show": "false"
+    },
+    {
+        "dim": "emailjs",
+        "alt": "EmailJS",
+        "url":"/tech/emailjs.svg",
+        "show": "false"
+    },
+    {
+        "dim": "php",
+        "alt": "PHP",
+        "url":"/tech/php.svg",
+        "show": "true"
+    }
+]

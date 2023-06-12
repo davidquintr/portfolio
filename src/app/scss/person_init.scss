@@ -4,16 +4,42 @@
 .section{
     border: 1px solid $color-blue;
     background-color: $color-internal;
-    border-radius: 10px;
+    border-radius: $br-default;
     padding: 25px;
     
-    &-person{
+    &-title{
+        text-align: center;               
+        color: $color-bluelight;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-image: linear-gradient(0.25turn, transparent, $color-bluelight, transparent) 1;
+
+        h2{
+            margin: 10px 0;
+        }
+
+    }
+
+    &-body{
+        color: $color-gray-text;
+        margin: 20px;
+    }
+
+    &-contain{
         display: flex;
+        padding: 20px;
         justify-content: center;
         align-items: center;
         gap: 20px;
-        border-radius: 10px 10px 0 0;
-
+    }
+    
+    &-person{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        border-radius: $br-default;
+        grid-area: first;
+        height: fit-content;
        &-img{
             filter: saturate(0);
             width: 200px;
@@ -33,6 +59,28 @@
                 color: $color-gray-text;
             }
        }
+
+    }
+
+    &-tech{
+        border-radius: 0px 0px $br-default $br-default;
+        border: none;
+        border-top: 1px solid $color-blue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        background-image: $linear-gradient-bg;
+        width: 100%;
+        box-sizing: border-box;
+        img{
+            filter: invert(1);
+        }
+    }
+
+    &-aboutme{
+        padding: 0;
+        grid-area: two;
 
     }
 }

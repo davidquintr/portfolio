@@ -10,5 +10,17 @@ body{
 }
 
 .article{
-    
+    &-base{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-areas: 
+          "first first first"
+          "two two three"; 
+    }
+}
+
+.tech-items{
+    width: 36px;
+    height: 36px;
 }
