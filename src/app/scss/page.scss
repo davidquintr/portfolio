@@ -24,3 +24,62 @@ body{
     width: 36px;
     height: 36px;
 }
+
+
+.button-link{
+    cursor: pointer;
+    width: 100%;
+    background-color: $color-boldblue;    
+    border-radius: 50px;
+    padding: 8px;
+    margin: 5px;
+    transition: background-color 0.2s, transform 0.3s;
+    
+    &:hover{
+        background-color: $color-blue;
+    }
+
+    &:active{
+        transform: scale(0.98);
+    }
+
+    &.extended{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 20px;
+        width: auto;
+
+        p{
+            margin: 0;
+        }
+
+    }
+
+
+}
+
+.personal-item{
+    border-radius: $br-default;
+    padding-inline: 10px;
+    background-color: $color-items;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid $color-blue;
+    justify-content:space-between;
+    align-items: center;
+    height: 48px;
+
+    *{
+        margin: 0;
+    }    
+
+    h4{
+        color: $color-bluelight;
+    }
+
+    p{
+        color: white;
+    }
+
+}

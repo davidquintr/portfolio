@@ -7,11 +7,12 @@
     border-radius: $br-default;
     padding: 25px;
     
-    &-title{
+    &-title, &-footer{
         text-align: center;               
         color: $color-bluelight;
+        border-width: 0;
         border-bottom-width: 1px;
-        border-bottom-style: solid;
+        border-style: solid;
         border-image: linear-gradient(0.25turn, transparent, $color-bluelight, transparent) 1;
 
         h2{
@@ -20,9 +21,23 @@
 
     }
 
+    &-footer{
+        display: flex;
+        border-bottom-width: 0;
+        border-top-width: 1px;
+    }
+
     &-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 5px;
         color: $color-gray-text;
         margin: 20px;
+
+        &.personal{
+            height: calc(100% - 71px);
+        }
     }
 
     &-contain{
@@ -82,5 +97,12 @@
         padding: 0;
         grid-area: two;
 
+    }
+
+    &-personal{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
