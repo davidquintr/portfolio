@@ -17,7 +17,7 @@ export default function PersonalInfo(){
                     <PersonalItem title={"Email"} url={""} detail={personal.mail}></PersonalItem>
                     <PersonalItem title={"Age"} url={""} detail={age}></PersonalItem>
                     <PersonalItem title={"Birthday"} url={""} detail={personal.birthday}></PersonalItem>
-                    <PersonalItem title={"Currículum"} url={"curriculum.pdf"} detail={"Open"}></PersonalItem>
+                    <PersonalItem title={"CV"} url={"curriculum.pdf"} detail={"Open"}></PersonalItem>
                 </div>
                 <div className="section-footer">
                     <a className="button-link">Contact me</a>

@@ -6,8 +6,8 @@ export default function TechnologiesItems() {
   return (
       <>
           {
-              tech.map((element, index) => (
-                  <Image className='tech-items' src={element.url} width={32} height={32} key={index} alt={element.alt} />
+              tech.map((element, index) => element.show == "true" && (
+                 <Image className='tech-items' src={element.url} width={32} height={32} key={index} alt={element.alt} />
               ))
           }
       </>

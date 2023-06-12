@@ -5,11 +5,14 @@ h2,p{
 }
 
 body{
+    display: flex;
+    justify-content: center;
     background-color: $color-bg;
     padding-inline: 10px;
 }
 
 .article{
+    width: 70%;
     &-base{
         display: grid;
         gap: 20px;
@@ -45,6 +48,7 @@ body{
 
     &.extended{
         display: flex;
+        gap:5px;
         justify-content: center;
         align-items: center;
         padding-inline: 20px;
@@ -82,4 +86,11 @@ body{
         color: white;
     }
 
+}
+
+.fa{
+    &-sm{
+        width: 22px;
+        height: 22px;
+    }
 }
