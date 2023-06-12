@@ -1,0 +1,38 @@
+@import './basics';
+
+
+.section{
+    border: 1px solid $color-blue;
+    background-color: $color-internal;
+    border-radius: 10px;
+    padding: 25px;
+    
+    &-person{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border-radius: 10px 10px 0 0;
+
+       &-img{
+            filter: saturate(0);
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+       }
+       
+       &-details{
+            h2{
+                font-size: 32px;
+                color: $color-bluelight;
+            }
+            h2, p{
+                margin: 0;
+            }
+            p{
+                color: $color-gray-text;
+            }
+       }
+
+    }
+}
