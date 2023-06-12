@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faEye} from '@fortawesome/free-solid-svg-icons';
-import '../scss/basics.scss'
 
 export default function PersonalItem({ title, detail, url }) {
   return (

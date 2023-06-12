@@ -1,7 +1,6 @@
 import basics from "../assets/json/basics.json";
 import Image from "next/image";
 import davidquint from "../assets/img/davidquint-photo.png";
-import "../scss/person_init.scss";
 import TechItems from "../components/tecnologies_items";
 
 export default function PersonInit() {

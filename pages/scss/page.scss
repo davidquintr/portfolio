@@ -1,14 +1,19 @@
 @import './basics';
 
-h2,h4,p{
+h2,h4,p, a{
     font-family: 'Poppins';
 }
 
 body{
-    display: flex;
-    justify-content: center;
+    margin: 0;
     background-color: $color-bg;
     padding-inline: 10px;
+
+    #__next{
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 .article{
@@ -38,13 +43,14 @@ body{
     padding: 8px;
     margin: 5px;
     transition: background-color 0.2s, transform 0.3s;
+    text-decoration: none;
     
     &:hover{
         background-color: $color-blue;
     }
 
     &:active{
-        transform: scale(0.98);
+        transform: scale(0.95);
     }
 
     &.extended{
