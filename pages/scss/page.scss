@@ -51,12 +51,25 @@ body{
     margin: 5px;
     transition: background-color 0.2s, transform 0.3s;
     text-decoration: none;
+
+    &.social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 36px;
+        height: 36px;
+        
+        img{
+            width: 28px;
+            height: 28px;
+        }
+    }
     
-    &:hover{
+    &:hover:not(:disabled){
         background-color: $color-blue;
     }
 
-    &:active{
+    &:active:not(:disabled){
         transform: scale(0.95);
     }
 
@@ -104,6 +117,22 @@ body{
             width: 14px;
             height: 14px;
         }
+    }
+
+    &.submit{
+        color: $color-bluelight;
+        border: 0;
+        margin-inline: 20px;
+
+        svg{
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &:disabled{
+        opacity: 0.5;
+
     }
 
 }
@@ -220,5 +249,96 @@ body{
         gap: 5px;
         justify-content: center;
         margin: 0 !important;
+    }
+}
+
+.contact{
+    &-elements{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        margin-inline: 20px;
+
+        &-middle{
+            display: flex;
+            gap: 10px;                
+        }
+
+        &-column{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &-social{
+        &-elements{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &-title{
+            text-align: center;            
+        }
+    }
+
+    &-contain{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.input-contact{
+    box-sizing: border-box;
+    border-radius: $br-default;
+    padding-inline: 10px;
+    width: 100%;
+    height: 36px;
+    border: 0;
+    border-bottom: 2px solid $color-blue;
+    background-color: $color-bg;
+    color: white;
+    transition: background-color 0.2s, outline 0.5s;
+
+    &:focus{
+        outline: 1px solid $color-bluelight;
+        background-color: $color-items;
+    }
+
+    &.subject{
+        font-family: 'Poppins';
+        padding: 10px;
+        height: 128px;
+        resize: none;
+    }
+}
+
+.plane-text{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    animation: entry 0.5s;
+
+    &.send{
+        background-color: $color-green;
+    }
+
+    &.no-send{
+        background-color: $color-red;
+    }
+
+}
+
+@keyframes entry {
+    0% {
+        opacity: 0;
+        transform: scaleY(0.3);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
     }
 }

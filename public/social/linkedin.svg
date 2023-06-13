@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Page-1">
+    <g id="Dribbble-Light-Preview">
+      <g id="icons">
+        <path id="linkedin-_161_" data-name="linkedin-[#161]" class="cls-1" d="m800,800h-160v-279.96c0-76.8-33.88-119.65-94.64-119.65-66.12,0-105.36,44.65-105.36,119.65v279.96h-160V280h160v58.48s50.2-88.09,163.32-88.09,196.68,69.04,196.68,211.93v337.68h0ZM97.68,196.84C43.72,196.84,0,152.75,0,98.4S43.72,0,97.68,0s97.64,44.08,97.64,98.4c.04,54.36-43.72,98.44-97.64,98.44h0ZM0,800h200V280H0v520Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,14 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faEye} from '@fortawesome/free-solid-svg-icons';
 
-type PersonalProps = {
-  title : string,
-  detail : string,
-  url : string
-};
-
-
-const PersonalItem: React.FC<PersonalProps> =   ({ title, detail, url }) => {
+const PersonalItem = ({ title , detail, url }) => {
   return (
     <>
       <div className="personal-item">

@@ -32,7 +32,7 @@ const ProjectsItem: React.FC<ProjectProps> = ({ element }) => {
           </div>
           <div className="project-buttons">
             {element.urlView != "" ? (
-              <Link href={element.urlView} className="button-link extended light">
+              <Link href={element.urlView} className="button-link extended light" target="__blank">
                 <FontAwesomeIcon
                   icon={faEye}
                   color="fff"
@@ -43,7 +43,7 @@ const ProjectsItem: React.FC<ProjectProps> = ({ element }) => {
             ) : null}
 
             {element.urlCode != "" ? (
-              <Link href={element.urlCode} className="button-link extended light">
+              <Link href={element.urlCode} className="button-link extended light" target="__blank">
                 <FontAwesomeIcon
                   icon={faCode}
                   color="fff"
@@ -54,7 +54,7 @@ const ProjectsItem: React.FC<ProjectProps> = ({ element }) => {
             ) : null}
 
             {element.urlDetails != "" ? (
-              <Link href={element.urlDetails} className="button-link extended light">
+              <Link href={element.urlDetails} className="button-link extended light" target="__blank">
                 <FontAwesomeIcon
                   icon={faAlignLeft}
                   color="fff"

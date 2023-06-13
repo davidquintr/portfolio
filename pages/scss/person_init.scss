@@ -56,6 +56,7 @@
     }
     
     &-person{
+        background-color: rgb(8, 8, 8);
         background-image: $linear-gradient-bg;
         display: flex;
         flex-direction: column;
@@ -88,6 +89,7 @@
     }
 
     &-tech{
+        background-color: rgb(8, 8, 8);
         border-radius: 0px 0px $br-default $br-default;
         padding: 10px;
         border: none;
@@ -117,7 +119,8 @@
         justify-content: space-between;
     }
 
-    &-projects{
+    &-projects, &-contact{
+        transition: all 0.5s;
         padding: 0;
         grid-area: two;
     }

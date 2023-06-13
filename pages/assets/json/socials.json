@@ -1,0 +1,22 @@
+[
+    {
+        "name" : "WhatsApp",
+        "url" : "https://wa.me/77488103",
+        "img" : "/social/whatsapp.svg"
+    },
+    {
+        "name" : "GitHub",
+        "url" : "https://github.com/davidquintr",
+        "img" : "/social/github.svg"
+    },
+    {
+        "name" : "Instagram",
+        "url" : "https://www.instagram.com/davidquintr/",
+        "img" : "/social/instagram.svg"
+    },
+    {
+        "name" : "LinkedIn",
+        "url" : "https://www.linkedin.com/in/david-quintanilla-ruiz-a41044231",
+        "img" : "/social/linkedin.svg"
+    }
+]
