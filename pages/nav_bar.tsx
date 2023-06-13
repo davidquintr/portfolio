@@ -1,34 +1,36 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useRouter } from 'next/router';
-import {faAddressBook, faHouse, faBarsProgress} from '@fortawesome/free-solid-svg-icons';
-import Link from 'next/link'
-import Router from 'next/router';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useRouter } from "next/router";
+import {
+  faAddressBook,
+  faHouse,
+  faBarsProgress,
+} from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
+import Router from "next/router";
+import { usePathname } from "next/navigation";
 
+const links = [
+  { href: "/", text: "Home", icon: faHouse },
+  { href: "/projects", text: "Projects", icon: faBarsProgress },
+  { href: "/contact", text: "Contact", icon: faAddressBook },
+];
 
-export const NavBar = () =>{
-  const router = useRouter();
+export const NavBar = () => {
+  const path = usePathname();
 
-  function evalActive(text){
-    return router.pathname.includes(text) ? "active" : ""
-  }
-
-    return(
-      <>
-        <nav className='nav nav-bar'>
-          <Link className={`button-link extended minimal ${evalActive("home")}`} href='/'>
-            <FontAwesomeIcon icon={faHouse} className='fa-ssm color-blue'  />
-              <p>Home</p>
-            </Link>
-            <Link className={`button-link extended minimal ${evalActive("projects")}`} href='/projects'>
-            <FontAwesomeIcon icon={faBarsProgress} className='fa-ssm color-blue'  />
-              <p>Projects</p>
-            </Link>
-            <Link className={`button-link extended minimal ${evalActive("contact")}`} href='/contact'>
-              <FontAwesomeIcon icon={faAddressBook} className='fa-ssm color-blue'  />
-              <p>Contact</p>
-            </Link>
-        </nav>
-      </>
-    )  
-  }
-  
+  return (
+    <>
+      <nav className="nav nav-bar">
+        {links.map((element, index) => {
+          return(<Link key={index} className={`button-link extended minimal ${element.href === path ? "active" : ""}`} href={element.href}>
+            <FontAwesomeIcon
+              icon={element.icon}
+              className="fa-ssm color-blue"
+            />
+            <p>{element.text}</p>
+          </Link>);
+        })}
+      </nav>
+    </>
+  );
+};

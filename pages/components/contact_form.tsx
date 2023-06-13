@@ -8,6 +8,7 @@ import AlertElement from "./alert_element";
 
 const formContact = () => {
   const form: any = React.createRef();
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [isEmailSent, setIsEmailSent] = useState(null);
   const buttonSend: LegacyRef<HTMLButtonElement> = React.createRef();
 

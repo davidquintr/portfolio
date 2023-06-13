@@ -28,10 +28,8 @@ body{
           "two two three";
         
         &.extended{
-            grid-template-areas: 
-            "first first first"
-            "mid mid mid"
-            "two two two";
+            display: flex;
+            flex-direction: column;
         }
     }
 }
