@@ -25,7 +25,14 @@ body{
         grid-template-areas: 
           "first first first"
           "mid mid mid"
-          "two two three"; 
+          "two two three";
+        
+        &.extended{
+            grid-template-areas: 
+            "first first first"
+            "mid mid mid"
+            "two two two";
+        }
     }
 }
 
@@ -73,6 +80,32 @@ body{
 
     }
 
+    &.active, &.light{
+        background-color: $color-blue;
+        border: 1px solid $color-bluelight;
+        box-sizing: content-box;
+
+        &:hover{
+            background-color: $color-boldblue;
+        }
+    }
+
+    &.light{
+        width: 120px;
+        border-radius: $br-default;
+        margin: 0;
+        border: none !important;
+
+        p{
+            font-size: small;
+        }
+
+        svg{
+            width: 14px;
+            height: 14px;
+        }
+    }
+
 }
 
 .personal-item{
@@ -117,7 +150,12 @@ body{
 }
 
 .nav{
+    z-index: 50;
+    position:sticky;
+    top: 0;
+
     &-bar{
+        height: 54px;
         border-radius: $br-default;
         background-color: $color-internal;
         padding: 0;
@@ -125,5 +163,62 @@ body{
         justify-content: center;
         gap: 10px;
         grid-area: mid;
+    }
+}
+
+.project{
+    font-family: 'Poppins';
+    background-color: rgb(8, 8, 8);
+    outline: 2px solid $color-blue;
+    border-radius: $br-default;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+
+    &-img{
+        border-radius: $br-default $br-default 0 0;
+        width: auto;
+        height: auto;
+        aspect-ratio: auto;
+        border-bottom: 1px solid $color-blue;
+    }
+
+    &-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: $linear-gradient-bg;
+        padding: 10px;
+        text-align: start;
+        height: 100%;
+        
+        &-tech{
+            display: flex;
+            gap: 5px;
+            filter: invert(1);
+            margin: 15px 0;
+        }
+
+        &-details{
+            margin: 0 12px;
+
+            h3, p{
+                margin: 0;
+            }
+
+            h3{
+                font-size: xx-large;
+                color: $color-bluelight;
+            }
+        }
+
+    }
+
+    &-buttons{
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+        margin: 0 !important;
     }
 }

@@ -38,6 +38,13 @@
         &.personal{
             height: calc(100% - 71px);
         }
+
+        &.projects{
+            justify-content: center;
+            gap: 15px;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 
     &-contain{
@@ -108,5 +115,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    &-projects{
+        padding: 0;
+        grid-area: two;
     }
 }

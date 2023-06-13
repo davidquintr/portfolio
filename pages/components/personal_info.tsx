@@ -15,7 +15,7 @@ export default function PersonalInfo(){
                 </div>
                 <div className="section-body personal">
                     <PersonalItem title={"Email"} url={""} detail={personal.mail}></PersonalItem>
-                    <PersonalItem title={"Age"} url={""} detail={age}></PersonalItem>
+                    <PersonalItem title={"Age"} url={""} detail={age.toString()}></PersonalItem>
                     <PersonalItem title={"Birthday"} url={""} detail={personal.birthday}></PersonalItem>
                     <PersonalItem title={"CV"} url={"curriculum.pdf"} detail={"Open"}></PersonalItem>
                 </div>
