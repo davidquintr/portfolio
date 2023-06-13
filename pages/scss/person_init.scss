@@ -45,6 +45,10 @@
             flex-direction: row;
             flex-wrap: wrap;
         }
+
+        &.contact{
+            margin-inline: 35px;
+        }
     }
 
     &-contain{
@@ -65,7 +69,6 @@
         grid-area: first;
         height: fit-content;
        &-img{
-            filter: saturate(0);
             width: 200px;
             height: 200px;
             border-radius: 100%;

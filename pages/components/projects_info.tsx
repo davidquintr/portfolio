@@ -1,5 +1,5 @@
 import ProjectsItem from "./project_item";
-import project from "../assets/json/projects.json";
+import project from "../assets/json/projects_es.json";
 
 export default function ProjectsInfo() {
   return (
@@ -10,7 +10,7 @@ export default function ProjectsInfo() {
         </div>
         <div className="section-body projects">
         {project.map((element, index) => (
-          <ProjectsItem key={index} element={element} />
+          <ProjectsItem key={index} element={element} index={index} />
         ))}
         </div>
       </section>

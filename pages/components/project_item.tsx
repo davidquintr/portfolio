@@ -3,16 +3,21 @@ import { faEye, faCode, faAlignLeft } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 import TechnologiesSpecific from "./tecnologies_specific";
-import project from "../assets/json/projects.json";
+import project from "../assets/json/projects_es.json";
+import { motion, AnimatePresence } from "framer-motion";
 
-type ProjectProps = {
-  element: (typeof project)[0];
-};
 
-const ProjectsItem: React.FC<ProjectProps> = ({ element }) => {
+const ProjectsItem = ({ element, index }) => {
   return (
     <>
-      <div className="project">
+    <AnimatePresence>
+      <motion.div 
+        initial={{ opacity: 0, x: -15 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: 0 }}
+        transition={{ delay: 0.8 * (index / 2) }}
+      
+      className="project">
         <Image
           className="project-img"
           src={element.img}
@@ -65,7 +70,8 @@ const ProjectsItem: React.FC<ProjectProps> = ({ element }) => {
             ) : null}
           </div>
         </div>
-      </div>
+      </motion.div>
+      </AnimatePresence>
     </>
   );
 };
