@@ -13,7 +13,7 @@ export default function AboutMe() {
             <h2>About me</h2>
           </div>
           <div className="section-body">
-            <p dangerouslySetInnerHTML={{ __html: basics.eng.aboutme }}></p>
+            <div dangerouslySetInnerHTML={{ __html: basics.eng.aboutme }}></div>
           </div>
       </motion.section>
     </AnimatePresence>

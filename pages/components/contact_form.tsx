@@ -49,6 +49,7 @@ const formContact = () => {
           <h2>Contact</h2>
         </div>
         <div className="section-body contact">
+          <p className="text-center">If you are looking for help with a project or need assistence, you can contact me!</p>
           <form className="contact-contain" ref={form} onSubmit={sendEmail}>
             <div className="contact-elements ">
               <div className="contact-elements-middle ">
