@@ -11,7 +11,7 @@ const TechnologiesSpecific: React.FC<TechnologiesSpecificProps> =  ({lineTech}) 
         <>
         {
             tech?.map((element,index) => {
-                return lineTech.includes(element.dim) ? (<Image className='project-info-tech-img' key={index} src={element.url} width={32} height={32} alt={element.alt}></Image>) : null
+                return lineTech?.includes(element.dim) ? (<Image className='project-info-tech-img' key={index} src={element.url} width={32} height={32} alt={element.alt}></Image>) : null
             })
         }
         </>
