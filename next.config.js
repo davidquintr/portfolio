@@ -5,8 +5,6 @@ const nextConfig = {
     domains: ['davidquintr.github.io'],
     unoptimized: true
   },
-  output: 'export',
-  distDir: '_static',
 }
 
 module.exports = nextConfig
