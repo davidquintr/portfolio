@@ -1,6 +1,6 @@
 [
   {
-    "img": "/project/portafolio.png",
+    "img": "./project/portafolio.png",
     "title": "Antiguo Portafolio",
     "details": "Creado para la recopilación de mis proyectos en el desarrollo de mi carrera universitaria y aprendizaje personal.",
     "tech": "rjs sass ps ai emailjs",
@@ -9,7 +9,7 @@
     "urlDetails": ""
   },
   {
-    "img": "/project/taskitty.png",
+    "img": "./project/taskitty.png",
     "title": "TasKitty",
     "details": "Creado para Desarrollo de Aplicaciones Móviles I en el 2S-2022, realizado con Kotlin en Android Studio.",
     "tech": "kt ps ai",
@@ -18,7 +18,7 @@
     "urlDetails": ""
   },
   {
-    "img": "/project/wreader.png",
+    "img": "./project/wreader.png",
     "title": "WhatsApp Reader",
     "details": "Proyecto personal, interpreta los mensajes exportados de un chat de WhatsApp y los muestra en un formato similar al original.",
     "tech": "html css js",
@@ -27,7 +27,7 @@
     "urlDetails": ""
   },
   {
-    "img": "/project/brainview.png",
+    "img": "./project/brainview.png",
     "title": "BrainView - 3D",
     "details": "Creado como comisión - Vista básica de limitados puntos del cerebro, internos y externos. Realizado con Unity bajo C# junto a herramientas multimedia.",
     "tech": "unity cs ai ps",
@@ -37,7 +37,7 @@
   }
   ,
   {
-    "img": "/project/blog.png",
+    "img": "./project/blog.png",
     "title": "Blog - JavaScript / JQuery",
     "details": "Creado para Desarrollo de Aplicaciones Web en el 2S-2022, Realizado con HTML y CSS.",
     "tech": "html css",
@@ -46,7 +46,7 @@
     "urlDetails": ""
   },
   {
-    "img": "/project/eysmono.png",
+    "img": "./project/eysmono.png",
     "title": "SistemaEyS - Monodevelop",
     "details": "Creado para Programación de Aplicaciones 1S-2022, Sistema de control de empleados en C# y GTK#.",
     "tech": "cs gtk mysql",
@@ -55,7 +55,7 @@
     "urlDetails": ""
   },
   {
-    "img": "/project/eysvb.png",
+    "img": "./project/eysvb.png",
     "title": "SistemaEyS - Visual Basic",
     "details": "Creado para Diseño de Bases de Datos 1S-2022, Sistema de control de empleados en Visual Basic .NET",
     "tech": "vbnet mssql",
@@ -64,7 +64,7 @@
     "urlDetails": ""
   },
   {
-    "img": "/project/classblock.png",
+    "img": "./project/classblock.png",
     "title": "ClassBlock",
     "details": "Creado para Programación Orientada a Objetos 2S-2021, Un sistema de pseudo-administración de tareas. Realizado con Java.",
     "tech": "java mssql ps",
@@ -73,7 +73,7 @@
     "urlDetails": ""
   },
   {
-    "img": "/project/mitiendita.png",
+    "img": "./project/mitiendita.png",
     "title": "Mi Tiendita",
     "details": "Creado para Metodología de la Programación 1S-2021, Un sistema de gestión de inventarios y facturación. Realizado con C/C++",
     "tech": "cpp",

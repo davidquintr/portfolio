@@ -2,92 +2,92 @@
     {
         "dim": "ai",
         "alt": "Adobe Illustrator",
-        "url":"/tech/ai.svg",
+        "url":"./tech/ai.svg",
         "show": "true"
     },
     {
         "dim": "ps",
         "alt": "Adobe Photoshop",
-        "url":"/tech/ps.svg",
+        "url":"./tech/ps.svg",
         "show": "true"
 
     },
     {
         "dim": "mv",
         "alt": "Magix Vegas",
-        "url":"/tech/mv.svg",
+        "url":"./tech/mv.svg",
         "show": "true"
     },
     {
         "dim": "html",
         "alt": "HTML",
-        "url":"/tech/html.svg",
+        "url":"./tech/html.svg",
         "show": "true"
     },
     {
         "dim": "css",
         "alt": "CSS",
-        "url":"/tech/css.svg",
+        "url":"./tech/css.svg",
         "show": "true"
     },
     {
         "dim": "sass",
         "alt": "SASS",
-        "url":"/tech/sass.svg",
+        "url":"./tech/sass.svg",
         "show": "true"
     },
     {
         "dim": "js",
         "alt": "JavaScript",
-        "url":"/tech/js.svg",
+        "url":"./tech/js.svg",
         "show": "true"
     },
     {
         "dim": "rjs",
         "alt": "ReactJS",
-        "url":"/tech/react.svg",
+        "url":"./tech/react.svg",
         "show": "true"
     },
     {
         "dim": "cs",
         "alt": "C#",
-        "url":"/tech/csharp.svg",
+        "url":"./tech/csharp.svg",
         "show": "true"
     },
     {
         "dim": "unity",
         "alt": "Unity",
-        "url":"/tech/unity.svg",
+        "url":"./tech/unity.svg",
         "show": "true"
     },
     {
         "dim": "kt",
         "alt": "Kotlin",
-        "url":"/tech/kotlin.svg",
+        "url":"./tech/kotlin.svg",
         "show": "false"
     },
     {
         "dim": "gtk",
         "alt": "GTK#",
-        "url":"/tech/gtk.svg",
+        "url":"./tech/gtk.svg",
         "show": "false"
     },
     {
         "dim": "vbnet",
         "alt": "Visual Basic .NET",
-        "url":"/tech/vbnet.svg",
+        "url":"./tech/vbnet.svg",
         "show": "false"
     },
     {
         "dim": "mssql",
         "alt": "Microsoft SQL Server",
-        "url":"/tech/mssql.svg",
+        "url":"./tech/mssql.svg",
         "show": "false"
     },
     {
         "dim": "mysql",
         "alt": "MySQL Server",
-        "url":"/tech/mysql.svg",
+        "url":"./tech/mysql.svg",
         "show": "false"
     },
     {
@@ -99,24 +99,24 @@
     {
         "dim": "cpp",
         "alt": "C++",
-        "url":"/tech/cpp.svg",
+        "url":"./tech/cpp.svg",
         "show": "false"
     },
     {
         "dim": "emailjs",
         "alt": "EmailJS",
-        "url":"/tech/emailjs.svg",
+        "url":"./tech/emailjs.svg",
         "show": "false"
     },
     {
         "dim": "php",
         "alt": "PHP",
-        "url":"/tech/php.svg",
+        "url":"./tech/php.svg",
         "show": "true"
     },{
         "dim": "asp",
         "alt": "ASP.NET",
-        "url":"/tech/asp.svg",
+        "url":"./tech/asp.svg",
         "show": "true"
     }
 ]
