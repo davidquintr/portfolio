@@ -35,38 +35,7 @@ const ProjectsItem = ({ element, index }) => {
             </div>
           </div>
           <div className="project-buttons">
-            {element?.urlView != "" ? (
-              <Link href={element?.urlView} className="button-link extended light" target="__blank">
-                <FontAwesomeIcon
-                  icon={faEye}
-                  color="fff"
-                  className="fa-sm color-blue"
-                />
-                <p>Watch online</p>
-              </Link>
-            ) : null}
-
-            {element?.urlCode != "" ? (
-              <Link href={element?.urlCode} className="button-link extended light" target="__blank">
-                <FontAwesomeIcon
-                  icon={faCode}
-                  color="fff"
-                  className="fa-sm color-blue"
-                />
-                <p>View Source</p>
-              </Link>
-            ) : null}
-
-            {element?.urlDetails != "" ? (
-              <Link href={element?.urlDetails} className="button-link extended light" target="__blank">
-                <FontAwesomeIcon
-                  icon={faAlignLeft}
-                  color="fff"
-                  className="fa-sm color-blue"
-                />
-                <p>More Info</p>
-              </Link>
-            ) : null}
+            
           </div>
         </div>
       </motion.div>
