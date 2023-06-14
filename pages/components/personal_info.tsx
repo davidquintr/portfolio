@@ -25,7 +25,7 @@ export default function PersonalInfo() {
             <PersonalItem
               title={"Email"}
               url={""}
-              detail={personal.mail}
+              detail={personal?.mail}
             ></PersonalItem>
             <PersonalItem
               title={"Age"}
@@ -35,7 +35,7 @@ export default function PersonalInfo() {
             <PersonalItem
               title={"Birthday"}
               url={""}
-              detail={personal.birthday}
+              detail={personal?.birthday}
             ></PersonalItem>
             <PersonalItem
               title={"CV"}

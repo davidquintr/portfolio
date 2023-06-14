@@ -16,8 +16,8 @@ export default function PersonInit() {
               alt="img_ico"
             ></Image>
             <div className="section-person-details">
-              <h2>{basics.author}</h2>
-              <div dangerouslySetInnerHTML={{ __html: basics.eng.details }} />
+              <h2>{basics?.author}</h2>
+              <div dangerouslySetInnerHTML={{ __html: basics?.eng.details }} />
             </div>
         </div>
         <CompleteTech></CompleteTech>

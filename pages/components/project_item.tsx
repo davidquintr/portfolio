@@ -3,7 +3,6 @@ import { faEye, faCode, faAlignLeft } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 import TechnologiesSpecific from "./tecnologies_specific";
-import project from "../assets/json/projects_en.json";
 import { motion, AnimatePresence } from "framer-motion";
 
 
@@ -20,24 +19,24 @@ const ProjectsItem = ({ element, index }) => {
       className="project">
         <Image
           className="project-img"
-          src={element.img}
+          src={element?.img}
           width={960}
           height={540}
           alt="example"
         ></Image>
         <div className="project-info">
           <div className="project-info-details">
-            <h3>{element.title}</h3>
-            <p>{element.details}</p>
+            <h3>{element?.title}</h3>
+            <p>{element?.details}</p>
             <div className="project-info-tech">
               <TechnologiesSpecific
-                lineTech={element.tech}
+                lineTech={element?.tech}
               ></TechnologiesSpecific>
             </div>
           </div>
           <div className="project-buttons">
-            {element.urlView != "" ? (
-              <Link href={element.urlView} className="button-link extended light" target="__blank">
+            {element?.urlView != "" ? (
+              <Link href={element?.urlView} className="button-link extended light" target="__blank">
                 <FontAwesomeIcon
                   icon={faEye}
                   color="fff"
@@ -47,8 +46,8 @@ const ProjectsItem = ({ element, index }) => {
               </Link>
             ) : null}
 
-            {element.urlCode != "" ? (
-              <Link href={element.urlCode} className="button-link extended light" target="__blank">
+            {element?.urlCode != "" ? (
+              <Link href={element?.urlCode} className="button-link extended light" target="__blank">
                 <FontAwesomeIcon
                   icon={faCode}
                   color="fff"
@@ -58,8 +57,8 @@ const ProjectsItem = ({ element, index }) => {
               </Link>
             ) : null}
 
-            {element.urlDetails != "" ? (
-              <Link href={element.urlDetails} className="button-link extended light" target="__blank">
+            {element?.urlDetails != "" ? (
+              <Link href={element?.urlDetails} className="button-link extended light" target="__blank">
                 <FontAwesomeIcon
                   icon={faAlignLeft}
                   color="fff"

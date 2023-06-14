@@ -9,7 +9,7 @@ export default function ProjectsInfo() {
           <h2>Projects</h2>
         </div>
         <div className="section-body projects">
-        {project.map((element, index) => (
+        {project?.map((element, index) => (
           <ProjectsItem key={index} element={element} index={index} />
         ))}
         </div>
