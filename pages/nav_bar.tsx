@@ -15,7 +15,7 @@ const links = [
   { href: "/contact", text: "Contact", icon: faAddressBook },
 ];
 
-export const NavBar = () => {
+const NavBar = () => {
   const path = usePathname();
 
   return (
@@ -34,3 +34,5 @@ export const NavBar = () => {
     </>
   );
 };
+
+export default NavBar
