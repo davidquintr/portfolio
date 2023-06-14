@@ -3,10 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['davidquintr.github.io'],
+    unoptimized: true
   },
-  experimental: {
-    appDir: false,
-  },
+  output: 'export',
+  distDir: '_static',
 }
 
 module.exports = nextConfig
