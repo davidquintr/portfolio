@@ -9,7 +9,9 @@ export default function Document() {
         <link rel="shortcut icon" href='./icon.svg'></link>
       </Head>
       <body>
-        <PersonInit></PersonInit>
+        <div className='person-init'>
+          <PersonInit></PersonInit>
+        </div>
         <Main />
         <Footer></Footer>
         <NextScript />

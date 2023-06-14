@@ -78,9 +78,10 @@
     &-person{
         background-color: rgb(8, 8, 8);
         background-image: $linear-gradient-bg;
-        width: 100%;
+        border: 1px solid $color-blue;
         display: flex; 
         flex-direction: column;
+        padding-inline: 30%;
         padding: 0;
         border-radius: $br-default;
         grid-area: first;
@@ -157,4 +158,10 @@
         padding: 0;
         grid-area: two;
     }
+}
+
+
+.person-init{
+    display: flex;
+    justify-content: center;
 }

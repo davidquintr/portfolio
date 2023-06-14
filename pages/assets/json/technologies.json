@@ -93,7 +93,7 @@
     {
         "dim": "java",
         "alt": "Java",
-        "url":"/tech/java.svg",
+        "url":"./tech/java.svg",
         "show": "false"
     },
     {
