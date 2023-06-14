@@ -35,7 +35,16 @@ const ProjectsItem = ({ element, index }) => {
             </div>
           </div>
           <div className="project-buttons">
-            
+          {element?.urlView != "" ? (
+              <Link href={element?.urlView} className="button-link extended light" target="__blank">
+                <FontAwesomeIcon
+                  icon={faEye}
+                  color="fff"
+                  className="fa-sm color-blue"
+                />
+                <p>Watch online</p>
+              </Link>
+            ) : null}
           </div>
         </div>
       </motion.div>
