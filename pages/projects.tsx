@@ -1,6 +1,6 @@
 import PersonInit from "./components/person_init";
 import ProjectsInfo from "./components/projects_info";
-import { NavBar } from "./nav_bar";
+import NavBar from "./nav_bar";
 import Head from "next/head";
 import { PageWrapper } from "./components/page_wrapper";
 
