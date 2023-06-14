@@ -4,7 +4,9 @@ import { Footer } from './components/footer'
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <link rel="shortcut icon" href='/icon.svg'></link>
+      </Head>
       <body>
         <Main />
         <Footer></Footer>
