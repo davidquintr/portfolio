@@ -1,10 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faCode, faAlignLeft } from "@fortawesome/free-solid-svg-icons";
+
 import Image from "next/image";
-import Link from "next/link";
 import TechnologiesSpecific from "./tecnologies_specific";
 import { motion, AnimatePresence } from "framer-motion";
 import projects from '../assets/json/projects_en.json'
+import ProjectLinkElement from "./project_link_element";
 
 type ProjectsItemProps = {
   element : typeof projects[0]
@@ -39,17 +38,7 @@ const ProjectsItem: React.FC<ProjectsItemProps> = ({ element, index }) => {
             </div>
           </div>
           <div className="project-buttons">
-          {element?.urlView != "" ? (
-              <Link href={"https://davidquintr.github.io/portafolio/"} className="button-link extended light" target="__blank">
-                <p>{element?.urlView}</p>
-                <FontAwesomeIcon
-                  icon={faEye}
-                  color="fff"
-                  className="fa-sm color-blue"
-                />
-                <p>Watch online</p>
-              </Link>
-            ) : null}
+            <ProjectLinkElement element={element}></ProjectLinkElement>
           </div>
         </div>
       </motion.div>
