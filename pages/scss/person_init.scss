@@ -35,6 +35,11 @@
         color: $color-gray-text;
         margin: 20px;
 
+        @media (max-width: 600px) {
+            margin: 20px 10px;
+        }
+    
+
         &.personal{
             height: calc(100% - 71px);
         }
@@ -48,6 +53,12 @@
 
         &.contact{
             margin-inline: 35px;
+           
+
+            @media (max-width: 800px) {
+                margin-inline: 10px;
+            }
+
         }
     }
 
@@ -57,17 +68,23 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
+
+        @media (max-width: 880px) {
+            flex-direction: column;
+        }
+    
     }
     
     &-person{
         background-color: rgb(8, 8, 8);
         background-image: $linear-gradient-bg;
-        display: flex;
+        display: flex; 
         flex-direction: column;
         padding: 0;
         border-radius: $br-default;
         grid-area: first;
         height: fit-content;
+
        &-img{
             width: 200px;
             height: 200px;
@@ -75,6 +92,18 @@
        }
        
        &-details{
+
+            @media (max-width: 880px) {
+                h2{
+                    text-align: center;
+                }
+
+                p{
+                    text-align: center;
+                }
+
+            }
+
             h2{
                 font-size: 32px;
                 color: $color-bluelight;
@@ -84,7 +113,6 @@
 
             }
             p{
-                display: inline;
                 color: white;
             }
        }
@@ -120,6 +148,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        grid-area: three;
     }
 
     &-projects, &-contact{

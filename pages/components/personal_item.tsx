@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faEye} from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
 
 const PersonalItem = ({ title , detail, url }) => {
   return (
@@ -9,10 +10,10 @@ const PersonalItem = ({ title , detail, url }) => {
         {url == "" ? (
           <p>{detail}</p>
         ) : (
-          <a className="button-link extended">
+          <Link className="button-link extended" href={"/documents/CV David Quintanilla.pdf"} target='__blank'>
             <FontAwesomeIcon icon={faEye} color='fff' className='fa-sm color-blue'  />
             <p>{detail}</p>
-          </a>
+          </Link>
         )}
       </div>
     </>

@@ -18,6 +18,16 @@ body{
 
 .article{
     width: 70%;
+
+    @media (max-width: 1100px) {
+        width: 85%;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+
+
     &-base{
         display: grid;
         gap: 10px;
@@ -30,6 +40,14 @@ body{
         &.extended{
             display: flex;
             flex-direction: column;
+        }
+
+        @media (max-width: 800px) {
+            grid-template-areas: 
+            "first first first"
+            "mid mid mid"
+            "three three three"
+            "two two two";
         }
     }
 }
@@ -44,6 +62,7 @@ body{
     cursor: pointer;
     width: 100%;
     background-color: $color-boldblue;    
+    color: $color-bluelight;
     border-radius: 50px;
     padding: 8px;
     margin: 5px;
@@ -87,6 +106,11 @@ body{
 
         &.minimal{
             width: 128px;
+
+            @media (max-width: 600px) {
+                padding-inline: 15px;
+                width: 85px;
+            }
         }
 
     }
@@ -202,6 +226,14 @@ body{
     flex-direction: column;
     width: 45%;
 
+    @media (max-width: 880px) {
+        width: 75%;
+    }
+
+    @media (max-width: 600px) {
+        width: 95%;
+    }
+
     &-img{
         border-radius: $br-default $br-default 0 0;
         width: auto;
@@ -259,9 +291,18 @@ body{
         flex-direction: column;
         margin-inline: 40px;
 
+        @media (max-width: 800px) {
+            margin-inline: 20px;
+        }
+        
+
         &-middle{
             display: flex;
-            gap: 10px;                
+            gap: 10px;
+            
+            @media (max-width: 600px) {
+                flex-direction: column;
+            }
         }
 
         &-column{
@@ -286,6 +327,10 @@ body{
     &-contain{
         display: grid;
         grid-template-columns: 2fr 1fr;
+
+        @media (max-width: 800px) {
+            grid-template-columns: 1fr;
+        }
     }
 }
 

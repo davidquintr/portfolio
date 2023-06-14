@@ -1,5 +1,5 @@
 import ProjectsItem from "./project_item";
-import project from "../assets/json/projects_es.json";
+import project from "../assets/json/projects_en.json";
 
 export default function ProjectsInfo() {
   return (

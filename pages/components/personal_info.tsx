@@ -2,6 +2,7 @@ import PersonalItem from "./personal_item";
 import personal from "../assets/json/personal.json";
 import { differenceInYears } from "date-fns";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 export default function PersonalInfo() {
   let myAge = new Date("2004-04-19");
@@ -43,7 +44,7 @@ export default function PersonalInfo() {
             ></PersonalItem>
           </div>
           <div className="section-footer">
-            <a className="button-link">Contact me</a>
+            <Link className="button-link" href="/contact">Contact me</Link>
           </div>
         </motion.section>
       </AnimatePresence>

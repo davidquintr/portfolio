@@ -3,7 +3,7 @@ import { faEye, faCode, faAlignLeft } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 import TechnologiesSpecific from "./tecnologies_specific";
-import project from "../assets/json/projects_es.json";
+import project from "../assets/json/projects_en.json";
 import { motion, AnimatePresence } from "framer-motion";
 
 
