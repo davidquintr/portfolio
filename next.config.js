@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    basePath: '/portfolio',
     domains: ['davidquintr.github.io'],
     unoptimized: true
   },
