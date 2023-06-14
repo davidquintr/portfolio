@@ -113,5 +113,10 @@
         "alt": "PHP",
         "url":"/tech/php.svg",
         "show": "true"
+    },{
+        "dim": "asp",
+        "alt": "ASP.NET",
+        "url":"/tech/asp.svg",
+        "show": "true"
     }
 ]
