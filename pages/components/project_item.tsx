@@ -41,6 +41,7 @@ const ProjectsItem: React.FC<ProjectsItemProps> = ({ element, index }) => {
           <div className="project-buttons">
           {element?.urlView != "" ? (
               <Link href={"https://davidquintr.github.io/portafolio/"} className="button-link extended light" target="__blank">
+                <p>{element?.urlView}</p>
                 <FontAwesomeIcon
                   icon={faEye}
                   color="fff"
