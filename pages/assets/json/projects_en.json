@@ -1,6 +1,6 @@
 [
   {
-    "img": "/project/portafolio.png",
+    "img": "./project/portafolio.png",
     "title": "Old Portfolio",
     "details": "Created for collection of my projects in the development of my universitary career and self-learn.",
     "tech": "rjs sass ps ai emailjs",
@@ -9,7 +9,7 @@
     "urlDetails": ""
   },
   {
-    "img": "/project/taskitty.png",
+    "img": "./project/taskitty.png",
     "title": "TasKitty",
     "details": "Created for Mobile Applications Development I in 1S-2022, developed by Kotlin in Android Studio.",
     "tech": "kt ps ai",
@@ -18,7 +18,7 @@
     "urlDetails": ""
   },
   {
-    "img": "/project/wreader.png",
+    "img": "./project/wreader.png",
     "title": "WhatsApp Reader",
     "details": "Personal project, interpreats the exported message of WhatsApp chat and shows in a familiar format for read better.",
     "tech": "html css js",
@@ -27,7 +27,7 @@
     "urlDetails": ""
   },
   {
-    "img": "/project/brainview.png",
+    "img": "./project/brainview.png",
     "title": "BrainView - 3D",
     "details": "Created as commission - Basic view of limited points of the brain, internal and external. Developed in Unity Engine over C# and using Multimedia Tools.",
     "tech": "unity cs ai ps",
@@ -37,7 +37,7 @@
   }
   ,
   {
-    "img": "/project/blog.png",
+    "img": "./project/blog.png",
     "title": "Blog - JavaScript / JQuery",
     "details": "Created por Web Applications Development in 2S-2022, developed with HTML and CSS.",
     "tech": "html css",
@@ -46,7 +46,7 @@
     "urlDetails": ""
   },
   {
-    "img": "/project/eysmono.png",
+    "img": "./project/eysmono.png",
     "title": "SistemaEyS - Monodevelop",
     "details": "Created for Programming of Applications in 1S-2022, is a Employees Control System with C# and GTK#.",
     "tech": "cs gtk mysql",
@@ -55,7 +55,7 @@
     "urlDetails": ""
   },
   {
-    "img": "/project/eysvb.png",
+    "img": "./project/eysvb.png",
     "title": "SistemaEyS - Visual Basic",
     "details": "Created for Databases Design in 1S-2022,  is a Employees Control System with Visual Basic .NET.",
     "tech": "vbnet mssql",
@@ -64,7 +64,7 @@
     "urlDetails": ""
   },
   {
-    "img": "/project/classblock.png",
+    "img": "./project/classblock.png",
     "title": "ClassBlock",
     "details": "Created for Object Oriented Programming in 2S-2021, is a pseudo system for manage tasks. Developed with Java.",
     "tech": "java mssql ps",
@@ -73,7 +73,7 @@
     "urlDetails": ""
   },
   {
-    "img": "/project/mitiendita.png",
+    "img": "./project/mitiendita.png",
     "title": "'Mi Tiendita'",
     "details": "Created for Programming Methodology in 1S-2021, is a system of inventory control and billing. Developed with C/C++.",
     "tech": "cpp",
