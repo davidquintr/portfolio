@@ -6,7 +6,7 @@ import TechItems from "../components/tecnologies_items";
 export default function PersonInit() {
   return (
     <>
-      <section className="section section-person">
+      <article className="article section-person">
         <div className="section-contain">
             <Image
               className="section-person-img"
@@ -21,7 +21,7 @@ export default function PersonInit() {
             </div>
         </div>
         <CompleteTech></CompleteTech>
-      </section>
+      </article>
     </>
   );
 }

@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import Footer from './components/footer'
+import PersonInit from './components/person_init'
 
 export default function Document() {
   return (
@@ -8,6 +9,7 @@ export default function Document() {
         <link rel="shortcut icon" href='./icon.svg'></link>
       </Head>
       <body>
+        <PersonInit></PersonInit>
         <Main />
         <Footer></Footer>
         <NextScript />

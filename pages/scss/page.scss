@@ -27,6 +27,8 @@ body{
 .footer{
     position: relative;
     margin-top: auto;
+    box-sizing: border-box;
+    width: 100%;
     background-image: $linear-gradient-bg;
     padding: 10px;
     bottom: 0;
@@ -56,7 +58,6 @@ body{
         gap: 10px;
         grid-template-columns: 1fr 1fr 1fr; 
         grid-template-areas: 
-          "first first first"
           "mid mid mid"
           "two two three";
         
@@ -67,7 +68,6 @@ body{
 
         @media (max-width: 800px) {
             grid-template-areas: 
-            "first first first"
             "mid mid mid"
             "three three three"
             "two two two";

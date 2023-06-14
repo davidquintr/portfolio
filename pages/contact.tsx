@@ -11,7 +11,6 @@ export default function Contact() {
         <title>Contact</title>
       </Head>
       <article className="article article-base extended">
-        <PersonInit></PersonInit>
         <NavBar></NavBar>
         <PageWrapper>
           <ContactForm></ContactForm>

@@ -4,9 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import TechnologiesSpecific from "./tecnologies_specific";
 import { motion, AnimatePresence } from "framer-motion";
+import projects from '../assets/json/projects_en.json'
 
-
-const ProjectsItem = ({ element, index }) => {
+type ProjectsItemProps = {
+  element : typeof projects[0]
+  index : number
+};
+const ProjectsItem: React.FC<ProjectsItemProps> = ({ element, index }) => {
   return (
     <>
     <AnimatePresence>
@@ -35,16 +39,7 @@ const ProjectsItem = ({ element, index }) => {
             </div>
           </div>
           <div className="project-buttons">
-          {element?.urlView != "" ? (
-              <Link href={element?.urlView} className="button-link extended light" target="__blank">
-                <FontAwesomeIcon
-                  icon={faEye}
-                  color="fff"
-                  className="fa-sm color-blue"
-                />
-                <p>Watch online</p>
-              </Link>
-            ) : null}
+
           </div>
         </div>
       </motion.div>

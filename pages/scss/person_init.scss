@@ -78,6 +78,7 @@
     &-person{
         background-color: rgb(8, 8, 8);
         background-image: $linear-gradient-bg;
+        width: 100%;
         display: flex; 
         flex-direction: column;
         padding: 0;

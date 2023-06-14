@@ -15,7 +15,6 @@ export default function Projects() {
         <title>Projects</title>
       </Head>
       <article className="article article-base extended">
-        <PersonInit></PersonInit>
         <NavBar></NavBar>
         <PageWrapper>
           <ProjectsInfo></ProjectsInfo>

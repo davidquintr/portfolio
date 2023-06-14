@@ -12,7 +12,6 @@ import PersonalInfo from "./personal_info";
         <title>Home</title>
       </Head>
       <article className="article article-base">
-        <PersonInit></PersonInit>
         <NavBar></NavBar>
         <AboutMe></AboutMe>
         <PersonalInfo></PersonalInfo>
