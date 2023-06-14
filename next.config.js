@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  basePath: '/portfolio',
   images: {
-    basePath: '/portfolio',
     domains: ['davidquintr.github.io'],
     unoptimized: true
   },
