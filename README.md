@@ -1,6 +1,6 @@
 
 <div align="center">
-    <img src="./public/davidquint-photo.png" style="border-radius: 30%" width="128px"></img>
+    <img src="./public/davidquint-photo.png"  width="128px"></img>
     <h1>David Quintanilla - Portfolio</h1>
     <p>Collection of all my progress in System Engineering</p>
     <a href="https://opensource.org/licenses/MIT">
@@ -55,6 +55,6 @@ I will do this in this year, i promise.
 <div align="center">
     <p>You can see the result online:</p>
     <a href="https://davidquintr.github.io/portfolio/">
-        <img src="./public/portfolio-icon.png" height="32">
+        <img src="./public/portfolio-icon.png" height="48">
     </a>
 </div>
