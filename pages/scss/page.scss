@@ -25,13 +25,26 @@ body{
 }
 
 .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    gap: 5px;
     margin-top: auto;
     box-sizing: border-box;
     width: 100%;
     background-image: $linear-gradient-bg;
     padding: 10px;
     bottom: 0;
+
+    a{
+        color: white;
+
+        svg{
+            width: 16px;
+            height: 16px;
+        }
+    }
 
     p{
         color: white;

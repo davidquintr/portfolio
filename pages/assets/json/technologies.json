@@ -3,20 +3,20 @@
         "dim": "ai",
         "alt": "Adobe Illustrator",
         "url":"./tech/ai.svg",
-        "show": "true"
+        "show": "false"
     },
     {
         "dim": "ps",
         "alt": "Adobe Photoshop",
         "url":"./tech/ps.svg",
-        "show": "true"
+        "show": "false"
 
     },
     {
         "dim": "mv",
         "alt": "Magix Vegas",
         "url":"./tech/mv.svg",
-        "show": "true"
+        "show": "false"
     },
     {
         "dim": "html",
@@ -31,21 +31,27 @@
         "show": "true"
     },
     {
-        "dim": "sass",
-        "alt": "SASS",
-        "url":"./tech/sass.svg",
-        "show": "true"
-    },
-    {
         "dim": "js",
         "alt": "JavaScript",
         "url":"./tech/js.svg",
         "show": "true"
     },
     {
+        "dim": "sass",
+        "alt": "SASS",
+        "url":"./tech/sass.svg",
+        "show": "true"
+    },
+    {
         "dim": "rjs",
         "alt": "ReactJS",
         "url":"./tech/react.svg",
+        "show": "true"
+    }, 
+    {
+        "dim": "nextjs",
+        "alt": "NextJS",
+        "url":"./tech/nextjs.svg",
         "show": "true"
     },
     {
@@ -113,10 +119,17 @@
         "alt": "PHP",
         "url":"./tech/php.svg",
         "show": "true"
-    },{
+    },
+    {
         "dim": "asp",
         "alt": "ASP.NET",
         "url":"./tech/asp.svg",
+        "show": "true"
+    },
+    {
+        "dim": "git",
+        "alt": "GIT",
+        "url":"./tech/git.svg",
         "show": "true"
     }
 ]

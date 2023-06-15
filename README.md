@@ -3,7 +3,7 @@
     <img src="./public/davidquint-photo.png"  width="128px"></img>
     <h1>David Quintanilla - Portfolio</h1>
     <p>Collection of all my progress in System Engineering</p>
-    <a href="https://opensource.org/licenses/MIT">
+    <a href="https://github.com/davidquintr/portfolio/blob/main/LICENSE">
         <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
     </a>
 </div>
