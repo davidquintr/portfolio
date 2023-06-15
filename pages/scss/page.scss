@@ -24,6 +24,10 @@ body{
 
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 .footer{
     display: flex;
     justify-content: center;

@@ -55,7 +55,7 @@
         "show": "true"
     },
     {
-        "dim": "cs",
+        "dim": "csh",
         "alt": "C#",
         "url":"./tech/csharp.svg",
         "show": "true"

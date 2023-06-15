@@ -30,7 +30,7 @@
     "img": "./project/brainview.png",
     "title": "BrainView - 3D",
     "details": "Creado como comisión - Vista básica de limitados puntos del cerebro, internos y externos. Realizado con Unity bajo C# junto a herramientas multimedia.",
-    "tech": "unity cs ai ps",
+    "tech": "unity csharp ai ps",
     "urlCode": "https://github.com/davidquintr/brain-3d",
     "urlView": "",
     "urlDetails": ""
@@ -49,7 +49,7 @@
     "img": "./project/eysmono.png",
     "title": "SistemaEyS - Monodevelop",
     "details": "Creado para Programación de Aplicaciones 1S-2022, Sistema de control de empleados en C# y GTK#.",
-    "tech": "cs gtk mysql",
+    "tech": "csharp gtk mysql",
     "urlCode": "https://github.com/davidquintr/SistemaEyS-Mono",
     "urlView": "",
     "urlDetails": ""
