@@ -439,30 +439,67 @@ body{
 
 .post{
     display: flex;
-    outline: 2px solid $color-blue;
-    border-radius: $br-default;
-    background-color: black;
-    background-image: $linear-gradient-bg;
-    width: 80%;
-    align-items: center;
+    justify-content: center;
     gap: 15px;
 
-    @media (max-width: 800px) {
-        width: 100%;
+    a{
+        text-decoration: none;
+        color: unset;
+        display: flex;
+        outline: 2px solid $color-blue;
+        border-radius: $br-default;
+        background-color: black;
+        background-image: $linear-gradient-bg;
+        width: 90%;
+        align-items: center;
+        gap: 15px;
+        transition: all 0.5s;
+
+        &:hover{
+            background-color: $color-boldblue;
+        }
+
+        &:active{
+            transform: scale(0.98);
+        }
+    
+        @media (max-width: 800px) {
+            width: 100%;
+        }
+        
+        @media (max-width: 600px) {
+            gap: 0;
+            flex-direction: column;
+        }
     }
 
     &-img{
         border-radius: $br-default;
-        height: 100%;
+        margin: 20px 10px;
+        height: auto;
         width: 40%;
         box-shadow: 0px 0px 10px $color-darkblue;
+
+        @media (max-width: 800px) {
+            width: 30%;
+        }
+        
+        @media (max-width: 600px) {
+            margin: 0;
+            width: 100%;
+        }
+
     }
 
     &-info{
         display: flex;
-        margin: 20px 0;
         flex-direction: column;
+        margin-block: 10px;
         gap: 10px;
+
+        @media (max-width: 600px) {
+            margin: 10px;
+        }
 
         &-tag{
             display: flex;
@@ -470,7 +507,6 @@ body{
             gap: 5px;
 
             .tag{
-                pointer-events: none;
                 color: black;
                 border-radius: 10px;
                 background-color: white;
@@ -495,7 +531,7 @@ body{
 
             h3{
                 color: $color-bluelight;
-                font-size: xx-large;
+                font-size: x-large;
             }
 
             p{

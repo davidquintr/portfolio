@@ -7,7 +7,7 @@ export default function Blog() {
   return (
     <>
       <Head>
-        <title>Contact</title>
+        <title>Blog</title>
       </Head>
       <article className="article article-base extended">
         <NavBar></NavBar>

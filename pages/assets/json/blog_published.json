@@ -1,18 +1,11 @@
 [
     {
-        "icon": "/thumbnail.png",
-        "title": "EXPEDOC",
+        "icon": "/blog/expedoc.png",
+        "title": "Development Guide - Expediente Docente",
         "date": "2004-04-19",
-        "tags": "Fullstack Document",
+        "tags": "Fullstack Lead",
         "author":"0",
-        "details": "There's nothing"
-    }, 
-    {
-        "icon": "/thumbnail.png",
-        "title": "EXPEDOC",
-        "date": "2004-04-19",
-        "tags": "Fullstack Document Doc doc xd miau",
-        "author":"0",
-        "details": "There's nothing"
+        "details": "There's nothing",
+        "url": "expedoc-development"
     }
 ]
