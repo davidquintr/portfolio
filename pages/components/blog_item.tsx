@@ -17,7 +17,7 @@ const BlogItem = ({ element, index }) => {
             transition={{ delay: 0.5 * (index / 2) }}
           className="post"
         >
-        <Link href={element?.url}>
+        <Link href={"blog/" + element?.url}>
           <Image
             src={element.icon}
             alt={element.title}

@@ -3,26 +3,6 @@ import BlogItem from "./blog_item";
 import { useRouter } from 'next/router';
 
 const BlogPage = () => {
-  const router = useRouter();
-  const { query } = router;
-  const { article } = query;
-
-  if (article) {
-    const currentArticle = blog.find(item => item.url === `blog/${article}`);
-
-    if (currentArticle) {
-      return (
-        <div>
-          <h2>{currentArticle.title}</h2>
-          <p>{currentArticle.details}</p>
-        </div>
-      );
-    } else {
-      return <div>No se encontró el artículo</div>;
-    }
-  }
-
-
   return (
     <>
       <section className="section section-blog">
