@@ -6,6 +6,11 @@ h2, h3,h4,p, a{
     font-family: 'Poppins';
 }
 
+::selection {
+    background-color: $color-blue;
+    color: white;
+  }
+
 body{
     display: flex;
     flex-direction: column;

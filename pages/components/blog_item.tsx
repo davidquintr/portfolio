@@ -3,10 +3,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import personal from "../assets/json/personal.json";
 import Link from 'next/link'
+import DateParsed from './date'
 
 
 const BlogItem = ({ element, index }) => {
     let tags = element.tags.split(' ');
+    console.log(element.date)
   return (
     <>
       <AnimatePresence>
@@ -39,7 +41,9 @@ const BlogItem = ({ element, index }) => {
 
             <div className="post-info-title">
                 <h3>{element.title}</h3>
-                <p>{element.date}</p>
+                <p>
+                  <DateParsed dateOrigin={element.date}></DateParsed>
+                </p>  
             </div>
 
             <div className="post-info-author">

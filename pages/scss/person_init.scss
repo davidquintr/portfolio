@@ -170,6 +170,10 @@
             margin-inline: 50px;
             align-items: flex-start;
 
+            @media (max-width: 600px) {
+                margin-inline: 20px;
+            }
+
             &-image{
                 border-radius: 10px;
                 width: 100%;
