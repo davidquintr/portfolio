@@ -39,7 +39,6 @@
             margin: 20px 10px;
         }
     
-
         &.personal{
             height: calc(100% - 71px);
         }
@@ -153,10 +152,17 @@
         grid-area: three;
     }
 
-    &-projects, &-contact{
+    &-projects, &-contact, &-blog{
         transition: all 0.5s;
         padding: 0;
         grid-area: two;
+    }
+
+    &-blog{
+        .section-body{
+            align-items: center;
+            gap: 15px;
+        }
     }
 }
 

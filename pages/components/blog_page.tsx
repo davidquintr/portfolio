@@ -1,4 +1,6 @@
 import Head from "next/head";
+import blog from '../assets/json/blog_published.json'
+import BlogItem from "./blog_item";
 
 const BlogPage = () => {
   return (
@@ -10,10 +12,16 @@ const BlogPage = () => {
         <div className="section-title">
             <h2>Blog</h2>
         </div>
-        <div className="section-body"></div>
-
+        <div className="section-body">
+          {
+            blog?.map((element, index) => {
+              return(
+                <BlogItem element={element} index={index} key={index}></BlogItem>
+              )
+            })
+          }                      
+        </div>
       </section>
-      
     </>
   );
 };

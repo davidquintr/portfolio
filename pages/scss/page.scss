@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-h2,h4,p, a{
+h2, h3,h4,p, a{
     font-family: 'Poppins';
 }
 
@@ -435,4 +435,101 @@ body{
         opacity: 1;
         transform: scaleY(1);
     }
+}
+
+.post{
+    display: flex;
+    outline: 2px solid $color-blue;
+    border-radius: $br-default;
+    background-color: black;
+    background-image: $linear-gradient-bg;
+    width: 80%;
+    align-items: center;
+    gap: 15px;
+
+    @media (max-width: 800px) {
+        width: 100%;
+    }
+
+    &-img{
+        border-radius: $br-default;
+        height: 100%;
+        width: 40%;
+        box-shadow: 0px 0px 10px $color-darkblue;
+    }
+
+    &-info{
+        display: flex;
+        margin: 20px 0;
+        flex-direction: column;
+        gap: 10px;
+
+        &-tag{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+
+            .tag{
+                pointer-events: none;
+                color: black;
+                border-radius: 10px;
+                background-color: white;
+                
+                p{
+                    font-size: x-small;
+                    font-weight: 500;
+                    padding: 5px 10px;
+                    margin: 0;
+                }
+            }
+        }
+
+        &-title{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            h3, p{
+                margin: 0;
+            }
+
+            h3{
+                color: $color-bluelight;
+                font-size: xx-large;
+            }
+
+            p{
+                font-weight: 500;
+            }
+
+        }
+
+        &-author{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img{
+                border-radius: 50%;
+                width: 32px;
+                height: auto;
+            }
+
+            .details{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
+                p{
+                    font-size: small;
+                    margin: 0;
+                }
+                
+                .person{
+                    font-weight: 600;
+                }
+
+            }
+        }
+    }
+
 }
