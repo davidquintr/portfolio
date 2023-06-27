@@ -150,6 +150,10 @@ body{
             @media (max-width: 600px) {
                 padding-inline: 15px;
                 width: 85px;
+
+                p{
+                    display: none;
+                }
             }
         }
 

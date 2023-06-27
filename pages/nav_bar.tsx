@@ -4,6 +4,7 @@ import {
   faAddressBook,
   faHouse,
   faBarsProgress,
+  faBlog
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Router from "next/router";
@@ -11,6 +12,7 @@ import { usePathname } from "next/navigation";
 
 const links = [
   { href: "/", text: "Home", icon: faHouse },
+  {href: "/blog", text: "Blog", icon: faBlog},
   { href: "/projects", text: "Projects", icon: faBarsProgress },
   { href: "/contact", text: "Contact", icon: faAddressBook },
 ];

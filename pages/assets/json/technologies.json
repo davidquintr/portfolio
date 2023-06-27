@@ -58,19 +58,19 @@
         "dim": "csh",
         "alt": "C#",
         "url":"./tech/csharp.svg",
-        "show": "true"
+        "show": "false"
     },
     {
         "dim": "unity",
         "alt": "Unity",
         "url":"./tech/unity.svg",
-        "show": "true"
+        "show": "false"
     },
     {
         "dim": "kt",
         "alt": "Kotlin",
         "url":"./tech/kotlin.svg",
-        "show": "false"
+        "show": "true"
     },
     {
         "dim": "gtk",
@@ -130,6 +130,6 @@
         "dim": "git",
         "alt": "GIT",
         "url":"./tech/git.svg",
-        "show": "true"
+        "show": "false"
     }
 ]
