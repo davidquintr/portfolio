@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-h2, h3,h4,p, a{
+h2, h3,h4,p, a, table{
     font-family: 'Poppins';
 }
 
@@ -572,5 +572,128 @@ body{
             }
         }
     }
+}
 
+.blog{
+    &-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+
+        p{
+            font-weight: 400 !important;
+            margin-bottom: 20px !important;
+        }
+
+        h3, h4{
+            margin-bottom: 5px;
+            color: $color-bluelight;
+        }
+
+        h3{
+            font-size: x-large;
+        }
+
+        &-img{
+            border-radius: $br-default;
+            width: 90%;
+            margin-inline: 35px;
+            filter: brightness(0.5);
+            transition: filter 0.5s;
+
+            &:hover{
+                filter: brightness(1);
+            }
+        }
+
+        &-double{
+            padding-inline: 35px;
+            display: flex;
+            gap: 10px;
+
+            img{
+                border-radius: $br-default;
+                width: 50%;
+                filter: brightness(0.5);
+                transition: filter 0.5s;
+    
+                &:hover{
+                    filter: brightness(1);
+                }
+            }
+        }
+
+        &-grid{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding-inline: 35px;
+
+            img{
+                border-radius: $br-default;
+                width: 45%;
+                transition: filter 0.5s;
+
+                &:hover{
+                    filter: brightness(1);
+                }
+            }
+
+        }
+
+        video{
+            border-radius: $br-default;
+            margin-inline: 35px;
+            width: 90%;
+            filter: brightness(0.5);
+            transition: filter 0.5s;
+
+            &:hover{
+                filter: brightness(1);
+            }
+
+        }
+
+        &-contributors{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+
+            img{
+                border-radius: 50%;
+                width: min(64px, 64px);
+                height: auto;
+            }
+        }
+
+        table{
+            display: flex;
+            justify-content: center;
+            margin-block: 35px;
+
+            tbody{
+                background-color: $color-bg;
+                border-bottom: 3px solid $color-bg;
+                padding: 5px;
+                border-radius: $br-default;
+
+                tr{                        
+                    th{
+                        border-radius: 5px 5px 0 0;
+                        border-bottom: 3px solid $color-blue;
+                    }
+                    td{
+                        padding: 5px;
+                        border-bottom: 3px solid $color-items;
+                    }
+                }
+
+            }
+
+        }
+
+    }
 }
