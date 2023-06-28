@@ -35,7 +35,7 @@ const ProjectLinkElement: React.FC<ProjectLinkProps> = (element) =>{
             ) : null}
 
             {element?.element?.urlDetails != "" ? (
-              <Link href={element?.element?.urlDetails ?? ''} className="button-link extended light" target="__blank">
+              <Link href={element?.element?.urlDetails ?? ''} className="button-link extended light">
                 <FontAwesomeIcon
                   icon={faAlignLeft}
                   color="fff"

@@ -39,7 +39,6 @@
             margin: 20px 10px;
         }
     
-
         &.personal{
             height: calc(100% - 71px);
         }
@@ -60,6 +59,7 @@
             }
 
         }
+        
     }
 
     &-contain{
@@ -153,10 +153,48 @@
         grid-area: three;
     }
 
-    &-projects, &-contact{
+    &-projects, &-contact, &-blog{
         transition: all 0.5s;
         padding: 0;
         grid-area: two;
+    }
+
+    &-blog{
+        .section-body{
+            align-items: center;
+            gap: 15px;
+        }
+
+        .blog-article{
+            display: flex;
+            margin-inline: 50px;
+            align-items: flex-start;
+
+            @media (max-width: 600px) {
+                margin-inline: 20px;
+            }
+
+            &-image{
+                border-radius: 10px;
+                width: 100%;
+                height: 256px;
+                object-fit: cover;
+            }
+
+            h2, p{
+                margin: 0;
+            }
+
+            h2{
+                font-size: xx-large;
+                color: $color-bluelight;
+            }
+
+            p{
+                font-weight: 500;
+            }
+
+        }
     }
 }
 

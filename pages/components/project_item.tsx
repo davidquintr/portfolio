@@ -17,7 +17,7 @@ const ProjectsItem: React.FC<ProjectsItemProps> = ({ element, index }) => {
         initial={{ opacity: 0, x: -15 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: 0 }}
-        transition={{ delay: 0.8 * (index / 2) }}
+        transition={{ delay: 0.5 * (index / 2) }}
       
       className="project">
         <Image

@@ -1,0 +1,17 @@
+[
+    {
+        "name" : "Facebook",
+        "url" : "https://www.facebook.com/sharer/sharer.php?u=",
+        "img" : "../social/facebook.svg"
+    },
+    {
+        "name" : "Twitter",
+        "url" : "https://twitter.com/intent/tweet?text=",
+        "img" : "../social/twitter.svg"
+    },
+    {
+        "name" : "LinkedIn",
+        "url" : "https://www.linkedin.com/sharing/share-offsite/?url=",
+        "img" : "../social/linkedin.svg"
+    }
+]

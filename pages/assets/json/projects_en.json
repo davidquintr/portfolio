@@ -1,4 +1,13 @@
-[
+[  
+  {
+  "img": "./project/expedoc.png",
+  "title": "Expediente Docente",
+  "details": "My first job experience in Software Development. This works like a teacher manager or internal social media for a college, including self system of feedback and a record history of teachers.",
+  "tech": "asp csharp css js html",
+  "urlCode": "",
+  "urlView": "",
+  "urlDetails": "/blog/expedoc-development"
+  },
   {
     "img": "./project/portafolio.png",
     "title": "Old Portfolio",
