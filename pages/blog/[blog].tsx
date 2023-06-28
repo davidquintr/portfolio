@@ -58,7 +58,7 @@ const BlogArticle = () => {
                   </div>
                   <Image
                     className="blog-article-image"
-                    src={blogElement?.icon}
+                    src={`.${blogElement?.icon}`}
                     alt={blogElement?.title}
                     width={960}
                     height={540}

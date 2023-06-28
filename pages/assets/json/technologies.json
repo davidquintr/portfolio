@@ -105,31 +105,31 @@
     {
         "dim": "cpp",
         "alt": "C++",
-        "url":"/tech/cpp.svg",
+        "url":"./tech/cpp.svg",
         "show": "false"
     },
     {
         "dim": "emailjs",
         "alt": "EmailJS",
-        "url":"/tech/emailjs.svg",
+        "url":"./tech/emailjs.svg",
         "show": "false"
     },
     {
         "dim": "php",
         "alt": "PHP",
-        "url":"/tech/php.svg",
+        "url":"./tech/php.svg",
         "show": "true"
     },
     {
         "dim": "asp",
         "alt": "ASP.NET",
-        "url":"/tech/asp.svg",
+        "url":"./tech/asp.svg",
         "show": "true"
     },
     {
         "dim": "git",
         "alt": "GIT",
-        "url":"/tech/git.svg",
+        "url":"./tech/git.svg",
         "show": "false"
     }
 ]
