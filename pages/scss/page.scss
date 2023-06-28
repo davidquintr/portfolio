@@ -629,7 +629,7 @@ body{
 
         .post-info-author{
             img{
-                width: min(84px, 84px);
+                width: min(76px, 76px);
             }
             p{
                 font-size: medium;
@@ -643,8 +643,12 @@ body{
         justify-content: center;
         box-sizing: border-box;
 
+        a, a:active{
+            color: $color-gray-text;
+        }
+
         p{
-            font-weight: 400 !important;
+            font-weight: 300 !important;
             margin-bottom: 20px !important;
         }
 
@@ -737,7 +741,17 @@ body{
                 border-radius: 50%;
                 width: min(64px, 64px);
                 height: auto;
+                transition: filter 0.2s, transform 0.2s;
+                
+                &:hover{
+                    filter: brightness(1.2);
+                }
+
+                &:active{
+                    transform: scale(0.95);
+                }
             }
+           
         }
 
         table{

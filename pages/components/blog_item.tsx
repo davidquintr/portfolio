@@ -8,7 +8,7 @@ import Tags from "./tags";
 
 
 const BlogItem = ({ element, index }) => {
-    let tags = element.tags.split(' ');
+    let tags = element?.tags.split(' ');
   return (
     <>
       <AnimatePresence>
@@ -21,9 +21,9 @@ const BlogItem = ({ element, index }) => {
         >
         <Link href={"blog/" + element?.url}>
           <Image
-            src={element.icon}
-            alt={element.title}
-            title={element.title}
+            src={element?.icon}
+            alt={element?.title}
+            title={element?.title}
             width={800}
             height={450}
             className="post-img"
@@ -34,17 +34,17 @@ const BlogItem = ({ element, index }) => {
             </div>
 
             <div className="post-info-title">
-                <h3>{element.title}</h3>
+                <h3>{element?.title}</h3>
                 <p>
-                  <DateParsed dateOrigin={element.date}></DateParsed>
+                  <DateParsed dateOrigin={element?.date}></DateParsed>
                 </p>  
             </div>
 
             <div className="post-info-author">
-                <Image src={personal.photo} alt={personal.name} width={128} height={128}></Image>
+                <Image src={personal?.photo} alt={personal?.name} width={128} height={128}></Image>
                 <div className="post-info-author details">
                     <p>Author</p>
-                    <p className="person">{personal.name}</p>
+                    <p className="person">{personal?.name}</p>
                 </div>
             </div>
           </div>

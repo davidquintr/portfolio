@@ -19,7 +19,7 @@ const BlogArticle = () => {
 
   const isBlog = blogElement != undefined ? true : false;
 
-  let tags = isBlog ? blogElement.tags.split(" ") : [""];
+  let tags = isBlog ? blogElement?.tags.split(" ") : [""];
   const { asPath } = useRouter();
   const origin =
     typeof window !== "undefined" && window.location.origin
@@ -27,11 +27,21 @@ const BlogArticle = () => {
       : "";
 
   const URL = `${origin}${asPath}`;
-
   return (
     <>
       <Head>
-        <title>{isBlog ? blogElement.title : "Blog"}</title>
+        <title>{isBlog ? blogElement?.title : "Blog"}</title>
+        <link rel="shortcut icon" href="../icon.svg"></link>
+        <meta property="og:image" content={`..${blogElement?.icon}`}></meta>
+        <meta property="og:url" content={URL}></meta>
+        <meta property="article:section" content={`Blog - ${isBlog ? blogElement?.title : ""}`}></meta>
+        {
+          tags?.map((element, index) =>{
+            return(
+                <meta key={index} property="article:tag" content={element}></meta>
+            )
+          })
+        }
       </Head>
       <article className="article article-base extended">
         <NavBar></NavBar>
@@ -41,15 +51,15 @@ const BlogArticle = () => {
               {isBlog ? (
                 <>
                   <div>
-                    <h2>{blogElement.title}</h2>
+                    <h2>{blogElement?.title}</h2>
                     <p>
-                      {<DateParsed dateOrigin={blogElement.date}></DateParsed>}
+                      {<DateParsed dateOrigin={blogElement?.date}></DateParsed>}
                     </p>
                   </div>
                   <Image
                     className="blog-article-image"
-                    src={blogElement.icon}
-                    alt={blogElement.title}
+                    src={blogElement?.icon}
+                    alt={blogElement?.title}
                     width={960}
                     height={540}
                   ></Image>
@@ -64,14 +74,14 @@ const BlogArticle = () => {
                     <div className="blog-social">
                       <div className="post-info-author">
                         <Image
-                          src={personal.photo}
-                          alt={personal.name}
+                          src={personal?.photo}
+                          alt={personal?.name}
                           width={128}
                           height={128}
                         ></Image>
                         <div className="post-info-author details">
                           <p>Author</p>
-                          <p className="person">{personal.name}</p>
+                          <p className="person">{personal?.name}</p>
                         </div>
                       </div>
                       <div className="blog-share">
