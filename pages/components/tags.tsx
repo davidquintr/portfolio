@@ -2,7 +2,7 @@
 
 const Tags = ({tag }) => {
 
-    let tags = tag.split(' ');
+    let tags = tag?.split(' ');
 
   return (
     <>
