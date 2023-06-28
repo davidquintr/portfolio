@@ -5,6 +5,9 @@ import Head from "next/head";
 import BlogPublished from "../assets/json/blog_published.json";
 import Image from "next/image";
 import DateParsed from "../components/date";
+import personal from "../assets/json/personal.json";
+import Tags from "../components/tags";
+import SocialShare from "../components/social_share";
 
 const BlogArticle = () => {
   const router = useRouter();
@@ -15,6 +18,15 @@ const BlogArticle = () => {
       : null;
 
   const isBlog = blogElement != undefined ? true : false;
+
+  let tags = isBlog ? blogElement.tags.split(" ") : [""];
+  const { asPath } = useRouter();
+  const origin =
+    typeof window !== "undefined" && window.location.origin
+      ? window.location.origin
+      : "";
+
+  const URL = `${origin}${asPath}`;
 
   return (
     <>
@@ -30,7 +42,9 @@ const BlogArticle = () => {
                 <>
                   <div>
                     <h2>{blogElement.title}</h2>
-                    <p>{<DateParsed dateOrigin={blogElement.date}></DateParsed>}</p>
+                    <p>
+                      {<DateParsed dateOrigin={blogElement.date}></DateParsed>}
+                    </p>
                   </div>
                   <Image
                     className="blog-article-image"
@@ -43,6 +57,30 @@ const BlogArticle = () => {
                     className="blog-body"
                     dangerouslySetInnerHTML={{ __html: blogElement?.details }}
                   ></div>
+                  <div className="blog-info">
+                    <ul className="blog-tag">
+                      <Tags tag={blogElement?.tags}></Tags>
+                    </ul>
+                    <div className="blog-social">
+                      <div className="post-info-author">
+                        <Image
+                          src={personal.photo}
+                          alt={personal.name}
+                          width={128}
+                          height={128}
+                        ></Image>
+                        <div className="post-info-author details">
+                          <p>Author</p>
+                          <p className="person">{personal.name}</p>
+                        </div>
+                      </div>
+                      <div className="blog-share">
+                        <div className="blog-share-buttons">
+                          <SocialShare link={URL}></SocialShare>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </>
               ) : (
                 <h2>This article does not exist.</h2>

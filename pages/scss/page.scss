@@ -6,6 +6,15 @@ h2, h3,h4,p, a, table{
     font-family: 'Poppins';
 }
 
+ul{
+    margin: 0;
+    padding: 0;
+
+    li{
+        list-style: none;
+    }
+}
+
 ::selection {
     background-color: $color-blue;
     color: white;
@@ -575,6 +584,59 @@ body{
 }
 
 .blog{
+
+    &-share{
+        &-buttons{
+            display: flex;
+            
+        }
+
+    }
+
+    &-social{
+        display: flex;
+        gap: 10%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    &-tag{
+        padding: 10px;
+        @extend .post-info-tag;
+        pointer-events: none;
+        
+        .tag{
+            p{
+                font-size: medium;
+            }
+        }
+
+    }
+
+    .tag-text{
+        margin: 0;
+    }
+
+    &-info{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 10px;
+        background-color: $color-bg;
+        width: 100%;
+
+        .post-info-author{
+            img{
+                width: min(84px, 84px);
+            }
+            p{
+                font-size: medium;
+            }
+        }
+    }
+
     &-body{
         display: flex;
         flex-direction: column;
@@ -622,6 +684,15 @@ body{
                     filter: brightness(1);
                 }
             }
+
+            @media (max-width: 960px) {
+                flex-direction: column;
+                img{
+                    width: 100%;
+                }
+
+            }
+        
         }
 
         &-grid{

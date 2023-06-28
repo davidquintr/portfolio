@@ -4,11 +4,11 @@ import Image from "next/image";
 import personal from "../assets/json/personal.json";
 import Link from 'next/link'
 import DateParsed from './date'
+import Tags from "./tags";
 
 
 const BlogItem = ({ element, index }) => {
     let tags = element.tags.split(' ');
-    console.log(element.date)
   return (
     <>
       <AnimatePresence>
@@ -30,13 +30,7 @@ const BlogItem = ({ element, index }) => {
           ></Image>
           <div className="post-info">
             <div className="post-info-tag">
-              {tags?.map((tagElement, index) => {
-                return(
-                    <div className="tag" key={index}>
-                        <p>{tagElement}</p>
-                    </div>
-                )
-              })}
+              <Tags tag={element?.tags}></Tags>
             </div>
 
             <div className="post-info-title">
