@@ -1,6 +1,6 @@
 [
     {
-        "icon": "/blog/expedoc.png",
+        "icon": "./blog/expedoc.png",
         "title": "Expediente Docente - Generalities",
         "date": "2004-04-19",
         "tags": "Fullstack Lead",
