@@ -19,7 +19,7 @@ const BlogArticle = () => {
 
   const isBlog = blogElement != undefined ? true : false;
 
-  let tags = isBlog ? blogElement?.tags.split(" ") : [""];
+  let tags = isBlog ? blogElement?.tags?.split(" ") : [""];
   const { asPath } = useRouter();
   const origin =
     typeof window !== "undefined" && window.location.origin

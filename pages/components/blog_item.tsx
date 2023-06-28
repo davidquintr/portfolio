@@ -8,7 +8,7 @@ import Tags from "./tags";
 
 
 const BlogItem = ({ element, index }) => {
-    let tags = element?.tags.split(' ');
+    let tags = element?.tags?.split(' ');
   return (
     <>
       <AnimatePresence>
