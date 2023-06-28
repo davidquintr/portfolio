@@ -606,6 +606,7 @@ body{
         padding: 10px;
         @extend .post-info-tag;
         pointer-events: none;
+        justify-content: center;
         
         .tag{
             p{
