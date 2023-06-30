@@ -8,8 +8,8 @@ export default function Blog() {
     <>
       <Head>
         <title>Blog</title>
-        <meta property="og:title" content="Portfolio - David Quintanilla"></meta>
-        <meta property="og:description" content="Frontend developer portfolio."></meta>
+        <meta property="og:title" content="Portfolio | Blog"></meta>
+        <meta property="og:description" content="A blog with explainment, details and code of my projects."></meta>
         <meta property="og:image" content="https://davidquintr.github.io/portfolio/thumbnail.png"></meta>
         <meta property="og:url" content="https://davidquintr.github.io/portfolio/"></meta>
       </Head>

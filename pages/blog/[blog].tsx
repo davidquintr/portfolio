@@ -50,7 +50,7 @@ const BlogArticle = ({ blogElement }) => {
       <Head>
         <title>{isBlog ? blogElement?.title : "Blog"}</title>
         <link rel="shortcut icon" href="../icon.svg"></link>
-        <meta property="og:image" content={`..${blogElement?.icon}`}></meta>
+        <meta property="og:image" content={`${origin}/${blogElement?.icon?.replace("./", "")}`}></meta>
         <meta property="og:url" content={URL}></meta>
         <meta
           property="article:section"
