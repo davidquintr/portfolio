@@ -45,87 +45,91 @@ const BlogArticle = ({ blogElement }) => {
       : "";
 
   const URL = `${origin}${asPath}`;
-  return (
-    <>
-      <Head>
-        <title>{isBlog ? blogElement?.title : "Blog"}</title>
-        <link rel="shortcut icon" href="../icon.svg"></link>
-        <meta property="og:image" content={`https://davidquintr.github.io/portfolio/${blogElement?.icon?.replace("./", "")}`}></meta>
-        <meta property="og:url" content={URL}></meta>
-        <meta
-          property="article:section"
-          content={`Blog - ${isBlog ? blogElement?.title : ""}`}
-        ></meta>
-        {tags?.map((element, index) => {
-          return (
-            <meta key={index} property="article:tag" content={element}></meta>
-          );
-        })}
-      </Head>
-      <article className="article article-base extended">
-        <NavBar></NavBar>
-        <PageWrapper>
-          <section className="section section-blog">
-            <div className="section-body blog-article">
-              {isBlog ? (
-                <>
-                  <div>
-                    <h2>{blogElement?.title}</h2>
-                    <p>
-                      {
-                        <DateParsed
-                          dateOrigin={blogElement?.date}
-                        ></DateParsed>
-                      }
-                    </p>
-                  </div>
-                  <Image
-                    className="blog-article-image"
-                    src={`.${blogElement?.icon}`}
-                    alt={blogElement?.title}
-                    width={960}
-                    height={540}
-                  ></Image>
-                  <div
-                    className="blog-body"
-                    dangerouslySetInnerHTML={{
-                      __html: blogElement?.details,
-                    }}
-                  ></div>
-                  <div className="blog-info">
-                    <ul className="blog-tag">
-                      <Tags tag={blogElement?.tags}></Tags>
-                    </ul>
-                    <div className="blog-social">
-                      <div className="post-info-author">
-                        <Image
-                          src={personal?.photo}
-                          alt={personal?.name}
-                          width={128}
-                          height={128}
-                        ></Image>
-                        <div className="post-info-author details">
-                          <p>Author</p>
-                          <p className="person">{personal?.name}</p>
+  try {
+    return (
+      <>
+        <Head>
+          <title>{isBlog ? blogElement?.title : "Blog"}</title>
+          <link rel="shortcut icon" href="../icon.svg"></link>
+          <meta property="og:image" content={`${origin}/${blogElement?.icon?.replace("./", "")}`}></meta>
+          <meta property="og:url" content={URL}></meta>
+          <meta property="og:description" content={blogElement?.description}></meta>
+          <meta
+            property="article:section"
+            content={`Blog - ${isBlog ? blogElement?.title : ""}`}
+          ></meta>
+          {tags?.map((element, index) => {
+            return (
+              <meta key={index} property="article:tag" content={element}></meta>
+            );
+          })}
+        </Head>
+        <article className="article article-base extended">
+          <NavBar></NavBar>
+          <PageWrapper>
+            <section className="section section-blog">
+              <div className="section-body blog-article">
+                {isBlog ? (
+                  <>
+                    <div>
+                      <h2>{blogElement?.title}</h2>
+                      <p>
+                        {
+                          <DateParsed
+                            dateOrigin={blogElement?.date}
+                          ></DateParsed>
+                        }
+                      </p>
+                    </div>
+                    <Image
+                      className="blog-article-image"
+                      src={`.${blogElement?.icon}`}
+                      alt={blogElement?.title}
+                      width={960}
+                      height={540}
+                    ></Image>
+                    <div
+                      className="blog-body"
+                      dangerouslySetInnerHTML={{
+                        __html: blogElement?.details,
+                      }}
+                    ></div>
+                    <div className="blog-info">
+                      <ul className="blog-tag">
+                        <Tags tag={blogElement?.tags}></Tags>
+                      </ul>
+                      <div className="blog-social">
+                        <div className="post-info-author">
+                          <Image
+                            src={personal?.photo}
+                            alt={personal?.name}
+                            width={128}
+                            height={128}
+                          ></Image>
+                          <div className="post-info-author details">
+                            <p>Author</p>
+                            <p className="person">{personal?.name}</p>
+                          </div>
                         </div>
-                      </div>
-                      <div className="blog-share">
-                        <div className="blog-share-buttons">
-                          <SocialShare link={URL}></SocialShare>
+                        <div className="blog-share">
+                          <div className="blog-share-buttons">
+                            <SocialShare link={URL}></SocialShare>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </>
-              ) : (
-                <h2>This article does not exist.</h2>
-              )}
-            </div>
-          </section>
-        </PageWrapper>
-      </article>
-    </>
-  );
+                  </>
+                ) : (
+                  <h2>This article does not exist.</h2>
+                )}
+              </div>
+            </section>
+          </PageWrapper>
+        </article>
+      </>
+    );
+  }
+  catch(error){}
 };
 
 export default BlogArticle;

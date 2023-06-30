@@ -1,7 +1,8 @@
 [
     {
         "icon": "./blog/expedoc.png",
-        "title": "Expediente Docente - Generalities",
+        "title": "Expediente Docente - Web Platform development",
+        "description" : "Details about the development of web platform 'Expediente Docente'.",
         "date": "2023-06-27",
         "tags": "Fullstack Development Lead ASP.Net Expediente_Docente",
         "author":"0",

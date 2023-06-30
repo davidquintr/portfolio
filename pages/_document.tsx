@@ -6,7 +6,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="shortcut icon" href="./icon.svg"></link>
+        <link rel="shortcut icon" href="/portfolio/icon.svg"></link>
         <meta property="og:type" content="portfolio"></meta>
         <meta property="og:locale" content="es_ES"></meta>
         <meta property="article:author" content="David Quintanilla Ruiz"></meta>
