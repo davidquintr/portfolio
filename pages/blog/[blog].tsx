@@ -2,21 +2,39 @@ import { useRouter } from "next/router";
 import PageWrapper from "../components/page_wrapper";
 import NavBar from "../nav_bar";
 import Head from "next/head";
-import BlogPublished from "../assets/json/blog_published.json";
 import Image from "next/image";
 import DateParsed from "../components/date";
 import personal from "../assets/json/personal.json";
 import Tags from "../components/tags";
 import SocialShare from "../components/social_share";
+import { GetStaticProps, GetStaticPaths } from "next";
 
-const BlogArticle = () => {
+const BlogPublished = require("../assets/json/blog_published.json");
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths = BlogPublished.map((blogItem) => ({
+    params: { blog: blogItem.url },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const blogUrl = params?.blog as string;
+  const blogElement = BlogPublished.find((b) => b.url === blogUrl);
+
+  return {
+    props: {
+      blogElement,
+    },
+  };
+};
+
+const BlogArticle = ({ blogElement }) => {
   const router = useRouter();
-  const blog = router.query.blog;
-  const blogElement =
-    blog && router.query.blog
-      ? BlogPublished.find((b) => b.url === blog)
-      : null;
-
   const isBlog = blogElement != undefined ? true : false;
 
   let tags = isBlog ? blogElement?.tags?.split(" ") : [""];
@@ -34,14 +52,15 @@ const BlogArticle = () => {
         <link rel="shortcut icon" href="../icon.svg"></link>
         <meta property="og:image" content={`..${blogElement?.icon}`}></meta>
         <meta property="og:url" content={URL}></meta>
-        <meta property="article:section" content={`Blog - ${isBlog ? blogElement?.title : ""}`}></meta>
-        {
-          tags?.map((element, index) =>{
-            return(
-                <meta key={index} property="article:tag" content={element}></meta>
-            )
-          })
-        }
+        <meta
+          property="article:section"
+          content={`Blog - ${isBlog ? blogElement?.title : ""}`}
+        ></meta>
+        {tags?.map((element, index) => {
+          return (
+            <meta key={index} property="article:tag" content={element}></meta>
+          );
+        })}
       </Head>
       <article className="article article-base extended">
         <NavBar></NavBar>
@@ -53,7 +72,11 @@ const BlogArticle = () => {
                   <div>
                     <h2>{blogElement?.title}</h2>
                     <p>
-                      {<DateParsed dateOrigin={blogElement?.date}></DateParsed>}
+                      {
+                        <DateParsed
+                          dateOrigin={blogElement?.date}
+                        ></DateParsed>
+                      }
                     </p>
                   </div>
                   <Image
@@ -65,7 +88,9 @@ const BlogArticle = () => {
                   ></Image>
                   <div
                     className="blog-body"
-                    dangerouslySetInnerHTML={{ __html: blogElement?.details }}
+                    dangerouslySetInnerHTML={{
+                      __html: blogElement?.details,
+                    }}
                   ></div>
                   <div className="blog-info">
                     <ul className="blog-tag">

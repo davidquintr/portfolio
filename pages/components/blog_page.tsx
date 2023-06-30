@@ -1,6 +1,17 @@
-import blog from '../assets/json/blog_published.json'
 import BlogItem from "./blog_item";
 import { useRouter } from 'next/router';
+import { GetStaticProps } from 'next';
+
+const blog = require('../assets/json/blog_published.json');
+
+export const getStaticProps: GetStaticProps = async () => {
+
+  return {
+    props: {
+      blog,
+    },
+  };
+};
 
 const BlogPage = () => {
   return (

@@ -12,7 +12,7 @@ export default function PersonInit() {
               className="section-person-img"
               width={400}
               height={400}
-              src="./davidquint-photo.png"
+              src={davidquint}
               alt="img_ico"
             ></Image>
             <div className="section-person-details">
