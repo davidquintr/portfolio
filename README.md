@@ -25,6 +25,8 @@ I able the fork of my portfolio, obviously leaving credits and direct link to my
 ## Details
 This is a collection of all my progress in my college career and self learn, this represents my peak as developer and designer, also the sense of everything related to Software Development.
 
+Also, a blog where i will be commenting all my progress in long projects or tiny functions that can be interesting.
+
 I open to work. :D
 
 ## Local install
@@ -45,8 +47,10 @@ For all this, `npm install` and continue for each item.
 1. ☀️ Switch to Light Mode.
 2. 🇳🇮 Switch to Spanish as Language.
 3. 🔎 Search in `Project` tab.
-4. 📕 Blog for long projects.
-5. 📘 Introduce `EXPEDOC`, actually im not abled to put anything.
+
+## Completed
+1. 📕 Blog for long projects.
+2. 📘 Introduce `EXPEDOC`, actually im not abled to put anything.
 
 I will do this in this year, i promise.
 
