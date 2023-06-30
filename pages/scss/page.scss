@@ -478,7 +478,7 @@ body{
         width: 90%;
         align-items: center;
         gap: 15px;
-        transition: all 0.5s;
+        transition: background-color 0.5s, transform 0.5s;
 
         &:hover{
             background-color: $color-boldblue;
@@ -499,7 +499,7 @@ body{
     }
 
     &-img{
-        border-radius: $br-default;
+        border-radius: 5px;
         margin: 20px 10px;
         height: auto;
         width: 40%;

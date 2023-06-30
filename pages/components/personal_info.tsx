@@ -38,6 +38,11 @@ export default function PersonalInfo() {
               detail={personal?.birthday}
             ></PersonalItem>
             <PersonalItem
+              title={"Country"}
+              url={""}
+              detail={personal?.country}
+            ></PersonalItem>
+            <PersonalItem
               title={"CV"}
               url={"curriculum.pdf"}
               detail={"Open"}

@@ -1,6 +1,7 @@
 [
     {
         "icon": "./blog/expedoc.png",
+        "thumbnail": "./blog/expedoc-thumbnail.png",
         "title": "Expediente Docente - Web Platform development",
         "description" : "Details about the development of web platform 'Expediente Docente'.",
         "date": "2023-06-27",
