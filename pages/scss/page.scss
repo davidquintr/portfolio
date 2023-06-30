@@ -2,8 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-h2, h3,h4,p, a, table{
+h1, h2, h3,h4,p, a, table{
     font-family: 'Poppins';
+}
+
+.error-text{
+    color: $color-bluelight;
 }
 
 ul{
@@ -44,6 +48,7 @@ body{
 
 .footer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -55,12 +60,17 @@ body{
     padding: 10px;
     bottom: 0;
 
+    &-social{
+        display: flex;
+        gap: 5px;
+    }
+
     a{
         color: white;
 
         svg{
-            width: 16px;
-            height: 16px;
+            width: 24px;
+            height: 24px;
         }
     }
 
