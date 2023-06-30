@@ -1,13 +1,8 @@
 import tech from "../assets/json/technologies.json";
 import Image from "next/image";
-import davidquint from "../assets/img/davidquint-photo.png";
-import { useRouter } from "next/router";
 
 export default function TechnologiesItems() {
-  const origin =
-    typeof window !== "undefined" && window.location.origin
-      ? window.location.origin
-      : "";
+  const origin = "/portfolio"
 
   return (
     <>
