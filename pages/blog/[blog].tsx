@@ -45,6 +45,7 @@ const BlogArticle = ({ blogElement }) => {
       : "";
 
   const URL = `${origin}${asPath}`;
+  const deployUrl = "https://davidquintr.github.io"
 
   try {
     return (
@@ -54,7 +55,7 @@ const BlogArticle = ({ blogElement }) => {
           <title>{isBlog ? blogElement?.title : "Blog"}</title>
           <meta property="og:title" content={blogElement?.title}></meta>
           <meta property="og:description" content={blogElement?.description}></meta>
-          <meta property="og:image" content={`${origin}/portfolio/${blogElement?.thumbnail?.replace("./", "")}`}></meta>
+          <meta property="og:image" content={`${deployUrl}/portfolio/${blogElement?.thumbnail?.replace("./", "")}`}></meta>
           <meta property="og:url" content={URL}></meta>
           <meta
             property="article:section"
