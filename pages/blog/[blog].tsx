@@ -49,14 +49,15 @@ const BlogArticle = ({ blogElement }) => {
     return (
       <>
         <Head>
-          <title>{isBlog ? blogElement?.title : "Blog"}</title>
           <link rel="shortcut icon" href="../icon.svg"></link>
+          <title>{isBlog ? blogElement?.title : "Blog"}</title>
+          <meta property="og:title" content={blogElement?.title}></meta>
+          <meta property="og:description" content={blogElement?.description}></meta>
           <meta property="og:image" content={`${origin}/portfolio/${blogElement?.icon?.replace("./", "")}`}></meta>
           <meta property="og:url" content={URL}></meta>
-          <meta property="og:description" content={blogElement?.description}></meta>
           <meta
             property="article:section"
-            content={`Blog - ${isBlog ? blogElement?.title : ""}`}
+            content={`Blog - ${isBlog ? blogElement?.title?.replace("_", "") : ""}`}
           ></meta>
           {tags?.map((element, index) => {
             return (

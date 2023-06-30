@@ -266,7 +266,8 @@ body{
     &-bar{
         height: 54px;
         border-radius: $br-default;
-        background-color: $color-internal;
+        background-color: #1a1a1ae2;
+        backdrop-filter: blur(5px);
         padding: 0;
         display: flex;
         justify-content: center;
@@ -675,13 +676,15 @@ body{
         }
 
         &-double{
+            box-sizing: border-box;
             padding-inline: 35px;
-            display: flex;
+            display: grid;
             gap: 10px;
+            grid-template-columns: 2fr 2fr;
 
             img{
+                max-width: 100%;
                 border-radius: $br-default;
-                width: 50%;
                 filter: brightness(0.5);
                 transition: filter 0.5s;
     
@@ -691,6 +694,7 @@ body{
             }
 
             @media (max-width: 960px) {
+                display: flex;
                 flex-direction: column;
                 img{
                     width: 100%;
@@ -720,6 +724,7 @@ body{
         }
 
         video{
+            box-sizing: border-box;
             border-radius: $br-default;
             margin-inline: 35px;
             width: 90%;
@@ -740,7 +745,7 @@ body{
 
             img{
                 border-radius: 50%;
-                width: min(64px, 64px);
+                width: min(48px, 48px);
                 height: auto;
                 transition: filter 0.2s, transform 0.2s;
                 
