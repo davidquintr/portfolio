@@ -12,7 +12,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Contact</title>
+        <title>Projects</title>
         <meta property="og:title" content="Portfolio | Projects"></meta>
         <meta property="og:description" content="Frontend developer portfolio."></meta>
         <meta property="og:image" content="https://davidquintr.github.io/portfolio/thumbnail.png"></meta>
