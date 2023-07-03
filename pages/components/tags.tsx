@@ -7,7 +7,7 @@ const Tags = ({tag }) => {
       {tag?.map((tagElement, index) => {
         return (
           <div className="tag" key={index}>
-            <p>{tagElement?.replace("_", ' ')}</p>
+            <p>{tagElement}</p>
           </div>
         );
       })}

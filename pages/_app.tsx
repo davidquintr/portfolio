@@ -1,6 +1,7 @@
 import './scss/page.scss'
 import "./scss/person_init.scss";
 import "./scss/post.scss";
+import "./scss/panel.scss";
 import type { AppProps } from 'next/app'
 
 
