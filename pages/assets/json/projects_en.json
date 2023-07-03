@@ -3,7 +3,7 @@
   "img": "./project/expedoc.png",
   "title": "Expediente Docente",
   "details": "My first job experience in Software Development. This works like a teacher manager or internal social media for a college, including self system of feedback and a historical register of teachers.",
-  "tech": "asp csharp css js html",
+  "tech": "asp csharp css js html mssql",
   "urlCode": "",
   "urlView": "",
   "urlDetails": "/blog/expedoc-development"
@@ -28,7 +28,7 @@
   },
   {
     "img": "./project/wreader.png",
-    "title": "WhatsApp Reader",
+    "title": "WhatsApp Reader JS",
     "details": "Personal project, interpreats the exported message of WhatsApp chat and shows in a familiar format for read better.",
     "tech": "html css js",
     "urlCode": "https://github.com/davidquintr/whatsapp-reader.github.io",
@@ -83,7 +83,7 @@
   },
   {
     "img": "./project/mitiendita.png",
-    "title": "'Mi Tiendita'",
+    "title": "Mi Tiendita",
     "details": "Created for Programming Methodology in 1S-2021, is a system of inventory control and billing. Developed with C/C++.",
     "tech": "cpp",
     "urlCode": "https://github.com/davidquintr/brain-3d",

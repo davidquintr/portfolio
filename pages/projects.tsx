@@ -27,8 +27,6 @@ export default function Projects() {
     const exists = tempFilters.find((it) => it === element);
     
     window.scrollTo(window.scrollX, panelPos)
-    console.log()
-
     if (exists !== undefined) {
       tempFilters.splice(tempFilters.indexOf(exists), 1);
       tempBtnFilters.filter(bf => bf !== e)
@@ -55,7 +53,6 @@ export default function Projects() {
   }
 
   function handleSearch(e) {
-    console.log(e.target)
     window.scrollTo(window.scrollX, panelPos)
 
     let value = e.target.value.toLowerCase();
@@ -98,11 +95,8 @@ export default function Projects() {
     let orderProject = pureProject.sort((a, b) =>
       a.title.localeCompare(b.title, undefined, { sensitivity: "base" })
     );
-
     const { top } = panelRef.current.getBoundingClientRect();
-    console.log(top)
     setPanelPos(top - 74)
-
     setProject(orderProject);
   }, []);
 
