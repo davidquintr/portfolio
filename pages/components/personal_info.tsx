@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
 export default function PersonalInfo() {
-  let myAge = new Date("2004-04-19");
+  let myAge = new Date(personal?.birthday);
   const age = differenceInYears(new Date(), myAge);
 
   return (

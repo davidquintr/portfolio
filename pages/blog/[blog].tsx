@@ -34,10 +34,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 const BlogArticle = ({ blogElement }) => {
+  try {
+
   const router = useRouter();
   const isBlog = blogElement != undefined ? true : false;
-
-  let tags = isBlog ? blogElement?.tags?.split(" ") : [""];
   const { asPath } = useRouter();
   const origin =
     typeof window !== "undefined" && window.location.origin
@@ -47,7 +47,6 @@ const BlogArticle = ({ blogElement }) => {
   const URL = `${origin}${asPath}`;
   const deployUrl = "https://davidquintr.github.io"
 
-  try {
     return (
       <>
         <Head>
@@ -59,9 +58,9 @@ const BlogArticle = ({ blogElement }) => {
           <meta property="og:url" content={URL}></meta>
           <meta
             property="article:section"
-            content={`Blog - ${isBlog ? blogElement?.title?.replace("_", "") : ""}`}
+            content={`Blog - ${isBlog ? blogElement?.title : ""}`}
           ></meta>
-          {tags?.map((element, index) => {
+          {blogElement?.tags.map((element, index) => {
             return (
               <meta key={index} property="article:tag" content={element}></meta>
             );

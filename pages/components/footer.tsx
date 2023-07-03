@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faInstagram, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
 const Footer = () => {
@@ -13,6 +13,12 @@ const Footer = () => {
                     </Link>
                     <Link href={"https://www.linkedin.com/in/david-quintanilla-ruiz-a41044231/"}>
                         <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+                    </Link>
+                    <Link href={"https://www.instagram.com/davidquintr/"}>
+                        <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+                    </Link>
+                    <Link href={"https://api.whatsapp.com/send/?phone=77488103&text&type=phone_number&app_absent=0"}>
+                        <FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon>
                     </Link>
                 </div>
             </footer>

@@ -2,11 +2,9 @@
 
 const Tags = ({tag }) => {
 
-    let tags = tag?.split(' ');
-
   return (
     <>
-      {tags?.map((tagElement, index) => {
+      {tag?.map((tagElement, index) => {
         return (
           <div className="tag" key={index}>
             <p>{tagElement?.replace("_", ' ')}</p>
