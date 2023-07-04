@@ -19,6 +19,7 @@
         width: 100%;
 
         input{
+
             color: white;
             background-color: $color-bg;
             outline: none;
@@ -55,10 +56,10 @@
     border: none;
     outline: none;
     background-color: $color-blue;
-    transition: transform 0.5s, background-color 0.2s;
+    transition: transform 0.2s, background-color 0.5s, filter 0.5s;
     
     &.marked{
-        outline: $color-bluelight 2px solid;
+        outline: $color-bluelight 1px solid;
     }
 
     &:active{
@@ -87,7 +88,17 @@
         }
 
         &:hover{
+            filter: none;
             background-color: $color-blue;
         }
+    }
+
+    &:hover:not(&-scroll){
+      filter: brightness(1.2);
+    }
+
+    &.reset{
+      background-color: white;
+      color: $color-darkblue;
     }
 }

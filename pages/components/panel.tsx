@@ -116,7 +116,7 @@ const Panel = ({isProject, pureArray, setElement, element, pureFilter}) => {
                 <span>{isProject ? element.alt : element}</span>
               </button>
             ))}
-            <button className="filter-button" onClick={() => handleReset()}>
+            <button className="filter-button reset" onClick={() => handleReset()}>
               <span>Reset</span>
             </button>
           </div>
