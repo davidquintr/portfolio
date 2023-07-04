@@ -171,6 +171,7 @@
             align-items: flex-start;
 
             @media (max-width: 600px) {
+                height: auto;
                 margin: 15px;
             }
 
