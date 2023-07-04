@@ -25,9 +25,7 @@
             border: none;
             width: max-content;
             width: -webkit-fill-available;
-        }
-
-        
+        }      
 
       }
   
@@ -43,7 +41,8 @@
 
       &-control{
         display: flex;
-        max-width: 100%;
+        width: 100%;
+        justify-content: space-between;
       }
     }
   }
