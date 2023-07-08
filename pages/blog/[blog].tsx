@@ -39,13 +39,10 @@ const BlogArticle = ({ blogElement }) => {
 
   try {
     const isBlog = blogElement != undefined ? true : false;
-    const origin =
-      typeof window !== "undefined" && window.location.origin
-        ? window.location.origin
-        : "";
 
-    const URL = `${origin}${asPath}`;
     const deployUrl = "https://davidquintr.github.io";
+    const pathProj = "/portfolio/";
+    const URL = `${deployUrl}${pathProj}${asPath}`;
 
     return (
       <>
@@ -74,6 +71,19 @@ const BlogArticle = ({ blogElement }) => {
               <meta key={index} property="article:tag" content={element}></meta>
             );
           })}
+          <meta name="twitter:card" content="summary_large_image"></meta>
+          <meta name="twitter:title" content={blogElement?.title}></meta>
+          <meta
+            name="twitter:description"
+            content={blogElement?.description}
+          ></meta>
+          <meta
+            property="twitter:image"
+            content={`${deployUrl}/portfolio/${blogElement?.thumbnail?.replace(
+              "./",
+              ""
+            )}`}
+          ></meta>
         </Head>
         <article className="article article-base extended">
           <NavBar></NavBar>

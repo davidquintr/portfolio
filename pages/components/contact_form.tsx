@@ -90,13 +90,12 @@ const formContact = () => {
                   ></FontAwesomeIcon>
                   <p>Send Message</p>
                 </button>
-                {isEmailSent == true ? <p className="plane-text send">Enviado</p> : isEmailSent == false ? <p className="plane-text no-send">No enviado</p> : null}
+                {isEmailSent == true ? <p className="plane-text send">Send</p> : isEmailSent == false ? <p className="plane-text no-send">Something went wrong, try again later.</p> : null}
               </div>
             </div>
             <div className="contact-social">
               <p className="contact-social-title">
-                Do you want more direct communication? Contact me on my social
-                media platforms.
+                Do you want more direct communication? There's other way for contact me.
               </p>
               <div className="contact-social-elements">
                 <SocialItems></SocialItems>
