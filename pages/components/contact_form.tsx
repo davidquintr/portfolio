@@ -5,10 +5,8 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import SocialItems from "./social_items";
 import AlertElement from "./alert_element";
 
-
-const formContact = () => {
+const FormContact = () => {
   const form: any = React.createRef();
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [isEmailSent, setIsEmailSent] = useState(null);
   const buttonSend: LegacyRef<HTMLButtonElement> = React.createRef();
 
@@ -32,7 +30,7 @@ const formContact = () => {
         (result) => {
           console.log("true");
           setIsEmailSent(true);
-          buttonSend.current.disabled = true
+          buttonSend.current.disabled = true;
         },
         (error) => {
           console.log("false");
@@ -49,7 +47,9 @@ const formContact = () => {
           <h2>Contact</h2>
         </div>
         <div className="section-body contact">
-          <p className="text-center">If you are looking for help with a project or need assistence, you can contact me!</p>
+          <p className="text-center">
+            If you are looking for help with a project or need assistance, you can contact me!
+          </p>
           <form className="contact-contain" ref={form} onSubmit={sendEmail}>
             <div className="contact-elements ">
               <div className="contact-elements-middle ">
@@ -84,21 +84,24 @@ const formContact = () => {
                   required
                 ></textarea>
                 <button ref={buttonSend} type="submit" className="button-link extended submit">
-                  <FontAwesomeIcon
-                    icon={faPaperPlane}
-                    className="fa-sm"
-                  ></FontAwesomeIcon>
+                  <FontAwesomeIcon icon={faPaperPlane} className="fa-sm" />
                   <p>Send Message</p>
                 </button>
-                {isEmailSent == true ? <p className="plane-text send">Send</p> : isEmailSent == false ? <p className="plane-text no-send">Something went wrong, try again later.</p> : null}
+                {isEmailSent == true ? (
+                  <p className="plane-text send">Send</p>
+                ) : isEmailSent == false ? (
+                  <p className="plane-text no-send">
+                    Something went wrong, try again later.
+                  </p>
+                ) : null}
               </div>
             </div>
             <div className="contact-social">
               <p className="contact-social-title">
-                Do you want more direct communication? There's other way for contact me.
+                Do you want more direct communication? There&apos;s another way to contact me.
               </p>
               <div className="contact-social-elements">
-                <SocialItems></SocialItems>
+                <SocialItems />
               </div>
             </div>
           </form>
@@ -107,5 +110,4 @@ const formContact = () => {
     </>
   );
 };
-export default formContact;
-
+export default FormContact;

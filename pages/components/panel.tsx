@@ -31,14 +31,15 @@ const Panel = ({isProject, pureArray, setElement, element, pureFilter}) => {
       })
     }
 
-    window.scrollTo(window.scrollX, panelPos - 74)
+    window.scrollTo(window.scrollX, panelPos)
     setFilters([]);
     setElement(pureArray);
+    console.log(panelPos)
 } 
 
   
   function handleSearch(e) {
-    window.scrollTo(window.scrollX, panelPos - 74)
+    window.scrollTo(window.scrollX, panelPos)
 
     let value = e.target.value.toLowerCase();
 
@@ -94,9 +95,8 @@ const Panel = ({isProject, pureArray, setElement, element, pureFilter}) => {
         return;
 
     const { top } = panelRef.current.getBoundingClientRect();
-    setPanelPos(top)
-    console.log(top)
-  })
+    setPanelPos(top - 74)
+  }, [panelPos])
  
 
   return (
