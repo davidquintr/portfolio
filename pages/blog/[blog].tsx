@@ -34,12 +34,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 const BlogArticle = ({ blogElement }) => {
-  const router = useRouter();
-  const { asPath } = useRouter();
-
+  
   try {
+    
+    const router = useRouter();
+    const { asPath } = useRouter();
     const isBlog = blogElement != undefined ? true : false;
-
     const deployUrl = "https://davidquintr.github.io";
     const pathProj = "/portfolio/";
     const URL = `${deployUrl}${pathProj}${asPath}`;
@@ -149,7 +149,9 @@ const BlogArticle = ({ blogElement }) => {
         </article>
       </>
     );
-  } catch (error) {}
+  } catch (error) {
+    return null
+  }
 };
 
 export default BlogArticle;
