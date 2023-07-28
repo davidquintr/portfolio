@@ -2,6 +2,7 @@
   {
     "icon": "./blog/expedoc.png",
     "thumbnail": "./blog/expedoc-thumbnail.png",
+    "blur": "./blog/expedoc-blur.png",
     "title": "Expediente Docente - Web Platform development",
     "description": "Details about the development of web platform 'Expediente Docente'.",
     "date": "2023-06-27",
@@ -13,6 +14,7 @@
   {
     "icon": "./blog/dropdown-vanilla.png",
     "thumbnail": "./blog/dropdown-vanilla-thumbnail.png",
+    "blur": "./blog/dropdown-vanilla-blur.png",
     "title": "Dropdown in JavaScript vanilla",
     "description": "Creating a dropdown in JavaScript vanilla, please don't use Bootstrap.",
     "date": "2023-07-27",

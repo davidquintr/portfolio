@@ -14,7 +14,7 @@ const BlogItem = ({ element, index }) => {
         <motion.div
           initial={{ opacity: 0, x: -15 }}
           whileInView={{opacity: 1, x: 0}}
-          transition={{ delay: 0.1 * (index / 2)}}
+          transition={{ delay: 0.1 * (index + 1 / 2)}}
           viewport={{once: true}}
           className="post"
         >
@@ -25,6 +25,8 @@ const BlogItem = ({ element, index }) => {
             title={element?.title}
             width={800}
             height={450}
+            placeholder="blur"
+            blurDataURL={element?.blur}
             className="post-img"
           ></Image>
           <div className="post-info">

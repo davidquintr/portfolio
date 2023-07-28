@@ -70,7 +70,7 @@
         "dim": "kt",
         "alt": "Kotlin",
         "url":"./tech/kotlin.svg",
-        "show": "true"
+        "show": "false"
     },
     {
         "dim": "gtk",

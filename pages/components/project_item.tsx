@@ -1,22 +1,21 @@
 
 import Image from "next/image";
+import {Suspense, lazy} from 'react'
 import TechnologiesSpecific from "./tecnologies_specific";
 import { motion, AnimatePresence } from "framer-motion";
-import projects from '../assets/json/projects_en.json'
 import ProjectLinkElement from "./project_link_element";
 
-type ProjectsItemProps = {
-  element : typeof projects[0]
-  index : number
-};
-const ProjectsItem: React.FC<ProjectsItemProps> = ({ element, index }) => {
+const ProjectsItem = ({ element, index }) => {
+
+  const image = lazy(()=> import(element?.img))
+
   return (
     <>
     <AnimatePresence>
       <motion.div 
         initial={{ opacity: 0, x: -15 }}
         whileInView={{opacity: 1, x: 0}}
-        transition={{ delay: 0.1 * (index / 2)}}
+        transition={{ delay: 0.1 * (index + 1 / 10)}}
         viewport={{once: true}}
       
       className="project">
@@ -26,6 +25,9 @@ const ProjectsItem: React.FC<ProjectsItemProps> = ({ element, index }) => {
           width={960}
           height={540}
           alt="example"
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={element?.blur}
         ></Image>
         <div className="project-info">
           <div className="project-info-details">

@@ -45,7 +45,8 @@ const NavBar = () => {
     <>
       <nav className={`nav nav-bar ${headerClass()}`}>
         {links.map((element, index) => {
-          return(<Link key={index} className={`button-link extended minimal ${element.href === path ? "active" : ""}`} href={element.href}>
+          return(
+          <Link key={index} className={`button-link extended minimal ${element.href === path ? "active" : ""}`} href={element.href}>
             <FontAwesomeIcon
               icon={element.icon}
               className="fa-ssm color-blue"

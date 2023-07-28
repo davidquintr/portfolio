@@ -1,6 +1,7 @@
 [  
   {
   "img": "./project/expedoc.png",
+  "blur": "./project/expedoc.png",
   "title": "Expediente Docente",
   "details": "My first job experience in Software Development. This works like a teacher manager or internal social media for a college, including self system of feedback and a historical register of teachers.",
   "tech": "asp csharp css js html mssql",
@@ -10,6 +11,7 @@
   },
   {
     "img": "./project/portafolio.png",
+    "blur": "./project/portafolio-blur.png",
     "title": "Old Portfolio",
     "details": "Created for collection of my projects in the development of my universitary career and self-learn.",
     "tech": "rjs sass ps ai emailjs",
@@ -19,6 +21,7 @@
   },
   {
     "img": "./project/taskitty.png",
+    "blur": "./project/taskitty.png",
     "title": "TasKitty",
     "details": "Created for Mobile Applications Development I in 1S-2022, developed by Kotlin in Android Studio.",
     "tech": "kt ps ai",
@@ -28,6 +31,7 @@
   },
   {
     "img": "./project/wreader.png",
+    "blur": "./project/wreader.png",
     "title": "WhatsApp Reader JS",
     "details": "Personal project, interpreats the exported message of WhatsApp chat and shows in a familiar format for read better.",
     "tech": "html css js",
@@ -37,6 +41,7 @@
   },
   {
     "img": "./project/brainview.png",
+    "blur": "./project/brainview.png",
     "title": "BrainView - 3D",
     "details": "Created as commission - Basic view of limited points of the brain, internal and external. Developed in Unity Engine over C# and using Multimedia Tools.",
     "tech": "unity csh ai ps",
@@ -47,6 +52,7 @@
   ,
   {
     "img": "./project/blog.png",
+    "blur": "./project/blog.png",
     "title": "Blog - JavaScript / JQuery",
     "details": "Created por Web Applications Development in 2S-2022, developed with HTML and CSS.",
     "tech": "html css",
@@ -56,6 +62,7 @@
   },
   {
     "img": "./project/eysmono.png",
+    "blur": "./project/eysmono.png",
     "title": "SistemaEyS - Monodevelop",
     "details": "Created for Programming of Applications in 1S-2022, is a Employees Control System with C# and GTK#.",
     "tech": "csh gtk mysql",
@@ -65,6 +72,7 @@
   },
   {
     "img": "./project/eysvb.png",
+    "blur": "./project/eysvb.png",
     "title": "SistemaEyS - Visual Basic",
     "details": "Created for Databases Design in 1S-2022,  is a Employees Control System with Visual Basic .NET.",
     "tech": "vbnet mssql",
@@ -74,6 +82,7 @@
   },
   {
     "img": "./project/classblock.png",
+    "blur": "./project/classblock.png",
     "title": "ClassBlock",
     "details": "Created for Object Oriented Programming in 2S-2021, is a pseudo system for manage tasks. Developed with Java.",
     "tech": "java mssql ps",
@@ -83,6 +92,7 @@
   },
   {
     "img": "./project/mitiendita.png",
+    "blur": "./project/mitiendita.png",
     "title": "Mi Tiendita",
     "details": "Created for Programming Methodology in 1S-2021, is a system of inventory control and billing. Developed with C/C++.",
     "tech": "cpp",
