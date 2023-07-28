@@ -100,12 +100,6 @@
         &-img{
             border-radius: $br-default;
             width: 100%;
-            filter: brightness(0.5);
-            transition: filter 0.5s;
-
-            &:hover{
-                filter: brightness(1);
-            }
         }
 
         &-double{
@@ -117,12 +111,6 @@
             img{
                 max-width: 100%;
                 border-radius: $br-default;
-                filter: brightness(0.5);
-                transition: filter 0.5s;
-    
-                &:hover{
-                    filter: brightness(1);
-                }
             }
 
             @media (max-width: 960px) {
@@ -146,11 +134,6 @@
             img{
                 border-radius: $br-default;
                 width: 45%;
-                transition: filter 0.5s;
-
-                &:hover{
-                    filter: brightness(1);
-                }
             }
 
         }
@@ -169,9 +152,7 @@
             &::-webkit-scrollbar-thumb {
                 background: #00000067;
             }
-        }
-
-        
+        }       
 
         pre > *{
             font-family: 'Fira Code', monospace !important;
@@ -183,13 +164,6 @@
             border-radius: $br-default;
             width: 100%;
             margin-bottom: 5px;
-            filter: brightness(0.5);
-            transition: filter 0.5s;
-
-            &:hover{
-                filter: brightness(1);
-            }
-
         }
 
         &-contributors{

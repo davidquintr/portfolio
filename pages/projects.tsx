@@ -3,11 +3,13 @@ import technologies from "./assets/json/technologies.json";
 import pureProject from "./assets/json/projects_en.json";
 import NavBar from "./nav_bar";
 import Head from "next/head";
-import PageWrapper from "./components/page_wrapper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
 import Panel from "./components/panel";
+import dynamic from "next/dynamic";
+
+const PageWrapper = dynamic(() => import("./components/page_wrapper"));
 
 export const metadata = {
   title: "Projects",

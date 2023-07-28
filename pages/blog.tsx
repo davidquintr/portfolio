@@ -1,12 +1,13 @@
 import NavBar from "./nav_bar";
 import Head from "next/head";
-import PageWrapper from "./components/page_wrapper";
 import BlogItem from "./components/blog_item";
 import { GetStaticProps } from "next";
 import { useEffect, useState } from "react";
 import Panel from "./components/panel";
+import dynamic from "next/dynamic";
 
 const blog = require("./assets/json/blog_published.json");
+const PageWrapper = dynamic(() => import("./components/page_wrapper"));
 
 export const getStaticProps: GetStaticProps = async () => {
   return {

@@ -22,8 +22,8 @@ const ProjectsItem = ({ element, index }) => {
         <Image
           className="project-img"
           src={element?.img}
-          width={960}
-          height={540}
+          width={720}
+          height={405}
           alt="example"
           loading="lazy"
           placeholder="blur"

@@ -23,8 +23,8 @@ const BlogItem = ({ element, index }) => {
             src={element?.icon}
             alt={element?.title}
             title={element?.title}
-            width={800}
-            height={450}
+            width={720}
+            height={405}
             placeholder="blur"
             blurDataURL={element?.blur}
             className="post-img"

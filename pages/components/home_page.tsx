@@ -1,9 +1,10 @@
 import Head from "next/head";
 import PersonInit from "./person_init";
 import NavBar from "../nav_bar";
-import PageWrapper from "./page_wrapper";
-import AboutMe from "./about_me";
-import PersonalInfo from "./personal_info";
+import dynamic from "next/dynamic";
+
+const AboutMe = dynamic(() => import("./about_me"));
+const PersonalInfo = dynamic(() => import("./personal_info"));
 
  const HomePage = () => {
   return (
