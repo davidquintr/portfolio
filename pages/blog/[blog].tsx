@@ -56,7 +56,6 @@ const BlogArticle = ({ blogElement }) => {
   const router = useRouter(); 
   const { asPath } = useRouter();
   const [content, setContent] = useState("")
-  try {
 
   useEffect(() => {
     const temporalContent = blogElement?.details;
@@ -66,11 +65,14 @@ const BlogArticle = ({ blogElement }) => {
 
   useEffect(()=>{
     const allFormat = document.querySelectorAll(".format")
+    
     allFormat.forEach((element, index) =>{
       Prism.highlightElement(element);
     })
+
   },[content])
   
+  try {
     const isBlog = blogElement != undefined ? true : false;
     const deployUrl = "https://davidquintr.github.io";
     const pathProj = "/portfolio/";
