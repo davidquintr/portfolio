@@ -11,7 +11,7 @@ export default function TechnologiesItems() {
       {tech?.map(
         (element, index) =>
           element.show == "true" && (
-            <TechItem element={element} index={index}></TechItem>
+            <TechItem element={element} key={index} index={index}></TechItem>
           )
       )
       }
