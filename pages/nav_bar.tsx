@@ -9,6 +9,8 @@ import {
 import Link from "next/link";
 import Router from "next/router";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+
 
 const links = [
   { href: "/", text: "Home", icon: faHouse },
@@ -20,9 +22,28 @@ const links = [
 const NavBar = () => {
   const path = usePathname();
 
+  const [headerTransparent, setHeaderTransparent] = useState(false);
+
+  const headerClass = () => {
+    return headerTransparent ? "transparent" : ""
+  }
+
+  useEffect(() => {
+    const handleScroll = () => {
+        const scrollY = window.scrollY;
+        if(scrollY > 0)
+            setHeaderTransparent(true);
+        else
+            setHeaderTransparent(false);
+    };
+    window.addEventListener('scroll',handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  },[]);
+
+
   return (
     <>
-      <nav className="nav nav-bar">
+      <nav className={`nav nav-bar ${headerClass()}`}>
         {links.map((element, index) => {
           return(<Link key={index} className={`button-link extended minimal ${element.href === path ? "active" : ""}`} href={element.href}>
             <FontAwesomeIcon

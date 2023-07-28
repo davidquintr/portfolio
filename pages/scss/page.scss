@@ -304,19 +304,27 @@ body{
 .nav{
     z-index: 50;
     position:sticky;
-    top: 0;
+    top: -1px;
 
     &-bar{
         height: 54px;
         border-radius: $br-default;
-        background-color: #1a1a1ae2;
+        background-color: $color-internal;
         backdrop-filter: blur(5px);
         padding: 0;
         display: flex;
         justify-content: center;
         gap: 10px;
         grid-area: mid;
+        transition: background-color 0.4s, border-radius 0.4s, box-shadow 0.6s;
     }
+
+    &.transparent{
+        border-radius: 0;
+        background-color: #1a1a1ade;
+        box-shadow: 0 3px 10px #0000005e;
+    }
+
 }
 
 .project{
