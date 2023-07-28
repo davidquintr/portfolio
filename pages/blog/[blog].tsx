@@ -62,7 +62,7 @@ const BlogArticle = ({ blogElement }) => {
     const temporalContent = blogElement?.details;
     setContent(temporalContent)
 
-  }, []);
+  }, [blogElement?.details]);
 
   useEffect(()=>{
     const allFormat = document.querySelectorAll(".format")
