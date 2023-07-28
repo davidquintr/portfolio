@@ -66,12 +66,9 @@ const BlogArticle = ({ blogElement }) => {
 
   useEffect(()=>{
     const allFormat = document.querySelectorAll(".format")
-    try{
-      allFormat.forEach((element, index) =>{
-        Prism.highlightElement(element);
-      })
-
-    } catch(exception){}
+    allFormat.forEach((element, index) =>{
+      Prism.highlightElement(element);
+    })
   },[content])
   
     const isBlog = blogElement != undefined ? true : false;
