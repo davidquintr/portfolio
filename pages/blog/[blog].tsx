@@ -8,10 +8,15 @@ import personal from "../assets/json/personal.json";
 import Tags from "../components/tags";
 import SocialShare from "../components/social_share";
 import { GetStaticProps, GetStaticPaths } from "next";
+import Prism from 'prismjs';
+import fs from 'fs';
+import path from 'path';
+import { useEffect, useState } from "react";
 
 const BlogPublished = require("../assets/json/blog_published.json");
 
 export const getStaticPaths: GetStaticPaths = async () => {
+  // Obtén la lista de rutas de blogs disponibles a partir de los datos de `BlogPublished`
   const paths = BlogPublished.map((blogItem) => ({
     params: { blog: blogItem.url },
   }));
@@ -26,20 +31,49 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const blogUrl = params?.blog as string;
   const blogElement = BlogPublished.find((b) => b.url === blogUrl);
 
-  return {
-    props: {
-      blogElement,
-    },
-  };
+  try {
+    const filePath = path.join(process.cwd(), blogElement?.details);
+    const fileContent = await fs.promises.readFile(filePath, 'utf8');
+    
+    
+    return {
+      props: {
+        blogElement: {
+          ...blogElement,
+          details: fileContent,
+        },
+      },
+    };
+  } catch (error) {
+    console.error('Error reading file content:', error);
+    return {
+      notFound: true,
+    };
+  }
 };
 
 const BlogArticle = ({ blogElement }) => {
-
-  const router = useRouter();
+  const router = useRouter(); 
   const { asPath } = useRouter();
-
+  const [content, setContent] = useState("")
   try {
-    
+
+  useEffect(() => {
+    const temporalContent = blogElement?.details;
+    setContent(temporalContent)
+
+  }, []);
+
+  useEffect(()=>{
+    const allFormat = document.querySelectorAll(".format")
+    try{
+      allFormat.forEach((element, index) =>{
+        Prism.highlightElement(element);
+      })
+
+    } catch(exception){}
+  },[content])
+  
     const isBlog = blogElement != undefined ? true : false;
     const deployUrl = "https://davidquintr.github.io";
     const pathProj = "/portfolio/";
@@ -110,16 +144,16 @@ const BlogArticle = ({ blogElement }) => {
                       width={960}
                       height={540}
                     ></Image>
+                    <ul className="blog-tag">
+                      <Tags tag={blogElement?.tags}></Tags>
+                    </ul>
                     <div
                       className="blog-body"
                       dangerouslySetInnerHTML={{
-                        __html: blogElement?.details,
+                        __html: content,
                       }}
                     ></div>
                     <div className="blog-info">
-                      <ul className="blog-tag">
-                        <Tags tag={blogElement?.tags}></Tags>
-                      </ul>
                       <div className="blog-social">
                         <div className="post-info-author">
                           <Image
@@ -134,6 +168,7 @@ const BlogArticle = ({ blogElement }) => {
                           </div>
                         </div>
                         <div className="blog-share">
+                          <p>Share my post!</p>
                           <div className="blog-share-buttons">
                             <SocialShare link={URL}></SocialShare>
                           </div>

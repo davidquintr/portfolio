@@ -3,6 +3,12 @@
 .blog{
 
     &-share{
+
+        p{
+            text-align: center;
+            font-size: smaller;
+        }
+
         &-buttons{
             display: flex;
             
@@ -20,6 +26,9 @@
     }
 
     &-tag{
+        border-radius: $br-default;
+        background-color: $color-bg;
+        width: 100%;
         padding: 10px;
         display: flex;
         flex-wrap: wrap;
@@ -64,6 +73,7 @@
     &-body{
         display: flex;
         flex-direction: column;
+        width: 100%;
         justify-content: center;
         box-sizing: border-box;
 
@@ -72,11 +82,13 @@
         }
 
         p{
+            letter-spacing: 0.005em;
             font-weight: 300 !important;
             margin-bottom: 20px !important;
         }
 
         h3, h4{
+            margin-top: 10px;
             margin-bottom: 5px;
             color: $color-bluelight;
         }
@@ -143,10 +155,34 @@
 
         }
 
+        pre{
+            display: inline-block;
+            border-radius: $br-default;
+            padding: 10px !important;
+            overflow: auto !important;
+
+            &::-webkit-scrollbar {
+                height: 4px;
+                background-color: #aaaaaa13; 
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #00000067;
+            }
+        }
+
+        
+
+        pre > *{
+            font-family: 'Fira Code', monospace !important;
+            font-size: medium;
+        }
+
         video{
             box-sizing: border-box;
             border-radius: $br-default;
             width: 100%;
+            margin-bottom: 5px;
             filter: brightness(0.5);
             transition: filter 0.5s;
 

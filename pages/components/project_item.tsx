@@ -15,9 +15,9 @@ const ProjectsItem: React.FC<ProjectsItemProps> = ({ element, index }) => {
     <AnimatePresence>
       <motion.div 
         initial={{ opacity: 0, x: -15 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 0 }}
-        transition={{ delay: 0.5 * (index / 2) }}
+        whileInView={{opacity: 1, x: 0}}
+        transition={{ delay: 0.1 * (index / 2)}}
+        viewport={{once: true}}
       
       className="project">
         <Image
