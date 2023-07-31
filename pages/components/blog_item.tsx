@@ -36,6 +36,7 @@ const BlogItem = ({ element, index }) => {
 
             <div className="post-info-title">
                 <h3>{element?.title}</h3>
+                <p className="post-info-description">{element?.description}</p>
                 <p>
                   <DateParsed dateOrigin={element?.date}></DateParsed>
                 </p>  

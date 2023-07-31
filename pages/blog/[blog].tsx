@@ -126,26 +126,26 @@ const BlogArticle = ({ blogElement }) => {
               <div className="section-body blog-article">
                 {isBlog ? (
                   <>
-                    <div>
-                      <h2>{blogElement?.title}</h2>
+                    <h2>{blogElement?.title}</h2>
+                    <div className="blog-details">
+                      <Image
+                        className="blog-article-image"
+                        src={`.${blogElement?.icon}`}
+                        alt={blogElement?.title}
+                        width={720}
+                        height={405}
+                      ></Image>
                       <p>
                         {
                           <DateParsed
                             dateOrigin={blogElement?.date}
                           ></DateParsed>
-                        }
+                        } - David Quintanilla Ruiz
                       </p>
+                      <ul className="blog-tag">
+                        <Tags tag={blogElement?.tags}></Tags>
+                      </ul>
                     </div>
-                    <Image
-                      className="blog-article-image"
-                      src={`.${blogElement?.icon}`}
-                      alt={blogElement?.title}
-                      width={960}
-                      height={540}
-                    ></Image>
-                    <ul className="blog-tag">
-                      <Tags tag={blogElement?.tags}></Tags>
-                    </ul>
                     <div
                       className="blog-body"
                       dangerouslySetInnerHTML={{

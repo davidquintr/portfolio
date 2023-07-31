@@ -342,6 +342,10 @@ body{
         width: 95%;
     }
 
+    @media (min-width: 1650px) {
+        width: 30%;
+    }
+
     &-img{
         border-radius: $br-default $br-default 0 0;
         width: auto;
@@ -603,6 +607,10 @@ body{
                 font-weight: 500;
             }
 
+        }
+
+        &-description{
+            font-size: small;
         }
 
         &-author{
