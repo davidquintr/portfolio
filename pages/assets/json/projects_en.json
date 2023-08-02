@@ -7,7 +7,8 @@
   "tech": "asp csharp css js html mssql",
   "urlCode": "",
   "urlView": "",
-  "urlDetails": "/blog/expedoc-development"
+  "urlDetails": "/blog/expedoc-development",
+  "archive" : "false"
   },
   {
     "img": "./project/portafolio.png",
@@ -17,7 +18,8 @@
     "tech": "rjs sass ps ai emailjs",
     "urlCode": "https://github.com/davidquintr/old-portfolio",
     "urlView": "https://davidquintr.github.io/old-portfolio/",
-    "urlDetails": ""
+    "urlDetails": "",
+    "archive" : "false"
   },
   {
     "img": "./project/taskitty.png",
@@ -27,7 +29,8 @@
     "tech": "kt ps ai",
     "urlCode": "https://github.com/VarEros/TasKitty",
     "urlView": "",
-    "urlDetails": ""
+    "urlDetails": "",
+    "archive" : "false"
   },
   {
     "img": "./project/wreader.png",
@@ -37,7 +40,8 @@
     "tech": "html css js",
     "urlCode": "https://github.com/davidquintr/whatsapp-reader-js",
     "urlView": "https://davidquintr.github.io/whatsapp-reader-js/",
-    "urlDetails": ""
+    "urlDetails": "",
+    "archive" : "true"
   },
   {
     "img": "./project/brainview.png",
@@ -47,7 +51,8 @@
     "tech": "unity csh ail ps",
     "urlCode": "https://github.com/davidquintr/brain-3d",
     "urlView": "",
-    "urlDetails": ""
+    "urlDetails": "",
+    "archive" : "false"
   }
   ,
   {
@@ -58,7 +63,8 @@
     "tech": "html css",
     "urlCode": "https://github.com/davidquintr/whatsapp-reader.github.io",
     "urlView": "https://davidquintr.github.io/teamfactorizacion-blog/",
-    "urlDetails": ""
+    "urlDetails": "",
+    "archive" : "false"
   },
   {
     "img": "./project/eysmono.png",
@@ -68,7 +74,8 @@
     "tech": "csh gtk mysql",
     "urlCode": "https://github.com/davidquintr/SistemaEyS-Mono",
     "urlView": "",
-    "urlDetails": ""
+    "urlDetails": "",
+    "archive" : "true"
   },
   {
     "img": "./project/eysvb.png",
@@ -78,7 +85,8 @@
     "tech": "vbnet mssql",
     "urlCode": "https://github.com/davidquintr/SistemaEyS",
     "urlView": "",
-    "urlDetails": ""
+    "urlDetails": "",
+    "archive" : "true"
   },
   {
     "img": "./project/classblock.png",
@@ -88,7 +96,8 @@
     "tech": "java mssql ps",
     "urlCode": "https://github.com/davidquintr/ClassBlock-APP",
     "urlView": "",
-    "urlDetails": ""
+    "urlDetails": "",
+    "archive" : "true"
   },
   {
     "img": "./project/mitiendita.png",
@@ -98,7 +107,8 @@
     "tech": "cpp",
     "urlCode": "https://github.com/davidquintr/brain-3d",
     "urlView": "",
-    "urlDetails": ""
+    "urlDetails": "",
+    "archive" : "true"
   },
   {
     "img": "./project/wareadernext.png",
@@ -108,7 +118,8 @@
     "tech": "next twind",
     "urlCode": "https://github.com/davidquintr/whatsapp-reader-next",
     "urlView": "https://whatsapp-reader-next.vercel.app/",
-    "urlDetails": ""
+    "urlDetails": "",
+    "archive" : "false"
   },
   {
     "img": "./project/logicnexusland.png",
@@ -118,6 +129,7 @@
     "tech": "next twind",
     "urlCode": "",
     "urlView": "https://logicnexus.vercel.app/",
-    "urlDetails": ""
+    "urlDetails": "",
+    "archive" : "false"
   }
 ]

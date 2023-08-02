@@ -8,6 +8,7 @@
     padding: 25px;
     
     &-title, &-footer{
+        position: relative;
         text-align: center;               
         color: $color-bluelight;
         border-width: 0;

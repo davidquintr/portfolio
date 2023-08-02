@@ -31,6 +31,7 @@ const ProjectsItem = ({ element, index }) => {
         ></Image>
         <div className="project-info">
           <div className="project-info-details">
+            { element?.archive == "true" ? <p className="project-archive">From project archive</p> : null}
             <h3>{element?.title}</h3>
             <p>{element?.details}</p>
             <div className="project-info-tech">

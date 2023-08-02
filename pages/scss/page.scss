@@ -156,6 +156,7 @@ body{
     box-sizing: content-box;
     cursor: pointer;
     width: 100%;
+    border: none;
     background-color: $color-boldblue;    
     color: $color-bluelight;
     border-radius: 50px;
@@ -214,14 +215,34 @@ body{
 
     }
 
+    &.archive{
+        background-color: $color-bg;
+        margin: 0;
+        top: 0px;
+        right: 10px;
+        min-width: auto;
+        width: auto !important;
+        position: absolute;
+
+        svg{
+            width: 20px;
+            height: 20px;
+        }
+
+    }
+
     &.active, &.light{
         background-color: $color-blue;
-        border: 1px solid $color-bluelight;
+        outline: 1px solid $color-bluelight;
         box-sizing: content-box;
 
         &:hover{
             background-color: $color-boldblue;
         }
+    }
+
+    &.light{
+        outline: none;
     }
 
     &.light{
@@ -352,6 +373,10 @@ body{
         height: auto;
         aspect-ratio: auto;
         border-bottom: 1px solid $color-blue;
+    }
+
+    &-archive{
+        font-size: smaller;
     }
 
     &-info{

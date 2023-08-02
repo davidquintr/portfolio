@@ -4,7 +4,7 @@ import pureProject from "./assets/json/projects_en.json";
 import NavBar from "./nav_bar";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faArchive } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
 import Panel from "./components/panel";
 import dynamic from "next/dynamic";
@@ -17,6 +17,8 @@ export const metadata = {
 
 export default function Projects() {
   const [project, setProject] = useState([]);
+  const [showArchive, setShowArchive] = useState(false)
+  const buttonArchive = useRef()
 
   useEffect(() => {
     let orderProject = pureProject.sort((a, b) =>
@@ -24,6 +26,10 @@ export default function Projects() {
     );
     setProject(orderProject);
   }, []);
+
+  function onArchiveClick(){
+    setShowArchive(!showArchive)
+  }
 
   return (
     <>
@@ -49,11 +55,15 @@ export default function Projects() {
           <section className="section section-projects">
             <div className="section-title">
               <h2>Projects</h2>
+              <button onClick={onArchiveClick} ref={buttonArchive} className={`button-link extended minimal archive ${showArchive ? "active" : ""}`}>
+                <FontAwesomeIcon icon={faArchive}></FontAwesomeIcon>
+                <p>Archive</p>
+              </button>
             </div>
             <Panel isProject={true} pureArray={pureProject} setElement={setProject} element={project} pureFilter={technologies}></Panel>
             <div className="section-body projects">
               {project?.map((element, index) => (
-                <ProjectsItem key={index} element={element} index={index} />
+                ( element?.archive == "true" && !showArchive ? null : <ProjectsItem key={index} element={element} index={index} />)
               ))}
             </div>
           </section>
