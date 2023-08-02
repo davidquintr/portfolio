@@ -49,7 +49,7 @@
         "show": "true"
     }, 
     {
-        "dim": "nextjs",
+        "dim": "next",
         "alt": "NextJS",
         "url":"./tech/nextjs.svg",
         "show": "true"
@@ -131,5 +131,11 @@
         "alt": "GIT",
         "url":"./tech/git.svg",
         "show": "false"
+    },
+    {
+        "dim": "twind",
+        "alt": "Tailwind",
+        "url":"./tech/tailwind.svg",
+        "show": "true"
     }
 ]

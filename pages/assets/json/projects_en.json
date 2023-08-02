@@ -1,7 +1,7 @@
 [  
   {
   "img": "./project/expedoc.png",
-  "blur": "./project/expedoc.png",
+  "blur": "./project/expedoc-blur.png",
   "title": "Expediente Docente",
   "details": "My first job experience in Software Development. This works like a teacher manager or internal social media for a college, including self system of feedback and a historical register of teachers.",
   "tech": "asp csharp css js html mssql",
@@ -21,7 +21,7 @@
   },
   {
     "img": "./project/taskitty.png",
-    "blur": "./project/taskitty.png",
+    "blur": "./project/taskitty-blur.png",
     "title": "TasKitty",
     "details": "Created for Mobile Applications Development I in 1S-2022, developed by Kotlin in Android Studio.",
     "tech": "kt ps ai",
@@ -31,7 +31,7 @@
   },
   {
     "img": "./project/wreader.png",
-    "blur": "./project/wreader.png",
+    "blur": "./project/wreader-blur.png",
     "title": "WhatsApp Reader JS",
     "details": "Personal project, interpreats the exported message of WhatsApp chat and shows in a familiar format for read better.",
     "tech": "html css js",
@@ -41,10 +41,10 @@
   },
   {
     "img": "./project/brainview.png",
-    "blur": "./project/brainview.png",
+    "blur": "./project/brainview-blur.png",
     "title": "BrainView - 3D",
     "details": "Created as commission - Basic view of limited points of the brain, internal and external. Developed in Unity Engine over C# and using Multimedia Tools.",
-    "tech": "unity csh ai ps",
+    "tech": "unity csh ail ps",
     "urlCode": "https://github.com/davidquintr/brain-3d",
     "urlView": "",
     "urlDetails": ""
@@ -52,7 +52,7 @@
   ,
   {
     "img": "./project/blog.png",
-    "blur": "./project/blog.png",
+    "blur": "./project/blog-blur.png",
     "title": "Blog - JavaScript / JQuery",
     "details": "Created por Web Applications Development in 2S-2022, developed with HTML and CSS.",
     "tech": "html css",
@@ -62,7 +62,7 @@
   },
   {
     "img": "./project/eysmono.png",
-    "blur": "./project/eysmono.png",
+    "blur": "./project/eysmono-blur.png",
     "title": "SistemaEyS - Monodevelop",
     "details": "Created for Programming of Applications in 1S-2022, is a Employees Control System with C# and GTK#.",
     "tech": "csh gtk mysql",
@@ -72,7 +72,7 @@
   },
   {
     "img": "./project/eysvb.png",
-    "blur": "./project/eysvb.png",
+    "blur": "./project/eysvb-blur.png",
     "title": "SistemaEyS - Visual Basic",
     "details": "Created for Databases Design in 1S-2022,  is a Employees Control System with Visual Basic .NET.",
     "tech": "vbnet mssql",
@@ -82,7 +82,7 @@
   },
   {
     "img": "./project/classblock.png",
-    "blur": "./project/classblock.png",
+    "blur": "./project/classblock-blur.png",
     "title": "ClassBlock",
     "details": "Created for Object Oriented Programming in 2S-2021, is a pseudo system for manage tasks. Developed with Java.",
     "tech": "java mssql ps",
@@ -92,12 +92,32 @@
   },
   {
     "img": "./project/mitiendita.png",
-    "blur": "./project/mitiendita.png",
+    "blur": "./project/mitiendita-blur.png",
     "title": "Mi Tiendita",
     "details": "Created for Programming Methodology in 1S-2021, is a system of inventory control and billing. Developed with C/C++.",
     "tech": "cpp",
     "urlCode": "https://github.com/davidquintr/brain-3d",
     "urlView": "",
+    "urlDetails": ""
+  },
+  {
+    "img": "./project/wareadernext.png",
+    "blur": "./project/wareadernext-blur.png",
+    "title": "WhatsApp Reader Next",
+    "details": "Personal remastered project, interpreats the exported message of WhatsApp chat and shows in a familiar format for read better.",
+    "tech": "next twind",
+    "urlCode": "https://github.com/davidquintr/whatsapp-reader-next",
+    "urlView": "https://whatsapp-reader-next.vercel.app/",
+    "urlDetails": ""
+  },
+  {
+    "img": "./project/logicnexusland.png",
+    "blur": "./project/logicnexusland-blur.png",
+    "title": "LogicNexus Page",
+    "details": "Project with more people, this is the presentation of our services, technologies and contact. We can come true your software ideas. :)",
+    "tech": "next twind",
+    "urlCode": "",
+    "urlView": "https://logicnexus.vercel.app/",
     "urlDetails": ""
   }
 ]
