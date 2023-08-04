@@ -1,7 +1,11 @@
 import { motion, AnimatePresence } from "framer-motion";
 import basics from "../assets/json/basics.json";
+import { useConfigContext } from "./config_provider";
 
 export default function AboutMe() {
+  // @ts-ignore
+  const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
+
   return (
     <AnimatePresence>
       <motion.section
@@ -10,10 +14,10 @@ export default function AboutMe() {
         exit={{ opacity: 0, x: 0 }}
         transition={{ delay: 0.25 }} className="section section-aboutme">
           <div className="section-title">
-            <h2>About me</h2>
+            <h2>{language == "es" ? "Acerca de mí" : "About me"}</h2>
           </div>
           <div className="section-body">
-            <div dangerouslySetInnerHTML={{ __html: basics.eng.aboutme }}></div>
+            <div dangerouslySetInnerHTML={{ __html: language == "es" ? basics?.es.aboutme : basics?.eng.aboutme }}></div>
           </div>
       </motion.section>
     </AnimatePresence>

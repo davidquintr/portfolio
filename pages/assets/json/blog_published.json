@@ -3,23 +3,23 @@
     "icon": "./blog/expedoc.png",
     "thumbnail": "./blog/expedoc-thumbnail.png",
     "blur": "./blog/expedoc-blur.png",
-    "title": "Expediente Docente - Web Platform development",
-    "description": "Details about the development of web platform 'Expediente Docente'.",
+    "title": {"es": "Expediente Docente - Desarrollo de la plataforma web", "eng" : "Expediente Docente - Web Platform development"},
+    "description": {"es" : "Detalles acerca del desarrollo de la plataforma web 'Expediente Docente'.","eng" : "Details about the development of web platform 'Expediente Docente'."},
     "date": "2023-06-27",
     "tags": ["Full Stack", "Development", "ASP.Net", "Expediente Docente"],
-    "details": "./pages/assets/json/blog/post-expedoc-general.html",
-    "url": "expedoc-development"
+    "details": {"es": "post-expedoc-general-es.html", "eng" : "post-expedoc-general.html"},
+    "url": {"es": "expedoc-development-es", "eng": "expedoc-development"}
   },
   {
     "icon": "./blog/dropdown-vanilla.png",
     "thumbnail": "./blog/dropdown-vanilla-thumbnail.png",
     "blur": "./blog/dropdown-vanilla-blur.png",
-    "title": "Dropdown in JavaScript vanilla",
-    "description": "Creating a dropdown in JavaScript vanilla, please don't use Bootstrap.",
+    "title": {"es": "Dropdown en JavaScript vanilla", "eng": "Dropdown in JavaScript vanilla"},
+    "description": {"es": "Creando un dropdown en JavaScript vanilla, por favor, no uses Bootstrap.","eng" : "Creating a dropdown in JavaScript vanilla, please don't use Bootstrap."},
     "date": "2023-07-27",
     "tags": ["Frontend", "JavaScript", "Functions"],
-    "details": "./pages/assets/json/blog/post-dropdown-vanilla.html",
-    "url": "dropdown-js-vanilla"
+    "details": {"es": "post-dropdown-vanilla-es.html" ,"eng": "post-dropdown-vanilla.html"},
+    "url": {"es" : "dropdown-js-vanilla-es", "eng" : "dropdown-js-vanilla"}
   }
 
 ]

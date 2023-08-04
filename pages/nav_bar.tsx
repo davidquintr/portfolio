@@ -4,59 +4,83 @@ import {
   faAddressBook,
   faHouse,
   faBarsProgress,
-  faBlog
+  faBlog,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Router from "next/router";
+
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-
+import { useConfigContext } from "./components/config_provider";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 const links = [
-  { href: "/", text: "Home", icon: faHouse },
-  {href: "/blog", text: "Blog", icon: faBlog},
-  { href: "/projects", text: "Projects", icon: faBarsProgress },
-  { href: "/contact", text: "Contact", icon: faAddressBook },
+  { href: "/", text: {es : "Inicio", eng: "Home"}, icon: faHouse },
+  { href: "/blog", text: {es : "Blog", eng: "Blog"}, icon: faBlog },
+  { href: "/projects", text: {es : "Proyectos", eng: "Projects"}, icon: faBarsProgress },
+  { href: "/contact", text: {es : "Contacto", eng: "Contact"}, icon: faAddressBook },
 ];
 
 const NavBar = () => {
+  // @ts-ignore
+  const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
   const path = usePathname();
-
   const [headerTransparent, setHeaderTransparent] = useState(false);
-
   const headerClass = () => {
-    return headerTransparent ? "transparent" : ""
-  }
+    return headerTransparent ? "transparent" : "";
+  };
 
   useEffect(() => {
     const handleScroll = () => {
-        const scrollY = window.scrollY;
-        if(scrollY > 0)
-            setHeaderTransparent(true);
-        else
-            setHeaderTransparent(false);
+      const scrollY = window.scrollY;
+      if (scrollY > 0) setHeaderTransparent(true);
+      else setHeaderTransparent(false);
     };
-    window.addEventListener('scroll',handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  },[]);
-
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
+      <div className="section-person-buttons">
+        <button
+          onClick={() => {
+            setLanguage(language == "es" ? "en" : "es");
+          }}
+          className="button-change"
+        >
+          {language}
+        </button>
+        <button
+          onClick={() => {
+            setDarkMode(!darkMode);
+          }}
+          className="button-change"
+        >
+          <FontAwesomeIcon icon={darkMode ? faMoon : faSun}></FontAwesomeIcon>
+        </button>
+      </div>
       <nav className={`nav nav-bar ${headerClass()}`}>
         {links.map((element, index) => {
-          return(
-          <Link key={index} className={`button-link extended minimal ${element.href === path ? "active" : ""}`} href={element.href}>
-            <FontAwesomeIcon
-              icon={element.icon}
-              className="fa-ssm color-blue"
-            />
-            <p>{element.text}</p>
-          </Link>);
+          return (
+            <Link
+              key={index}
+              className={`button-link extended minimal ${
+                element.href === path ? "active" : ""
+              }`}
+              href={element.href}
+            >
+              <FontAwesomeIcon
+                icon={element.icon}
+                className="fa-ssm color-blue"
+              />
+              <p>{language == "es" ? element.text.es : element.text.eng}</p>
+            </Link>
+          );
         })}
       </nav>
     </>
   );
 };
 
-export default NavBar
+export default NavBar;

@@ -12,27 +12,37 @@ import Prism from 'prismjs';
 import fs from 'fs';
 import path from 'path';
 import { useEffect, useState } from "react";
+import { useConfigContext } from "../components/config_provider";
 
 const BlogPublished = require("../assets/json/blog_published.json");
+  // @ts-ignore
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  // Obtén la lista de rutas de blogs disponibles a partir de los datos de `BlogPublished`
-  const paths = BlogPublished.map((blogItem) => ({
-    params: { blog: blogItem.url },
-  }));
-
-  return {
-    paths,
-    fallback: false,
+  export const getStaticPaths: GetStaticPaths = async () => {
+    const paths = BlogPublished.reduce((allPaths, blogItem) => {
+      const blogUrlEs = blogItem.url.es as string; // Ruta en español
+      const blogUrlEng = blogItem.url.eng as string; // Ruta en inglés
+      const paths = [
+        ...allPaths,
+        { params: { blog: blogUrlEs } },
+        { params: { blog: blogUrlEng } },
+      ];
+      return paths;
+    }, []);
+  
+    return {
+      paths,
+      fallback: false,
+    };
   };
-};
+  
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const blogUrl = params?.blog as string;
-  const blogElement = BlogPublished.find((b) => b.url === blogUrl);
+  const blogElement = BlogPublished.find((b) => b.url.eng === blogUrl || b.url.es === blogUrl);
+  const isSpanish = blogUrl.includes("-es")
 
   try {
-    const filePath = path.join(process.cwd(), blogElement?.details);
+    const filePath = path.join(process.cwd(), `./pages/assets/json/blog/${isSpanish ? blogElement?.details.es : blogElement?.details.eng}`);
     const fileContent = await fs.promises.readFile(filePath, 'utf8');
     
     
@@ -53,6 +63,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 const BlogArticle = ({ blogElement }) => {
+    // @ts-ignore
+    const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
   const router = useRouter(); 
   const { asPath } = useRouter();
   const [content, setContent] = useState("")
@@ -77,13 +89,14 @@ const BlogArticle = ({ blogElement }) => {
     const deployUrl = "https://davidquintr.github.io";
     const pathProj = "/portfolio/";
     const URL = `${deployUrl}${pathProj}${asPath}`;
+    const title = language == "es" ? blogElement?.title.es : blogElement?.title.eng
 
     return (
       <>
         <Head>
           <link rel="shortcut icon" href="../icon.svg"></link>
-          <title>{isBlog ? blogElement?.title : "Blog"}</title>
-          <meta property="og:title" content={blogElement?.title}></meta>
+          <title>{isBlog ? title : "Blog"}</title>
+          <meta property="og:title" content={title}></meta>
           <meta
             property="og:description"
             content={blogElement?.description}
@@ -126,12 +139,12 @@ const BlogArticle = ({ blogElement }) => {
               <div className="section-body blog-article">
                 {isBlog ? (
                   <>
-                    <h2>{blogElement?.title}</h2>
+                    <h2>{title}</h2>
                     <div className="blog-details">
                       <Image
                         className="blog-article-image"
                         src={`.${blogElement?.icon}`}
-                        alt={blogElement?.title}
+                        alt={language == "es" ? blogElement?.title.es : blogElement?.title.eng}
                         width={720}
                         height={405}
                       ></Image>
@@ -162,12 +175,12 @@ const BlogArticle = ({ blogElement }) => {
                             height={128}
                           ></Image>
                           <div className="post-info-author details">
-                            <p>Author</p>
+                            <p>{language == "es" ? "Autor" : "Author"}</p>
                             <p className="person">{personal?.name}</p>
                           </div>
                         </div>
                         <div className="blog-share">
-                          <p>Share my post!</p>
+                          <p>{language == "es" ? "¡Comparte mi publicación!" :"Share my post!"}</p>
                           <div className="blog-share-buttons">
                             <SocialShare link={URL}></SocialShare>
                           </div>
@@ -176,7 +189,7 @@ const BlogArticle = ({ blogElement }) => {
                     </div>
                   </>
                 ) : (
-                  <h2>This article does not exist.</h2>
+                  <h2>{language == "es" ? "Este artículo no existe." : "This article does not exist."}</h2>
                 )}
               </div>
             </section>

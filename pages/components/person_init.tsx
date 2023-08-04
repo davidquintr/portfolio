@@ -3,15 +3,19 @@ import Image from "next/image";
 import davidquint from "../assets/img/davidquint-photo.jpg";
 import davidquintBlur from "../assets/img/davidquint-photo-blur.jpg";
 import tech from "../assets/json/technologies.json";
+import { useConfigContext } from "./config_provider";
+
 
 export default function PersonInit() {
+  // @ts-ignore
   const origin = "/portfolio"
+    // @ts-ignore
+    const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
 
   return (
     <>
       <article className="article section-person">
         <div className="section-contain">
-          
           <div className="section-person-contain">
             <Image
               className="section-person-img"
@@ -25,7 +29,7 @@ export default function PersonInit() {
           </div>
           <div className="section-person-details">
             <h2>{basics?.author}</h2>
-            <div dangerouslySetInnerHTML={{ __html: basics?.eng.details }} />
+            <div dangerouslySetInnerHTML={{ __html: language == "es"? basics?.es.details : basics?.eng.details }} />
           </div>
         </div>
         <div className="section section-tech">

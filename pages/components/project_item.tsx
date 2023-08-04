@@ -4,10 +4,15 @@ import {Suspense, lazy} from 'react'
 import TechnologiesSpecific from "./tecnologies_specific";
 import { motion, AnimatePresence } from "framer-motion";
 import ProjectLinkElement from "./project_link_element";
+import { useConfigContext } from "./config_provider";
 
 const ProjectsItem = ({ element, index }) => {
-
+    // @ts-ignore
+  const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
   const image = lazy(()=> import(element?.img))
+
+  let currentDetails = language == "es" ? element?.details.es : element?.details.eng
+  let archiveText = language == "es" ? "Desde el Archivo" : "From project archive"
 
   return (
     <>
@@ -15,7 +20,7 @@ const ProjectsItem = ({ element, index }) => {
       <motion.div 
         initial={{ opacity: 0, x: -15 }}
         whileInView={{opacity: 1, x: 0}}
-        transition={{ delay: 0.1 * (index + 1 / 10)}}
+        transition={{ delay: 0.07 * (index + 1 / 10)}}
         viewport={{once: true}}
       
       className="project">
@@ -31,9 +36,9 @@ const ProjectsItem = ({ element, index }) => {
         ></Image>
         <div className="project-info">
           <div className="project-info-details">
-            { element?.archive == "true" ? <p className="project-archive">From project archive</p> : null}
+            { element?.archive == "true" ? <p className="project-archive">{archiveText}</p> : null}
             <h3>{element?.title}</h3>
-            <p>{element?.details}</p>
+            <p>{currentDetails}</p>
             <div className="project-info-tech">
               <TechnologiesSpecific
                 lineTech={element?.tech}
