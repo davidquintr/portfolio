@@ -49,9 +49,10 @@ const NavBar = () => {
           }}
           className="button-change"
         >
-          {language}
+          {language == "es" ? "en" : "es"}
         </button>
         <button
+          style={{display: "none"}}
           onClick={() => {
             setDarkMode(!darkMode);
           }}

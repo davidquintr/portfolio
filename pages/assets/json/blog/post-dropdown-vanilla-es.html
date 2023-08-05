@@ -1,18 +1,17 @@
 <h3>Concepto</h3>
-<p>This function was created for EXPEDOC, and this was made in relation to dropdown in Bootstrap, for be present to hide certain elements that are not necessary to show all the time or simply for give the option to hide elements.</p>
-<p>We can have an example in Bootstrap:</p>
+<p>Esta función fue creada para EXPEDOC y se hizo en relación con el menú desplegable en Bootstrap, para poder ocultar ciertos elementos que no son necesarios mostrar todo el tiempo o simplemente para dar la opción de ocultar elementos.</p>
+<p>Podemos tener un ejemplo en Bootstrap:</p>
 <video  autoplay loop muted controls>
 	<source src="../blog/dropdown-vanilla/dropdown-bootstrap.mp4" />
 </video>
-<p>For this, we need to import all the dependences for have use of this function, in my opinion, this are really not neccessary. As web developers, we have the tools, we can do something new and better.</p>
-<h3>Results</h3>
-<p>And this is my result for dropdown in JavaScript Vanilla.</p>
+<p>Para esto, necesitamos importar todas las dependencias para poder usar esta función, en mi opinión, esto no es realmente necesario. Como desarrolladores web, tenemos las herramientas, podemos crear algo nuevo y mejor.</p>
+<h3>Resultados</h3>
+<p>Y este es mi resultado para el menú desplegable en JavaScript Vanilla.</p>
 <video autoplay loop muted controls>
 	<source src="../blog/dropdown-vanilla/dropdown-vanilla.mp4" />
 </video>
-
-<h3>Source</h3>
-<p>There's the base who reacts to the size of each element.</p>
+<h3>Fuente</h3>
+<p>Aquí está la base que reacciona al tamaño de cada elemento.</p>
 <pre id="format" class="language-js format copy-to-clipboard" data-clipboard-text="Copy">
 <code>(function () {
     let oldresize = window.onresize;
@@ -27,7 +26,7 @@
     }
 })();</code>
 </pre>
-<p>For limitations of CSS3, the height values does not allow animations with transform property. Having this, the unique option is max-height property, this allows the transform animation but we can't know the height size of each element for CSS, for that reason we need to use JavaScript and this is the function:</p>
+<p>Por limitaciones de CSS3, los valores de altura no permiten animaciones con la propiedad "transform". Dado esto, la única opción es usar la propiedad "max-height", que permite la animación, pero no podemos conocer el tamaño de altura de cada elemento en CSS, por esa razón necesitamos usar JavaScript y esta es la función:</p>
 <pre id="format" class="language-js format copy-to-clipboard" data-clipboard-text="Copy">
 <code>let buttonDrop = document.querySelectorAll(".button-drop")
 let dropDownElements = document.querySelectorAll(".dropdown-element")
@@ -62,8 +61,9 @@ function dropSize() {
     })
 }</code>
 </pre>
-<p>Explaining this, we need to asign the class 'button-drop' to the button who open or close the dropdown. Following this, to the container target of elements 'dropdown-element'.</p>
-<p>If this is effective, for each element with the class 'dropdown-element' will be assigned the 'max-height' property in style inline html if is open. If is not open, is toggled the class 'dropdown-active' who contains certains CSS presets properties:</p>
+
+<p>Explicando esto, necesitamos asignar la clase 'button-drop' al botón que abre o cierra el menú desplegable. Luego, a los elementos que serán ocultados les asignamos la clase 'dropdown-element'.</p>
+<p>Si esto es efectivo, para cada elemento con la clase 'dropdown-element', se le asignará la propiedad 'max-height' en el estilo inline del HTML si está abierto. Si no está abierto, se alternará la clase 'dropdown-active', que contiene ciertas propiedades CSS preestablecidas:</p>
 <pre id="format" class="language-css format copy-to-clipboard" data-clipboard-text="Copy">
 <code>.dropdown-element{
     overflow-y: hidden;
@@ -82,7 +82,6 @@ function dropSize() {
 }</code>
 </pre>
 
-<p>As we can see, there's the recommended properties to the good work of this function.</p>
-
-<h4>Online view</h4>
-<p>You can see this code implemented in my <a href="https://github.com/davidquintr" target="_blank">GitHub</a> in the repository <a href="https://github.com/davidquintr/dropdown-js-vanilla" target="_blank">dropdown-js-vanilla</a> and also there's an <a href="https://davidquintr.github.io/dropdown-js-vanilla/" target="_blank">online deployed app</a> for test it. You are free to use and upgrade if you want.</p>
+<p>Como podemos ver, ahí están las propiedades recomendadas para el buen funcionamiento de esta función.</p>
+<h4>Vista en línea</h4>
+<p>Puedes ver este código implementado en mi <a href="https://github.com/davidquintr" target="_blank">GitHub</a> en el repositorio <a href="https://github.com/davidquintr/dropdown-js-vanilla" target="_blank">dropdown-js-vanilla</a> y también hay una <a href="https://davidquintr.github.io/dropdown-js-vanilla/" target="_blank">aplicación implementada en línea</a> para probarla. Eres libre de usarla y mejorarla si lo deseas.</p>
