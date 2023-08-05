@@ -279,6 +279,31 @@ body{
 
 }
 
+.button-change{
+    border: none;
+    background-color: $color-boldblue;
+    border-radius: $br-default;
+    width: 32px;
+    height: 32px;
+    transition: background-color 0.3s, transform 0.4s;
+    cursor: pointer;
+    color: $color-bluelight;
+    font-weight: bold;
+
+    &:hover{
+        background-color: $color-blue;
+    }
+
+    &:active{
+        transform: scale(0.95);
+    }
+
+    svg{
+        width: 12px;
+        height: 12px;
+    }
+}
+
 .personal-item{
     border-radius: $br-default;
     padding-inline: 10px;

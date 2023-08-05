@@ -2,6 +2,7 @@ import projects from '../assets/json/projects_en.json'
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faCode, faAlignLeft } from "@fortawesome/free-solid-svg-icons";
+import { useConfigContext } from "./config_provider";
 
 
 type ProjectLinkProps = {
@@ -9,6 +10,14 @@ type ProjectLinkProps = {
   };
 
 const ProjectLinkElement: React.FC<ProjectLinkProps> = (element) =>{
+  // @ts-ignore
+  const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
+
+  let translate = {
+    online: language == "es" ? "Ver en línea": "Watch online",
+    source: language == "es" ? "Ver código": "View Source",
+    info: language == "es" ? "Más Info": "More Info",
+  }
 
     return(
         <>
@@ -19,7 +28,7 @@ const ProjectLinkElement: React.FC<ProjectLinkProps> = (element) =>{
                   color="fff"
                   className="fa-sm color-blue"
                 />
-                <p>Watch online</p>
+                <p>{translate.online}</p>
               </Link>
             ) : null}
 
@@ -30,7 +39,7 @@ const ProjectLinkElement: React.FC<ProjectLinkProps> = (element) =>{
                   color="fff"
                   className="fa-sm color-blue"
                 />
-                <p>View Source</p>
+                <p>{translate.source}</p>
               </Link>
             ) : null}
 
@@ -41,7 +50,7 @@ const ProjectLinkElement: React.FC<ProjectLinkProps> = (element) =>{
                   color="fff"
                   className="fa-sm color-blue"
                 />
-                <p>More Info</p>
+                <p>{translate.info}</p>
               </Link>
             ) : null}
         </>

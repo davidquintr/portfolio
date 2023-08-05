@@ -1,0 +1,158 @@
+<h3>Generalidades</h3>
+<p>Para comenzar, es importante aclarar los objetivos y el público objetivo de este proyecto. El proyecto <b>'Expediente Docente'</b> fue desarrollado específicamente para el Departamento de Educación de la <a href="https://www.uca.edu.ni/">Universidad Centroamericana</a> de Nicaragua como parte del programa de práctica intermedia en la carrera de Ingeniería de Sistemas.</p>
+<p><b>'Expediente Docente'</b> funciona como una red social interna dentro del <a href="http://blog.uca.edu.ni/departamentoeducacion/">Departamento de Educación</a>, pero con un propósito distinto. Su objetivo principal es gestionar de manera efectiva la vida académica y profesional de los profesores del departamento, al mismo tiempo que proporciona comentarios valiosos para mejorar sus prácticas de enseñanza.</p>
+<h3>Visión del Proyecto</h3>
+<p>Aunque era necesario cumplir con los objetivos de las partes interesadas en términos de funcionalidades requeridas, personalmente tenía una visión diferente. Consideraba que las interfaces y la experiencia del usuario de los servicios web de la universidad estaban anticuadas, poco amigables y simples.</p>
+<p>Una de las limitaciones que identifiqué fue el uso de <a href="https://getbootstrap.com/">Bootstrap</a> en el proyecto y los requisitos, ya que esto restringía en gran medida las libertades visuales de la aplicación. Por consenso con mi equipo de desarrollo, decidimos no utilizar este framework gráfico y crear los estilos desde cero. El resultado visual fue considerablemente mejor que si hubiéramos utilizado Bootstrap.</p>
+<p>El objetivo que establecí para la aplicación fue superar cualquier plataforma existente dentro de la universidad y en mi país. Esto no es una meta irrealista de imaginar, ya que la mayoría de las universidades no tienen un sistema similar, y si lo tienen, dependen de un CMS o LMS externo.</p>
+<p>Creo que los resultados del desarrollo fueron satisfactorios tanto para las partes interesadas como para el equipo de desarrollo. Logramos alcanzar los objetivos establecidos y, al mismo tiempo, mejoramos significativamente la experiencia visual y de usuario en comparación con otras plataformas existentes.</p>
+<h3>Contribuciones</h3>
+<p>Tuve una posición en el proyecto para crear bases, características y estilos para el mismo. Además, corregí las estructuras y varios detalles mínimos.</p>
+<a href="../blog/expedoc-general/davidquint-contributions.png"><img src="../blog/expedoc-general/davidquint-contributions.png" class="blog-body-img" alt="Contributions" title="Contribuciones"></a>
+<h3>En la Aplicación</h3>
+<p>Dentro de la aplicación <b>'Expediente Docente'</b>, hay varios menús principales disponibles: <b>Panel de Control, Feedback, Áreas Académicas, Convocatorias, Profesores, Usuarios, Departamentos, Expediente, Rol y Opciones de Rol.</b> Cada menú principal tiene requisitos de permisos específicos, aunque un rol con todas las opciones habilitadas tiene acceso sin restricciones a todas las funciones. El sistema ofrece una variedad de funcionalidades, que se describen a continuación:</p>
+<h4>Panel de Control</h4>
+<p>El sistema está equipado con dos vistas del Panel de Control, una especial para los usuarios considerados <b>Administradores</b> y otra normal para quienes son <b>profesores</b> o <b>usuarios comunes</b>.</p>
+<div class="blog-body-double">
+	<a href="../blog/expedoc-general/expedoc-dashboard-admin.png"><img src="../blog/expedoc-general/expedoc-dashboard-admin.png" alt="expedoc-dashboard" title="Panel de Control Expedoc"></a>
+	<a href="../blog/expedoc-general/expedoc-dashboard-teach.png"><img src="../blog/expedoc-general/expedoc-dashboard-teach.png" alt="expedoc-dashboard" title="Panel de Control Expedoc"></a>
+</div>
+<h4>Departamento</h4>
+<p>Este es el contenedor principal del sistema, el departamento <b>abarca las distintas áreas de la universidad</b>, y puede tener múltiples áreas académicas.</p>
+<a href="img src="../blog/expedoc-general/expedoc-department.png"><img src="../blog/expedoc-general/expedoc-department.png" class="blog-body-img" alt="expedoc-department" title="Departamento Expedoc"></a>
+<h4>Áreas Académicas</h4>
+<p>Este es el contenedor de los usuarios.</p>
+<div class="blog-body-double">
+	<a href="../blog/expedoc-general/expedoc-academic.png"><img src="../blog/expedoc-general/expedoc-academic.png" alt="expedoc-academic" title="Áreas Académicas Expedoc"></a>
+	<a href="../blog/expedoc-general/expedoc-academic-form.png"><img src="../blog/expedoc-general/expedoc-academic-form.png"  alt="expedoc-academic form" title="Áreas Académicas Expedoc"></a>
+</div>
+<h4>Usuarios</h4>
+<p>Básicamente, los usuarios acceden a la plataforma.</p>
+<div class="blog-body-double">
+	<a href="../blog/expedoc-general/expedoc-users.png"><img src="../blog/expedoc-general/expedoc-users.png" alt="expedoc-users" title="Usuarios Expedoc"></a>
+	<a href="../blog/expedoc-general/expedoc-users-form.png"><img src="../blog/expedoc-general/expedoc-users-form.png" alt="expedoc-users" title="Usuarios Expedoc"></a>
+</div>
+<h4>Profesores</h4>
+<a href="../blog/expedoc-general/expedoc-teacher.png"><img src="../blog/expedoc-general/expedoc-teacher.png" class="blog-body-img" alt="expedoc-teachers" title="Profesores Expedoc"></a>
+<h4>Expediente</h4>
+<p>El expediente contiene toda la información relevante del profesor, con todos estos mini-expedientes:</p>
+<video autoplay loop muted controls>
+	<source src="../blog/expedoc-general/expedoc-expediente.mp4" />
+</video>
+<table>
+	<tr>
+		<th>Nombre</th>
+		<th>Descripción</th>
+	</tr>
+	<tr>
+		<td>Datos generales</td>
+		<td>Información personal relevante del usuario, como fecha de nacimiento, ID, correo electrónico, género y otros datos.</td>
+	</tr>
+	<tr>
+		<td>Resumen profesional</td>
+		<td>Es un resumen de 200 caracteres con la experiencia laboral.</td>
+	</tr>
+	<tr>
+		<td>Títulos</td>
+		<td>Son los títulos académicos del profesor.</td>
+	</tr>
+	<tr>
+		<td>Cursos</td>
+		<td>Son los cursos que imparte en su ejercicio como profesor en la universidad u otras instituciones.</td>
+	</tr>
+	<tr>
+		<td>Producción intelectual</td>
+		<td>Básicamente, son los libros o artículos publicados en formato APA.</td>
+	</tr>
+	<tr>
+		<td>Proyectos</td>
+		<td>Proyectos en los que el profesor ha participado con algún rol.</td>
+	</tr>
+	<tr>
+		<td>Reconocimientos</td>
+		<td>Son reconocimientos otorgados por alguna institución, por participaciones u otras razones.</td>
+	</tr>
+	<tr>
+		<td>Formación Docente</td>
+		<td>Estos son los cursos que el profesor ha tomado para su formación educativa.</td>
+	</tr>
+	<tr>
+		<td>Experiencia Profesional</td>
+		<td>Es la experiencia profesional del profesor.</td>
+	</tr>
+	<tr>
+		<td>Áreas de Especialización</td>
+		<td>Básicamente, las áreas de especialización del profesor.</td>
+	</tr>
+</table>
+<h3>Convocatorias</h3>
+<p>Estos son eventos que <b>se abren a los usuarios del sistema para completar sus datos o recibir comentarios de usuarios con roles especiales</b>, que en la práctica son sus superiores.</p>
+<div class="blog-body-double">
+	<a href="../blog/expedoc-general/expedoc-ann.png"><img src="../blog/expedoc-general/expedoc-ann.png" alt="expedoc-ann" title="Convocatorias Expedoc"></a>
+	<a href="../blog/expedoc-general/expedoc-ann-form.png"><img src="../blog/expedoc-general/expedoc-ann-form.png" alt="expedoc-ann" title="Convocatorias Expedoc"></a>
+</div>
+<h3>Rol</h3>
+<p>Los roles son distintivos o posiciones que ocupa un usuario; por sí mismos, no hacen nada.</p>
+<div class="blog-body-double">
+	<a href="../blog/expedoc-general/expedoc-role.png"><img src="../blog/expedoc-general/expedoc-role.png" alt="expedoc-role" title="Rol Expedoc"></a>
+	<a href="../blog/expedoc-general/expedoc-role-form.png"><img src="../blog/expedoc-general/expedoc-role-form.png" alt="expedoc-role" title="Rol Expedoc"></a>
+</div>
+<h3>Opciones de Rol</h3>
+<p>Estas son las permisiones otorgadas a un rol.</p>
+<div class="blog-body-double">
+	<a href="../blog/expedoc-general/expedoc-options.png"><img src="../blog/expedoc-general/expedoc-options.png" alt="expedoc-options" title="Opciones de Rol Expedoc"></a>
+	<a href="../blog/expedoc-general/expedoc-options-form.png"><img src="../blog/expedoc-general/expedoc-options-form.png" alt="expedoc-options" title="Opciones de Rol Expedoc"></a>
+</div>
+<h3>Feedback</h3>
+<p>El Feedback sirve para proporcionar un mensaje de crítica constructiva en el ejercicio del rol de docente.</p>
+<div class="blog-body-double">
+	<a href="../blog/expedoc-general/expedoc-feedback.png"><img src="../blog/expedoc-general/expedoc-feedback.png" alt="expedoc-options" title="Feedback Expedoc"></a>
+	<a href="../blog/expedoc-general/expedoc-feedback-form.png"><img src="../blog/expedoc-general/expedoc-feedback-form.png" alt="expedoc-options" title="Feedback Expedoc"></a>
+</div>
+<h3>Comentarios</h3>
+<p>Los comentarios están disponibles como respuestas en la sección de Feedback y en cada sección del Expediente.</p>
+<div class="blog-body-double">
+	<a href="../blog/expedoc-general/expedoc-comments-expedient.png"><img src="../blog/expedoc-general/expedoc-comments-expedient.png" alt="expedoc-comments" title="Comentarios Expedoc"></a>
+	<a href="../blog/expedoc-general/expedoc-comments-feedback.png" ><img src="../blog/expedoc-general/expedoc-comments-feedback.png" alt="expedoc-comments" title="Comentarios Expedoc"></a>
+</div>
+<h3>Funciones de Búsqueda</h3>
+<p>Estas son formas de <b>filtrar datos o información en cualquiera de las secciones</b>. Tienen filtros acumulativos para aumentar la precisión y también cuentan con una función de búsqueda simple.</p>
+<video  autoplay loop muted controls>
+	<source src="../blog/expedoc-general/expedoc-search.mp4" />
+</video>
+<h3>Configuraciones</h3>
+<p>Las configuraciones incluyen opciones de accesibilidad, como <b>modo oscuro, fuente amigable para disléxicos, tamaño de fuente, alto contraste, bordes cuadrados y credenciales de usuario</b>, que permiten cambiar las credenciales del usuario.</p>
+<video autoplay loop muted controls>
+	<source src="../blog/expedoc-general/expedoc-settings.mp4" />
+</video>
+<h3>Evaluación del Expediente</h3>
+<p>Esta es una funcionalidad especial para usuarios con roles especiales, que <b>permite dejar un comentario y aprobar o revocar los datos proporcionados por el profesor evaluado</b>. Esto se aplica a cada sección del Expediente.</p>
+<a href="../blog/expedoc-general/expedoc-expediente-evaluation.png"><img src="../blog/expedoc-general/expedoc-expediente-evaluation.png" class="blog-body-img" alt="expedoc-expedient-eval" title="Evaluación del Expediente Expedoc"></a>
+<h3>Alternar Rol</h3>
+<p>Esta función se utiliza si un usuario tiene más de un rol. Proporciona una forma rápida de <b>cambiar la perspectiva del sistema</b>.</p>
+<video autoplay loop muted controls>
+	<source src="../blog/expedoc-general/expedoc-role-change.mp4" />
+</video>
+<h3>Estado de Desarrollo de la Aplicación</h3>
+<p>Hasta la fecha de esta publicación, la aplicación <b>se encuentra todavía en fase de desarrollo</b>. Sin embargo, nuestras partes interesadas están satisfechas con el progreso realizado hasta ahora en el desarrollo de la aplicación web. <b>Quedan algunas funcionalidades y detalles menores por implementar</b>, lo que esperamos completar en los próximos dos meses. Esto nos acercará a las etapas finales del desarrollo y la posterior implementación del sistema en los servidores de <a href="https://www.uca.edu.ni/">Universidad Centroamericana</a>.</p>
+<h3>Código Abierto</h3>
+<p>Al menos por ahora, no puedo publicar todo el código de <b>'Expediente Docente'</b>, pero puedo revelar ciertas partes de él, solo necesito asegurarme de que el código revelado no comprometa la seguridad del sistema.</p>
+<h3>Agradecimientos</h3>
+<p>Agradezco especialmente a mi <b>equipo de desarrollo</b>, los lideré, pero una gran parte del trabajo es de ellos.</p>
+<h4>Equipo de Desarrollo</h4>
+<div class="blog-body-contributors">
+	<a href="https://github.com/Chocoyito" target="_blank"><img src="https://github.com/Chocoyito.png"></a>
+	<a href="https://github.com/VarEros" target="_blank"><img src="https://github.com/VarEros.png"></a>
+	<a href="https://github.com/Xeppyz" target="_blank"><img src="https://github.com/Xeppyz.png"></a>
+	<a href="https://github.com/Poncka" target="_blank"><img src="https://github.com/Poncka.png"></a>
+	<a href="https://github.com/andreitaglz1" target="_blank"><img src="https://github.com/andreitaglz1.png"></a>
+	<a href="https://github.com/MrSty" target="_blank"><img src="https://github.com/MrSty.png"></a>
+	<a href="https://github.com/gmabs" target="_blank"><img src="https://github.com/gmabs.png"></a>
+	<a href="https://github.com/EduardJiron" target="_blank"><img src="https://github.com/EduardJiron.png"></a>
+	<a href="https://github.com/rmtai" target="_blank"><img src="https://github.com/rmtai.png"></a>
+	<a href="https://github.com/GPorrasV" target="_blank"><img src="https://github.com/GPorrasV.png"></a>
+	<a href="https://github.com/RiuskeKMS" target="_blank"><img src="https://github.com/RiuskeKMS.png"></a>
+	<a href="https://github.com/BenjaminNarvaez-est" target="_blank"><img src="https://github.com/BenjaminNarvaez-est.png"></a>
+	<a href="https://github.com/GhostlyCoder20" target="_blank"><img src="https://github.com/GhostlyCoder20.png"></a>
+	<a href="https://github.com/simplyZair" target="_blank"><img src="https://github.com/simplyZair.png"></a>
+</div>

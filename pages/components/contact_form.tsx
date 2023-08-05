@@ -3,9 +3,13 @@ import React, { useContext, useRef, useState, useEffect, LegacyRef } from "react
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import SocialItems from "./social_items";
+import { useConfigContext } from "./config_provider";
+
 import AlertElement from "./alert_element";
 
 const FormContact = () => {
+    // @ts-ignore
+    const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
   const form: any = React.createRef();
   const [isEmailSent, setIsEmailSent] = useState(null);
   const buttonSend: LegacyRef<HTMLButtonElement> = React.createRef();
@@ -44,11 +48,11 @@ const FormContact = () => {
     <>
       <section className="section section-contact">
         <div className="section-title">
-          <h2>Contact</h2>
+          <h2>{language == "es" ? "Contacto" : "Contact"}</h2>
         </div>
         <div className="section-body contact">
           <p className="text-center">
-            If you are looking for help with a project or need assistance, you can contact me!
+            {language == "es" ? "Si estás buscando ayuda con un proyecto o necesitas asistencia, ¡Puedes contactarme!" : "If you are looking for help with a project or need assistance, you can contact me!"}
           </p>
           <form className="contact-contain" ref={form} onSubmit={sendEmail}>
             <div className="contact-elements ">
@@ -56,14 +60,14 @@ const FormContact = () => {
                 <input
                   className="input-contact name "
                   type="text"
-                  placeholder="First Name and Last Name"
+                  placeholder={language == "es" ? "Nombres y Apellidos" :"First Name and Last Name"}
                   name="user_name"
                   required
                 ></input>
                 <input
                   className="input-contact number "
                   type="text"
-                  placeholder="Contact Number"
+                  placeholder={language == "es" ? "Número de contacto" :"Contact Number"}
                   name="user_number"
                   required
                 ></input>
@@ -78,27 +82,27 @@ const FormContact = () => {
                 ></input>
                 <textarea
                   className="input-contact subject "
-                  placeholder="Subject"
+                  placeholder={language == "es" ? "Asunto" :"Subject"}
                   name="message"
                   rows={4}
                   required
                 ></textarea>
                 <button ref={buttonSend} type="submit" className="button-link extended submit">
                   <FontAwesomeIcon icon={faPaperPlane} className="fa-sm" />
-                  <p>Send Message</p>
+                  <p>{language == "es" ? "Enviar mensaje" :"Send Message"}</p>
                 </button>
                 {isEmailSent == true ? (
-                  <p className="plane-text send">Send</p>
+                  <p className="plane-text send">{language == "es" ? "Enviado" :"Sent"}</p>
                 ) : isEmailSent == false ? (
                   <p className="plane-text no-send">
-                    Something went wrong, try again later.
+                    {language == "es" ? "Algo salió mal, intente más tarde..." :"Something went wrong, try later..."}
                   </p>
                 ) : null}
               </div>
             </div>
             <div className="contact-social">
               <p className="contact-social-title">
-                Do you want more direct communication? There&apos;s another way to contact me.
+                {language == "es" ? "¿Quieres una comunicación más directa? Aquí hay otros medios para contactarme." : "Do you want more direct communication? There&apos;s another way to contact me."}
               </p>
               <div className="contact-social-elements">
                 <SocialItems />

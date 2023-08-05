@@ -8,6 +8,8 @@ import { faArchive } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
 import Panel from "./components/panel";
 import dynamic from "next/dynamic";
+import { useConfigContext } from "./components/config_provider";
+
 
 const PageWrapper = dynamic(() => import("./components/page_wrapper"));
 
@@ -16,6 +18,8 @@ export const metadata = {
 };
 
 export default function Projects() {
+    // @ts-ignore
+  const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
   const [project, setProject] = useState([]);
   const [showArchive, setShowArchive] = useState(false)
   const buttonArchive = useRef()
@@ -34,7 +38,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects</title>
+        <title>{language == "es" ? "Proyectos" :  "Projects"}</title>
         <meta property="og:title" content="Portfolio | Projects"></meta>
         <meta
           property="og:description"
@@ -54,10 +58,10 @@ export default function Projects() {
         <PageWrapper>
           <section className="section section-projects">
             <div className="section-title">
-              <h2>Projects</h2>
+              <h2>{language == "es" ? "Proyectos" :  "Projects"}</h2>
               <button onClick={onArchiveClick} ref={buttonArchive} className={`button-link extended minimal archive ${showArchive ? "active" : ""}`}>
                 <FontAwesomeIcon icon={faArchive}></FontAwesomeIcon>
-                <p>Archive</p>
+                <p>{language == "es" ? "Archivo" :  "Archive"}</p>
               </button>
             </div>
             <Panel isProject={true} pureArray={pureProject} setElement={setProject} element={project} pureFilter={technologies}></Panel>

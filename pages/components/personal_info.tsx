@@ -3,10 +3,21 @@ import personal from "../assets/json/personal.json";
 import { differenceInYears } from "date-fns";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import { useConfigContext } from "./config_provider";
 
 export default function PersonalInfo() {
+  // @ts-ignore
+  const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
   let myAge = new Date(personal?.birthday);
   const age = differenceInYears(new Date(), myAge);
+
+  let translate = {
+    info: language == "es" ? "Información Personal" : "Personal info",
+    age: language == "es" ? "Edad" : "Age",
+    birth: language == "es" ? "Cumpleaños" : "Birthday",
+    country: language == "es" ? "País" : "Country",
+    contact: language == "es" ? "Contáctame" : "Contact me"
+  }
 
   return (
     <>
@@ -19,7 +30,7 @@ export default function PersonalInfo() {
           className="section section-personal"
         >
           <div className="section-title">
-            <h2>Personal info</h2>
+            <h2>{translate.info}</h2>
           </div>
           <div className="section-body personal">
             <PersonalItem
@@ -28,17 +39,17 @@ export default function PersonalInfo() {
               detail={personal?.mail}
             ></PersonalItem>
             <PersonalItem
-              title={"Age"}
+              title={age}
               url={""}
               detail={age.toString()}
             ></PersonalItem>
             <PersonalItem
-              title={"Birthday"}
+              title={translate.birth}
               url={""}
               detail={personal?.birthday}
             ></PersonalItem>
             <PersonalItem
-              title={"Country"}
+              title={translate.country}
               url={""}
               detail={personal?.country}
             ></PersonalItem>
@@ -49,7 +60,7 @@ export default function PersonalInfo() {
             ></PersonalItem>
           </div>
           <div className="section-footer">
-            <Link className="button-link" href="/contact">Contact me</Link>
+            <Link className="button-link" href="/contact">{translate.contact}</Link>
           </div>
         </motion.section>
       </AnimatePresence>

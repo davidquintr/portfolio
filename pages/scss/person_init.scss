@@ -77,6 +77,8 @@
     }
     
     &-person{
+        pointer-events: all;
+        position: relative;
         background-color: rgb(8, 8, 8);
         background-image: $linear-gradient-bg;
         border: 1px solid $color-blue;
@@ -93,6 +95,25 @@
             height: 200px;
             background-color: $color-darkblue;
             border-radius: 100%;
+        }
+
+        &-buttons{
+            position: absolute;
+            z-index: 30;
+            margin: 5px;
+            right: 0;
+            gap: 2px;
+            top: 0;
+            padding-right: 15%;
+            display: flex;
+
+            @media (max-width: 1200px) {
+                padding-right: 7.5%;
+            }
+
+            @media (max-width: 600px) {
+                padding-right: 0;
+            }
         }
 
        &-img{
