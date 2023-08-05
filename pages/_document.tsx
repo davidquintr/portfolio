@@ -1,12 +1,8 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import Footer from './components/footer'
 import PersonInit from './components/person_init'
-import { ConfigProvider, useConfigContext } from './components/config_provider'
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Document() {
-  const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
 
   return (
       <Html lang="en">
@@ -27,5 +23,5 @@ export default function Document() {
           <NextScript />
         </body>
       </Html>
-  )
+  ) 
 }
