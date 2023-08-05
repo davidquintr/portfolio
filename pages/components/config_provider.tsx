@@ -4,7 +4,7 @@ import React, { createContext, useState, useContext, useEffect } from 'react';
  
   const ConfigContext = createContext({});
 
-export function ConfigProvider({ children }) {
+const ConfigProvider = ({ children }) => {
   const [language, setLanguage] = useState('en');
   const [darkMode, setDarkMode] = useState(true);
   let isRecover = false
@@ -45,6 +45,8 @@ export function ConfigProvider({ children }) {
     </ConfigContext.Provider>
   );
 }
+
+export default ConfigProvider
 
 export function useConfigContext() {
   const context = useContext(ConfigContext);

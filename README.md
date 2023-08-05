@@ -45,12 +45,12 @@ For all this, `npm install` and continue for each item.
 ## To do
 
 1. ☀️ Switch to Light Mode.
-2. 🇳🇮 Switch to Spanish as Language.
 
 ## Completed
 1. 📕 Blog for long projects.
 2. 📘 Introduce `EXPEDOC`, actually im not abled to put anything.
 3. 🔎 Search in `Project` tab.
+4. 🇳🇮 Switch to Spanish as Language.
 
 I will do this in this year, i promise.
 
