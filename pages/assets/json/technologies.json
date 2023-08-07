@@ -13,12 +13,6 @@
 
     },
     {
-        "dim": "mv",
-        "alt": "Magix Vegas",
-        "url":"./tech/mv.svg",
-        "show": "false"
-    },
-    {
         "dim": "html",
         "alt": "HTML",
         "url":"./tech/html.svg",

@@ -1,0 +1,329 @@
+@import './basics';
+
+body{
+    &.lightMode{
+        background-color: $light-internal;
+    }
+}
+
+nav{
+    &.lightMode{
+        background-color: white;
+
+        &.transparent{
+            background-color: #ffffffde;
+        }
+    }
+}
+
+.section{
+
+    &-contain{
+        &.lightMode{
+            background-color: white;
+            background: none;
+
+            h2{
+                color: $light-darkblue;
+            }
+
+            p{
+                color: black;
+            }
+
+        }
+    }
+
+    &-blog{
+        &.lightMode{
+            h1, h2, h3, h4{
+                color: $light-darkblue;
+            }
+        }
+    }
+    
+    &-tech{
+
+        &.lightMode{
+            background: none;
+            background-color: $light-bluelight !important;
+            img{
+                filter: invert(0);
+            }
+        }
+
+    }
+
+    &-personal{
+        &.lightMode{
+
+            .personal-item{
+                background-color: $light-internal;
+                border-color: $light-bluegray;
+                h4{
+                    color: $light-bluelight;
+                }
+
+                p{
+                    color: black
+                }
+
+            }
+        }
+    }
+
+
+    &-person{
+        &.lightMode{
+            background: none;
+
+            background-color: white;
+        }
+    }
+
+    &.lightMode{
+        border-color: $light-darkblue;
+        background-color: white;
+        color: black;
+
+        .section-title{
+            color: $light-darkblue;
+        }
+
+        .section-body > svg, p{
+            color: black;
+        }
+
+    }
+}
+
+.button-link{
+    &.lightMode{
+        background-color: $color-bluelight;
+        color: $light-darkblue !important;
+
+        &.active{
+            outline-color: $light-darkblue !important;
+            background-color: $light-bluegray;
+
+            &:hover{
+                background-color: $color-bluelight;
+            }
+        }
+
+        &:hover{
+            background-color: $light-bluegray;
+        }
+        
+        p{
+            color: $light-darkblue !important;
+        }
+
+        &.social{
+            background-color: $light-darkblue;
+
+            &:hover{
+                background-color: $light-bluelight;
+            }
+        }
+    }
+}
+
+.button-change{
+    &.lightMode{
+        background-color: $light-bluegray;
+        color: $light-darkblue;
+
+        &:hover{
+            background-color: $light-bluelight;
+        }
+    }
+}
+
+.section-panel{
+    &-search{
+        &.lightMode{
+            background-color: $light-internal;
+            color: $light-darkblue;
+
+            input{
+                color: $light-darkblue;
+                background-color: $light-internal;
+            }
+        }
+    }
+
+    &-control{
+
+        &.lightMode{
+
+            .filter-button{
+                background-color: $light-bluegray;
+                color: $light-darkblue;
+
+                &.reset{
+                    background-color: $light-internal;
+                }
+            }
+           
+            .filter-button-scroll{
+                background-color: $light-bluelight;
+
+                &:hover{
+                    background-color: $light-bluegray;
+                }
+
+            }
+
+            .left{
+                box-shadow: 5px 0 10px 10px white;
+            }
+
+            .right{
+                box-shadow: -5px 0 10px 10px white;
+            }
+
+        }
+
+    }
+
+}
+
+.project{
+    
+    &.lightMode{
+        outline-color: $light-darkblue;
+        background-color: white;
+    }
+
+    &-info{
+        &.lightMode{
+            background-color: $light-internal !important;
+            background: none;
+        }
+
+        &-details{
+            &.lightMode{
+                h3{
+                    color: $light-darkblue;
+                }
+
+                p{
+                    color: black;
+                }
+            }
+        }
+
+        &-tech{
+            &.lightMode{
+                img{
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+}
+
+.post{
+    &.lightMode{
+        a{
+            background-color: $light-internal !important;
+            background: none;
+
+            h3{
+                color: $light-darkblue;
+            }
+
+            &:hover{
+                background-color: white !important;
+            }
+
+            img{
+                box-shadow: 0 0 10px white !important;
+            }
+
+        }
+    }
+}
+
+.tag{
+    &.lightMode{
+        background-color: $light-gray;
+    }
+}
+
+.contact-contain{
+    &.lightMode{
+        input, textarea{
+            color: $light-darkblue;
+            background-color: $light-internal;
+            border-bottom: 2px solid $light-darkblue;
+
+            &:hover{
+                outline-color: $color-bluelight;
+            }
+        }
+    }
+}
+
+.plane-text{
+    &.lightMode{
+        &.send{
+            background-color: #418447;
+            color: white;
+        }
+        &.no-send{
+            background-color: #844141;
+            color: white;
+        }
+    }
+}
+
+.footer{
+    &.lightMode{
+        background: $linear-gradient-bg-light;
+        p{
+            color: black;
+        }
+
+        a{
+            background-color: $light-darkblue;
+
+            &:hover{
+                background-color: $light-bluelight;
+            }
+
+            svg,p{
+                color: white;
+            }
+        }
+    }
+}
+
+.blog{
+
+    &-details{
+        &.lightMode{
+            background-color: $light-internal;
+    
+            .blog-tag{
+                background-color: $light-internal;
+            }
+        }
+    }
+
+    &-body{
+        &.lightMode{
+            a{
+                color: $light-darkblue;
+            }
+        }
+    }
+
+    &-info{
+        &.lightMode{
+            background-color: $light-internal;
+        }
+    }
+
+}

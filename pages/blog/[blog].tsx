@@ -63,8 +63,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 const BlogArticle = ({ blogElement }) => {
-    // @ts-ignore
-    const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
+  // @ts-ignore
+  const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
+  let lightModeActive = darkMode ? "lightMode" : ""
+
   const router = useRouter(); 
   const { asPath } = useRouter();
   const [content, setContent] = useState("")
@@ -136,12 +138,12 @@ const BlogArticle = ({ blogElement }) => {
         <article className="article article-base extended">
           <NavBar></NavBar>
           <PageWrapper>
-            <section className="section section-blog">
+            <section className={`section section-blog ${lightModeActive}`}>
               <div className="section-body blog-article">
                 {isBlog ? (
                   <>
                     <h2>{title}</h2>
-                    <div className="blog-details">
+                    <div className={`blog-details ${lightModeActive}`}>
                       <Image
                         className="blog-article-image"
                         src={`.${blogElement?.icon}`}
@@ -162,12 +164,12 @@ const BlogArticle = ({ blogElement }) => {
                       </ul>
                     </div>
                     <div
-                      className="blog-body"
+                      className={`blog-body ${lightModeActive}`}
                       dangerouslySetInnerHTML={{
                         __html: content,
                       }}
                     ></div>
-                    <div className="blog-info">
+                    <div className={`blog-info ${lightModeActive}`}>
                       <div className="blog-social">
                         <div className="post-info-author">
                           <Image

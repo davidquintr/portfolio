@@ -10,6 +10,7 @@ export default function PersonalInfo() {
   const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
   let myAge = new Date(personal?.birthday);
   const age = differenceInYears(new Date(), myAge);
+  let lightModeActive = darkMode ? "lightMode" : ""
 
   let translate = {
     info: language == "es" ? "Información Personal" : "Personal info",
@@ -29,7 +30,7 @@ export default function PersonalInfo() {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 0 }}
           transition={{ delay: 0.30 }}
-          className="section section-personal"
+          className={`section section-personal ${lightModeActive}`}
         >
           <div className="section-title">
             <h2>{translate.info}</h2>
@@ -62,7 +63,7 @@ export default function PersonalInfo() {
             ></PersonalItem>
           </div>
           <div className="section-footer">
-            <Link className="button-link" href="/contact">{translate.contact}</Link>
+            <Link className={`button-link ${lightModeActive}`} href="/contact">{translate.contact}</Link>
           </div>
         </motion.section>
       </AnimatePresence>

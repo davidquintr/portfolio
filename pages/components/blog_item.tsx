@@ -9,8 +9,9 @@ import { useConfigContext } from "./config_provider";
 
 
 const BlogItem = ({ element, index }) => {
-    // @ts-ignore
+  // @ts-ignore
   const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
+  let lightModeActive = darkMode ? "lightMode" : ""
 
   let info = {
     url : language == "es" ? element?.url.es : element?.url.eng,
@@ -30,18 +31,18 @@ const BlogItem = ({ element, index }) => {
           whileInView={{opacity: 1, x: 0}}
           transition={{ delay: 0.07 * (index + 1 / 10)}}
           viewport={{once: true}}
-          className="post"
+          className={`post ${lightModeActive}`}
         >
         <Link href={`blog/${info.url}`}>
           <Image
             src={element?.icon}
-            alt={element?.title}
-            title={element?.title}
+            alt={info.title}
+            title={info.title}
             width={720}
             height={405}
             placeholder="blur"
             blurDataURL={element?.blur}
-            className="post-img"
+            className={`post-img ${lightModeActive}`}
           ></Image>
           <div className="post-info">
             <div className="post-info-tag">

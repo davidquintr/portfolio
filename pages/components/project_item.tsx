@@ -9,6 +9,7 @@ import { useConfigContext } from "./config_provider";
 const ProjectsItem = ({ element, index }) => {
     // @ts-ignore
   const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
+  let lightModeActive = darkMode ? "lightMode" : ""
   const image = lazy(()=> import(element?.img))
 
   let currentDetails = language == "es" ? element?.details.es : element?.details.eng
@@ -23,7 +24,7 @@ const ProjectsItem = ({ element, index }) => {
         transition={{ delay: 0.07 * (index + 1 / 10)}}
         viewport={{once: true}}
       
-      className="project">
+      className={`project ${lightModeActive}`}>
         <Image
           className="project-img"
           src={element?.img}
@@ -34,18 +35,18 @@ const ProjectsItem = ({ element, index }) => {
           placeholder="blur"
           blurDataURL={element?.blur}
         ></Image>
-        <div className="project-info">
-          <div className="project-info-details">
+        <div className={`project-info ${lightModeActive}`}>
+          <div className={`project-info-details ${lightModeActive}`}>
             { element?.archive == "true" ? <p className="project-archive">{archiveText}</p> : null}
             <h3>{element?.title}</h3>
             <p>{currentDetails}</p>
-            <div className="project-info-tech">
+            <div className={`project-info-tech ${lightModeActive}`}>
               <TechnologiesSpecific
                 lineTech={element?.tech}
               ></TechnologiesSpecific>
             </div>
           </div>
-          <div className="project-buttons">
+          <div className={`project-buttons ${lightModeActive}`}>
             <ProjectLinkElement element={element}></ProjectLinkElement>
           </div>
         </div>
