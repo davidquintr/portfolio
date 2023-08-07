@@ -90,6 +90,7 @@ const BlogArticle = ({ blogElement }) => {
     const pathProj = "/portfolio/";
     const URL = `${deployUrl}${pathProj}${asPath}`;
     const title = language == "es" ? blogElement?.title.es : blogElement?.title.eng
+    const description = language == "es" ? blogElement?.description.es : blogElement?.description.eng
 
     return (
       <>
@@ -99,7 +100,7 @@ const BlogArticle = ({ blogElement }) => {
           <meta property="og:title" content={title}></meta>
           <meta
             property="og:description"
-            content={blogElement?.description}
+            content={description}
           ></meta>
           <meta
             property="og:image"
@@ -111,7 +112,7 @@ const BlogArticle = ({ blogElement }) => {
           <meta property="og:url" content={URL}></meta>
           <meta
             property="article:section"
-            content={`Blog - ${isBlog ? blogElement?.title : ""}`}
+            content={`Blog - ${isBlog ? title : ""}`}
           ></meta>
           {blogElement?.tags.map((element, index) => {
             return (
@@ -119,10 +120,10 @@ const BlogArticle = ({ blogElement }) => {
             );
           })}
           <meta name="twitter:card" content="summary_large_image"></meta>
-          <meta name="twitter:title" content={blogElement?.title}></meta>
+          <meta name="twitter:title" content={title}></meta>
           <meta
             name="twitter:description"
-            content={blogElement?.description}
+            content={description}
           ></meta>
           <meta
             property="twitter:image"
@@ -144,10 +145,11 @@ const BlogArticle = ({ blogElement }) => {
                       <Image
                         className="blog-article-image"
                         src={`.${blogElement?.icon}`}
-                        alt={language == "es" ? blogElement?.title.es : blogElement?.title.eng}
+                        alt={title}
                         width={720}
                         height={405}
                       ></Image>
+                      <p className="blog-desc">{description}</p>
                       <p>
                         {
                           <DateParsed

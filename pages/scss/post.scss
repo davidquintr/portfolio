@@ -2,6 +2,10 @@
 
 .blog{
 
+    &-desc{
+        color: $color-bluelight;
+    }
+
     &-details{
         gap: 5px;
         border-radius: $br-default;

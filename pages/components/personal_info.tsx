@@ -16,7 +16,9 @@ export default function PersonalInfo() {
     age: language == "es" ? "Edad" : "Age",
     birth: language == "es" ? "Cumpleaños" : "Birthday",
     country: language == "es" ? "País" : "Country",
-    contact: language == "es" ? "Contáctame" : "Contact me"
+    contact: language == "es" ? "Contáctame" : "Contact me",
+    cv : language == "es" ? "CV David Quintanilla-ES.pdf" : "CV David Quintanilla-EN.pdf",
+    open: language == "es" ? "Abrir" : "Open"
   }
 
   return (
@@ -55,8 +57,8 @@ export default function PersonalInfo() {
             ></PersonalItem>
             <PersonalItem
               title={"CV"}
-              url={"curriculum.pdf"}
-              detail={"Open"}
+              url={translate.cv}
+              detail={translate.open}
             ></PersonalItem>
           </div>
           <div className="section-footer">
