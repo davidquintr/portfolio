@@ -6,7 +6,7 @@ const ConfigContext = createContext({});
 
 const ConfigProvider = ({ children }) => {
   const [language, setLanguage] = useState('en');
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   let isRecover = false
   let isRecoverTheme = false
   const LIGHT_MODE_TEXT = "lightMode"
@@ -34,6 +34,7 @@ const ConfigProvider = ({ children }) => {
       localStorage.setItem('language',localLanguage)
       setLanguage(localLanguage)
       console.log("set Language : ", localLanguage)
+
     } else if(localStorage != null) {
       let safeLanguage = localStorage.getItem('language')
       isRecover = true
@@ -44,7 +45,7 @@ const ConfigProvider = ({ children }) => {
 
   useEffect(() => {
     if(localStorage != null && localStorage.getItem('theme') == null){
-      let localTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? true : false
+      let localTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? false : true
       localStorage.setItem('theme',localTheme.toString())
       setDarkMode(localTheme)
 
