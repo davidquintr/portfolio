@@ -56,6 +56,7 @@ const NavBar = () => {
           {language == "es" ? "en" : "es"}
         </button>
         <button
+          style={{display: "none"}}
           onClick={() => {
             setDarkMode(!darkMode);
           }}
@@ -64,7 +65,7 @@ const NavBar = () => {
           <FontAwesomeIcon icon={darkMode ? faMoon : faSun}></FontAwesomeIcon>
         </button>
       </div>
-      <nav  className={`nav nav-bar ${lightModeActive}${headerClass()} `}>
+      <nav className={`nav nav-bar ${lightModeActive}${headerClass()} `}>
         {links.map((element, index) => {
           return (
             <Link

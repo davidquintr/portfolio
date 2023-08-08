@@ -44,7 +44,7 @@ For all this, `npm install` and continue for each item.
 
 ## To do
 
-1. ☀️ Switch to Light Mode.
+1. ☀️ Switch to Light Mode. (It's almost ready, but it's not what I expected. When it surpasses my standards, I will publish it).
 
 ## Completed
 1. 📕 Blog for long projects.

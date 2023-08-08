@@ -11,6 +11,23 @@ const ConfigProvider = ({ children }) => {
   let isRecoverTheme = false
   const LIGHT_MODE_TEXT = "lightMode"
 
+
+  useEffect(() => {
+    if(localStorage != null && localStorage.getItem('language') == null){
+      let localLanguage = navigator.language.includes('es') ? "es" : "en"
+      localStorage.setItem('language',localLanguage)
+      setLanguage(localLanguage)
+      console.log("set Language : ", localLanguage)
+
+    } else if(localStorage != null) {
+      let safeLanguage = localStorage.getItem('language')
+      isRecover = true
+      setLanguage(safeLanguage)
+      console.log("recover language", safeLanguage)
+    }
+  }, [])
+  
+/*
   useEffect(() => { 
     if(darkMode){
       document.body.classList.add(LIGHT_MODE_TEXT)
@@ -29,21 +46,6 @@ const ConfigProvider = ({ children }) => {
   },[darkMode])
 
   useEffect(() => {
-    if(localStorage != null && localStorage.getItem('language') == null){
-      let localLanguage = navigator.language.includes('es') ? "es" : "en"
-      localStorage.setItem('language',localLanguage)
-      setLanguage(localLanguage)
-      console.log("set Language : ", localLanguage)
-
-    } else if(localStorage != null) {
-      let safeLanguage = localStorage.getItem('language')
-      isRecover = true
-      setLanguage(safeLanguage)
-      console.log("recover language", safeLanguage)
-    }
-  }, [])
-
-  useEffect(() => {
     if(localStorage != null && localStorage.getItem('theme') == null){
       let localTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? false : true
       localStorage.setItem('theme',localTheme.toString())
@@ -56,6 +58,14 @@ const ConfigProvider = ({ children }) => {
     }
   }, [])
 
+    useEffect(() => {
+    if(!isRecoverTheme){
+      localStorage.setItem('theme', darkMode.toString())
+    }
+    isRecover = false
+  },[darkMode])
+  */
+
   useEffect(() => {
     if(!isRecover){
       localStorage.setItem('language',language)
@@ -63,13 +73,6 @@ const ConfigProvider = ({ children }) => {
 
     isRecover = false
   },[language])
-
-  useEffect(() => {
-    if(!isRecoverTheme){
-      localStorage.setItem('theme', darkMode.toString())
-    }
-    isRecover = false
-  },[darkMode])
 
   const contextValue = {
     language,
