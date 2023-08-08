@@ -3,6 +3,8 @@ import "./scss/person_init.scss";
 import "./scss/post.scss";
 import "./scss/panel.scss";
 import './css/prism-theme.css'
+import './scss/darkmode.scss'
+
 import ConfigProvider from './components/config_provider'
 
 import type { AppProps } from 'next/app'

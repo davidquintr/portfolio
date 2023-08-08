@@ -21,14 +21,18 @@ const links = [
   { href: "/contact", text: {es : "Contacto", eng: "Contact"}, icon: faAddressBook },
 ];
 
+const LIGHT_MODE_TEXT = "lightMode"
+
 const NavBar = () => {
   // @ts-ignore
   const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
   const path = usePathname();
   const [headerTransparent, setHeaderTransparent] = useState(false);
   const headerClass = () => {
-    return headerTransparent ? "transparent" : "";
+    return headerTransparent ? " transparent" : "";
   };
+
+  let lightModeActive = darkMode ? "lightMode" : ""
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,33 +51,32 @@ const NavBar = () => {
           onClick={() => {
             setLanguage(language == "es" ? "en" : "es");
           }}
-          className="button-change"
+          className={`button-change ${lightModeActive}`}
         >
           {language == "es" ? "en" : "es"}
         </button>
         <button
-          style={{display: "none"}}
           onClick={() => {
             setDarkMode(!darkMode);
           }}
-          className="button-change"
+          className={`button-change ${lightModeActive}`}
         >
           <FontAwesomeIcon icon={darkMode ? faMoon : faSun}></FontAwesomeIcon>
         </button>
       </div>
-      <nav className={`nav nav-bar ${headerClass()}`}>
+      <nav  className={`nav nav-bar ${lightModeActive}${headerClass()} `}>
         {links.map((element, index) => {
           return (
             <Link
               key={index}
-              className={`button-link extended minimal ${
+              className={`button-link ${lightModeActive} extended minimal ${
                 element.href === path ? "active" : ""
               }`}
               href={element.href}
             >
               <FontAwesomeIcon
                 icon={element.icon}
-                className="fa-ssm color-blue"
+                className="fa-ssm"
               />
               <p>{language == "es" ? element.text.es : element.text.eng}</p>
             </Link>

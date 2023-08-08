@@ -5,6 +5,7 @@ import { GetStaticProps } from "next";
 import { useEffect, useState } from "react";
 import Panel from "./components/panel";
 import dynamic from "next/dynamic";
+import { useConfigContext } from "./components/config_provider";
 
 const blog = require("./assets/json/blog_published.json");
 const PageWrapper = dynamic(() => import("./components/page_wrapper"));
@@ -20,6 +21,9 @@ export const getStaticProps: GetStaticProps = async () => {
 export default function Blog() {
   const [articlesBlog, setArticlesBlog] = useState([]);
   const [filters, setFilters] = useState([])
+  // @ts-ignore
+  const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
+  let lightModeActive = darkMode ? "lightMode" : ""
 
   const collectFilters = () =>{
     let collectedTags = []
@@ -62,7 +66,7 @@ export default function Blog() {
       <article className="article article-base extended">
         <NavBar></NavBar>
         <PageWrapper>
-          <section className="section section-blog">
+          <section className={`section section-blog ${lightModeActive}`}>
             <div className="section-title">
               <h2>Blog</h2>
             </div>

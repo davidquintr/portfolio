@@ -4,13 +4,14 @@ import davidquint from "../assets/img/davidquint-photo.jpg";
 import davidquintBlur from "../assets/img/davidquint-photo-blur.jpg";
 import tech from "../assets/json/technologies.json";
 import { useConfigContext } from "./config_provider";
+import { faCropSimple } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function PersonInit() {
   // @ts-ignore
   const origin = "/portfolio"
     // @ts-ignore
-    const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
+  const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
 
   return (
     <>
@@ -51,3 +52,4 @@ export default function PersonInit() {
     </>
   );
 }
+

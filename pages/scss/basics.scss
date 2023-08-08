@@ -11,6 +11,23 @@ $color-green: #26492e65;
 $color-red: #49262665;
 
 
+$light-internal: #eaeaea;
+$light-items: #b6b6b6;
+$light-darkblue: #2149c1;
+$light-boldblue: #47577c;
+$light-bluelight: #5b87ff;
+$light-bluegray: #c0d1ff;
+$light-gray: #c2c2c2;
+
+
 $linear-gradient-bg: linear-gradient(transparent, $color-darkblue);
+$linear-gradient-bg-light: linear-gradient(transparent,$light-bluelight);
+
 
 $br-default: 10px;
+
+.nav{
+    animation-name: nav;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+}

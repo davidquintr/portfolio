@@ -23,6 +23,7 @@ export default function Projects() {
   const [project, setProject] = useState([]);
   const [showArchive, setShowArchive] = useState(false)
   const buttonArchive = useRef()
+  let lightModeActive = darkMode ? "lightMode" : ""
 
   useEffect(() => {
     let orderProject = pureProject.sort((a, b) =>
@@ -56,10 +57,10 @@ export default function Projects() {
       <article className="article article-base extended">
         <NavBar></NavBar>
         <PageWrapper>
-          <section className="section section-projects">
+          <section className={`section section-projects ${lightModeActive}`}>
             <div className="section-title">
               <h2>{language == "es" ? "Proyectos" :  "Projects"}</h2>
-              <button onClick={onArchiveClick} ref={buttonArchive} className={`button-link extended minimal archive ${showArchive ? "active" : ""}`}>
+              <button onClick={onArchiveClick} ref={buttonArchive} className={`button-link extended minimal archive ${lightModeActive} ${showArchive ? " active" : ""}`}>
                 <FontAwesomeIcon icon={faArchive}></FontAwesomeIcon>
                 <p>{language == "es" ? "Archivo" :  "Archive"}</p>
               </button>

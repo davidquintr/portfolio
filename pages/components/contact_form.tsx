@@ -9,7 +9,9 @@ import AlertElement from "./alert_element";
 
 const FormContact = () => {
     // @ts-ignore
-    const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
+  const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
+  let lightModeActive = darkMode ? "lightMode" : ""
+
   const form: any = React.createRef();
   const [isEmailSent, setIsEmailSent] = useState(null);
   const buttonSend: LegacyRef<HTMLButtonElement> = React.createRef();
@@ -46,7 +48,7 @@ const FormContact = () => {
 
   return (
     <>
-      <section className="section section-contact">
+      <section className={`section section-contact ${lightModeActive}`}>
         <div className="section-title">
           <h2>{language == "es" ? "Contacto" : "Contact"}</h2>
         </div>
@@ -54,7 +56,7 @@ const FormContact = () => {
           <p className="text-center">
             {language == "es" ? "Si estás buscando ayuda con un proyecto o necesitas asistencia, ¡Puedes contactarme!" : "If you are looking for help with a project or need assistance, you can contact me!"}
           </p>
-          <form className="contact-contain" ref={form} onSubmit={sendEmail}>
+          <form className={`contact-contain ${lightModeActive}`} ref={form} onSubmit={sendEmail}>
             <div className="contact-elements ">
               <div className="contact-elements-middle ">
                 <input
@@ -82,19 +84,19 @@ const FormContact = () => {
                 ></input>
                 <textarea
                   className="input-contact subject "
-                  placeholder={language == "es" ? "Asunto" :"Subject"}
+                  placeholder={language == "es" ? "Asunto" : "Subject"}
                   name="message"
                   rows={4}
                   required
                 ></textarea>
-                <button ref={buttonSend} type="submit" className="button-link extended submit">
+                <button ref={buttonSend} type="submit" className={`button-link ${lightModeActive} extended submit`}>
                   <FontAwesomeIcon icon={faPaperPlane} className="fa-sm" />
                   <p>{language == "es" ? "Enviar mensaje" :"Send Message"}</p>
                 </button>
                 {isEmailSent == true ? (
-                  <p className="plane-text send">{language == "es" ? "Enviado" :"Sent"}</p>
+                  <p className={`plane-text ${lightModeActive} send`}>{language == "es" ? "Enviado" :"Sent"}</p>
                 ) : isEmailSent == false ? (
-                  <p className="plane-text no-send">
+                  <p className={`plane-text ${lightModeActive} no-send`}>
                     {language == "es" ? "Algo salió mal, intente más tarde..." :"Something went wrong, try later..."}
                   </p>
                 ) : null}

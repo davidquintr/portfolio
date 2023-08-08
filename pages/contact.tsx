@@ -7,8 +7,9 @@ import { useConfigContext } from "./components/config_provider";
 
 
 export default function Contact() {
-    // @ts-ignore
-    const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
+  // @ts-ignore
+  const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
+  
   return (
     <>
       <Head>
