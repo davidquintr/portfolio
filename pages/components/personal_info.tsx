@@ -42,7 +42,7 @@ export default function PersonalInfo() {
               detail={personal?.mail}
             ></PersonalItem>
             <PersonalItem
-              title={age}
+              title={translate.age}
               url={""}
               detail={age.toString()}
             ></PersonalItem>
