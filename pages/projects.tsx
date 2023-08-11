@@ -40,19 +40,20 @@ export default function Projects() {
     <>
       <Head>
         <title>{language == "es" ? "Proyectos" :  "Projects"}</title>
+
+        <meta name="description" content="Projects I've personally worked on during my time in university."></meta>
+        <meta property="og:url" content="https://davidquintr.github.io/portfolio/"></meta>
+        <meta property="og:type" content="website"></meta>
         <meta property="og:title" content="Portfolio | Projects"></meta>
-        <meta
-          property="og:description"
-          content="Frontend developer portfolio."
-        ></meta>
-        <meta
-          property="og:image"
-          content="https://davidquintr.github.io/portfolio/thumbnail.png"
-        ></meta>
-        <meta
-          property="og:url"
-          content="https://davidquintr.github.io/portfolio/"
-        ></meta>
+        <meta property="og:description" content="Projects I've personally worked on during my time in university."></meta>
+        <meta property="og:image" content="https://davidquintr.github.io/portfolio/thumbnail.png"></meta>
+
+        <meta name="twitter:card" content="summary_large_image"></meta>
+        <meta property="twitter:url" content="https://davidquintr.github.io/portfolio/"></meta>
+        <meta name="twitter:title" content="Portfolio | Projects"></meta>
+        <meta name="twitter:description" content="Projects I've personally worked on during my time in university."></meta>
+        <meta name="twitter:image" content="https://davidquintr.github.io/portfolio/thumbnail.png"></meta>
+
       </Head>
       <article className="article article-base extended">
         <NavBar></NavBar>

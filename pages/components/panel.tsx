@@ -45,17 +45,15 @@ const Panel = ({isProject, pureArray, setElement, element, pureFilter}) => {
   
   function handleSearch(e) {
     window.scrollTo(window.scrollX, panelPos)
-
     let value = e.target.value.toLowerCase();
-
     let elementFiltered = isProject ? pureArray.filter(
       (p) =>
         p.title.toLowerCase().includes(value) ||
-        p.details.toLowerCase().includes(value)
+        language == "es" ? p.details.es.toLowerCase().includes(value) : p.details.eng.toLowerCase().includes(value)
     ) : pureArray.filter(
         (p) =>
-          p.title.toLowerCase().includes(value) ||
-          p.description.toLowerCase().includes(value)
+          language == "es" ? p.title.es.toLowerCase().includes(value) : p.title.eng.toLowerCase().includes(value) ||
+          language == "es" ? p.description.es.toLowerCase().includes(value) : p.description.eng.toLowerCase().includes(value)
       );
     
     console.log(isProject)
