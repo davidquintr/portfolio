@@ -100,17 +100,6 @@
     "archive" : "true"
   },
   {
-    "img": "./project/mitiendita.png",
-    "blur": "./project/mitiendita-blur.png",
-    "title": "Mi Tiendita",
-    "details": {"es": "Creado para Metodología de la Programación en 1S-2021, es un sistema de control de inventario y facturación, desarrollado con C/C++."," eng": "Created for Programming Methodology in 1S-2021, is a system of inventory control and billing. Developed with C/C++."},
-    "tech": "cpp",
-    "urlCode": "https://github.com/davidquintr/brain-3d",
-    "urlView": "",
-    "urlDetails": "",
-    "archive" : "true"
-  },
-  {
     "img": "./project/wareadernext.png",
     "blur": "./project/wareadernext-blur.png",
     "title": "WhatsApp Reader Next",
@@ -128,6 +117,17 @@
     "details": {"es": "Proyecto con otras personas, esta es la presentación de nuestros servicios, tecnologías y contacto. Podemos hacer realidad tus ideas de aplicaciones. :)","eng" : "Project with other people, this is the presentation of our services, technologies and contact. We can come true your software ideas. :)"},
     "tech": "next twind",
     "urlCode": "",
+    "urlView": "https://logicnexus.vercel.app/",
+    "urlDetails": "",
+    "archive" : "false"
+  },
+  {
+    "img": "./project/simple-documentation.png",
+    "blur": "./project/simple-documentation-blur.png",
+    "title": "Simple Documentation",
+    "details": {"es": "Proyecto personal, funciona para crear documentación sencilla a través de Markdown. Puede interpretar líneas de código y no requiere recarga de la página para cambiar de artículo.","eng" : "Personal project, to create simple documentation through Markdown. It can interpreats code lines and does not requires page reload for change of article."},
+    "tech": "js twind css",
+    "urlCode": "https://davidquintr.github.io/simple-documentation/",
     "urlView": "https://logicnexus.vercel.app/",
     "urlDetails": "",
     "archive" : "false"
