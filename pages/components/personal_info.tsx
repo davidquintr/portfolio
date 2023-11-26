@@ -18,7 +18,7 @@ export default function PersonalInfo() {
     birth: language == "es" ? "Cumpleaños" : "Birthday",
     country: language == "es" ? "País" : "Country",
     contact: language == "es" ? "Contáctame" : "Contact me",
-    cv : language == "es" ? "CV David Quintanilla-ES.pdf" : "CV David Quintanilla-EN.pdf",
+    cv : `CV David Quintanilla-${language.toUpperCase()}`,
     open: language == "es" ? "Abrir" : "Open"
   }
 
@@ -40,11 +40,6 @@ export default function PersonalInfo() {
               title={"Email"}
               url={""}
               detail={personal?.mail}
-            ></PersonalItem>
-            <PersonalItem
-              title={translate.age}
-              url={""}
-              detail={age.toString()}
             ></PersonalItem>
             <PersonalItem
               title={translate.birth}
