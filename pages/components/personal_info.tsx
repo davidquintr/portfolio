@@ -18,7 +18,7 @@ export default function PersonalInfo() {
     birth: language == "es" ? "Cumpleaños" : "Birthday",
     country: language == "es" ? "País" : "Country",
     contact: language == "es" ? "Contáctame" : "Contact me",
-    cv : `CV David Quintanilla-${language.toUpperCase()}`,
+    cv : `CV David Quintanilla-${language.toUpperCase()}.pdf`,
     open: language == "es" ? "Abrir" : "Open"
   }
 
