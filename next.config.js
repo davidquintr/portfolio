@@ -1,11 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    domains: ['davidquintr.github.io'],
-    unoptimized: true
-  },
-  basePath: '/portfolio'
-}
+const nextConfig = {}
 
 module.exports = nextConfig
