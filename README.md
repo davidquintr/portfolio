@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+    <img src="./public/davidquint-photo.png"  width="128px"></img>
+    <h1>David Quintanilla - Portfolio</h1>
+    <p>Collection of all my progress in System Engineering</p>
+    <a href="https://github.com/davidquintr/portfolio/blob/main/LICENSE">
+        <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
+    </a>
+</div>
 
-## Getting Started
+<br>
 
-First, run the development server:
+<div align="center">
+    <p>Used technologies</p>
+    <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next JS">
+    <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SASS">
+    <img src="https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white" alt="Adobe Photoshop">
+    <img src="https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white" alt="Adobe Illustrator">
+    <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white">
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Free use
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I able the fork of my portfolio, obviously leaving credits and direct link to my repository.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Details
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This is a collection of all my progress in my college career and self learn, this represents my peak as developer and designer, also the sense of everything related to Software Development.
 
-## Learn More
+Also, a blog where i will be commenting all my progress in long projects or tiny functions that can be interesting.
 
-To learn more about Next.js, take a look at the following resources:
+I open to work. :D
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Local install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I uses a series of packages for enhance my portfolio.
+For all this, `npm install` and continue for each item.
 
-## Deploy on Vercel
+## To do
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. ☀️ Switch to Light Mode. (It's almost ready, but it's not what I expected. When it surpasses my standards, I will publish it).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Completed
+
+1. 📕 Blog for long projects.
+2. 📘 Introduce `EXPEDOC`, actually im not abled to put anything.
+3. 🔎 Search in `Project` tab.
+4. 🇳🇮 Switch to Spanish as Language.
+
+I will do this in this year, i promise.
+
+## View online
+
+<div align="center">
+    <p>You can see the result online:</p>
+    <a href="https://davidquintr.github.io/portfolio/">
+        <img src="./public/portfolio-icon.png" height="48">
+    </a>
+</div>
