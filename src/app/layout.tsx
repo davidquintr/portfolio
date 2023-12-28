@@ -18,15 +18,15 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex flex-col font-poppins dark:bg-dark-bg min-h-screen">
         <Header />
-        <nav className="max-w-[1120px] w-full mx-auto">
+        <nav className="max-w-[1360px] w-full mx-auto">
           <div className="px-4 sm:mx-4 flex gap-2.5 justify-center bg-dark-box rounded-lg my-2.5 py-2">
             <Navigation />
           </div>
         </nav>
-        <main className="max-w-[1120px] w-full px-2 sm:px-4 mx-auto flex-grow">
+        <main className="max-w-[1360px] w-full px-2 sm:px-4 mx-auto flex-grow">
           {children}
         </main>
-        <Footer></Footer>
+        <Footer />
       </body>
     </html>
   );

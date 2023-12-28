@@ -8,7 +8,7 @@ import {
   SiNextdotjs,
   SiDotnet,
 } from "react-icons/si";
-import TechStack from "../app/types/TypeTechStack";
+import { TechStack } from "../types/TypeTechStack";
 
 const techStack: TechStack = {
   php: {

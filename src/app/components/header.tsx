@@ -4,8 +4,8 @@ import techStack from "../sources/techStack";
 
 export default function Header() {
   return (
-    <header className="max-w-[1120px] w-full mx-auto">
-      <div className="flex-col border sm:mx-4 border-dark-blue-200 rounded-t-lg p-2.5 sm:p-5 bg-dark-gradient-bg flex justify-center gap-6 min-h-[240px] items-center sm:flex-row">
+    <header className="max-w-[1360px] w-full mx-auto">
+      <div className="flex-col border sm:mx-4 bg-black border-dark-blue-200 rounded-t-lg p-2.5 sm:p-5 bg-dark-gradient-bg flex justify-center gap-6 min-h-[240px] items-center sm:flex-row">
         <Image
           className="rounded-full"
           src="/davidquint-photo.png"
