@@ -7,7 +7,22 @@ import {
   SiReact,
   SiNextdotjs,
   SiDotnet,
+  SiAdobeillustrator,
+  SiAdobephotoshop,
+  SiJavascript,
+  SiCsharp,
+  SiGtk,
+  SiUnity,
+  SiKotlin,
+  SiVisualbasic,
+  SiMicrosoftsqlserver,
+  SiMysql,
+  SiCplusplus,
+  SiGit,
 } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
+import { IoLogoJavascript } from "react-icons/io";
+
 import { TechStack } from "../types/TypeTechStack";
 
 const techStack: TechStack = {
@@ -33,12 +48,12 @@ const techStack: TechStack = {
   },
   sass: {
     text: "SASS",
-    show: true,
+    show: false,
     icon: SiSass,
   },
   react: {
     text: "React",
-    show: true,
+    show: false,
     icon: SiReact,
   },
   nextjs: {
@@ -50,6 +65,66 @@ const techStack: TechStack = {
     text: ".NET",
     show: true,
     icon: SiDotnet,
+  },
+  illustrator: {
+    text: "Adobe Illustrator",
+    show: false,
+    icon: SiAdobeillustrator,
+  },
+  photoshop: {
+    text: "Adobe Photoshop",
+    show: false,
+    icon: SiAdobephotoshop,
+  },
+  javascript: {
+    text: "JavaScript",
+    show: true,
+    icon: IoLogoJavascript,
+  },
+  csharp: {
+    text: "C#",
+    show: false,
+    icon: TbBrandCSharp,
+  },
+  gtk: {
+    text: "GTK",
+    show: false,
+    icon: SiGtk,
+  },
+  unity: {
+    text: "Unity",
+    show: false,
+    icon: SiUnity,
+  },
+  kotlin: {
+    text: "Kotlin",
+    show: false,
+    icon: SiKotlin,
+  },
+  visualbasic: {
+    text: "Visual Basic",
+    show: false,
+    icon: SiVisualbasic,
+  },
+  sqlserver: {
+    text: "Microsoft SQL Server",
+    show: false,
+    icon: SiMicrosoftsqlserver,
+  },
+  mysql: {
+    text: "MySQL",
+    show: true,
+    icon: SiMysql,
+  },
+  cplusplus: {
+    text: "C++",
+    show: false,
+    icon: SiCplusplus,
+  },
+  git: {
+    text: "Git",
+    show: true,
+    icon: SiGit,
   },
 };
 

@@ -58,7 +58,7 @@ const en = {
       blog_js_jquery: {
         title: "Blog - JavaScript / JQuery",
         description: "Created for Web Applications Development in 2S-2022",
-        techs: [techStack.php],
+        techs: [techStack.html, techStack.css],
         gallery: ["/blog-1.png"],
         sourceLink: "https://github.com/davidquintr/whatsapp-reader.github.io",
         onlineLink: "https://davidquintr.github.io/teamfactorizacion-blog/",
@@ -68,7 +68,7 @@ const en = {
         title: "BrainView - 3D",
         description:
           "Created as commission - Basic view of limited points of the brain, internal and external.",
-        techs: [techStack.php],
+        techs: [techStack.csharp, techStack.unity],
         gallery: ["/brainview-1.png"],
         sourceLink: "https://github.com/davidquintr/brain-3d",
         onlineLink: "",
@@ -78,7 +78,13 @@ const en = {
         title: "Expediente Docente",
         description:
           "My first job experience in Software Development. This works like a teacher manager or internal social media for a college, including self system of feedback and a historical register of teachers.",
-        techs: [techStack.php],
+        techs: [
+          techStack.dotnet,
+          techStack.csharp,
+          techStack.html,
+          techStack.css,
+          techStack.sqlserver,
+        ],
         gallery: ["/expedoc-1.png"],
         sourceLink: "",
         onlineLink: "",
@@ -89,7 +95,12 @@ const en = {
         title: "Old Portfolio",
         description:
           "Created for collection of my projects in the development of my universitary career and self-learn.",
-        techs: [techStack.php],
+        techs: [
+          techStack.react,
+          techStack.sass,
+          techStack.photoshop,
+          techStack.illustrator,
+        ],
         gallery: ["/portafolio-1.png"],
         sourceLink: "https://github.com/davidquintr/old-portfolio",
         onlineLink: "https://davidquintr.github.io/old-portfolio/",
@@ -99,7 +110,7 @@ const en = {
         title: "Simple Documentation",
         description:
           "Personal project, to create simple documentation through Markdown. It can interpreats code lines and does not requires page reload for change of article.",
-        techs: [techStack.php],
+        techs: [techStack.html, techStack.css, techStack.javascript],
         gallery: ["/simple-documentation-1.png"],
         sourceLink: "https://github.com/davidquintr/simple-documentation",
         onlineLink: "https://davidquintr.github.io/simple-documentation/",
@@ -109,7 +120,7 @@ const en = {
         title: "Taskitty",
         description:
           "Created for Mobile Applications Development I in 1S-2022, developed with Kotlin in Android Studio.",
-        techs: [techStack.php],
+        techs: [techStack.kotlin, techStack.photoshop, techStack.illustrator],
         gallery: ["/taskitty-1.png"],
         sourceLink: "https://github.com/VarEros/TasKitty",
         onlineLink: "https://poncka.github.io/tasKitty-web.github.io/",

@@ -24,18 +24,20 @@ export default function Project(project: IProject) {
         ))}
       </div>
       <div className="flex flex-col justify-between bg-dark-gradient-bg flex-1 py-2.5 px-5">
-        <div>
-          <h2 className="text-dark-blue-100 font-bold text-3xl my-2">
-            {project.title}
-          </h2>
-          <p className="text-dark-gray">{project.description}</p>
-          <div className="my-3.5">
-            {project.techs.map((tech, index) => (
-              <tech.icon size="36" key={index} />
-            ))}
+        <div className="flex gap-1 my-3.5">
+          {project.techs.map((tech, index) => (
+            <tech.icon size="36" key={index} />
+          ))}
+        </div>
+        <div className="flex flex-col flex-1 justify-between">
+          <div>
+            <h2 className="text-dark-blue-100 font-bold text-3xl my-2">
+              {project.title}
+            </h2>
+            <p className="text-dark-gray">{project.description}</p>
           </div>
         </div>
-        <div className="flex justify-center gap-1">
+        <div className="flex justify-center gap-1 mt-6">
           <ExternalLink
             icon={faEye}
             link={project.onlineLink}

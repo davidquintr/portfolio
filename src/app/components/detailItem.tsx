@@ -13,7 +13,7 @@ export default function DetailItem({ title, description, link }: IdetailItem) {
   return (
     <div className="bg-dark-items rounded-lg flex mb-1.5 h-12  items-center justify-between px-2.5 border-dark-blue-200 border-b">
       <h2 className="text-dark-blue-100 font-bold">{title}</h2>
-      {description != "" && <p className="text-sm">{description}</p>}
+      {description != "" && <p>{description}</p>}
       {link != "" && (
         <Link
           className="flex items-center gap-1 transition-all bg-dark-blue-500 py-2 px-3 rounded-full hover:bg-dark-blue-200 active:scale-95"
