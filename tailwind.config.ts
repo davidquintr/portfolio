@@ -14,7 +14,10 @@ const config: Config = {
         fira_code: ["Fira Code"],
       },
       backgroundImage: {
-        "dark-gradient-bg": "linear-gradient(transparent, #0c1738)",
+        "dark-gradient": "linear-gradient(transparent, #0c1738)",
+        "light-gradient": "linear-gradient(transparent, #c0e6ff)",
+        "light-border-gradient":
+          "linear-gradient(0.25turn, transparent, #a3daff, transparent)",
         "dark-border-gradient":
           "linear-gradient(0.25turn, transparent, #a3bbff, transparent)",
       },
@@ -33,6 +36,19 @@ const config: Config = {
           red: "#49262665",
           green: "#26492e6",
           gray: "#d0d0d0",
+        },
+        light: {
+          black: "#333333",
+          gray: "#efefef",
+          bg: "#eaeaea",
+          blue: {
+            100: "#c0e6ff",
+            200: "#a3daff",
+            300: "#5bdaff",
+            400: "#11a5e0",
+            500: "#0b6c93",
+            600: "#07465f",
+          },
         },
       },
     },

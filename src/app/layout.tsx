@@ -16,10 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex flex-col font-poppins dark:bg-dark-bg min-h-screen">
+      <body className="flex flex-col font-poppins bg-light-bg dark:bg-dark-bg min-h-screen">
         <Header />
         <nav className="max-w-[1360px] w-full mx-auto">
-          <div className="px-4 sm:mx-4 flex gap-2.5 justify-center bg-dark-box rounded-lg my-2.5 py-2">
+          <div className="px-4 sm:mx-4 flex gap-2.5 justify-center bg-white dark:bg-dark-box rounded-lg my-2.5 py-2">
             <Navigation />
           </div>
         </nav>

@@ -5,46 +5,52 @@ import {
   SiHtml5,
   SiSass,
   SiReact,
-  SiNextdotjs,
   SiDotnet,
   SiAdobeillustrator,
   SiAdobephotoshop,
-  SiJavascript,
-  SiCsharp,
   SiGtk,
   SiUnity,
-  SiKotlin,
   SiVisualbasic,
   SiMicrosoftsqlserver,
   SiMysql,
   SiCplusplus,
   SiGit,
+  SiMarkdown,
 } from "react-icons/si";
-import { TbBrandCSharp } from "react-icons/tb";
+import { TbBrandCSharp, TbBrandKotlin, TbBrandNextjs } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
-
 import { TechStack } from "../types/TypeTechStack";
 
 const techStack: TechStack = {
-  php: {
-    text: "PHP",
+  html: {
+    text: "HTML5",
     show: true,
-    icon: SiPhp,
-  },
-  tailwind: {
-    text: "TailwindCSS",
-    show: true,
-    icon: SiTailwindcss,
+    icon: SiHtml5,
   },
   css: {
     text: "CSS3",
     show: true,
     icon: SiCss3,
   },
-  html: {
-    text: "HTML5",
+  javascript: {
+    text: "JavaScript",
     show: true,
-    icon: SiHtml5,
+    icon: IoLogoJavascript,
+  },
+  nextjs: {
+    text: "Next.js",
+    show: true,
+    icon: TbBrandNextjs,
+  },
+  dotnet: {
+    text: ".NET",
+    show: true,
+    icon: SiDotnet,
+  },
+  php: {
+    text: "PHP",
+    show: true,
+    icon: SiPhp,
   },
   sass: {
     text: "SASS",
@@ -56,16 +62,6 @@ const techStack: TechStack = {
     show: false,
     icon: SiReact,
   },
-  nextjs: {
-    text: "Next.js",
-    show: true,
-    icon: SiNextdotjs,
-  },
-  dotnet: {
-    text: ".NET",
-    show: true,
-    icon: SiDotnet,
-  },
   illustrator: {
     text: "Adobe Illustrator",
     show: false,
@@ -75,11 +71,6 @@ const techStack: TechStack = {
     text: "Adobe Photoshop",
     show: false,
     icon: SiAdobephotoshop,
-  },
-  javascript: {
-    text: "JavaScript",
-    show: true,
-    icon: IoLogoJavascript,
   },
   csharp: {
     text: "C#",
@@ -99,7 +90,7 @@ const techStack: TechStack = {
   kotlin: {
     text: "Kotlin",
     show: false,
-    icon: SiKotlin,
+    icon: TbBrandKotlin,
   },
   visualbasic: {
     text: "Visual Basic",
@@ -125,6 +116,16 @@ const techStack: TechStack = {
     text: "Git",
     show: true,
     icon: SiGit,
+  },
+  markdown: {
+    text: "Markdown",
+    show: false,
+    icon: SiMarkdown,
+  },
+  tailwind: {
+    text: "TailwindCSS",
+    show: true,
+    icon: SiTailwindcss,
   },
 };
 

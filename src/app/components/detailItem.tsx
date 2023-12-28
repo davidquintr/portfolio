@@ -11,17 +11,21 @@ interface IdetailItem {
 
 export default function DetailItem({ title, description, link }: IdetailItem) {
   return (
-    <div className="bg-dark-items rounded-lg flex mb-1.5 h-12  items-center justify-between px-2.5 border-dark-blue-200 border-b">
-      <h2 className="text-dark-blue-100 font-bold">{title}</h2>
-      {description != "" && <p>{description}</p>}
+    <div className="bg-light-gray dark:bg-dark-items rounded-lg flex mb-1.5 h-12  items-center justify-between px-2.5 border-light-blue-200 dark:border-dark-blue-200 border-b">
+      <h2 className="text-light-blue-500 dark:text-dark-blue-100 font-bold">
+        {title}
+      </h2>
+      {description != "" && (
+        <p className="dark:text-white text-light-black">{description}</p>
+      )}
       {link != "" && (
         <Link
-          className="flex items-center gap-1 transition-all bg-dark-blue-500 py-2 px-3 rounded-full hover:bg-dark-blue-200 active:scale-95"
+          className="flex items-center gap-1 transition-all dark:bg-dark-blue-500 py-2 px-3 rounded-full dark:hover:bg-dark-blue-200 active:scale-95 text-light-blue-500 bg-light-blue-100 hover:bg-light-blue-200 dark:text-dark-blue-100"
           href={link}
           target="_blank"
         >
-          <FontAwesomeIcon icon={faEye} className="size-5 text-dark-blue-100" />
-          <span className="text-dark-blue-100">{en.detail_item.open}</span>
+          <FontAwesomeIcon icon={faEye} className="size-5" />
+          <span>{en.detail_item.open}</span>
         </Link>
       )}
     </div>

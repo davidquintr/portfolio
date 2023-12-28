@@ -1,4 +1,4 @@
-import techStack from "./techStack";
+import ProjectsEn from "./projects_en";
 
 const en = {
   author: "David Quintanilla",
@@ -20,7 +20,7 @@ const en = {
     contact: "Contact",
   },
   footer: {
-    credits: "©2023 Designed and Programmed by David Quintanilla",
+    credits: "©2023-2024 Designed and Programmed by David Quintanilla",
     source: "View Source",
   },
   home: {
@@ -54,78 +54,23 @@ const en = {
     onlineText: "Watch Online",
     sourceText: "View Source",
     moreText: "More Info",
-    list: {
-      blog_js_jquery: {
-        title: "Blog - JavaScript / JQuery",
-        description: "Created for Web Applications Development in 2S-2022",
-        techs: [techStack.html, techStack.css],
-        gallery: ["/blog-1.png"],
-        sourceLink: "https://github.com/davidquintr/whatsapp-reader.github.io",
-        onlineLink: "https://davidquintr.github.io/teamfactorizacion-blog/",
-        moreLink: "",
-      },
-      brain_view: {
-        title: "BrainView - 3D",
-        description:
-          "Created as commission - Basic view of limited points of the brain, internal and external.",
-        techs: [techStack.csharp, techStack.unity],
-        gallery: ["/brainview-1.png"],
-        sourceLink: "https://github.com/davidquintr/brain-3d",
-        onlineLink: "",
-        moreLink: "",
-      },
-      expedoc: {
-        title: "Expediente Docente",
-        description:
-          "My first job experience in Software Development. This works like a teacher manager or internal social media for a college, including self system of feedback and a historical register of teachers.",
-        techs: [
-          techStack.dotnet,
-          techStack.csharp,
-          techStack.html,
-          techStack.css,
-          techStack.sqlserver,
-        ],
-        gallery: ["/expedoc-1.png"],
-        sourceLink: "",
-        onlineLink: "",
-        moreLink:
-          "https://davidquintr.github.io/portfolio/blog/expedoc-development",
-      },
-      old_portfolio: {
-        title: "Old Portfolio",
-        description:
-          "Created for collection of my projects in the development of my universitary career and self-learn.",
-        techs: [
-          techStack.react,
-          techStack.sass,
-          techStack.photoshop,
-          techStack.illustrator,
-        ],
-        gallery: ["/portafolio-1.png"],
-        sourceLink: "https://github.com/davidquintr/old-portfolio",
-        onlineLink: "https://davidquintr.github.io/old-portfolio/",
-        moreLink: "",
-      },
-      simple_documentation: {
-        title: "Simple Documentation",
-        description:
-          "Personal project, to create simple documentation through Markdown. It can interpreats code lines and does not requires page reload for change of article.",
-        techs: [techStack.html, techStack.css, techStack.javascript],
-        gallery: ["/simple-documentation-1.png"],
-        sourceLink: "https://github.com/davidquintr/simple-documentation",
-        onlineLink: "https://davidquintr.github.io/simple-documentation/",
-        moreLink: "",
-      },
-      taskitty: {
-        title: "Taskitty",
-        description:
-          "Created for Mobile Applications Development I in 1S-2022, developed with Kotlin in Android Studio.",
-        techs: [techStack.kotlin, techStack.photoshop, techStack.illustrator],
-        gallery: ["/taskitty-1.png"],
-        sourceLink: "https://github.com/VarEros/TasKitty",
-        onlineLink: "https://poncka.github.io/tasKitty-web.github.io/",
-        moreLink: "",
-      },
+    list: ProjectsEn,
+  },
+  blog: {
+    title: "Blog",
+  },
+  contact: {
+    title: "Contact",
+    cta: "If you are looking for help with a project or need assistance, you can contact me!",
+    direct_comm:
+      "Do you want more direct communication? There's another way to contact me:",
+    form: {
+      names: "First Name and Last Name",
+      email: "Email",
+      message: "Message",
+      success: "Sent",
+      fail: "Something went wrong, try later...",
+      send: "Send Message",
     },
   },
 };

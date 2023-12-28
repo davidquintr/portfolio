@@ -10,12 +10,12 @@ export default function BoxContent({
 }: IboxContent & { children: React.ReactNode }) {
   return (
     <section
-      className={`${className} rounded-lg bg-dark-box border border-dark-blue-200 flex flex-col`}
+      className={`${className} bg-white rounded-lg border-light-blue-200 dark:bg-dark-box border dark:border-dark-blue-200 flex flex-col`}
     >
-      <h1 className=" my-2.5 text-center font-bold text-2xl text-dark-blue-100">
+      <h1 className=" my-2.5 text-center font-bold text-2xl text-light-blue-400 dark:text-dark-blue-100">
         {title}
       </h1>
-      <span className=" h-[1px] bg-dark-border-gradient"></span>
+      <span className=" h-[1px] bg-light-border-gradient dark:bg-dark-border-gradient"></span>
       <div className="m-5">{children}</div>
     </section>
   );
