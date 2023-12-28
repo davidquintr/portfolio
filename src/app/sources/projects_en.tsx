@@ -5,7 +5,7 @@ const ProjectsEn = {
     title: "Blog - JavaScript / JQuery",
     description: "Created for Web Applications Development in 2S-2022",
     techs: [techs.html, techs.css],
-    gallery: ["/blog-1.png"],
+    gallery: ["/blog-1.png", "/expedoc-1.png"],
     sourceLink: "https://github.com/davidquintr/whatsapp-reader.github.io",
     onlineLink: "https://davidquintr.github.io/teamfactorizacion-blog/",
     moreLink: "",

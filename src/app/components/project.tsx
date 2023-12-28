@@ -12,7 +12,7 @@ export default function Project(project: IProject) {
       <div className="carousel">
         {project.gallery.map((image, index) => (
           <Image
-            className="w-full carousel-item aspect-video"
+            className="w-full carousel-item aspect-video scroll snap-always"
             alt={`${project.title} - ${index}`}
             width={480}
             height={270}

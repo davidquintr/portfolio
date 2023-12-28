@@ -23,7 +23,7 @@ export default function RootLayout({
             <Navigation />
           </div>
         </nav>
-        <main className="max-w-[1360px] w-full px-2 sm:px-4 mx-auto flex-grow">
+        <main className="max-w-[1360px] w-full sm:px-4 mx-auto flex-grow">
           {children}
         </main>
         <Footer />

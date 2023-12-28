@@ -8,11 +8,11 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 export default function Contact() {
   return (
     <BoxContent title={en.contact.title} className="">
-      <div className="grid grid-cols-6 md:mx-10">
-        <p className="col-span-6 text-center mb-5 text-light-black dark:text-dark-gray">
+      <div className="grid md:grid-cols-6 md:mx-10">
+        <p className="md:col-span-6 text-center mb-5 text-light-black dark:text-dark-gray">
           {en.contact.cta}
         </p>
-        <form className="col-span-4 md:px-[10%]">
+        <form className="md:col-span-4 md:px-[5%]">
           <div className="flex flex-col mb-2">
             <label className="hidden">{en.contact.form.names}</label>
             <input
@@ -41,7 +41,7 @@ export default function Contact() {
             <span>{en.contact.form.send}</span>
           </button>
         </form>
-        <div className="justify-center col-span-2">
+        <div className="justify-center md:col-span-2">
           <p className="text-balance text-center my-4 dark:text-dark-gray">
             {en.contact.direct_comm}
           </p>
