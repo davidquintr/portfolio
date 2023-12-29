@@ -48,6 +48,7 @@ export default function Contact() {
           <div className="flex justify-center gap-2.5">
             {external.social_media.map((media, index) => (
               <Link
+                key={index}
                 target="_blank"
                 href={media.link}
                 className="dark:bg-dark-blue-500 dark:hover:bg-dark-blue-200 bg-light-blue-400 flex justify-center items-center p-3 text-white hover:bg-light-blue-500 active:scale-95 transition-all rounded-full"

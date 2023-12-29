@@ -19,6 +19,7 @@ export default function Projects() {
               sourceLink={project.sourceLink}
               moreLink={project.moreLink}
               onlineLink={project.onlineLink}
+              index={index}
             ></Project>
           );
         })}

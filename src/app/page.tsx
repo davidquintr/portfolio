@@ -13,7 +13,10 @@ export default function Home() {
           </p>
         ))}
       </BoxContent>
-      <BoxContent className="lg:col-span-2" title={en.home.personal_info.title}>
+      <BoxContent
+        className="lg:col-span-2 animate-delay-100"
+        title={en.home.personal_info.title}
+      >
         <DetailItem
           title={en.detail_item.emailText}
           description={en.email}

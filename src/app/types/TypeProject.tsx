@@ -8,6 +8,7 @@ type IProject = {
   sourceLink: string;
   moreLink: string;
   onlineLink: string;
+  index: number;
 };
 
 export default IProject;
