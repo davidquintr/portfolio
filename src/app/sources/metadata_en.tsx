@@ -1,38 +1,49 @@
 const PAGE_PREFIX = "DavidQuint's Portfolio";
 const PAGE_DESCRIPTION =
   "Hello! I'm David Quintanilla Ruiz, a programmer who also dabbles in the world of design. I consider myself a fast learner, easily adaptable to the current needs.";
+const PAGE_URL = "https://davidquintr.vercel.app/";
 
 const MetadataBase = {
-  metadataBase: new URL("https://davidquintr.vercel.app/"),
-  description: PAGE_DESCRIPTION,
-  icons: {
-    icon: "/favicon.svg",
+  default: {
+    metadataBase: new URL(PAGE_URL),
+    description: PAGE_DESCRIPTION,
+    icons: {
+      icon: [
+        { url: "/icon_light.png" },
+        { url: "/icon_dark.png", media: "(prefers-color-scheme: dark)" },
+      ],
+    },
   },
-};
-
-const MetadataOg = {
   openGraph: {
     description: PAGE_DESCRIPTION,
-    url: "https://davidquintr.vercel.app/",
+    url: PAGE_URL,
     sitename: PAGE_PREFIX,
     images: [
       {
-        url: "/thumbnail-full.png",
+        url: `${PAGE_URL}thumbnail-full.png`,
         width: 1600,
         height: 900,
-        alt: `Thumbnail - ${PAGE_PREFIX}`,
       },
     ],
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    description: PAGE_DESCRIPTION,
+    images: [`${PAGE_URL}thumbnail-full.png`],
   },
 };
 
 const createPageMetadata = (pageTitle: string) => ({
   title: `${PAGE_PREFIX} | ${pageTitle}`,
-  ...MetadataBase,
+  ...MetadataBase.default,
   openGraph: {
     title: `${PAGE_PREFIX} | ${pageTitle}`,
-    ...MetadataOg,
+    ...MetadataBase.openGraph,
+  },
+  twitter: {
+    title: `${PAGE_PREFIX} | ${pageTitle}`,
+    ...MetadataBase.twitter,
   },
 });
 
