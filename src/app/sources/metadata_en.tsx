@@ -3,6 +3,7 @@ const PAGE_DESCRIPTION =
   "Hello! I'm David Quintanilla Ruiz, a programmer who also dabbles in the world of design. I consider myself a fast learner, easily adaptable to the current needs.";
 
 const MetadataBase = {
+  metadataBase: new URL("https://davidquintr.vercel.app/"),
   description: PAGE_DESCRIPTION,
   icons: {
     icon: "/favicon.svg",
