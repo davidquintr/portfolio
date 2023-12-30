@@ -19,6 +19,7 @@ export default function Header() {
         <Image
           className="rounded-full"
           src="/davidquint-photo.png"
+          quality={20}
           width={200}
           priority={true}
           height={200}
