@@ -68,7 +68,8 @@ const en = {
       names: "First Name and Last Name",
       email: "Email",
       message: "Message",
-      success: "Sent",
+      success:
+        "Your email was sent successfully. You will receive a response soon!",
       fail: "Something went wrong, try later...",
       send: "Send Message",
     },

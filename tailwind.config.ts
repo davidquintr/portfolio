@@ -34,10 +34,12 @@ const config: Config = {
             500: "#262b37",
           },
           red: "#49262665",
-          green: "#26492e6",
+          green: "#26492e",
           gray: "#d0d0d0",
         },
         light: {
+          green: "#cbe6c0",
+          red: "#e6c0c0",
           black: "#333333",
           gray: "#efefef",
           bg: "#eaeaea",
