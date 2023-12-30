@@ -10,7 +10,7 @@ const config: Config = {
     darkMode: "class",
     extend: {
       fontFamily: {
-        poppins: ["Poppins"],
+        poppins: ["var(--font-poppins)"],
         fira_code: ["Fira Code"],
       },
       backgroundImage: {
