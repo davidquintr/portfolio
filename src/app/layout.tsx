@@ -5,6 +5,13 @@ import Navigation from "./components/navigation";
 import Footer from "./components/footer";
 import { MetadataHome } from "./sources/metadata_en";
 
+export const viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#11a5e0" },
+    { media: "(prefers-color-scheme: dark)", color: "#0c1738" },
+  ],
+};
+
 export const metadata: Metadata = MetadataHome;
 
 export default function RootLayout({
