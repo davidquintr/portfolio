@@ -20,7 +20,6 @@ const MetadataOg = {
         url: "https://davidquintr.vercel.app/thumbnail-full.png",
         width: 1600,
         height: 900,
-        alt: `Thumbnail - ${PAGE_PREFIX}`,
       },
     ],
     type: "website",
@@ -32,7 +31,7 @@ const createPageMetadata = (pageTitle: string) => ({
   ...MetadataBase,
   openGraph: {
     title: `${PAGE_PREFIX} | ${pageTitle}`,
-    ...MetadataOg,
+    ...MetadataOg.openGraph,
   },
 });
 
