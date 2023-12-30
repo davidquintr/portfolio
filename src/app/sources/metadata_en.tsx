@@ -17,7 +17,7 @@ const MetadataOg = {
     sitename: PAGE_PREFIX,
     images: [
       {
-        url: "/thumbnail-full.png",
+        url: "https://davidquintr.vercel.app/thumbnail-full.png",
         width: 1600,
         height: 900,
         alt: `Thumbnail - ${PAGE_PREFIX}`,
