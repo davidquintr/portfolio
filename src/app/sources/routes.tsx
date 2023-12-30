@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import en from "../sources/en";
 import {
   faAddressBook,
