@@ -3,7 +3,7 @@ import assets from "./projects_assets";
 const ProjectsEn = {
   blog_js_jquery: {
     title: "Blog - JavaScript / JQuery",
-    description: "Created for Web Applications Development in 2S-2022",
+    description: "Creado para el Desarrollo de Aplicaciones Web en 2S-2022",
     ...assets.blog_js_jquery,
     sourceLink: "https://github.com/davidquintr/whatsapp-reader.github.io",
     onlineLink: "https://davidquintr.github.io/teamfactorizacion-blog/",
@@ -12,7 +12,7 @@ const ProjectsEn = {
   brain_view: {
     title: "BrainView - 3D",
     description:
-      "Created as commission - Basic view of limited points of the brain, internal and external.",
+      "Creado por encargo - Vista básica de puntos limitados del cerebro, internos y externos.",
     ...assets.brain_view,
     sourceLink: "https://github.com/davidquintr/brain-3d",
     onlineLink: "",
@@ -21,7 +21,7 @@ const ProjectsEn = {
   expedoc: {
     title: "Expediente Docente",
     description:
-      "My first job experience in Software Development. This works like a teacher manager or internal social media for a college, including self system of feedback and a historical register of teachers.",
+      "Mi primera experiencia laboral en Desarrollo de Software. Funciona como un gestor de profesores o red social interna para una universidad, incluyendo un sistema de retroalimentación personal y un registro histórico de profesores.",
     ...assets.expedoc,
     sourceLink: "",
     onlineLink: "",
@@ -29,18 +29,18 @@ const ProjectsEn = {
       "https://davidquintr.github.io/portfolio/blog/expedoc-development",
   },
   old_portfolio: {
-    title: "Old Portfolio",
+    title: "Antiguo Portafolio",
     description:
-      "Created for collection of my projects in the development of my universitary career and self-learn.",
+      "Creado para la recopilación de mis proyectos en el desarrollo de mi carrera universitaria y aprendizaje autodidacta.",
     ...assets.old_portfolio,
     sourceLink: "https://github.com/davidquintr/old-portfolio",
     onlineLink: "https://davidquintr.github.io/old-portfolio/",
     moreLink: "",
   },
   simple_documentation: {
-    title: "Simple Documentation",
+    title: "Documentación Simple",
     description:
-      "Personal project, to create simple documentation through Markdown. It can interpreats code lines and does not requires page reload for change of article.",
+      "Proyecto personal, para crear documentación simple a través de Markdown. Puede interpretar líneas de código y no requiere recargar la página para cambiar de artículo.",
     ...assets.simple_documentation,
     sourceLink: "https://github.com/davidquintr/simple-documentation",
     onlineLink: "https://davidquintr.github.io/simple-documentation/",
@@ -49,7 +49,7 @@ const ProjectsEn = {
   taskitty: {
     title: "Taskitty",
     description:
-      "Created for Mobile Applications Development I in 1S-2022, developed with Kotlin in Android Studio.",
+      "Creado para Desarrollo de Aplicaciones Móviles I en 1S-2022, desarrollado con Kotlin en Android Studio.",
     ...assets.taskitty,
     sourceLink: "https://github.com/VarEros/TasKitty",
     onlineLink: "https://poncka.github.io/tasKitty-web.github.io/",
@@ -58,16 +58,16 @@ const ProjectsEn = {
   wreader_next: {
     title: "WhatsApp Reader Next",
     description:
-      "Personal remastered project, interpreats the exported message of WhatsApp chat and shows in a familiar format for read better.",
+      "Proyecto personal remasterizado, interpreta el mensaje exportado del chat de WhatsApp y lo muestra en un formato familiar para una lectura mejor.",
     ...assets.wreader_next,
     sourceLink: "https://github.com/davidquintr/whatsapp-reader-next",
     onlineLink: "https://whatsapp-reader-next.vercel.app/",
     moreLink: "",
   },
   logic_nexus: {
-    title: "LogicNexus Page",
+    title: "Página de LogicNexus",
     description:
-      "Project with other people, this is the presentation of our services, technologies and contact. We can come true your software ideas. :)",
+      "Proyecto con otras personas, esta es la presentación de nuestros servicios, tecnologías y contacto. Podemos hacer realidad tus ideas de software. :)",
     ...assets.logic_nexus,
     sourceLink: "",
     onlineLink: "https://logicnexus.vercel.app/",

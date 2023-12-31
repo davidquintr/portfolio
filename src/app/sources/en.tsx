@@ -1,6 +1,8 @@
+import IDictionary from "../types/TypeDictionary";
 import ProjectsEn from "./projects_en";
 
-const en = {
+const en: IDictionary = {
+  lang: "en",
   author: "David Quintanilla",
   role: "System Engineering Student, Programmer and UI/UX Designer",
   email: "davidquintr@gmail.com",
@@ -14,6 +16,7 @@ const en = {
     cvText: "CV",
   },
   navigation: {
+    switch: "Switch to Spanish",
     home: "Home",
     blog: "Blog",
     projects: "Projects",

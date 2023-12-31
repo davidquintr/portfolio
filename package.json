@@ -16,6 +16,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "font-awesome": "^4.7.0",
     "next": "14.0.4",
+    "next-intl": "^3.4.0",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0"
