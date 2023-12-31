@@ -2,7 +2,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const external = {
   sourceCode: "https://github.com/davidquintr/portfolio",
-  curriculum: "CVDavidQuintanilla-",
+  curriculum: "CVDavidQuintanilla",
   social_media: [
     {
       name: "GitHub",
