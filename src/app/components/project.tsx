@@ -9,7 +9,7 @@ export default function Project(project: IProject) {
 
   return (
     <li
-      style={{ animationDelay: (project.index * 50).toString().concat("ms") }}
+      style={{ animationDelay: (project.index * 75).toString().concat("ms") }}
       className={`flex animate-fade-right animate-ease-in-out animate-duration-500 animate-once flex-col rounded-lg overflow-hidden bg-light-gray border-light-blue-400 dark:bg-black border-2 dark:border-dark-blue-200`}
     >
       <div className="carousel">

@@ -21,8 +21,6 @@ const MetadataBase = {
     images: [
       {
         url: `${PAGE_URL}thumbnail-full.png`,
-        width: 1600,
-        height: 900,
       },
     ],
     type: "website",
