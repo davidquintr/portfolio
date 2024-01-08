@@ -74,6 +74,10 @@ const en = {
       send: "Send Message",
     },
   },
+  post: {
+    author: "Author",
+    share: "Share my post!"
+  }
 };
 
 export default en;

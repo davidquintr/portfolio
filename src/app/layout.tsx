@@ -3,7 +3,6 @@ import "./style/globals.css";
 import Header from "./components/header";
 import Navigation from "./components/navigation";
 import Footer from "./components/footer";
-import { MetadataHome } from "./sources/metadata_en";
 import { poppins } from "./utils/fonts";
 
 export const viewport = {
@@ -13,7 +12,6 @@ export const viewport = {
   ],
 };
 
-export const metadata: Metadata = MetadataHome;
 
 export default function RootLayout({
   children,
