@@ -17,8 +17,8 @@ export default function Post({post, index} : IPost) {
   return (
     <li
     style={{ animationDelay: (index * 75).toString().concat("ms") }}
-         className="dark:bg-dark-gradient mt-2 animate-fade-right animate-ease-in-out animate-duration-500 animate-once border-2 rounded-lg dark:border-dark-blue-200 bg-light-gray border-light-blue-400 dark:bg-black hover:brightness-95 active:brightness-105 dark:hover:bg-dark-blue-200 transition-all dark:active:bg-dark-blue-100 duration-[400ms]">
-      <Link className="block h-full pb-3.5" href={`${BLOG_PATH}/${post.slug}`}>
+         className="group dark:bg-dark-gradient mt-2 animate-fade-right animate-ease-in-out animate-duration-500 animate-once border-2 rounded-lg dark:border-dark-blue-200 bg-light-gray border-light-blue-400 dark:bg-black hover:brightness-95 active:brightness-105 dark:hover:bg-dark-blue-200 transition-all dark:active:bg-dark-blue-100 duration-[400ms] delay-[50ms]">
+      <Link className="group-active:scale-95 transition-transform block h-full pb-3.5" href={`post/${post.slug}`}>
         <Image
           className="aspect-video rounded-md drop-shadow-xl -mt-4 scale-95"
           alt={post.slug}

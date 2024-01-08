@@ -55,6 +55,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("daisyui"), require("tailwindcss-animated")],
+  plugins: [require("daisyui"), require("tailwindcss-animated"), require('@tailwindcss/typography')],
 };
 export default config;

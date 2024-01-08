@@ -16,6 +16,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "font-awesome": "^4.7.0",
     "gray-matter": "^4.0.3",
+    "markdown-to-jsx": "^7.4.0",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
@@ -23,6 +24,7 @@
     "reading-time": "^1.5.0"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

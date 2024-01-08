@@ -5,7 +5,7 @@ date: "2023-06-15"
 tags: ["Frontend", "JavaScript", "Functions"]
 ---
 
-<h3>Concept</h3>
+<h1>Concept</h1>
 <p>This function was created for EXPEDOC, and this was made in relation to dropdown in Bootstrap, for be present to hide certain elements that are not necessary to show all the time or simply for give the option to hide elements.</p>
 <p>We can have an example in Bootstrap:</p>
 <video  autoplay loop muted controls>

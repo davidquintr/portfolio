@@ -5,7 +5,7 @@ date: "2023-06-15"
 tags: ["Full Stack", "Development", "ASP.Net", "Expediente Docente"]
 ---
 
-<h3>Generalities</h3>
+<h1>Generalities</h1>
 <p>To begin with, it is important to clarify the objectives and target audience of this project. The project <b>'Expediente Docente'</b> was specifically developed for the Education Department at <a href="https://www.uca.edu.ni/">Universidad Centroamericana</a> de Nicaragua as part of the mid-practice program in <b>System Engineering career.</b></p>
 <p><b>'Expediente Docente'</b> serves as an internal social network within the <a href="http://blog.uca.edu.ni/departamentoeducacion/">Education Department</a>, but with a distinct purpose. Its primary objective is to effectively manage the academic and professional lives of the department's teachers, while also providing valuable feedback to enhance their teaching practices.</p>
 
@@ -170,19 +170,19 @@ tags: ["Full Stack", "Development", "ASP.Net", "Expediente Docente"]
 <h3>Thanks</h3>
 <p>Special thanks to my <b>development team</b>, i lead they but a great part of work is of them.</p>
 <h4>Development Team</h4>
-<div class="blog-body-contributors">
-	<a href="https://github.com/Chocoyito" target="_blank"><img src="https://github.com/Chocoyito.png"></a>
-	<a href="https://github.com/VarEros" target="_blank"><img src="https://github.com/VarEros.png"></a>
-	<a href="https://github.com/Xeppyz" target="_blank"><img src="https://github.com/Xeppyz.png"></a>
-	<a href="https://github.com/Poncka" target="_blank"><img src="https://github.com/Poncka.png"></a>
-	<a href="https://github.com/andreitaglz1" target="_blank"><img src="https://github.com/andreitaglz1.png"></a>
-	<a href="https://github.com/MrSty" target="_blank"><img src="https://github.com/MrSty.png"></a>
-	<a href="https://github.com/gmabs" target="_blank"><img src="https://github.com/gmabs.png"></a>
-	<a href="https://github.com/EduardJiron" target="_blank"><img src="https://github.com/EduardJiron.png"></a>
-	<a href="https://github.com/rmtai" target="_blank"><img src="https://github.com/rmtai.png"></a>
-	<a href="https://github.com/GPorrasV" target="_blank"><img src="https://github.com/GPorrasV.png"></a>
-	<a href="https://github.com/RiuskeKMS" target="_blank"><img src="https://github.com/RiuskeKMS.png"></a>
-	<a href="https://github.com/BenjaminNarvaez-est" target="_blank"><img src="https://github.com/BenjaminNarvaez-est.png"></a>
-	<a href="https://github.com/GhostlyCoder20" target="_blank"><img src="https://github.com/GhostlyCoder20.png"></a>
-	<a href="https://github.com/simplyZair" target="_blank"><img src="https://github.com/simplyZair.png"></a>
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+	<a href="https://github.com/Chocoyito" target="_blank"><img style="width:48px; height: 48px;" src="https://github.com/Chocoyito.png"></a>
+	<a href="https://github.com/VarEros" target="_blank"><img style="width:48px; height: 48px;" src="https://github.com/VarEros.png"></a>
+	<a href="https://github.com/Xeppyz" target="_blank"><img style="width:48px; height: 48px;" src="https://github.com/Xeppyz.png"></a>
+	<a href="https://github.com/Poncka" target="_blank"><img style="width:48px; height: 48px;" src="https://github.com/Poncka.png"></a>
+	<a href="https://github.com/andreitaglz1" target="_blank"><img style="width:48px; height: 48px;" src="https://github.com/andreitaglz1.png"></a>
+	<a href="https://github.com/MrSty" target="_blank"><img style="width:48px; height: 48px;" src="https://github.com/MrSty.png"></a>
+	<a href="https://github.com/gmabs" target="_blank"><img style="width:48px; height: 48px;" src="https://github.com/gmabs.png"></a>
+	<a href="https://github.com/EduardJiron" target="_blank"><img style="width:48px; height: 48px;" src="https://github.com/EduardJiron.png"></a>
+	<a href="https://github.com/rmtai" target="_blank"><img style="width:48px; height: 48px;" src="https://github.com/rmtai.png"></a>
+	<a href="https://github.com/GPorrasV" target="_blank"><img style="width:48px; height: 48px;" src="https://github.com/GPorrasV.png"></a>
+	<a href="https://github.com/RiuskeKMS" target="_blank"><img style="width:48px; height: 48px;" src="https://github.com/RiuskeKMS.png"></a>
+	<a href="https://github.com/BenjaminNarvaez-est" target="_blank"><img style="width:48px; height: 48px;" src="https://github.com/BenjaminNarvaez-est.png"></a>
+	<a href="https://github.com/GhostlyCoder20" target="_blank"><img style="width:48px; height: 48px;" src="https://github.com/GhostlyCoder20.png"></a>
+	<a href="https://github.com/simplyZair" target="_blank"><img style="width:48px; height: 48px;" src="https://github.com/simplyZair.png"></a>
 </div>
