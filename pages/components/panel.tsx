@@ -39,7 +39,6 @@ const Panel = ({isProject, pureArray, setElement, element, pureFilter}) => {
     window.scrollTo(window.scrollX, panelPos)
     setFilters([]);
     setElement(pureArray);
-    console.log(panelPos)
 } 
 
   
@@ -56,8 +55,6 @@ const Panel = ({isProject, pureArray, setElement, element, pureFilter}) => {
           language == "es" ? p.description.es.toLowerCase().includes(value) : p.description.eng.toLowerCase().includes(value)
       );
     
-    console.log(isProject)
-    console.log(elementFiltered)
     setElement(elementFiltered);
 }
 

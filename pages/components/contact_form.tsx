@@ -34,12 +34,10 @@ const FormContact = () => {
       )
       .then(
         (result) => {
-          console.log("true");
           setIsEmailSent(true);
           buttonSend.current.disabled = true;
         },
         (error) => {
-          console.log("false");
           setIsEmailSent(false);
         }
       );

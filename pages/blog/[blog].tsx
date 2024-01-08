@@ -13,6 +13,7 @@ import fs from 'fs';
 import path from 'path';
 import { useEffect, useState } from "react";
 import { useConfigContext } from "../components/config_provider";
+import Redirect from "../components/redirect";
 
 const BlogPublished = require("../assets/json/blog_published.json");
   // @ts-ignore
@@ -55,7 +56,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       },
     };
   } catch (error) {
-    console.error('Error reading file content:', error);
     return {
       notFound: true,
     };
@@ -136,67 +136,8 @@ const BlogArticle = ({ blogElement }) => {
           ></meta>
         </Head>
         <article className="article article-base extended">
-          <NavBar></NavBar>
           <PageWrapper>
-            <section className={`section section-blog ${lightModeActive}`}>
-              <div className="section-body blog-article">
-                {isBlog ? (
-                  <>
-                    <h2>{title}</h2>
-                    <div className={`blog-details ${lightModeActive}`}>
-                      <Image
-                        className="blog-article-image"
-                        src={`.${blogElement?.icon}`}
-                        alt={title}
-                        width={720}
-                        height={405}
-                      ></Image>
-                      <p className="blog-desc">{description}</p>
-                      <p>
-                        {
-                          <DateParsed
-                            dateOrigin={blogElement?.date}
-                          ></DateParsed>
-                        } - David Quintanilla Ruiz
-                      </p>
-                      <ul className="blog-tag">
-                        <Tags tag={blogElement?.tags}></Tags>
-                      </ul>
-                    </div>
-                    <div
-                      className={`blog-body ${lightModeActive}`}
-                      dangerouslySetInnerHTML={{
-                        __html: content,
-                      }}
-                    ></div>
-                    <div className={`blog-info ${lightModeActive}`}>
-                      <div className="blog-social">
-                        <div className="post-info-author">
-                          <Image
-                            src={personal?.photo}
-                            alt={personal?.name}
-                            width={128}
-                            height={128}
-                          ></Image>
-                          <div className="post-info-author details">
-                            <p>{language == "es" ? "Autor" : "Author"}</p>
-                            <p className="person">{personal?.name}</p>
-                          </div>
-                        </div>
-                        <div className="blog-share">
-                          <p>{language == "es" ? "¡Comparte mi publicación!" :"Share my post!"}</p>
-                          <div className="blog-share-buttons">
-                            <SocialShare link={URL}></SocialShare>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </>
-                ) : (
-                  <h2>{language == "es" ? "Este artículo no existe." : "This article does not exist."}</h2>
-                )}
-              </div>
-            </section>
+            <Redirect href={`post/${blogElement?.url.eng}`} />
           </PageWrapper>
         </article>
       </>

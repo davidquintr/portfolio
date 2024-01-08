@@ -1,7 +1,7 @@
 import Head from "next/head";
-import NavBar from "../nav_bar";
 import dynamic from "next/dynamic";
 import { useConfigContext } from "./config_provider";
+import Redirect from "./redirect";
 
 const AboutMe = dynamic(() => import("./about_me"));
 const PersonalInfo = dynamic(() => import("./personal_info"));
@@ -17,10 +17,8 @@ const HomePage = () => {
       <Head>
         <title>{title}</title>
       </Head>
-      <article className="article article-base">
-        <NavBar></NavBar>
-        <AboutMe></AboutMe>
-        <PersonalInfo></PersonalInfo>
+      <article className="article">
+      <Redirect href="" />
       </article>
     </>
   );

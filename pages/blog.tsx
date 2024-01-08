@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Panel from "./components/panel";
 import dynamic from "next/dynamic";
 import { useConfigContext } from "./components/config_provider";
+import Redirect from "./components/redirect";
 
 const blog = require("./assets/json/blog_published.json");
 const PageWrapper = dynamic(() => import("./components/page_wrapper"));
@@ -64,25 +65,8 @@ export default function Blog() {
 
       </Head>
       <article className="article article-base extended">
-        <NavBar></NavBar>
         <PageWrapper>
-          <section className={`section section-blog ${lightModeActive}`}>
-            <div className="section-title">
-              <h2>Blog</h2>
-            </div>
-            <Panel isProject={false} pureArray={blog} setElement={setArticlesBlog} element={articlesBlog} pureFilter={filters} />
-            <div className="section-body">
-              {articlesBlog?.map((element, index) => {
-                return (
-                  <BlogItem
-                    element={element}
-                    key={index}
-                    index={index}
-                  ></BlogItem>
-                );
-              })}
-            </div>
-          </section>
+          <Redirect href="blog" />
         </PageWrapper>
       </article>
     </>

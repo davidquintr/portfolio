@@ -4,6 +4,7 @@ import Head from "next/head";
 import ContactForm from './components/contact_form'
 import PageWrapper from "./components/page_wrapper";
 import { useConfigContext } from "./components/config_provider";
+import Redirect from "./components/redirect";
 
 
 export default function Contact() {
@@ -29,9 +30,8 @@ export default function Contact() {
 
       </Head>
       <article className="article article-base extended">
-        <NavBar></NavBar>
         <PageWrapper>
-          <ContactForm></ContactForm>
+          <Redirect href="contact" />
         </PageWrapper>
       </article>
     </>

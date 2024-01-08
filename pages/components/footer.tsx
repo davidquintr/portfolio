@@ -7,8 +7,6 @@ const Footer = () => {
     // @ts-ignore
     const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
 
-    console.log("language", language)
-
     return(
         <>
             <footer className="footer">

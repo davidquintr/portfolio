@@ -9,6 +9,7 @@ import { useEffect, useRef, useState } from "react";
 import Panel from "./components/panel";
 import dynamic from "next/dynamic";
 import { useConfigContext } from "./components/config_provider";
+import Redirect from "./components/redirect";
 
 
 const PageWrapper = dynamic(() => import("./components/page_wrapper"));
@@ -56,23 +57,8 @@ export default function Projects() {
 
       </Head>
       <article className="article article-base extended">
-        <NavBar></NavBar>
         <PageWrapper>
-          <section className={`section section-projects ${lightModeActive}`}>
-            <div className="section-title">
-              <h2>{language == "es" ? "Proyectos" :  "Projects"}</h2>
-              <button onClick={onArchiveClick} ref={buttonArchive} className={`button-link extended minimal archive ${lightModeActive} ${showArchive ? " active" : ""}`}>
-                <FontAwesomeIcon icon={faArchive}></FontAwesomeIcon>
-                <p>{language == "es" ? "Archivo" :  "Archive"}</p>
-              </button>
-            </div>
-            <Panel isProject={true} pureArray={pureProject} setElement={setProject} element={project} pureFilter={technologies}></Panel>
-            <div className="section-body projects">
-              {project?.map((element, index) => (
-                ( element?.archive == "true" && !showArchive ? null : <ProjectsItem key={index} element={element} index={index} />)
-              ))}
-            </div>
-          </section>
+          <Redirect href="projects" />
         </PageWrapper>
       </article>
     </>

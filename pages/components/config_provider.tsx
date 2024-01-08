@@ -17,13 +17,11 @@ const ConfigProvider = ({ children }) => {
       let localLanguage = navigator.language.includes('es') ? "es" : "en"
       localStorage.setItem('language',localLanguage)
       setLanguage(localLanguage)
-      console.log("set Language : ", localLanguage)
 
     } else if(localStorage != null) {
       let safeLanguage = localStorage.getItem('language')
       isRecover = true
       setLanguage(safeLanguage)
-      console.log("recover language", safeLanguage)
     }
   }, [])
   
