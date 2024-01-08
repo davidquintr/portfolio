@@ -19,6 +19,7 @@ export default function Project(project: IProject) {
             alt={`${project.title} - ${index}`}
             width={480}
             height={270}
+            quality={60}
             key={index}
             src={`${PROJECT_DIRECTORY}${image}`}
           />
