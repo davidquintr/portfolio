@@ -5,23 +5,25 @@ date: "2023-06-15"
 tags: ["Frontend", "JavaScript", "Functions"]
 ---
 
-<h1>Concept</h1>
-<p>This function was created for EXPEDOC, and this was made in relation to dropdown in Bootstrap, for be present to hide certain elements that are not necessary to show all the time or simply for give the option to hide elements.</p>
-<p>We can have an example in Bootstrap:</p>
+# Concept
+This function was created for EXPEDOC, and this was made in relation to dropdown in Bootstrap, for be present to hide certain elements that are not necessary to show all the time or simply for give the option to hide elements.
+We can have an example in Bootstrap:
 <video  autoplay loop muted controls>
 	<source src="../blog/dropdown-vanilla/dropdown-bootstrap.mp4" />
 </video>
-<p>For this, we need to import all the dependences for have use of this function, in my opinion, this are really not neccessary. As web developers, we have the tools, we can do something new and better.</p>
-<h3>Results</h3>
-<p>And this is my result for dropdown in JavaScript Vanilla.</p>
+For this, we need to import all the dependences for have use of this function, in my opinion, this are really not neccessary. As web developers, we have the tools, we can do something new and better.
+
+## Results
+And this is my result for dropdown in JavaScript Vanilla.
+
 <video autoplay loop muted controls>
 	<source src="../blog/dropdown-vanilla/dropdown-vanilla.mp4" />
 </video>
 
-<h3>Source</h3>
-<p>There's the base who reacts to the size of each element.</p>
-<pre id="format" class="language-js format copy-to-clipboard" data-clipboard-text="Copy">
-<code>(function () {
+## Source
+```js
+There's the base who reacts to the size of each element.
+(function () {
     let oldresize = window.onresize;
     window.onresize = function (e) {
         var event = window.event || e;
@@ -32,48 +34,49 @@ tags: ["Frontend", "JavaScript", "Functions"]
             return window.onzoom.call(window, event);
         }
     }
-})();</code>
-</pre>
-<p>For limitations of CSS3, the height values does not allow animations with transform property. Having this, the unique option is max-height property, this allows the transform animation but we can't know the height size of each element for CSS, for that reason we need to use JavaScript and this is the function:</p>
-<pre id="format" class="language-js format copy-to-clipboard" data-clipboard-text="Copy">
-<code>let buttonDrop = document.querySelectorAll(".button-drop")
+})();
+```
+For limitations of CSS3, the height values does not allow animations with transform property. Having this, the unique option is max-height property, this allows the transform animation but we can't know the height size of each element for CSS, for that reason we need to use JavaScript and this is the function:
+
+```js
+let buttonDrop = document.querySelectorAll(".button-drop")
 let dropDownElements = document.querySelectorAll(".dropdown-element")
 
 if (buttonDrop.length > 0 && dropDownElements.length > 0) {
-window.addEventListener("DOMContentLoaded", function () {
-assignButton()
-dropSize()
-})
+    window.addEventListener("DOMContentLoaded", function () {
+    assignButton()
+    dropSize()
+    })
 }
 
 function assignButton() {
-try {
-buttonDrop.forEach((element, index) => {
-element.addEventListener('click', function () {
-dropDownElements[index].style.transition = ""
-dropDownElements[index].classList.toggle("dropdown-active")
-element.classList.toggle("dropIcon-active")
-})
-})
-} catch (error){}
+    try {
+        buttonDrop.forEach((element, index) => {
+            element.addEventListener('click', function () {
+                dropDownElements[index].style.transition = ""
+                dropDownElements[index].classList.toggle("dropdown-active")
+                element.classList.toggle("dropIcon-active")
+            })
+        })
+    } catch (error){}
 }
 
 window.addEventListener('resize', function () {
-dropSize()
+    dropSize()
 })
 
 function dropSize() {
-dropDownElements.forEach((element, index) => {
-let height = element.scrollHeight
-element.style.maxHeight = height + "px";
-})
-}</code>
+    dropDownElements.forEach((element, index) => {
+    let height = element.scrollHeight
+        element.style.maxHeight = height + "px";
+    })
+}
+```
 
-</pre>
-<p>Explaining this, we need to asign the class 'button-drop' to the button who open or close the dropdown. Following this, to the container target of elements 'dropdown-element'.</p>
-<p>If this is effective, for each element with the class 'dropdown-element' will be assigned the 'max-height' property in style inline html if is open. If is not open, is toggled the class 'dropdown-active' who contains certains CSS presets properties:</p>
-<pre id="format" class="language-css format copy-to-clipboard" data-clipboard-text="Copy">
-<code>.dropdown-element{
+Explaining this, we need to asign the class 'button-drop' to the button who open or close the dropdown. Following this, to the container target of elements 'dropdown-element'.
+If this is effective, for each element with the class 'dropdown-element' will be assigned the 'max-height' property in style inline html if is open. If is not open, is toggled the class 'dropdown-active' who contains certains CSS presets properties:
+```css
+.dropdown-element{
     overflow-y: hidden;
     border: 1px solid #d4d4d4;
     border-top: none;
@@ -83,15 +86,14 @@ element.style.maxHeight = height + "px";
 }
 
 .dropdown-active {
-max-height: 0 !important;
-opacity: 0;
-padding: 0 !important;
-margin: 0 !important;
-}</code>
+    max-height: 0 !important;
+    opacity: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+```
 
-</pre>
+As we can see, there's the recommended properties to the good work of this function.
 
-<p>As we can see, there's the recommended properties to the good work of this function.</p>
-
-<h4>Online view</h4>
-<p>You can see this code implemented in my <a href="https://github.com/davidquintr" target="_blank">GitHub</a> in the repository <a href="https://github.com/davidquintr/dropdown-js-vanilla" target="_blank">dropdown-js-vanilla</a> and also there's an <a href="https://davidquintr.github.io/dropdown-js-vanilla/" target="_blank">online deployed app</a> for test it. You are free to use and upgrade if you want.</p>
+## Online view
+You can see this code implemented in my [GitHub](https://github.com/davidquintr) in the repository [dropdown-js-vanilla](https://github.com/davidquintr/dropdown-js-vanilla) and also there's an [online deployed app](https://davidquintr.github.io/dropdown-js-vanilla/) for testing it. You are free to use and upgrade if you want.

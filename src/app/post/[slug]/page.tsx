@@ -1,14 +1,19 @@
 import BoxContent from "@/app/components/boxContent";
 import en from "@/app/sources/en";
 import external from "@/app/sources/external";
+import { PostMetadata } from "@/app/sources/post_metadata";
+import IBlog from "@/app/types/TypeBlog";
 import date from "@/app/utils/date";
 import { getPostMetadata } from "@/app/utils/postMetaData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+let slug = '';
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";
@@ -26,7 +31,7 @@ export const generateStaticParams = async () => {
 };
 
 export default function BlogPage(props: any) {
-  const slug = props.params.slug;
+  slug = props.params.slug;
   const BLOG_PATH = "/blog";
   const POST_PATH = "post"
   const IMG_EXT = ".png";
@@ -39,7 +44,7 @@ export default function BlogPage(props: any) {
   return (
     <BoxContent title="" className="">
       <div className="flex flex-col-reverse xl:flex-row md:px-8 gap-4 my-4">
-        <div className="flex flex-col gap-1 flex-1">
+        <div className="flex flex-col gap-1 flex-1 animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-100 xl:animate-delay-0 animate-once">
           <div className="flex flex-col gap-1.5 text-light-black dark:text-dark-gray">
             <div className="flex flex-wrap gap-1">
               {post.data.tags.map((tag: any, index: any) => (
@@ -53,7 +58,7 @@ export default function BlogPage(props: any) {
             </div>
             <h1 className="font-bold text-4xl text-light-blue-600 dark:text-dark-blue-100">{post.data.title}</h1>
             <p className="pt-1">{post.data.description}</p>
-            <p>{dateFormated}</p>
+            <p className="text-xs">{dateFormated}</p>
           </div>
           <div className="flex flex-col justify-center sm:justify-around gap-2 py-3 mt-auto sm:flex-row dark:bg-dark-items rounded-lg bg-light-gray">
             <div className="flex justify-center sm:justify-normal items-center gap-2">
@@ -93,7 +98,7 @@ export default function BlogPage(props: any) {
             </div>
           </div>
         </div>
-        <picture className="xl:max-w-[50%]">
+        <picture className="xl:max-w-[50%] animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-0 xl:animate-delay-100 animate-once">
           <Image
             className="aspect-video rounded-md drop-shadow-xl mx-auto"
             alt={post.data.slug}
@@ -105,9 +110,18 @@ export default function BlogPage(props: any) {
         </picture>
       </div>
       <span className="block h-[1px] bg-light-border-gradient dark:bg-dark-border-gradient my-4"></span>
-      <article className="prose max-w-max prose-headings:text-light-blue-500 dark:prose-headings:text-dark-blue-100 prose-img:rounded-lg prose-video:rounded-lg dark:*:text-dark-gray">
-        <Markdown>{post.content}</Markdown>
+      <article className="prose max-w-max dark:prose-a:text-white prose-li:my-0.5 prose-headings:text-light-blue-500 dark:prose-headings:text-dark-blue-100 prose-img:rounded-lg prose-video:rounded-lg dark:*:text-dark-gray">
+        {<Markdown>{post.content}</Markdown>}
       </article>
     </BoxContent>
   );
+}
+
+type genMetadata = {
+  params: {slug: string}
+}
+ 
+export async function generateMetadata ({params}: genMetadata){
+  const slug = params.slug;
+  return PostMetadata(slug);
 }

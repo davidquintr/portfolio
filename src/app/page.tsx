@@ -1,7 +1,11 @@
+import { Metadata } from "next";
 import BoxContent from "./components/boxContent";
 import DetailItem from "./components/detailItem";
 import en from "./sources/en";
 import external from "./sources/external";
+import { MetadataHome } from "./sources/metadata_en";
+
+export const metadata: Metadata = MetadataHome;
 
 export default function Home() {
   return (
