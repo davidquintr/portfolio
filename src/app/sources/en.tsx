@@ -53,7 +53,7 @@ const en = {
     title: "Projects",
     onlineText: "Watch Online",
     sourceText: "View Source",
-    moreText: "More Info",
+    moreText: "Know More",
     list: ProjectsEn,
   },
   blog: {

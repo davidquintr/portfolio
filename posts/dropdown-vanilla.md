@@ -75,6 +75,7 @@ function dropSize() {
 
 Explaining this, we need to asign the class 'button-drop' to the button who open or close the dropdown. Following this, to the container target of elements 'dropdown-element'.
 If this is effective, for each element with the class 'dropdown-element' will be assigned the 'max-height' property in style inline html if is open. If is not open, is toggled the class 'dropdown-active' who contains certains CSS presets properties:
+
 ```css
 .dropdown-element{
     overflow-y: hidden;

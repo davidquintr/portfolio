@@ -23,6 +23,7 @@ export default function Post({post, index} : IPost) {
           className="aspect-video rounded-md drop-shadow-xl -mt-4 scale-95"
           alt={post.slug}
           src={`${BLOG_PATH}/${post.slug}${IMG_EXT}`}
+          priority={true}
           quality={60}
           width={800}
           height={450}

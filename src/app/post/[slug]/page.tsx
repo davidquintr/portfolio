@@ -83,6 +83,7 @@ export default function BlogPage(props: any) {
                 {external.social_api.map((media, index) => (
                   <Link
                     target="_blank"
+                    aria-label={media.name}
                     href={`${media.url}${external.domain}${POST_PATH}/${slug}`}
                     key={index}
                     className="dark:bg-dark-blue-500 dark:hover:bg-dark-blue-200 bg-light-blue-400 flex justify-center items-center p-3 text-white hover:bg-light-blue-500 active:scale-95 transition-all rounded-full"
@@ -101,7 +102,7 @@ export default function BlogPage(props: any) {
         <picture className="xl:max-w-[50%] animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-0 xl:animate-delay-100 animate-once">
           <Image
             className="aspect-video rounded-md drop-shadow-xl mx-auto"
-            alt={post.data.slug}
+            alt=""
             src={`${BLOG_PATH}/${slug}${IMG_EXT}`}
             width={800}
             height={450}

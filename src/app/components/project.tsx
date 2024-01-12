@@ -20,6 +20,7 @@ export default function Project(project: IProject) {
             width={480}
             height={270}
             quality={60}
+            priority={true}
             key={index}
             src={`${PROJECT_DIRECTORY}${image}`}
           />

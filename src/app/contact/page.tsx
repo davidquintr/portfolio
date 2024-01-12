@@ -95,7 +95,7 @@ export default function Contact() {
           >
             <FontAwesomeIcon
               icon={inProgress ? faSpinner : faPaperPlane}
-              className={`fa-sm ${inProgress && "animate-spin"}`}
+              className={`${inProgress && "animate-spin"} size-3.5`}
             />
             <span>{en.contact.form.send}</span>
           </button>
@@ -109,6 +109,7 @@ export default function Contact() {
               <Link
                 key={index}
                 target="_blank"
+                aria-label={media.name}
                 href={media.link}
                 className="dark:bg-dark-blue-500 dark:hover:bg-dark-blue-200 bg-light-blue-400 flex justify-center items-center p-3 text-white hover:bg-light-blue-500 active:scale-95 transition-all rounded-full"
               >

@@ -122,7 +122,9 @@ Comments are available as responses in the Feedback section and in each section 
 
 These are ways to **filter data or information in any of the sections**. They have cumulative filters to increase accuracy and also have a simple search function.
 
-[Watch Search Functions Video](../blog/expedoc-general/expedoc-search.mp4)
+<video autoplay loop muted controls>
+	<source src="../blog/expedoc-general/expedoc-search.mp4">
+</video>
 
 ### Settings
 
@@ -160,17 +162,18 @@ Special thanks to my **development team**. I lead them, but a great part of the 
 
 ### Development Team
 
-- [Chocoyito](https://github.com/Chocoyito)
-- [VarEros](https://github.com/VarEros)
-- [Xeppyz](https://github.com/Xeppyz)
-- [Poncka](https://github.com/Poncka)
-- [andreitaglz1](https://github.com/andreitaglz1)
-- [MrSty](https://github.com/MrSty)
-- [gmabs](https://github.com/gmabs)
-- [EduardJiron](https://github.com/EduardJiron)
-- [rmtai](https://github.com/rmtai)
-- [GPorrasV](https://github.com/GPorrasV)
-- [RiuskeKMS](https://github.com/RiuskeKMS)
-- [BenjaminNarvaez-est](https://github.com/BenjaminNarvaez-est)
-- [GhostlyCoder20](https://github.com/GhostlyCoder20)
-- [simplyZair](https://github.com/simplyZair)
+<div style="display: flex; flex-wrap: wrap; gap: 5px;">
+  <a href="https://github.com/VarEros"><img width="48" src="https://github.com/VarEros.png" alt="VarEros GitHub" style="margin: 0;" loading="lazy"></a>
+  <a href="https://github.com/Xeppyz"><img width="48" src="https://github.com/Xeppyz.png" alt="Xeppyz GitHub" style="margin: 0;" loading="lazy"></a>
+  <a href="https://github.com/Poncka"><img width="48" src="https://github.com/Poncka.png" alt="Poncka GitHub" style="margin: 0;" loading="lazy"></a>
+  <a href="https://github.com/andreitaglz1"><img width="48" src="https://github.com/andreitaglz1.png" alt="andreitaglz1 GitHub" style="margin: 0;" loading="lazy"></a>
+  <a href="https://github.com/MrSty"><img width="48" src="https://github.com/MrSty.png" alt="MrSty GitHub" style="margin: 0;" loading="lazy"></a>
+  <a href="https://github.com/gmabs"><img width="48" src="https://github.com/gmabs.png" alt="gmabs GitHub" style="margin: 0;" loading="lazy"></a>
+  <a href="https://github.com/EduardJiron"><img width="48" src="https://github.com/EduardJiron.png" alt="EduardJiron GitHub" style="margin: 0;" loading="lazy"></a>
+  <a href="https://github.com/rmtai"><img width="48" src="https://github.com/rmtai.png" alt="rmtai GitHub" style="margin: 0;" loading="lazy"></a>
+  <a href="https://github.com/GPorrasV"><img width="48" src="https://github.com/GPorrasV.png" alt="GPorrasV GitHub" style="margin: 0;" loading="lazy"></a>
+  <a href="https://github.com/RiuskeKMS"><img width="48" src="https://github.com/RiuskeKMS.png" alt="RiuskeKMS GitHub" style="margin: 0;" loading="lazy"></a>
+  <a href="https://github.com/BenjaminNarvaez-est"><img width="48" src="https://github.com/BenjaminNarvaez-est.png" alt="BenjaminNarvaez-est GitHub" style="margin: 0;" loading="lazy"></a>
+  <a href="https://github.com/GhostlyCoder20"><img width="48" src="https://github.com/GhostlyCoder20.png" alt="GhostlyCoder20 GitHub" style="margin: 0;" loading="lazy"></a>
+  <a href="https://github.com/simplyZair"><img width="48" src="https://github.com/simplyZair.png" alt="simplyZair GitHub" style="margin: 0;" loading="lazy"></a>
+</div>
