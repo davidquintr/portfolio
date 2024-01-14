@@ -27,7 +27,7 @@ export default function Home() {
         <ul className="flex w-full flex-col gap-1.5 md:flex-row">
           {en.home.experience.list.map((experience, index) => (
             <li
-              className="md:w-[50%] px-4 py-2 rounded-md bg-light-gray dark:bg-dark-items flex flex-col"
+              className="md:w-[50%] px-2.5 py-2 rounded-md bg-light-gray dark:bg-dark-items flex flex-col"
               key={index}
             >
               <div className="flex gap-2">

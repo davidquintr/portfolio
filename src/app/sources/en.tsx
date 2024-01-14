@@ -34,14 +34,14 @@ const en = {
           location: "Managua, Nicaragua",
           time: "September 2022 - August 2022",
           tech: [tech.html, tech.css, tech.javascript,tech.dotnet, tech.sqlserver],
-          description: `- Development of Web Platform 'Expediente Docente' for the Department of Education of the confiscated Universidad Centroamericana`
+          description: `- Development of Web Platform 'Expediente Docente' for the Department of Education of the confiscated Universidad Centroamericana.`
         },
         {
           name: "OOQIA",
           position: "Web Developer Intern",
           location: "Managua, Nicaragua",
           time: "September 2023 - Present",
-          tech: [tech.wordpress, tech.html, tech.css, tech.javascript, tech.sass, tech.vuejs, tech.nuxtjs, tech.mysql],
+          tech: [tech.wordpress, tech.html, tech.css, tech.javascript, tech.php, tech.tailwind,tech.sass, tech.vuejs, tech.nuxtjs, tech.mysql],
           description: `- Development of WordPress themes, improvements and support for the customers of OOQIA.
           - Building strong websites for effective SEO performance and smooth UI/UX.`
         },
