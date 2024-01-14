@@ -43,6 +43,7 @@ const config: Config = {
           black: "#333333",
           gray: "#efefef",
           bg: "#eaeaea",
+          shadow: '#575757',
           blue: {
             100: "#c0e6ff",
             200: "#a3daff",

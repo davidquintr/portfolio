@@ -17,12 +17,12 @@ export default function Header() {
     <header className="max-w-[1360px] w-full mx-auto">
       <div className="flex-col border sm:mx-4 bg-white dark:bg-black border-light-blue-200 dark:border-dark-blue-200 rounded-t-lg p-2.5 sm:p-5 dark:bg-dark-gradient flex justify-center gap-6 min-h-[240px] items-center sm:flex-row">
         <Image
-          className="rounded-full"
+          className="rounded-full size-[200px]"
           src="/davidquint-photo.png"
           quality={20}
-          width={200}
+          width={120}
           priority={true}
-          height={200}
+          height={120}
           alt={en.author}
           title={en.author}
         />

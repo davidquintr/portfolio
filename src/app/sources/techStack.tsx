@@ -16,6 +16,9 @@ import {
   SiCplusplus,
   SiGit,
   SiMarkdown,
+  SiVuedotjs,
+  SiWordpress,
+  SiNuxtdotjs,
 } from "react-icons/si";
 import { TbBrandCSharp, TbBrandKotlin, TbBrandNextjs } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
@@ -106,6 +109,18 @@ const techStack: TechStack = {
     text: "TailwindCSS",
     icon: SiTailwindcss,
   },
+  vuejs: {
+    text: "Vue.js",
+    icon: SiVuedotjs
+  },
+  wordpress: {
+    text: "WordPress",
+    icon: SiWordpress
+  },
+  nuxtjs: {
+    text: "Nuxt.js",
+    icon: SiNuxtdotjs,
+  }
 };
 
 export default techStack;

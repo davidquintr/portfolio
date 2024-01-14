@@ -1,4 +1,5 @@
 import ProjectsEn from "./projects_en";
+import tech from "./techStack";
 
 const en = {
   author: "David Quintanilla",
@@ -25,25 +26,32 @@ const en = {
   },
   home: {
     experience: {
-      title: "Experience",
-      list: {
-        uca: {
+      title: "Relevant Experience",
+      list: [
+        {
           name: "Universidad Centroamericana",
           position: "Project Manager",
+          location: "Managua, Nicaragua",
           time: "September 2022 - August 2022",
+          tech: [tech.html, tech.css, tech.javascript,tech.dotnet, tech.sqlserver],
+          description: `- Development of Web Platform 'Expediente Docente' for the Department of Education of the confiscated Universidad Centroamericana`
         },
-        ooqia: {
+        {
           name: "OOQIA",
           position: "Web Developer Intern",
+          location: "Managua, Nicaragua",
           time: "September 2023 - Present",
+          tech: [tech.wordpress, tech.html, tech.css, tech.javascript, tech.sass, tech.vuejs, tech.nuxtjs, tech.mysql],
+          description: `- Development of WordPress themes, improvements and support for the customers of OOQIA.
+          - Building strong websites for effective SEO performance and smooth UI/UX.`
         },
-      },
+      ],
     },
     about_me: {
       title: "About me",
       description: `Hello! I'm David Quintanilla Ruiz, a programmer who also dabbles in the world of design. I consider myself a fast learner, easily adaptable to the current needs. I possess excellent communication skills and know how to lead teams effectively. My expertise lies in creating and designing web pages, particularly focusing on user interface and user experience.
-      I served as a Project Manager for the development of the 'Teacher's Record' platform at the Central American University in my country, Nicaragua.
-      Currently, I'm a student of Systems Engineering at the Central American University of Nicaragua, expecting to complete my studies by 2026. Among my interests are playing video games, watching technology videos, and occasionally drawing.`,
+      I served as a Project Manager for the development of the 'Expediente Docente' platform at the Universidad Centroamericana of Nicaragua, I'm currently employed as a Web Developer at OOQIA and not seeking new positions.
+      Among my interests are playing video games, watching technology videos, and occasionally drawing.`,
     },
     personal_info: {
       title: "Personal Info",

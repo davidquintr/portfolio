@@ -91,7 +91,7 @@ export default function Contact() {
           </div>
           <button
             disabled={disableButton}
-            className="flex justify-center items-center w-full gap-2 mb-4 mt-2 py-2 rounded-full bg-light-blue-400 dark:bg-dark-blue-500 enabled:dark:hover:bg-dark-blue-200 dark:text-dark-blue-100  enabled:hover:bg-light-blue-500 enabled:active:scale-95 disabled:brightness-90 disabled:scale-95 transition-all text-white"
+            className="flex justify-center items-center w-full gap-2 mb-4 mt-2 py-2 rounded-full bg-light-blue-100 dark:bg-dark-blue-500 enabled:dark:hover:bg-dark-blue-200 dark:text-dark-blue-100  enabled:hover:bg-light-blue-300 enabled:active:scale-95 disabled:brightness-90 disabled:scale-95 transition-all text-light-blue-500"
           >
             <FontAwesomeIcon
               icon={inProgress ? faSpinner : faPaperPlane}
