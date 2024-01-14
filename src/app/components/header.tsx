@@ -20,9 +20,10 @@ export default function Header() {
           className="rounded-full size-[200px]"
           src="/davidquint-photo.png"
           quality={50}
-          width={128}
+          width={200}
+          sizes="(max-width: 768px) 18vw, (max-width: 1200px) 18vw, 20vw"
           priority={true}
-          height={128}
+          height={200}
           alt={en.author}
           title={en.author}
         />
