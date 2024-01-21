@@ -1,4 +1,5 @@
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./style/globals.css";
 import Header from "./components/header";
 import Navigation from "./components/navigation";
@@ -34,6 +35,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <GoogleAnalytics gaId="G-7QXYTQD1ZD" />
+        <SpeedInsights/>
       </body>
     </html>
   );
