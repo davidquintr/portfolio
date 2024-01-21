@@ -1,7 +1,7 @@
 const PAGE_PREFIX = "DavidQuint's Portfolio";
 const PAGE_DESCRIPTION =
   "Hello! I'm David Quintanilla Ruiz, a programmer who also dabbles in the world of design. I consider myself a fast learner, easily adaptable to the current needs.";
-const PAGE_URL = "https://davidquintr.vercel.app/";
+const PAGE_URL = "https://davidquintr.com/";
 
 const MetadataBase = {
   default: {

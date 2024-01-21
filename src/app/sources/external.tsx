@@ -2,7 +2,7 @@ import { faFacebook, faGithub, faLinkedin, faTwitter } from "@fortawesome/free-b
 
 const external = {
   sourceCode: "https://github.com/davidquintr/portfolio",
-  domain: "https://davidquintr.vercel.app/",
+  domain: "https://davidquintr.com/",
   curriculum: "CVDavidQuintanilla",
   social_media: [
     {
