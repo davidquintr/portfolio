@@ -5,6 +5,7 @@ import Header from "./components/header";
 import Navigation from "./components/navigation";
 import Footer from "./components/footer";
 import { poppins } from "./utils/fonts";
+import schema from './sources/schema';
 
 export const viewport = {
   themeColor: [
@@ -18,6 +19,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  
   return (
     <html lang="en">
       <body
@@ -33,9 +35,10 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <GoogleAnalytics gaId="G-7QXYTQD1ZD" />
-        <SpeedInsights/>
       </body>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <GoogleAnalytics gaId="G-7QXYTQD1ZD" />
+      <SpeedInsights/>
     </html>
   );
 }
