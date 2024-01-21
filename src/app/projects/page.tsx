@@ -1,6 +1,8 @@
+import { Metadata } from "next";
 import BoxContent from "../components/boxContent";
 import Project from "../components/project";
 import en from "../sources/en";
+import { MetadataProjects } from "../sources/metadata_en";
 
 export default function Projects() {
   return (
@@ -27,3 +29,5 @@ export default function Projects() {
     </BoxContent>
   );
 }
+
+export const metadata: Metadata = MetadataProjects;

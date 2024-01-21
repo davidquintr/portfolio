@@ -2,16 +2,16 @@ import BoxContent from "@/app/components/boxContent";
 import en from "@/app/sources/en";
 import external from "@/app/sources/external";
 import { PostMetadata } from "@/app/sources/post_metadata";
-import IBlog from "@/app/types/TypeBlog";
 import date from "@/app/utils/date";
 import { getPostMetadata } from "@/app/utils/postMetaData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
-import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { GoogleAnalytics } from '@next/third-parties/google'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 let slug = '';
 
@@ -114,6 +114,8 @@ export default function BlogPage(props: any) {
       <article className="prose max-w-max dark:prose-a:text-white prose-li:my-0.5 prose-headings:text-light-blue-500 dark:prose-headings:text-dark-blue-100 prose-img:rounded-lg prose-video:rounded-lg dark:*:text-dark-gray">
         {<Markdown>{post.content}</Markdown>}
       </article>
+      <GoogleAnalytics gaId="G-7QXYTQD1ZD" />
+      <SpeedInsights/>
     </BoxContent>
   );
 }
@@ -126,3 +128,4 @@ export async function generateMetadata ({params}: genMetadata){
   const slug = params.slug;
   return PostMetadata(slug);
 }
+

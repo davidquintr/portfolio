@@ -2,6 +2,8 @@ import BoxContent from "../components/boxContent";
 import en from "../sources/en";
 import Post from "../components/post";
 import { getPostMetadata } from "../utils/postMetaData";
+import type { Metadata } from "next";
+import { MetadataBlog } from "../sources/metadata_en";
 
 export default function Blog() {
   const posts = getPostMetadata();
@@ -19,3 +21,5 @@ export default function Blog() {
     </BoxContent>
   );
 }
+
+export const metadata: Metadata = MetadataBlog;

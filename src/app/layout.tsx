@@ -13,7 +13,6 @@ export const viewport = {
   ],
 };
 
-
 export default function RootLayout({
   children,
 }: {
