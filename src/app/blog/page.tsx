@@ -10,7 +10,7 @@ export default function Blog() {
   return (
     <BoxContent title={en.blog.title} className="">
       <ul className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
-        {posts.map((post, index) => (
+        {(posts.reverse()).map((post, index) => (
           <Post
             key={index}
             index={index}

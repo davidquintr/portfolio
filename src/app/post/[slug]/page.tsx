@@ -109,7 +109,7 @@ export default function BlogPage(props: any) {
         </picture>
       </div>
       <span className="block h-[1px] bg-light-border-gradient dark:bg-dark-border-gradient my-4"></span>
-      <article className="prose max-w-max dark:prose-a:text-white prose-li:my-0.5 prose-headings:text-light-blue-500 dark:prose-headings:text-dark-blue-100 prose-img:rounded-lg prose-video:rounded-lg dark:*:text-dark-gray">
+      <article className="prose max-w-max dark:prose-a:text-white prose-li:my-0.5 prose-headings:text-light-blue-500 dark:prose-headings:text-dark-blue-100 prose-img:rounded-lg prose-video:rounded-lg *:accent-light-blue-400  dark:*:accent-dark-blue-100 dark:*:text-dark-gray">
         {<Markdown>{post.content}</Markdown>}
       </article>
     </BoxContent>

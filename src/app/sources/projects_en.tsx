@@ -71,16 +71,6 @@ const ProjectsEn = {
     onlineLink: "https://whatsapp-reader-next.vercel.app/",
     moreLink: "",
   },
-  logic_nexus: {
-    title: "LogicNexus Page",
-    description:
-      "Project with other people, this is the presentation of our services, technologies and contact. We can come true your software ideas. :)",
-    techs: [techs.nextjs, techs.tailwind],
-    gallery: ["/logicnexusland-1.png"],
-    sourceLink: "",
-    onlineLink: "https://logicnexus.vercel.app/",
-    moreLink: "",
-  },
 };
 
 export default ProjectsEn;

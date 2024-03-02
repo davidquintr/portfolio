@@ -34,7 +34,7 @@ export default function Project(project: IProject) {
         </div>
         <div className="flex flex-col flex-1 justify-between">
           <div>
-            <h2 className="text-light-blue-500 dark:text-dark-blue-100 font-bold text-3xl my-2">
+            <h2 className="text-light-blue-500 dark:text-dark-blue-100 font-bold text-2xl my-2">
               {project.title}
             </h2>
             <p className="text-light-black dark:text-dark-gray">
