@@ -43,9 +43,9 @@ export default function Post({post, index} : IPost) {
               </span>
             ))}
           </div>
-          <h2 className="text-light-blue-500 dark:text-dark-blue-100 text-2xl font-bold pb-2">
+          <h3 className="text-light-blue-500 dark:text-dark-blue-100 text-2xl font-bold pb-2">
             {post.title}
-          </h2>
+          </h3>
           <p className="text-light-black dark:text-dark-gray text-xs">{post.description}</p>
         </div>
       </Link>

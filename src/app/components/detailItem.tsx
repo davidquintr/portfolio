@@ -12,9 +12,9 @@ interface IdetailItem {
 export default function DetailItem({ title, description, link }: IdetailItem) {
   return (
     <div className="bg-light-gray dark:bg-dark-items rounded-lg flex mb-1.5 h-12  items-center justify-between px-2.5 border-light-blue-200 dark:border-dark-blue-200 border-b">
-      <h2 className="text-light-blue-500 dark:text-dark-blue-100 font-bold">
+      <h3 className="text-light-blue-500 dark:text-dark-blue-100 font-bold">
         {title}
-      </h2>
+      </h3>
       {description != "" && (
         <p className="dark:text-white text-light-black">{description}</p>
       )}

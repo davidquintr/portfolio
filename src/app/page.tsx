@@ -49,12 +49,12 @@ export default function Home() {
                     />
                   </picture>
                   <figcaption className="flex flex-col gap-0.5">
-                    <h2 className="text-light-blue-500 dark:text-dark-blue-100 text-xl font-bold">
+                    <h3 className="text-light-blue-500 dark:text-dark-blue-100 text-xl font-bold">
                       {experience.position}
-                    </h2>
-                    <h3 className="text-light-black dark:text-white">
-                      {experience.name}
                     </h3>
+                    <h4 className="text-light-black dark:text-white">
+                      {experience.name}
+                    </h4>
                     <span className="text-xs">{experience.time}</span>
                     <div className="flex gap-0.5 items-center text-light-shadow dark:text-dark-gray">
                       <FontAwesomeIcon
