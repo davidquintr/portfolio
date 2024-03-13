@@ -5,9 +5,7 @@ date: "2023-06-15"
 tags: ["Services", "Freelance", "UI/UX", "Web", "UCA"]
 ---
 ## La realidad y mi situación
-Actualmente, mi vida se ha complicado debido a los innumerables calvarios que han sucedido por culpa de la inestabilidad política de mi país, mi universidad, Universidad Centroamericana de Managua-Nicaragua [fue confiscada por el gobierno de Nicaragua](https://es.wikipedia.org/wiki/Universidad_Centroamericana#Confiscaci%C3%B3n_y_cierre), alegando corrupción y terrorismo, como justificación a tan agravante hecho.
-
-En respuesta a esto, nunca ha sido mi intención quedarme de brazos cruzados a ver qué sucede, decidí partir hacia nuevos horizontes y hoy me encuentro en El Salvador, tratando de retomar mis estudios como Ingeniero en Sistemas de Información. Aunque actualmente tengo ingresos fijos como desarrollador web, necesito obtener ingresos extras para lograr subsistir y es por eso que estoy ofreciendo mis servicios como desarrollador web.
+Actualmente, mi vida se ha complicado debido al cierre de mi universidad, Universidad Centroamericana de Managua-Nicaragua, en respuesta a esto, nunca ha sido mi intención quedarme de brazos cruzados a ver qué sucede, decidí partir hacia nuevos horizontes y hoy me encuentro en El Salvador, tratando de retomar mis estudios como Ingeniero en Sistemas de Información. Aunque actualmente tengo ingresos fijos como desarrollador web, necesito obtener ingresos extras para lograr subsistir y es por eso que estoy ofreciendo mis servicios como desarrollador web.
 
 ## Servicios
 Tengo conocimiento de multifacético en el mundo de la tecnología y puedo diseñar soluciones para tu negocio y productividad en el campo, puedo ofrecer los siguientes servicios:
