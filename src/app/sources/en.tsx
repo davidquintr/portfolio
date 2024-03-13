@@ -3,7 +3,7 @@ import tech from "./techStack";
 
 const en = {
   author: "David Quintanilla",
-  role: "System Engineering Student, Programmer and UI/UX Designer",
+  role: "Web developer and Informatic Engineering Student",
   email: "davidquintr@gmail.com",
   birthday: "2004/04/19",
   country: "Nicaragua",
