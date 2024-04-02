@@ -2,7 +2,7 @@ import ProjectsEn from "./projects_en";
 import tech from "./techStack";
 
 const en = {
-  author: "David Quintanilla",
+  author: "David Quintanilla Ruiz",
   role: "Web developer and Informatic Engineering Student",
   email: "davidquintr@gmail.com",
   birthday: "2004/04/19",
