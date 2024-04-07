@@ -9,7 +9,7 @@ export default function Blog() {
   const posts = getPostMetadata();
   return (
     <BoxContent title={en.blog.title} className="">
-      <ul className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+      <ul className="grid md:grid-cols-2 gap-2">
         {(posts.reverse()).map((post, index) => (
           <Post
             key={index}

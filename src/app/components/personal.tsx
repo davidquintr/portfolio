@@ -23,8 +23,8 @@ export default function Personal() {
           alt={en.author}
           title={en.author}
         />
-        <div className="text-center flex flex-col justify-center sm:text-left text-light-primary">
-        <h1 className="text-xl">{en.role}</h1>
+        <div className="text-center flex flex-col justify-center sm:text-left text-light-primary dark:text-white">
+          <h1 className="text-xl dark:text-dark-gray-100">{en.role}</h1>
           <h2 className="font-bold text-4xl">
             {en.author}
           </h2>
@@ -35,7 +35,7 @@ export default function Personal() {
                 target="_blank"
                 aria-label={media.name}
                 href={media.link}
-                className="bg-light-blue-100 hover:bg-light-blue-200 transition-all active:scale-95 text-light-primary flex justify-center items-center gap-1 px-1.5 py-1 rounded-md"
+                className="bg-light-blue-100 dark:bg-dark-blue-600 dark:text-dark-blue-100 hover:bg-light-blue-200 dark:hover:bg-dark-blue-700 transition-all active:scale-95 text-light-primary flex justify-center items-center gap-1 px-1.5 py-1 rounded-md"
               >
                 <FontAwesomeIcon
                   icon={media.icon}

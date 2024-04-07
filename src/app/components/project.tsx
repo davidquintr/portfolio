@@ -3,6 +3,7 @@ import IProject from "../types/TypeProject";
 import en from "../sources/en";
 import { faEye, faCode, faAlignLeft } from "@fortawesome/free-solid-svg-icons";
 import ExternalLink from "./externalLink";
+import TechItem from "./tech_item";
 
 export default function Project(project: IProject) {
   const PROJECT_DIRECTORY = "/projects";
@@ -10,12 +11,12 @@ export default function Project(project: IProject) {
   return (
     <li
       style={{ animationDelay: (project.index * 75).toString().concat("ms") }}
-      className={`flex animate-fade-right animate-ease-in-out animate-duration-500 animate-once flex-col rounded-lg overflow-hidden bg-light-gray border-light-blue-400 dark:bg-black border-2 dark:border-dark-blue-200`}
+      className={`flex animate-fade-right flex-col items-center animate-ease-in-out animate-duration-500 animate-once overflow-hidden`}
     >
-      <div className="carousel">
+      <div className="carousel w-full aspect-video rounded-lg border border-dark-blue-700">
         {project.gallery.map((image, index) => (
           <Image
-            className="w-full carousel-item aspect-video scroll snap-always"
+            className="carousel-item w-full aspect-video scroll snap-always"
             alt={`${project.title} - ${index}`}
             width={480}
             height={270}
@@ -26,23 +27,23 @@ export default function Project(project: IProject) {
           />
         ))}
       </div>
-      <div className="flex flex-col justify-between dark:bg-dark-gradient flex-1 py-2.5 px-5">
-        <div className="flex gap-1 my-3.5 text-light-blue-600 dark:text-white">
+      <div className="flex size-full p-2 flex-col justify-between dark:bg-dark-gradient flex-1">
+        <div className="flex flex-wrap gap-1 mb-1 text-light-blue-600 dark:text-white">
           {project.techs.map((tech, index) => (
-            <tech.icon size="36" key={index} />
+            <TechItem height={10} icon={tech.icon} text={tech.text} key={index} />
           ))}
         </div>
-        <div className="flex flex-col flex-1 justify-between">
+        <div className="flex flex-col flex-1 justify-between gap-1">
           <div>
-            <h3 className="text-light-blue-500 dark:text-dark-blue-100 font-bold text-2xl my-2">
+            <h3 className="text-light-blue-500 text-lg dark:text-dark-blue-100 font-bold">
               {project.title}
             </h3>
-            <p className="text-light-black dark:text-dark-gray">
+            <p className="text-light-black dark:text-dark-gray text-xs">
               {project.description}
             </p>
           </div>
         </div>
-        <div className="flex justify-center gap-1 mt-6">
+        <div className="flex gap-1 mt-2">
           <ExternalLink
             icon={faEye}
             link={project.onlineLink}

@@ -32,7 +32,7 @@ const applications = [
 export default function Home() {
   return (
     <>
-      <article className="flex flex-col lg:grid lg:grid-cols-6 gap-2.5 w-full">
+      <article className="flex flex-col lg:grid lg:grid-cols-6 gap-2.5 sm:gap-6 w-full">
         <BoxContent
           className="animate-delay-200 lg:animate-delay-0 lg:col-span-4"
           title={en.home.about_me.title}

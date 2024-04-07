@@ -9,13 +9,13 @@ export default function Navigation() {
 
   return (
     <>
-    <header className="flex bg-light-blue-100 gap-4 justify-center rounded-b-md mb-6 max-w-[1360px] w-full mx-auto">
+    <header className="flex bg-light-blue-100 dark:bg-dark-blue-550 gap-4 justify-center rounded-b-md mb-6 max-w-[1400px] w-full mx-auto z-10">
         {routes.map((link, index) => {
           return (
             <Link
               key={index}
-              className={`py-2.5 px-2 text-light-primary text-base transition-all active:scale-95 ${
-                link.href == path ? "bg-light-blue-200 hover:light-blue-100" : "hover:bg-light-blue-150"}`}
+              className={`py-2.5 px-2 text-light-primary dark:text-dark-blue-300 text-base transition-all active:scale-95 ${
+                link.href == path ? "bg-light-blue-200 hover:light-blue-100 dark:bg-dark-blue-500" : "hover:bg-light-blue-150 dark:hover:bg-dark-blue-500"}`}
               href={link.href}
             >
               <FontAwesomeIcon icon={link.icon} className="size-3 sm:size-5 hidden" />
