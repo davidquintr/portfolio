@@ -1,5 +1,5 @@
 import "./style/globals.css";
-import Header from "./components/header";
+import Personal from "./components/personal";
 import Navigation from "./components/navigation";
 import Footer from "./components/footer";
 import { poppins } from "./utils/fonts";
@@ -20,15 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`flex flex-col ${poppins.variable} font-poppins bg-light-bg dark:bg-dark-bg min-h-screen`}
+        className={`flex flex-col ${poppins.variable} bg-light-background min-h-screen px-4 mx-auto flex-grow`}
       >
-        <Header />
-        <nav className="sticky top-[-10px] z-10 max-w-[1360px] w-full mx-auto">
-          <div className="px-4 sm:mx-4 flex gap-2.5 justify-center bg-white dark:bg-dark-box rounded-lg my-2.5 py-2">
-            <Navigation />
-          </div>
-        </nav>
-        <main className="max-w-[1360px] w-full sm:px-4 mx-auto flex-grow">
+        <Navigation />
+        <Personal />
+        <main className="max-w-[1360px] w-full mx-auto flex-1">
           {children}
         </main>
         <Footer />

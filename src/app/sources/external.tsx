@@ -3,7 +3,16 @@ import { faFacebook, faGithub, faLinkedin, faTwitter } from "@fortawesome/free-b
 const external = {
   sourceCode: "https://github.com/davidquintr/portfolio",
   domain: "https://davidquintr.com/",
-  curriculum: "CVDavidQuintanilla",
+  curriculum: [
+    {
+      link: "https://www.davidquintr.com/documents/CV-DavidQuintanilla-EN.pdf",
+      name: "English"
+    },
+    {
+      link: "https://www.davidquintr.com/documents/CV-DavidQuintanilla-ES.pdf",
+      name: "Spanish"
+    }
+  ],
   social_media: [
     {
       name: "GitHub",

@@ -3,16 +3,18 @@ import tech from "./techStack";
 
 const en = {
   author: "David Quintanilla Ruiz",
-  role: "Web developer and Informatic Engineering Student",
+  role: "Web Developer and UI/UX designer",
   email: "davidquintr@gmail.com",
   birthday: "2004/04/19",
-  country: "Nicaragua",
+  nationality: "Nicaraguan",
+  country: "El Salvador",
+  cvText: "Curriculum",
   detail_item: {
     open: "Open",
     emailText: "Email",
     birthdayText: "Birthday",
     countryText: "Country",
-    cvText: "CV",
+    nationality: "Nationality",
   },
   navigation: {
     home: "Home",
@@ -56,6 +58,12 @@ const en = {
     personal_info: {
       title: "Personal Info",
     },
+    tech_stack: {
+      title: "Tech Stack"
+    },
+    applications: {
+      title: "Applications"
+    }
   },
   projects: {
     title: "Projects",

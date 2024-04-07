@@ -19,6 +19,9 @@ import {
   SiVuedotjs,
   SiWordpress,
   SiNuxtdotjs,
+  SiAdobepremierepro,
+  SiFigma,
+  SiAzuredevops,
 } from "react-icons/si";
 import { TbBrandCSharp, TbBrandKotlin, TbBrandNextjs } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
@@ -64,6 +67,18 @@ const techStack: TechStack = {
   photoshop: {
     text: "Adobe Photoshop",
     icon: SiAdobephotoshop,
+  },
+  premiere: {
+    text: "Adobe Premiere",
+    icon: SiAdobepremierepro,
+  },
+  figma: {
+    text: "Figma",
+    icon: SiFigma,
+  },
+  azuredevops: {
+    text: "Azure DevOps",
+    icon: SiAzuredevops,
   },
   csharp: {
     text: "C#",
