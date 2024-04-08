@@ -14,3 +14,7 @@
 .open-close-anim {
     animation: open-close 1s;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
