@@ -41,8 +41,18 @@ export default function BlogPage(props: any) {
 
   return (
     <BoxContent title="" className="">
-      <div className="flex flex-col-reverse xl:flex-row md:px-8 gap-4 my-4">
-        <div className="flex flex-col gap-1 flex-1 animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-100 xl:animate-delay-0 animate-once">
+      <div className="flex flex-col xl:flex-row md:px-8 gap-4 my-4">
+        <picture className="xl:max-w-[50%] animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-100 xl:animate-delay-100 animate-once">
+            <Image
+              className="aspect-video rounded-md drop-shadow-xl mx-auto"
+              alt=""
+              src={`${BLOG_PATH}/${slug}${IMG_EXT}`}
+              width={800}
+              height={450}
+              priority={true}
+            />
+          </picture>
+        <div className="flex flex-col gap-1 flex-1 animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-0 xl:animate-delay-0 animate-once">
           <div className="flex flex-col gap-1.5 text-light-black dark:text-dark-gray">
             <div className="flex flex-wrap gap-1">
               {post.data.tags.map((tag: any, index: any) => (
@@ -84,32 +94,22 @@ export default function BlogPage(props: any) {
                     aria-label={media.name}
                     href={`${media.url}${external.domain}${POST_PATH}/${slug}`}
                     key={index}
-                    className="dark:bg-dark-blue-500 dark:hover:bg-dark-blue-200 bg-light-blue-400 flex justify-center items-center p-3 text-white hover:bg-light-blue-500 active:scale-95 transition-all rounded-full"
+                    className="flex gap-1 items-center bg-light-blue-100 px-1.5 py-1 rounded-md dark:bg-dark-blue-600 dark:hover:bg-dark-blue-700 dark:text-light-blue-100 hover:bg-light-blue-200 transition-all text-light-primary active:scale-95"
                   >
                     <FontAwesomeIcon
                       icon={media.icon}
-                      className="size-7"
+                      className="size-4"
                       key={index}
                     />
+                    <p>Share</p>
                   </Link>
                 ))}
               </div>
             </div>
           </div>
         </div>
-        <picture className="xl:max-w-[50%] animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-0 xl:animate-delay-100 animate-once">
-          <Image
-            className="aspect-video rounded-md drop-shadow-xl mx-auto"
-            alt=""
-            src={`${BLOG_PATH}/${slug}${IMG_EXT}`}
-            width={800}
-            height={450}
-            priority={true}
-          />
-        </picture>
       </div>
-      <span className="block h-[1px] bg-light-border-gradient dark:bg-dark-border-gradient my-4"></span>
-      <article className="prose max-w-max dark:prose-a:text-white prose-li:my-0.5 prose-headings:text-light-blue-500 dark:prose-headings:text-dark-blue-100 prose-img:rounded-lg prose-video:rounded-lg *:accent-light-blue-400  dark:*:accent-dark-blue-100 dark:*:text-dark-gray">
+      <article className="prose max-w-max dark:prose-a:text-white prose-li:my-0.5 prose-headings:text-light-primary dark:prose-headings:text-dark-blue-100 prose-img:rounded-lg prose-video:rounded-lg *:accent-light-blue-400  dark:*:accent-dark-blue-100 dark:*:text-dark-gray">
         {<Markdown>{post.content}</Markdown>}
       </article>
     </BoxContent>

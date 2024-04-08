@@ -9,8 +9,8 @@ const MetadataBase = {
     description: PAGE_DESCRIPTION,
     icons: {
       icon: [
-        { url: "/icon_light.png" },
-        { url: "/icon_dark.png", media: "(prefers-color-scheme: dark)" },
+        { url: "/icon_light.svg" },
+        { url: "/icon_dark.svg", media: "(prefers-color-scheme: dark)" },
       ],
     },
   },
@@ -20,7 +20,7 @@ const MetadataBase = {
     sitename: PAGE_PREFIX,
     images: [
       {
-        url: `${PAGE_URL}thumbnail-full.png`,
+        url: `${PAGE_URL}thumbnail.webp`,
       },
     ],
     type: "website",
@@ -28,7 +28,7 @@ const MetadataBase = {
   twitter: {
     card: "summary_large_image",
     description: PAGE_DESCRIPTION,
-    images: [`${PAGE_URL}thumbnail-full.png`],
+    images: [`${PAGE_URL}thumbnail.webp`],
   },
 };
 

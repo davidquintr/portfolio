@@ -10,8 +10,8 @@ import DropdownButton from "./dropdown_button";
 export default function Personal() {
 
   return (
-    <section className="w-full mx-auto mb-12">
-      <div className="flex justify-center gap-2">
+    <section className="w-full mx-auto mb-12 px-2 z-10">
+      <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center gap-2">
         <Image
           className="rounded-full size-[120px]"
           src="/davidquint-photo.png"
@@ -25,10 +25,10 @@ export default function Personal() {
         />
         <div className="text-center flex flex-col justify-center sm:text-left text-light-primary dark:text-white">
           <h1 className="text-xl dark:text-dark-gray-100">{en.role}</h1>
-          <h2 className="font-bold text-4xl">
+          <h2 className="font-bold text-3xl sm:text-4xl">
             {en.author}
           </h2>
-          <div className="flex gap-1.5 pt-1">
+          <div className="flex justify-center sm:justify-start gap-1.5 pt-1">
             {external.social_media.map((media, index) => (
               <Link
                 key={index}
