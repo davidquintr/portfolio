@@ -11,7 +11,7 @@ export default function Contact() {
 
   return (
     <BoxContent title={en.contact.title} className="">
-      <div className="grid md:grid-cols-7 gap-8">
+      <div className="grid md:grid-cols-7 gap-8 text-center md:text-left">
         <Form />
         <div className="flex flex-col justify-center md:col-span-3">
           <p className="font-medium dark:text-white text-2xl mb-2">
@@ -19,7 +19,7 @@ export default function Contact() {
           </p>
           <div>
             <p>{en.contact.share_my}</p>
-            <div className="flex gap-1">
+            <div className="flex gap-1 justify-center md:justify-start">
               {external.social_api.map((media, index) => (
                 <Link
                   target="_blank"

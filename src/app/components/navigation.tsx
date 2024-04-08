@@ -9,12 +9,12 @@ export default function Navigation() {
 
   return (
     <>
-    <header className="flex z-20 bg-light-blue-100 backdrop-blur-3xl dark:bg-dark-blue-550 gap-4 justify-center rounded-b-md mb-6 max-w-[1400px] w-full mx-auto top-0 sticky">
+    <header className="flex z-30 bg-light-blue-100 backdrop-blur-3xl dark:bg-dark-blue-550 justify-center rounded-b-md mb-6 max-w-[1400px] w-full mx-auto top-0 sticky">
         {routes.map((link, index) => {
           return (
             <Link
               key={index}
-              className={`py-2.5 px-2 text-light-primary dark:text-dark-blue-300 text-base transition-all active:scale-95 ${
+              className={`py-2.5 px-4 text-light-primary dark:text-dark-blue-300 text-base transition-all active:scale-95 ${
                 link.href == path ? "bg-light-blue-200 hover:light-blue-100 dark:bg-dark-blue-500" : "hover:bg-light-blue-150 dark:hover:bg-dark-blue-500"}`}
               href={link.href}
             >

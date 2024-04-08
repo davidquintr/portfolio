@@ -10,7 +10,7 @@ import DropdownButton from "./dropdown_button";
 export default function Personal() {
 
   return (
-    <section className="w-full mx-auto mb-12 px-2 z-10">
+    <section className="w-full mx-auto mb-12 px-2 z-20">
       <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center gap-2">
         <Image
           className="rounded-full size-[120px]"
