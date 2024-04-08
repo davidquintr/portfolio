@@ -5,11 +5,11 @@ const external = {
   domain: "https://davidquintr.com/",
   curriculum: [
     {
-      link: "https://www.davidquintr.com/documents/CV-DavidQuintanilla-EN.pdf",
+      link: "/documents/CV-DavidQuintanilla-EN.pdf",
       name: "English"
     },
     {
-      link: "https://www.davidquintr.com/documents/CV-DavidQuintanilla-ES.pdf",
+      link: "/documents/CV-DavidQuintanilla-ES.pdf",
       name: "Spanish"
     }
   ],

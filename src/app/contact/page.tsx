@@ -14,7 +14,7 @@ export default function Contact() {
       <div className="grid md:grid-cols-7 gap-8 text-center md:text-left">
         <Form />
         <div className="flex flex-col justify-center md:col-span-3">
-          <p className="font-medium dark:text-white text-2xl mb-2">
+          <p className="font-medium text-pretty dark:text-white text-2xl mb-2">
             {en.contact.cta}
           </p>
           <div>

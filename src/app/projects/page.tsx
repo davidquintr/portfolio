@@ -7,7 +7,7 @@ import { MetadataProjects } from "../sources/metadata_en";
 export default function Projects() {
   return (
     <BoxContent title={en.projects.title} className="">
-      <ul className="grid sm:grid-cols-3 gap-4">
+      <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {Object.keys(en.projects.list).map((projectKey, index) => {
           const project =
             en.projects.list[projectKey as keyof typeof en.projects.list];

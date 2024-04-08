@@ -6,8 +6,8 @@ import { poppins } from "./utils/fonts";
 
 export const viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#11a5e0" },
-    { media: "(prefers-color-scheme: dark)", color: "#0c1738" },
+    { media: "(prefers-color-scheme: light)", color: "#c6ceff" },
+    { media: "(prefers-color-scheme: dark)", color: "#263365" },
   ],
 };
 
@@ -24,7 +24,7 @@ export default function RootLayout({
       >
         <Navigation />
         <Personal />
-        <main className="max-w-[1400px] w-full mx-auto flex-1 z-10 px-2">
+        <main className="max-w-[1400px] w-full mx-auto flex-1 z-10 px-4">
           {children}
         </main>
         <span className="bg-light-blue-400 size-60 sm:size-80 rounded-full absolute right-0 z-0 blur-[256px] animate-pulse animate-duration-[5000ms]"></span>

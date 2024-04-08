@@ -42,7 +42,7 @@ export default function BlogPage(props: any) {
   return (
     <BoxContent title="" className="">
       <div className="flex flex-col xl:flex-row md:px-8 gap-4 my-4">
-        <picture className="xl:max-w-[50%] animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-100 xl:animate-delay-100 animate-once">
+        <picture className="xl:max-w-[50%] animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-0 xl:animate-delay-100 animate-once">
             <Image
               className="aspect-video rounded-md drop-shadow-xl mx-auto"
               alt=""
@@ -52,18 +52,18 @@ export default function BlogPage(props: any) {
               priority={true}
             />
           </picture>
-        <div className="flex flex-col gap-1 flex-1 animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-0 xl:animate-delay-0 animate-once">
+        <div className="flex flex-col gap-1 flex-1 animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-100 xl:animate-delay-0 animate-once">
           <div className="flex flex-col gap-1.5 text-light-black dark:text-dark-gray">
-            <div className="flex flex-wrap gap-1">
+            <ul className="flex flex-wrap gap-1">
               {post.data.tags.map((tag: any, index: any) => (
-                <span
+                <li
                   className="px-2.5 py-[5px] bg-light-gray rounded-lg text-black text-xs dark:bg-white"
                   key={index}
                 >
                   {tag}
-                </span>
+                </li>
               ))}
-            </div>
+            </ul>
             <h1 className="font-bold text-4xl text-light-blue-600 dark:text-dark-blue-100">{post.data.title}</h1>
             <p className="pt-1">{post.data.description}</p>
             <p className="text-xs">{dateFormated}</p>

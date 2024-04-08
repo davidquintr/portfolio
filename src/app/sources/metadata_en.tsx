@@ -20,7 +20,7 @@ const MetadataBase = {
     sitename: PAGE_PREFIX,
     images: [
       {
-        url: `${PAGE_URL}thumbnail.webp`,
+        url: `${PAGE_URL}thumbnail-meta.jpg`,
       },
     ],
     type: "website",

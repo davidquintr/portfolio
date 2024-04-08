@@ -28,11 +28,11 @@ export default function Project(project: IProject) {
         ))}
       </div>
       <div className="flex size-full p-2 flex-col justify-between dark:bg-dark-gradient flex-1">
-        <div className="flex flex-wrap gap-1 mb-1 text-light-blue-600 dark:text-white">
+        <ul className="flex flex-wrap gap-1 mb-1 text-light-blue-600 dark:text-white">
           {project.techs.map((tech, index) => (
             <TechItem height={10} icon={tech.icon} text={tech.text} key={index} />
           ))}
-        </div>
+        </ul>
         <div className="flex flex-col flex-1 justify-between gap-1">
           <div>
             <h3 className="text-light-blue-500 text-lg dark:text-dark-blue-100 font-bold">
