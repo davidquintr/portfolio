@@ -9,7 +9,7 @@ export default function Navigation() {
 
   return (
     <>
-    <header className="flex bg-light-blue-100 dark:bg-dark-blue-550 gap-4 justify-center rounded-b-md mb-6 max-w-[1400px] w-full mx-auto z-10">
+    <header className="flex z-20 bg-light-blue-100 backdrop-blur-3xl dark:bg-dark-blue-550 gap-4 justify-center rounded-b-md mb-6 max-w-[1400px] w-full mx-auto top-0 sticky">
         {routes.map((link, index) => {
           return (
             <Link

@@ -1,6 +1,6 @@
 ---
-title: "Expedoc Development"
-description: "Details about the development of web platform 'Expediente Docente'."
+title: "Development of Expediente Docente"
+description: "Details about the development of web platform 'Expediente Docente' for my Universidad Centroamericana."
 date: "2023-06-15"
 tags: ["Full Stack", "Development", "ASP.Net", "Expediente Docente"]
 ---

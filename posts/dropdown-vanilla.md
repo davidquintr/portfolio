@@ -1,7 +1,7 @@
 ---
 title: "Dropdown in JavaScript vanilla"
 description: "Creating a dropdown in JavaScript vanilla, please don't use Bootstrap."
-date: "2023-06-15"
+date: "2023-09-23"
 tags: ["Frontend", "JavaScript", "Functions"]
 ---
 
