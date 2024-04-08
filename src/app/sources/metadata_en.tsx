@@ -1,6 +1,6 @@
 const PAGE_PREFIX = "DavidQuint's Portfolio";
 const PAGE_DESCRIPTION =
-  "Hello! I'm David Quintanilla Ruiz, a programmer who also dabbles in the world of design. I consider myself a fast learner, easily adaptable to the current needs.";
+  "Hello! David Quintanilla Ruiz here, a programmer with design skills. Experienced in web development and design, proficient in communication and adept at team leadership and great making captivating user interfaces and enhancing user experiences.";
 const PAGE_URL = "https://davidquintr.com/";
 
 const MetadataBase = {
