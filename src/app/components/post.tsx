@@ -55,39 +55,3 @@ export default function Post({ post, index }: IPost) {
     </li>
   );
 }
-
-/*
-      <Link className="group-active:scale-95 transition-transform block h-full pb-3.5" href={`post/${post.slug}`}>
-        <Image
-          className="aspect-video rounded-md drop-shadow-xl -mt-4 scale-95"
-          alt={post.slug}
-          src={`${BLOG_PATH}/${post.slug}${IMG_EXT}`}
-          priority={true}
-          quality={60}
-          width={800}
-          height={450}
-        />
-        <div className="pt-1 px-3">
-          <div className="flex justify-between font-medium text-xs text-light-black dark:text-dark-gray">
-            <p className="text-sm font-semibold">{dateFormated}</p>
-            <p>{post.stats.text}</p>
-          </div>
-          <div className="flex gap-[5px] flex-wrap py-2">
-            {post.tags.map((tag, index) => (
-              <span
-                className="px-2.5 py-[5px] bg-white rounded-lg text-black text-[10px]"
-                key={index}
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-          <h3 className="text-light-blue-500 dark:text-dark-blue-100 text-2xl font-bold pb-2">
-            {post.title}
-          </h3>
-          <p className="text-light-black dark:text-dark-gray text-xs">{post.description}</p>
-        </div>
-      </Link>
-
-
-*/

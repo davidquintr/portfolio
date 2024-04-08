@@ -22,12 +22,12 @@ export default function Form() {
         "aqJFVCZrRMTDkeRGM"
       )
       .then(
-        (result) => {
+        () => {
           setIsEmailSent(true);
           setDisableButton(true);
           setInprogress(false);
         },
-        (error) => {
+        () => {
           setIsEmailSent(false);
           setDisableButton(true);
           setInprogress(false);
@@ -37,12 +37,9 @@ export default function Form() {
 
   return (
     <>
-      <p className="md:col-span-6 text-center mb-5 text-light-black dark:text-dark-gray">
-        {en.contact.cta}
-      </p>
       {isEmailSent != null && (
         <div
-          className={`md:col-span-6 md:mx-[5%] animate-jump mb-4 py-4 rounded-lg text-center text-black dark:text-white ${
+          className={`md:col-span-7 animate-jump py-4 rounded-lg text-center text-black dark:text-white ${
             isEmailSent
               ? "bg-light-green dark:bg-dark-green"
               : "bg-light-red dark:bg-dark-red"
@@ -54,7 +51,7 @@ export default function Form() {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="md:col-span-4 md:px-[5%]"
+        className="md:col-span-4"
       >
         <div className="flex flex-col mb-2">
           <label className="hidden">{en.contact.form.names}</label>
@@ -62,24 +59,24 @@ export default function Form() {
             type="text"
             name="user_name"
             required
-            className="h-12 placeholder:text-sm bg-light-gray rounded-lg border-b-2 border-light-blue-400 px-2.5 outline-light-blue-300 dark:bg-dark-bg dark:border-dark-blue-500 dark:focus:outline-dark-blue-200 dark:focus:bg-dark-items"
+            className="h-12 placeholder:text-sm border dark:bg-dark-schema-input border-light-blue-100 bg-light-gray-100 rounded-md px-2.5 outline-light-blue-300 dark:bg-dark-bg dark:border-dark-blue-500 dark:focus:outline-dark-blue-200 dark:focus:bg-dark-items"
             placeholder={en.contact.form.names}
           />
         </div>
         <div className="flex flex-col mb-2">
           <label className="hidden">{en.contact.form.email}</label>
           <input
-            className="h-12 placeholder:text-sm bg-light-gray rounded-lg border-b-2 border-light-blue-400 px-2.5 outline-light-blue-300 dark:bg-dark-bg dark:border-dark-blue-500 dark:focus:outline-dark-blue-200 dark:focus:bg-dark-items"
+            className="h-12 placeholder:text-sm border dark:bg-dark-schema-input border-light-blue-100 bg-light-gray-100 rounded-md px-2.5 outline-light-blue-300 dark:bg-dark-bg dark:border-dark-blue-500 dark:focus:outline-dark-blue-200 dark:focus:bg-dark-items"
             type="email"
             name="user_email"
             required
             placeholder={en.contact.form.email}
           />
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col mb-2">
           <label className="hidden">{en.contact.form.message}</label>
           <textarea
-            className="min-h-32 placeholder:text-sm bg-light-gray rounded-lg border-b-2 border-light-blue-400 px-2.5 py-3 outline-light-blue-300 dark:bg-dark-bg dark:border-dark-blue-500 dark:focus:outline-dark-blue-200 dark:focus:bg-dark-items"
+            className="min-h-32 placeholder:text-sm border dark:bg-dark-schema-input border-light-blue-100 bg-light-gray-100 rounded-md px-2.5 py-3 outline-light-blue-300 dark:bg-dark-bg dark:border-dark-blue-500 dark:focus:outline-dark-blue-200 dark:focus:bg-dark-items"
             name="message"
             rows={4}
             placeholder={en.contact.form.message}
@@ -87,7 +84,7 @@ export default function Form() {
         </div>
         <button
           disabled={disableButton}
-          className="flex justify-center items-center w-full gap-2 mb-4 mt-2 py-2 rounded-full bg-light-blue-100 dark:bg-dark-blue-500 enabled:dark:hover:bg-dark-blue-200 dark:text-dark-blue-100  enabled:hover:bg-light-blue-300 enabled:active:scale-95 disabled:brightness-90 disabled:scale-95 transition-all text-light-blue-500"
+          className="flex justify-center items-center w-full gap-2 py-2 rounded-md bg-light-blue-100 dark:bg-dark-blue-600  enabled:hover:bg-light-blue-200 enabled:active:scale-95 disabled:brightness-90 disabled:scale-95 transition-all text-light-primary dark:text-dark-blue-100 dark:enabled:hover:bg-dark-blue-700"
         >
           <FontAwesomeIcon
             icon={inProgress ? faSpinner : faPaperPlane}

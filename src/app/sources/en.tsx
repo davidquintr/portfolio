@@ -3,7 +3,7 @@ import tech from "./techStack";
 
 const en = {
   author: "David Quintanilla Ruiz",
-  role: "Web Developer and UI/UX designer",
+  role: "Web Developer | UI/UX designer",
   email: "davidquintr@gmail.com",
   birthday: "2004/04/19",
   nationality: "Nicaraguan",
@@ -77,9 +77,9 @@ const en = {
   },
   contact: {
     title: "Contact",
-    cta: "If you are looking for help with a project or need assistance, you can contact me!",
-    direct_comm:
-      "Do you want more direct communication? There's another way to contact me:",
+    cta: "Looking for support or have questions? Feel free to contact me!",
+    share_my:
+      "If you want to help my work:",
     form: {
       names: "First Name and Last Name",
       email: "Email",

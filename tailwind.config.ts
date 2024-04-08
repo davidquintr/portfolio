@@ -46,8 +46,9 @@ const config: Config = {
             200: "#BFCCFF",
             300: "#4F5E77",
             400: "#6587FF"
-          }
-
+          },
+          green: "#cbe6c0",
+          red: "#e6c0c0",
         },
         dark: {
           background: "#000418",
@@ -68,7 +69,9 @@ const config: Config = {
           },
           gray: {
             100: "#D0D0D0",
-          }
+          },
+          red: "#49262665",
+          green: "#26492e",
         }
       },
     },

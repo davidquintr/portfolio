@@ -13,7 +13,7 @@ export default function Project(project: IProject) {
       style={{ animationDelay: (project.index * 75).toString().concat("ms") }}
       className={`flex animate-fade-right flex-col items-center animate-ease-in-out animate-duration-500 animate-once overflow-hidden`}
     >
-      <div className="carousel w-full aspect-video rounded-lg border border-dark-blue-700">
+      <div className="carousel w-full aspect-video rounded-lg border border-light-blue-200 dark:border-dark-blue-700">
         {project.gallery.map((image, index) => (
           <Image
             className="carousel-item w-full aspect-video scroll snap-always"
