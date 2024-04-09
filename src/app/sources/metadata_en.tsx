@@ -49,5 +49,6 @@ const MetadataHome = createPageMetadata("Home");
 const MetadataBlog = createPageMetadata("Blog");
 const MetadataProjects = createPageMetadata("Projects");
 const MetadataContact = createPageMetadata("Contact");
+const MetadataExperience = createPageMetadata("Experience");
 
-export { MetadataHome, MetadataBlog, MetadataProjects, MetadataContact };
+export { MetadataHome, MetadataBlog, MetadataProjects, MetadataContact, MetadataExperience };
