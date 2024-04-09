@@ -11,10 +11,10 @@ const schema = {
       external.social_media[0].link,
       external.social_media[1].link,
     ],
-    "jobTitle": en.home.experience.list[1].position,
+    "jobTitle": en.experience.list[1].positions[1].name,
     "worksFor": {
       "@type": "Organization",
-      "name": en.home.experience.list[1].name
+      "name": en.experience.list[1].place
     }
 }
 
