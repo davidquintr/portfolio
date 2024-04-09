@@ -18,7 +18,6 @@ export default function Navigation() {
                 link.href == path ? "bg-light-blue-200 hover:light-blue-100 dark:bg-dark-blue-500" : "hover:bg-light-blue-150 dark:hover:bg-dark-blue-500"}`}
               href={link.href}
             >
-              <FontAwesomeIcon icon={link.icon} className="size-3 sm:size-5 hidden" />
               <p className="text-xs sm:text-base">{link.text}</p>
             </Link>
           );
