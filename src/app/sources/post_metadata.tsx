@@ -13,8 +13,8 @@ export const PostMetadata = (slug?: string): any => {
     description: blog?.description,
     icons: {
       icon: [
-        { url: "/icon_light.png" },
-        { url: "/icon_dark.png", media: "(prefers-color-scheme: dark)" },
+        { url: "/icon_light.svg" },
+        { url: "/icon_dark.svg", media: "(prefers-color-scheme: dark)" },
       ],
     },
     openGraph: {
