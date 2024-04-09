@@ -1,7 +1,6 @@
 "use client"
 import { IconDefinition, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
 import { useState } from "react";
 
 interface IDropdownButton {
@@ -36,7 +35,7 @@ export default function DropdownButton({icon, name, elements}: IDropdownButton){
             <div className={`absolute w-full transition-all overflow-hidden left-0 rounded-b-md ${!isOpen && '!h-0'}`} style={{height: elements.length * 40}}>
                 <div className="bg-light-blue-100 dark:bg-dark-blue-600 dark:text-dark-blue-100 shadow-md">
                     {elements.map((el, index) => (
-                        <Link target="_blank" onClick={onDropdownClick} href={el.link} key={index} className="block px-4 py-2 hover:bg-light-blue-200 dark:hover:bg-dark-blue-700 active:scale-95 transition-all">{el.name}</Link>
+                        <a target="_blank" onClick={onDropdownClick} href={el.link} key={index} className="block px-4 py-2 hover:bg-light-blue-200 dark:hover:bg-dark-blue-700 active:scale-95 transition-all">{el.name}</a>
                     ))}
                 </div>
             </div>
