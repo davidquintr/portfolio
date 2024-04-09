@@ -37,16 +37,16 @@ export default function Post({ post, index }: IPost) {
               <p>{post.stats.text}</p>
             </div>
             <h3 className="font-bold text-lg">{post.title}</h3>
-            <div className="flex gap-0.5 py-0.5 flex-wrap">
+            <ul className="flex gap-0.5 py-0.5 flex-wrap">
               {post.tags.map((tag, index) => (
-                <span
-                  className="px-1.5 py-1 bg-white dark:bg-dark-blue-500 dark:text-dark-gray-100 rounded-[2px] text-black text-xs"
+                <li
+                  className="px-1.5 py-1 bg-white dark:bg-dark-background dark:text-dark-gray-100 rounded-[2px] text-black text-xs"
                   key={index}
                 >
                   {tag}
-                </span>
+                </li>
               ))}
-            </div>
+            </ul>
             <p className="line-clamp-1 text-sm">{post.description}</p>
           </div>
         </div>
