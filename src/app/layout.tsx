@@ -4,6 +4,7 @@ import Navigation from "./components/navigation";
 import Footer from "./components/footer";
 import { poppins } from "./utils/fonts";
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from "@vercel/analytics/react"
 import Script from "next/script";
 import schema from "./sources/schema";
 
@@ -35,6 +36,7 @@ export default function RootLayout({
         <span className="bg-light-blue-400 size-60 sm:size-80 rounded-full absolute left-0 bottom-0 blur-[256px] z-0 animate-pulse animate-duration-[8600ms]"></span>
         <Footer />
         <SpeedInsights />
+        <Analytics />
         <Script type="application/ld+json" id="schema-org" dangerouslySetInnerHTML={{__html: JSON.stringify(schema)}}></Script>
       </body>
     </html>
