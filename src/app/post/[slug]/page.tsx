@@ -44,7 +44,7 @@ export default function BlogPage(props: any) {
       <div className="flex flex-col xl:flex-row md:px-8 gap-4 my-4">
         <picture className="xl:max-w-[50%] animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-0 xl:animate-delay-100 animate-once">
             <Image
-              className="aspect-video rounded-md drop-shadow-xl mx-auto"
+              className="aspect-video rounded-md border border- border-light-blue-200 dark:border-dark-blue-500 drop-shadow-xl mx-auto"
               alt=""
               src={`${BLOG_PATH}/${slug}${IMG_EXT}`}
               width={800}
