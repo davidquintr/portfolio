@@ -5,7 +5,7 @@ const nextConfig = {
     domains: ['davidquintr.github.io'],
     unoptimized: true
   },
-  basePath: '/portfolio'
+  basePath: '/'
 }
 
 module.exports = nextConfig
