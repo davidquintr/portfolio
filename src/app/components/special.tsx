@@ -1,44 +1,63 @@
-"use client"
-import nicaragua from "../../../public/nicaragua_2018.svg"
-import cap from "../../../public/cap.webp"
+"use client";
 import Image from "next/image";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
+import events from "../sources/events";
 
 export default function SpecialDays() {
-    const [showNicaraguaImage, setNicaraguaImage] = useState(false);
-    const [showBirthdayImage, setBirthdayImage] = useState(false);
+  const [getSpecialEvents, setSpecialEvents] = useState<boolean[]>([]);
 
+  useEffect(() => {
+    const verifyDate = () => {
+      const currentDate = new Date();
+      const currentMonth = currentDate.getMonth() + 1;
+      const currentDay = currentDate.getDate();
 
-    useEffect(() => {
-        const verifyDate = () => {
-            const currentDate = new Date();
-            const currentMonth = currentDate.getMonth() + 1;
-            const currentDay = currentDate.getDate();
+      const updatedSpecialEvents = events.map((event) => {
+        if (currentMonth !== event.month) {
+          return false;
+        }
 
-            if (currentMonth === 4 && currentDay >= 18 && currentDay <= 21) {
-                setNicaraguaImage(true);
-            } else {
-                setNicaraguaImage(false);
-            }
+        const isTimeRange = Array.isArray(event.dayRange);
+        const isInRange = isTimeRange
+          ? currentDay >=
+              (Array.isArray(event.dayRange) ? event.dayRange[0] : 0) &&
+            currentDay <=
+              (Array.isArray(event.dayRange) ? event.dayRange[1] : 0)
+          : currentDay === event.dayRange;
 
-            if (currentMonth === 4 && currentDay == 19) {
-                setBirthdayImage(true);
-            } else {
-                setBirthdayImage(false);
-            }
-        };
+        return isInRange;
+      });
 
-        verifyDate();
-    }, []);
+      setSpecialEvents([...updatedSpecialEvents]);
+    };
 
-    return (
-        <>
-            {showBirthdayImage && (
-                <Image className=" z-50 absolute -top-[18%] left-[35%]" alt="Birthday Cap" title="I'ts my birthday :D" src={cap} width={30} sizes="(max-width: 768px) 28vw, (max-width: 1200px) 18vw, 20vw"/>
-            )}
-            {showNicaraguaImage && (
-                <Image className="absolute left-0" alt="Nicaragua 2018" src={nicaragua} width={120} sizes="(max-width: 768px) 28vw, (max-width: 1200px) 18vw, 20vw"/>
-            )}
-        </>
-    )
+    verifyDate();
+  }, []);
+
+  console.log(getSpecialEvents);
+
+  return (
+    <>
+      {getSpecialEvents.map(
+        (special, index) =>
+          special && (
+            <Image
+              className="absolute"
+              style={{
+                zIndex: events[index].index,
+                top: events[index].position.top,
+                bottom: events[index].position.top,
+                left: events[index].position.left,
+                right: events[index].position.right,
+              }}
+              alt={events[index].name}
+              src={events[index].image}
+              width={events[index].size}
+              height={events[index].size}
+              key={index}
+            />
+          )
+      )}
+    </>
+  );
 }
