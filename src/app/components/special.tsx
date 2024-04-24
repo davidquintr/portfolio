@@ -34,8 +34,6 @@ export default function SpecialDays() {
     verifyDate();
   }, []);
 
-  console.log(getSpecialEvents);
-
   return (
     <>
       {getSpecialEvents.map(
@@ -43,13 +41,7 @@ export default function SpecialDays() {
           special && (
             <Image
               className="absolute"
-              style={{
-                zIndex: events[index].index,
-                top: events[index].position.top,
-                bottom: events[index].position.top,
-                left: events[index].position.left,
-                right: events[index].position.right,
-              }}
+              style={events[index].style}
               alt={events[index].name}
               src={events[index].image}
               width={events[index].size}
