@@ -7,12 +7,14 @@ export function middleware(request: NextRequest) {
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   )
+
+  const isSpanish = request.headers.get('accept-language')?.split(';')[0].includes('es');
   const isPostPath = pathname.startsWith('/post/')
-  const isPublic = ['/blog/','/documents/','/experience/','/projects/', '/thumbnail', '/icon'].some(path => pathname.startsWith(path))
+  const isPublic = ['/blog/','/documents/','/experience/','/projects/', '/thumbnail', '/icon', 'davidquint'].some(path => pathname.startsWith(path))
  
   if (pathnameHasLocale || isPostPath || isPublic) return
  
-  const locale = 'en'
+  const locale = isSpanish ? 'es' : 'en'
 
   request.nextUrl.pathname = `/${locale}/${pathname}`
   
