@@ -1,11 +1,13 @@
 "use client"
 import { faPaperPlane, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import en from "../sources/en";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { getDictionary } from "../[lang]/dictionaries";
 
-export default function Form() {
+export default function Form({lang} : {lang: string}) {
+  const dict = getDictionary(lang);
+
   const form = useRef<HTMLFormElement>(null);
   const [isEmailSent, setIsEmailSent] = useState<boolean>();
   const [disableButton, setDisableButton] = useState<boolean>();
@@ -45,7 +47,7 @@ export default function Form() {
               : "bg-light-red dark:bg-dark-red"
           }`}
         >
-          {isEmailSent ? en.contact.form.success : en.contact.form.fail}
+          {isEmailSent ? dict.contact.form.success : dict.contact.form.fail}
         </div>
       )}
       <form
@@ -54,32 +56,32 @@ export default function Form() {
         className="md:col-span-4"
       >
         <div className="flex flex-col mb-2">
-          <label className="hidden">{en.contact.form.names}</label>
+          <label className="hidden">{dict.contact.form.names}</label>
           <input
             type="text"
             name="user_name"
             required
             className="h-12 placeholder:text-sm border dark:bg-dark-schema-input border-light-blue-100 bg-light-gray-100 rounded-md px-2.5 outline-light-blue-300 dark:bg-dark-bg dark:border-dark-blue-500 dark:focus:outline-dark-blue-200 dark:focus:bg-dark-items"
-            placeholder={en.contact.form.names}
+            placeholder={dict.contact.form.names}
           />
         </div>
         <div className="flex flex-col mb-2">
-          <label className="hidden">{en.contact.form.email}</label>
+          <label className="hidden">{dict.contact.form.email}</label>
           <input
             className="h-12 placeholder:text-sm border dark:bg-dark-schema-input border-light-blue-100 bg-light-gray-100 rounded-md px-2.5 outline-light-blue-300 dark:bg-dark-bg dark:border-dark-blue-500 dark:focus:outline-dark-blue-200 dark:focus:bg-dark-items"
             type="email"
             name="user_email"
             required
-            placeholder={en.contact.form.email}
+            placeholder={dict.contact.form.email}
           />
         </div>
         <div className="flex flex-col mb-2">
-          <label className="hidden">{en.contact.form.message}</label>
+          <label className="hidden">{dict.contact.form.message}</label>
           <textarea
             className="min-h-32 placeholder:text-sm border dark:bg-dark-schema-input border-light-blue-100 bg-light-gray-100 rounded-md px-2.5 py-3 outline-light-blue-300 dark:bg-dark-bg dark:border-dark-blue-500 dark:focus:outline-dark-blue-200 dark:focus:bg-dark-items"
             name="message"
             rows={4}
-            placeholder={en.contact.form.message}
+            placeholder={dict.contact.form.message}
           />
         </div>
         <button
@@ -90,7 +92,7 @@ export default function Form() {
             icon={inProgress ? faSpinner : faPaperPlane}
             className={`${inProgress && "animate-spin"} size-3.5`}
           />
-          <span>{en.contact.form.send}</span>
+          <span>{dict.contact.form.send}</span>
         </button>
       </form>
     </>

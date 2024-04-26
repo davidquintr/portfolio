@@ -1,5 +1,5 @@
+import { getDictionary } from "@/app/[lang]/dictionaries";
 import BoxContent from "@/app/components/boxContent";
-import en from "@/app/sources/en";
 import external from "@/app/sources/external";
 import { PostMetadata } from "@/app/sources/post_metadata";
 import date from "@/app/utils/date";
@@ -12,6 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 let slug = '';
+const en = getDictionary('en')
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";

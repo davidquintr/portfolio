@@ -1,5 +1,5 @@
 import Link from "next/link";
-import IBlog from "../types/TypeBlog";
+import IBlog from "../[lang]/types/TypeBlog";
 import Image from "next/image";
 import date from "../utils/date";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,7 +20,7 @@ export default function Post({ post, index }: IPost) {
       style={{ animationDelay: (index * 75).toString().concat("ms") }}
       className="group bg-light-blue-100 hover:bg-light-blue-200 dark:bg-dark-blue-600 py-3 pl-3 pr-4  rounded-md dark:hover:bg-dark-blue-700 animate-fade-right animate-ease-in-out animate-duration-500 animate-once duration-[400ms] delay-[50ms]"
     >
-      <Link className="flex group-active:scale-95 transition-transform items-center" href={`post/${post.slug}`}>
+      <Link className="flex group-active:scale-95 transition-transform items-center" href={`/post/${post.slug}`}>
         <div className="flex-1">
           <Image
             className="aspect-video rounded-md drop-shadow-xl -mt-4 scale-95 hidden"

@@ -1,5 +1,7 @@
-import en from "./en"
+import { getDictionary } from "../[lang]/dictionaries";
 import external from "./external"
+
+const en = getDictionary('en')
 
 const schema = {
     "@context": "https://schema.org/",
@@ -8,13 +10,13 @@ const schema = {
     "url": external.domain,
     "image": `${external.domain}davidquint-photo.png`,
     "sameAs": [
-      external.social_media[0].link,
-      external.social_media[1].link,
+      "https://github.com/davidquintr",
+      "https://www.linkedin.com/in/david-quintanilla-ruiz-a41044231/",
     ],
-    "jobTitle": en.experience.list[1].positions[1].name,
+    "jobTitle": "Software Consultant",
     "worksFor": {
       "@type": "Organization",
-      "name": en.experience.list[1].place
+      "name": "OOQIA"
     }
 }
 

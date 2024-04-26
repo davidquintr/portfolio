@@ -1,5 +1,5 @@
 import matter from "gray-matter";
-import IBlog from "../types/TypeBlog";
+import IBlog from "../[lang]/types/TypeBlog";
 import fs from 'fs'
 import readingTime from "reading-time";
 

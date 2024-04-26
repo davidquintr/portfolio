@@ -1,20 +1,23 @@
-import BoxContent from "../components/boxContent";
-import TechItem from "../components/tech_item";
-import en from "../sources/en";
+import BoxContent from "../../components/boxContent";
+import TechItem from "../../components/tech_item";
 import Image from "next/image";
-import { MetadataExperience } from "../sources/metadata_en";
+import { MetadataExperience } from "../../sources/metadata_en";
 import { Metadata } from "next";
+import { getDictionary } from "../dictionaries";
+import techStack from "../../sources/techStack";
 
 interface IPositions {
   name: string;
   tasks: string;
 }
 
-export default function Experience() {
+export default function Experience({ params: { lang } } : {params: { lang: string}}) {
+  const dict = getDictionary(lang)
+
   return (
-    <BoxContent title={en.experience.title} className="">
+    <BoxContent title={dict.experience.title} className="">
       <ul>
-        {en.experience.list.reverse().map((ex, index) => (
+        {dict.experience.list.reverse().map((ex, index) => (
           <li
             style={{ animationDelay: (index * 75).toString().concat("ms") }}
             key={index}
@@ -40,8 +43,8 @@ export default function Experience() {
                 {ex.tech.map((tec, index) => (
                   <TechItem
                     height={10}
-                    icon={tec.icon}
-                    text={tec.text}
+                    icon={techStack[tec].icon}
+                    text={techStack[tec].text}
                     key={index}
                   />
                 ))}

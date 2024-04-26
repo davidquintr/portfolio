@@ -1,14 +1,15 @@
 import Image from "next/image";
-import en from "../sources/en";
 import external from "../sources/external";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { faFileLines } from "@fortawesome/free-solid-svg-icons";
 import DropdownButton from "./dropdown_button";
 import SpecialDays from "./special";
+import { getDictionary } from "../[lang]/dictionaries";
 
-export default function Personal() {
-
+export default function Personal({lang}: {lang: string}) {
+  const dict = getDictionary(lang)
+  
   return (
     <section className="w-full mx-auto mb-12 px-4 z-20">
       <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center gap-2">
@@ -22,14 +23,14 @@ export default function Personal() {
             sizes="(max-width: 768px) 28vw, (max-width: 1200px) 18vw, 20vw"
             priority={true}
             height={120}
-            alt={en.author}
-            title={en.author}
+            alt={dict.author}
+            title={dict.author}
           />
         </picture>
         <div className="text-center flex flex-col justify-center sm:text-left text-light-primary dark:text-white">
-          <h1 className="text-xl dark:text-dark-gray-100">{en.role}</h1>
+          <h1 className="text-xl dark:text-dark-gray-100">{dict.role}</h1>
           <h2 className="font-bold text-3xl sm:text-4xl">
-            {en.author}
+            {dict.author}
           </h2>
           <div className="flex justify-center sm:justify-start gap-1.5 pt-1">
             {external.social_media.map((media, index) => (
@@ -48,7 +49,7 @@ export default function Personal() {
                 <p>{media.name}</p>
               </Link>
             ))}
-            <DropdownButton elements={external.curriculum} icon={faFileLines} name={en.cvText} />
+            <DropdownButton elements={external.curriculum} icon={faFileLines} name={dict.cvText} />
           </div>
         </div>
       </div>

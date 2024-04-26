@@ -1,20 +1,20 @@
-import en from "../sources/en";
+function provideRoutes(routes : any) {
+  return [
+    { href: "", text: routes.home },
+    {
+      href: "/experience",
+      text: routes.experience,
+    },
+    { href: "/blog", text: routes.blog },
+    {
+      href: "/projects",
+      text: routes.projects,
+    },
+    {
+      href: "/contact",
+      text: routes.contact,
+    },
+  ];
+}
 
-const routes = [
-  { href: "/", text: en.navigation.home },
-  {
-    href: "/experience",
-    text: en.navigation.experience,
-  },
-  { href: "/blog", text: en.navigation.blog },
-  {
-    href: "/projects",
-    text: en.navigation.projects,
-  },
-  {
-    href: "/contact",
-    text: en.navigation.contact,
-  },
-];
-
-export default routes;
+export default provideRoutes;

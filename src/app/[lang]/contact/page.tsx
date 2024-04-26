@@ -1,24 +1,29 @@
 import type { Metadata } from "next";
-import { MetadataContact } from "../sources/metadata_en";
-import BoxContent from "../components/boxContent";
-import en from "../sources/en";
-import Form from "../components/form";
-import external from "../sources/external";
+import { MetadataContact } from "../../sources/metadata_en";
+import BoxContent from "../../components/boxContent";
+import Form from "../../components/form";
+import external from "../../sources/external";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { getDictionary } from "../dictionaries";
 
-export default function Contact() {
+export default function Contact({
+  params: { lang },
+}: {
+  params: { lang: string };
+}) {
+  const dict = getDictionary(lang);
 
   return (
-    <BoxContent title={en.contact.title} className="">
+    <BoxContent title={dict.contact.title} className="">
       <div className="grid md:grid-cols-7 gap-8 text-center md:text-left">
-        <Form />
+        <Form lang={lang} />
         <div className="flex flex-col justify-center md:col-span-3">
           <p className="font-medium text-pretty dark:text-white text-2xl mb-2">
-            {en.contact.cta}
+            {dict.contact.cta}
           </p>
           <div>
-            <p>{en.contact.share_my}</p>
+            <p>{dict.contact.share_my}</p>
             <div className="flex gap-1 justify-center md:justify-start">
               {external.social_api.map((media, index) => (
                 <Link
@@ -33,7 +38,7 @@ export default function Contact() {
                     className="size-4"
                     key={index}
                   />
-                  <p>Share</p>
+                  <p>{dict.contact.share}</p>
                 </Link>
               ))}
             </div>

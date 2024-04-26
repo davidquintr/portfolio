@@ -1,9 +1,9 @@
 import Image from "next/image";
-import IProject from "../types/TypeProject";
-import en from "../sources/en";
+import IProject from "../[lang]/types/TypeProject";
 import { faEye, faCode, faAlignLeft } from "@fortawesome/free-solid-svg-icons";
 import ExternalLink from "./externalLink";
 import TechItem from "./tech_item";
+import techStack from "../sources/techStack";
 
 export default function Project(project: IProject) {
   const PROJECT_DIRECTORY = "/projects";
@@ -29,9 +29,11 @@ export default function Project(project: IProject) {
       </div>
       <div className="flex size-full p-2 flex-col justify-between dark:bg-dark-gradient flex-1">
         <ul className="flex flex-wrap gap-1 mb-1 text-light-blue-600 dark:text-white">
-          {project.techs.map((tech, index) => (
-            <TechItem height={10} icon={tech.icon} text={tech.text} key={index} />
-          ))}
+          {project.techs.map((tech, index) => {
+            return(
+              <TechItem height={10} icon={techStack[tech].icon} text={techStack[tech].text} key={index} />
+            )
+          })}
         </ul>
         <div className="flex flex-col flex-1 justify-between gap-1">
           <div>
@@ -47,17 +49,17 @@ export default function Project(project: IProject) {
           <ExternalLink
             icon={faEye}
             link={project.onlineLink}
-            text={en.projects.onlineText}
+            text={project.onlineText}
           ></ExternalLink>
           <ExternalLink
             icon={faCode}
             link={project.sourceLink}
-            text={en.projects.sourceText}
+            text={project.sourceText}
           ></ExternalLink>
           <ExternalLink
             icon={faAlignLeft}
             link={project.moreLink}
-            text={en.projects.moreText}
+            text={project.moreText}
           ></ExternalLink>
         </div>
       </div>
