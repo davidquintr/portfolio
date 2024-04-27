@@ -6,10 +6,8 @@ type Tech = {
 };
 
 type TechStack = {
-  [key: string]: {
-    text: string;
-    icon: IconType;
-  };
+  text: string;
+  icon: IconType;
 };
 
 export type { TechStack, Tech };

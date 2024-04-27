@@ -1,0 +1,181 @@
+{
+  "author": "David Quintanilla Ruiz",
+  "role": "Web Developer | UI/UX designer",
+  "email": "davidquintr@gmail.com",
+  "birthday": "2004/04/19",
+  "nationality": "Nicaraguan",
+  "country": "El Salvador",
+  "cvText": "Curriculum",
+  "lang": "English",
+  "detail_item": {
+    "open": "Open",
+    "emailText": "Email",
+    "birthdayText": "Birthday",
+    "countryText": "Country",
+    "nationality": "Nationality"
+  },
+  "navigation": {
+    "home": "Home",
+    "blog": "Blog",
+    "projects": "Projects",
+    "contact": "Contact",
+    "experience": "Experience"
+  },
+  "footer": {
+    "credits": "©2023-2024 Designed and Programmed by David Quintanilla",
+    "source": "View Source"
+  },
+  "home": {
+    "about_me": {
+      "title": "About me",
+      "description": "Hello! I'm David Quintanilla Ruiz, a programmer who also dabbles in the world of design. I consider myself a fast learner, easily adaptable to the current needs. I possess excellent communication skills and know how to lead teams effectively. My expertise lies in creating and designing web pages, particularly focusing on user interface and user experience.\nI served as a Project Manager for the development of the 'Expediente Docente' platform at the Universidad Centroamericana of Nicaragua, I'm currently employed as a Web Developer at OOQIA.\nAmong my interests are playing video games, watching technology videos, and occasionally drawing."
+    },
+    "personal_info": {
+      "title": "Personal Info"
+    },
+    "tech_stack": {
+      "title": "Tech Stack"
+    },
+    "applications": {
+      "title": "Applications"
+    }
+  },
+  "experience": {
+    "title": " Experience",
+    "list": [
+      {
+        "place": "Universidad Centroamericana",
+        "image": "/experience/Universidad-Centroamericana.png",
+        "positions": [
+          {
+            "name": "Project Manager",
+            "tasks": "Development of the 'Expediente Docente' system was an entire system designed for the management of college teachers, which included their personal information and academic records.\nLeading a team and managing task schedules to deliver results to the final client.\nStandardization of mechanism, styles and documentation for future projects on the University.\nTotal freedom with the UI/UX design, the result is a fluent, clean and modern view to the final user."
+          }
+        ],
+        "location": "Managua, Nicaragua",
+        "time": "September 2022 - August 2022",
+        "tech": [0, 1, 2, 4, 18]
+      },
+      {
+        "place": "OOQIA",
+        "image": "/experience/OOQIA.jpeg",
+        "positions": [
+          {
+            "name": "Web Development Intern",
+            "tasks": "Development of WordPress themes and templates from scratch tailored to meet client needs, creation of plugins, and standardization of processes for future projects.\nSupport past projects, implement new features, optimize website performance, conduct code reviews, and address design issues, ensuring quality and UI/UX efficiency.\nCompany website remodeling, focusing on proof of concept and implementation of new features, SEO enhancements, and integration of filters for use in Google Analytics.\nUI/UX development using Figma, based on designs and styles predetermined by the client."
+          },
+          {
+            "name": "Software Consultant",
+            "tasks": "Automated 'graphic design system' for developing new pages based on client requirements.\nUI/UX development using Figma, based on designs and styles predetermined by the client."
+          }
+        ],
+        "location": "Managua, Nicaragua",
+        "time": "September 2023 - Present",
+        "tech": [24, 0, 1, 2, 5, 22, 6, 20, 25, 19]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "onlineText": "Watch Online",
+    "sourceText": "View Source",
+    "moreText": "Know More",
+    "list": [
+      {
+        "title": "Blog - JavaScript / JQuery",
+        "description": "Created for Web Applications Development in 2S-2022",
+        "techs": [0, 1],
+        "gallery": ["/blog-1.png", "/expedoc-1.png"],
+        "sourceLink": "https://github.com/davidquintr/whatsapp-reader.github.io",
+        "onlineLink": "https://davidquintr.github.io/teamfactorizacion-blog/",
+        "moreLink": ""
+      },
+      {
+        "title": "BrainView - 3D",
+        "description": "Created as commission - Basic view of limited points of the brain, internal and external.",
+        "techs": [13, 15],
+        "gallery": ["/brainview-1.png"],
+        "sourceLink": "https://github.com/davidquintr/brain-3d",
+        "onlineLink": "",
+        "moreLink": ""
+      },
+      {
+        "title": "Expediente Docente",
+        "description": "My first job experience in Software Development. This works like a teacher manager or internal social media for a college, including self system of feedback and a historical register of teachers.",
+        "techs": [0, 1, 2, 13, 18],
+        "gallery": ["/expedoc-1.png"],
+        "sourceLink": "",
+        "onlineLink": "",
+        "moreLink": "/post/expedoc-development"
+      },
+      {
+        "title": "Old Portfolio",
+        "description": "Created for collection of my projects in the development of my universitary career and self-learn.",
+        "techs": [7, 6, 9, 8],
+        "gallery": ["/portafolio-1.png"],
+        "sourceLink": "https://github.com/davidquintr/old-portfolio",
+        "onlineLink": "https://davidquintr.github.io/old-portfolio/",
+        "moreLink": ""
+      },
+      {
+        "title": "Simple Documentation",
+        "description": "Personal project, to create simple documentation through Markdown. It can interpreats code lines and does not requires page reload for change of article.",
+        "techs": [0, 1, 2, 3, 22],
+        "gallery": ["/simple-documentation-1.png"],
+        "sourceLink": "https://github.com/davidquintr/simple-documentation",
+        "onlineLink": "https://davidquintr.github.io/simple-documentation/",
+        "moreLink": ""
+      },
+      {
+        "title": "Taskitty",
+        "description": "Created for Mobile Applications Development I in 1S-2022, developed with Kotlin in Android Studio.",
+        "techs": [19, 9, 8],
+        "gallery": ["/taskitty-1.png"],
+        "sourceLink": "https://github.com/VarEros/TasKitty",
+        "onlineLink": "https://poncka.github.io/tasKitty-web.github.io/",
+        "moreLink": ""
+      },
+      {
+        "title": "WhatsApp Reader Next",
+        "description": "Personal remastered project, interpreats the exported message of WhatsApp chat and shows in a familiar format for read better.",
+        "techs": [16, 23],
+        "gallery": ["/wreader-1.png"],
+        "sourceLink": "https://github.com/davidquintr/whatsapp-reader-next",
+        "onlineLink": "https://whatsapp-reader-next.vercel.app/",
+        "moreLink": ""
+      }
+    ]
+  },
+  "blog": {
+    "title": "Blog"
+  },
+  "contact": {
+    "title": "Contact",
+    "cta": "Looking for support or have questions? Feel free to contact me!",
+    "share_my": "If you want to help my work:",
+    "share": "Share",
+    "form": {
+      "names": "First Name and Last Name",
+      "email": "Email",
+      "message": "Message",
+      "success": "Your email was sent successfully. You will receive a response soon!",
+      "fail": "Something went wrong, try later...",
+      "send": "Send Message"
+    }
+  },
+  "post": {
+    "author": "Author",
+    "share": "Share my post!"
+  },
+  "not_found": {
+    "joke": "Shhh... the cat is",
+    "pages": {
+      "text" : "Back to Home",
+      "link": "/"
+    },
+    "blog": {
+      "text": "Back to Blog Posts",
+      "link": "/blog"
+    }
+  }
+}

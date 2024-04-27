@@ -1,0 +1,181 @@
+{
+  "author": "David Quintanilla Ruiz",
+  "role": "Desarrollador Web | Diseñador UI/UX",
+  "email": "davidquintr@gmail.com",
+  "birthday": "2004/04/19",
+  "nationality": "Nicaragüense",
+  "country": "El Salvador",
+  "cvText": "Currículum",
+  "lang": "Español",
+  "detail_item": {
+    "open": "Abrir",
+    "emailText": "Email",
+    "birthdayText": "Cumpleaños",
+    "countryText": "País",
+    "nationality": "Nacionalidad"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "blog": "Blog",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "experience": "Experiencia"
+  },
+  "footer": {
+    "credits": "©2023-2024 Diseñado y Programado por David Quintanilla",
+    "source": "Ver código fuente"
+  },
+  "home": {
+    "about_me": {
+      "title": "Acerca de mí",
+      "description": "¡Hola! Soy David Quintanilla Ruiz, un programador que también incursiona en el mundo del diseño. Me considero un aprendiz rápido, fácilmente adaptable a las necesidades actuales. Poseo excelentes habilidades de comunicación y sé cómo liderar equipos de manera efectiva. Mi experiencia radica en crear y diseñar páginas web, centrándome particularmente en la interfaz de usuario y la experiencia del usuario.\nMe desempeñé como Gerente de Proyectos para el desarrollo de la plataforma 'Expediente Docente' en la Universidad Centroamericana de Nicaragua, actualmente trabajo como Desarrollador Web en OOQIA.\nEntre mis intereses se encuentran jugar videojuegos, ver videos de tecnología y dibujar ocasionalmente."
+    },
+    "personal_info": {
+      "title": "Información Personal"
+    },
+    "tech_stack": {
+      "title": "Tech Stack"
+    },
+    "applications": {
+      "title": "Aplicaciones"
+    }
+  },
+  "experience": {
+    "title": " Experiencia",
+    "list": [
+      {
+        "place": "Universidad Centroamericana",
+        "image": "/experience/Universidad-Centroamericana.png",
+        "positions": [
+          {
+            "name": "Gerente de Proyectos",
+            "tasks": "Desarrollo del sistema 'Expediente Docente' que fue un sistema completo diseñado para la gestión de profesores universitarios, que incluía su información personal y registros académicos.\nLiderazgo de un equipo y gestión de horarios de tareas para entregar resultados al cliente final.\nEstandarización de mecanismos, estilos y documentación para futuros proyectos en la Universidad.\nLibertad total con el diseño de UI/UX, el resultado es una vista fluida, limpia y moderna para el usuario final."
+          }
+        ],
+        "location": "Managua, Nicaragua",
+        "time": "Septiembre de 2022 - Agosto de 2022",
+        "tech": [0, 1, 2, 4, 18]
+      },
+      {
+        "place": "OOQIA",
+        "image": "/experience/OOQIA.jpeg",
+        "positions": [
+          {
+            "name": "Pasante de Desarrollo Web",
+            "tasks": "Desarrollo de temas y plantillas de WordPress desde cero adaptados para satisfacer las necesidades del cliente, creación de complementos y estandarización de procesos para proyectos futuros.\nApoyo a proyectos pasados, implementación de nuevas funciones, optimización del rendimiento del sitio web, realización de revisiones de código y resolución de problemas de diseño, asegurando calidad y eficiencia en UI/UX.\nRemodelación del sitio web de la empresa, centrándose en la prueba de concepto e implementación de nuevas características, mejoras de SEO e integración de filtros para su uso en Google Analytics.\nDesarrollo de UI/UX utilizando Figma, basado en diseños y estilos predeterminados por el cliente."
+          },
+          {
+            "name": "Consultor de Software",
+            "tasks": "Automatización del 'sistema de diseño gráfico' para desarrollar nuevas páginas basadas en los requisitos del cliente.\nDesarrollo de UI/UX utilizando Figma, basado en diseños y estilos predeterminados por el cliente."
+          }
+        ],
+        "location": "Managua, Nicaragua",
+        "time": "Septiembre de 2023 - Presente",
+        "tech": [24, 0, 1, 2, 5, 22, 6, 20, 25, 19]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "onlineText": "Ver en Línea",
+    "sourceText": "Ver código",
+    "moreText": "Saber más",
+    "list": [
+      {
+         "title": "Blog - JavaScript / JQuery",
+         "description": "Creado para Desarrollo de Aplicaciones Web en 2S-2022 en la Universidad Centroamericana",
+         "techs": [0, 1],
+         "gallery": ["/blog-1.png"],
+         "sourceLink": "https://github.com/davidquintr/whatsapp-reader.github.io",
+         "onlineLink": "https://davidquintr.github.io/teamfactorizacion-blog/",
+         "moreLink": ""
+      },
+      {
+         "title": "BrainView - 3D",
+         "description": "Creado por comisión - Vista básica de puntos limitados del cerebro, internos y externos.",
+         "techs": [13, 15],
+         "gallery": ["/brainview-1.png"],
+         "sourceLink": "https://github.com/davidquintr/brain-3d",
+         "onlineLink": "",
+         "moreLink": ""
+      },
+      {
+         "title": "Expediente Docente",
+         "description": "Mi primera experiencia laboral en Desarrollo de Software. Funciona como un gestor de profesores o una red social interna para una universidad, incluyendo un sistema de retroalimentación propia y un registro histórico de profesores.",
+         "techs": [0, 1, 2, 13, 18],
+         "gallery": ["/expedoc-1.png"],
+         "sourceLink": "",
+         "onlineLink": "",
+         "moreLink": "/post/expedoc-development"
+      },
+      {
+         "title": "Old Portafolio",
+         "description": "Creado para recopilar mis proyectos en el desarrollo de mi carrera universitaria y autodidacta.",
+         "techs": [7, 6, 9, 8],
+         "gallery": ["/portafolio-1.png"],
+         "sourceLink": "https://github.com/davidquintr/old-portfolio",
+         "onlineLink": "https://davidquintr.github.io/old-portfolio/",
+         "moreLink": ""
+      },
+      {
+         "title": "Simple Documentation",
+         "description": "Proyecto personal, para crear documentación simple a través de Markdown. Puede interpretar líneas de código y no requiere recarga de página para cambiar de artículo.",
+         "techs": [0, 1, 2, 3, 22],
+         "gallery": ["/simple-documentation-1.png"],
+         "sourceLink": "https://github.com/davidquintr/simple-documentation",
+         "onlineLink": "https://davidquintr.github.io/simple-documentation/",
+         "moreLink": ""
+      },
+      {
+         "title": "Taskitty",
+         "description": "Creado para Desarrollo de Aplicaciones Móviles I en 1S-2022 para la Universidad Centroamericana.",
+         "techs": [19, 9, 8],
+         "gallery": ["/taskitty-1.png"],
+         "sourceLink": "https://github.com/VarEros/TasKitty",
+         "onlineLink": "https://poncka.github.io/tasKitty-web.github.io/",
+         "moreLink": ""
+      },
+      {
+         "title": "WhatsApp Reader Next",
+         "description": "Proyecto personal remasterizado, interpreta el mensaje exportado del chat de WhatsApp y lo muestra en un formato familiar para una mejor lectura.",
+         "techs": [16, 23],
+         "gallery": ["/wreader-1.png"],
+         "sourceLink": "https://github.com/davidquintr/whatsapp-reader-next",
+         "onlineLink": "https://whatsapp-reader-next.vercel.app/",
+         "moreLink": ""
+      }
+   ]
+  },
+  "blog": {
+    "title": "Blog"
+  },
+  "contact": {
+    "title": "Contacto",
+    "cta": "¿Buscas apoyo o tienes preguntas? ¡No dudes en contactarme!",
+    "share_my": "Si quieres apoyar mi trabajo:",
+    "share": "Compartir",
+    "form": {
+       "names": "Nombre y Apellido",
+       "email": "Correo Electrónico",
+       "message": "Mensaje",
+       "success": "Tu correo electrónico se envió correctamente. ¡Recibirás una respuesta pronto!",
+       "fail": "Algo salió mal, inténtalo más tarde...",
+       "send": "Enviar Mensaje"
+    }
+  },
+  "post": {
+    "author": "Autor",
+    "share": "Comparte mi publicación!"
+  },
+  "not_found": {
+    "joke": "Silencio... el gato está haciendo",
+    "pages": {
+      "text" : "Volver al Inicio",
+      "link": "/"
+    },
+    "blog": {
+      "text": "Volver a los Posts",
+      "link": "/blog"
+    }
+  }
+}

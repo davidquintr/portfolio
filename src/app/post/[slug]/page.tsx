@@ -1,24 +1,32 @@
+import { getDictionary } from "@/app/[lang]/dictionaries";
 import BoxContent from "@/app/components/boxContent";
-import en from "@/app/sources/en";
 import external from "@/app/sources/external";
 import { PostMetadata } from "@/app/sources/post_metadata";
 import date from "@/app/utils/date";
 import { getPostMetadata } from "@/app/utils/postMetaData";
+import { faAnglesLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 let slug = '';
+const en = getDictionary('en')
 
 const getPostContent = (slug: string) => {
-  const folder = "posts/";
-  const file = `${folder}/${slug}.md`;
-  const content = fs.readFileSync(file, "utf8");
-  const formated = matter(content);
-  return formated;
+  let formated : any
+  try {
+    const folder = "posts/";
+    const file = `${folder}/${slug}.md`;
+    const content = fs.readFileSync(file, "utf8");
+    const formated = matter(content);
+    return formated;
+  } catch (err) {
+    return formated
+  }
 };
 
 export const generateStaticParams = async () => {
@@ -33,7 +41,18 @@ export default function BlogPage(props: any) {
   const BLOG_PATH = "/blog";
   const POST_PATH = "post"
   const IMG_EXT = ".png";
-  const post = getPostContent(slug);
+  let post : matter.GrayMatterFile<string>
+
+  try {
+    post = getPostContent(slug);
+  } catch(err) {
+    notFound();
+  }
+
+  if(!post){
+    notFound();
+  }
+
   const dateFormated = date({
     dateTarget: new Date(post.data.date),
     language: "en",
@@ -41,7 +60,11 @@ export default function BlogPage(props: any) {
 
   return (
     <BoxContent title="" className="">
-      <div className="flex flex-col xl:flex-row md:px-8 gap-4 my-4">
+      <Link href="/blog" className="inline-flex mt-4 items-center gap-2 px-4 py-2 rounded-md bg-light-blue-150 text-light-primary hover:bg-light-blue-200 active:scale-95 dark:bg-dark-blue-600 dark:hover:bg-dark-blue-700 dark:text-dark-blue-100 transition-all">
+        <FontAwesomeIcon icon={faAnglesLeft} className="size-3" />
+        <span>Back to Blog Posts</span>
+      </Link>
+      <div className="flex flex-col xl:flex-row gap-4 my-4">
         <picture className="xl:max-w-[50%] animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-0 xl:animate-delay-100 animate-once">
             <Image
               className="aspect-video rounded-md border border- border-light-blue-200 dark:border-dark-blue-500 drop-shadow-xl mx-auto"
@@ -57,7 +80,7 @@ export default function BlogPage(props: any) {
             <ul className="flex flex-wrap gap-1">
               {post.data.tags.map((tag: any, index: any) => (
                 <li
-                  className="px-2.5 py-[5px] bg-light-gray rounded-lg text-black text-xs dark:bg-white"
+                  className="px-2.5 py-[5px] bg-light-gray rounded-lg text-black text-xs bg-white dark:bg-dark-background dark:text-dark-gray-100"
                   key={index}
                 >
                   {tag}

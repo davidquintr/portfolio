@@ -5,15 +5,17 @@ import { useEffect, useState } from "react";
 import { usePathname } from 'next/navigation';
 
 interface IDropdownButton {
-    icon: IconDefinition;
+    icon?: IconDefinition;
     name: string
     elements: {
         link: string,
         name: string
-    }[]
+    }[],
+    className? : string
+    elementsClass?: string
 }
 
-export default function DropdownButton({icon, name, elements}: IDropdownButton){
+export default function DropdownButton({icon, name, elements, className, elementsClass}: IDropdownButton){
     const pathname = usePathname();
     const [isOpen, setOpen] = useState<boolean>();
 
@@ -21,17 +23,26 @@ export default function DropdownButton({icon, name, elements}: IDropdownButton){
         setOpen(!isOpen)
     }
 
+    const isExternal = (link : string) => {
+        try {
+            new URL(link);
+            return true;
+        } catch (error) {
+            return false;
+        }
+    };
+
     useEffect(() => {
         setOpen(false);
     }, [pathname]);
 
     return(
         <div className="relative z-10">
-            <button onClick={onDropdownClick} className={`bg-light-blue-100 hover:bg-light-blue-200 dark:bg-dark-blue-600 dark:text-dark-blue-100 dark:hover:bg-dark-blue-700 transition-all active:scale-95 text-light-primary flex justify-center items-center gap-1 px-1.5 py-1 ${isOpen ? 'rounded-b-none rounded-t-md dark:!bg-dark-blue-700 bg-light-blue-200' : 'rounded-md'}`}>
-                <FontAwesomeIcon
+            <button onClick={onDropdownClick} className={`${className} bg-light-blue-100 hover:bg-light-blue-200 dark:bg-dark-blue-600 dark:text-dark-blue-100 dark:hover:bg-dark-blue-700 transition-all active:scale-95 text-light-primary flex justify-center items-center gap-1 px-1.5 py-1 ${isOpen ? 'rounded-b-none rounded-t-md dark:!bg-dark-blue-700 bg-light-blue-200' : 'rounded-md'}`}>
+                {icon && <FontAwesomeIcon
                     icon={icon}
                     className="size-4"
-                />
+                />}
                 <p>{name}</p>
                 <FontAwesomeIcon
                     icon={faAngleUp}
@@ -41,7 +52,7 @@ export default function DropdownButton({icon, name, elements}: IDropdownButton){
             <div className={`absolute w-full transition-all overflow-hidden left-0 rounded-b-md ${!isOpen && '!h-0'}`} style={{height: elements.length * 40}}>
                 <div className="bg-light-blue-100 dark:bg-dark-blue-600 dark:text-dark-blue-100 shadow-md">
                     {elements.map((el, index) => (
-                        <a target="_blank" onClick={onDropdownClick} href={el.link} key={index} className="block px-2 py-2 hover:bg-light-blue-200 dark:hover:bg-dark-blue-700 active:scale-95 transition-all">{el.name}</a>
+                        <a target={isExternal(el.link) ? "_blank" : "_self"} onClick={onDropdownClick} href={el.link} key={index} className={`${elementsClass} block px-2 py-2 hover:bg-light-blue-200 dark:hover:bg-dark-blue-700 active:scale-95 transition-all`}>{el.name}</a>
                     ))}
                 </div>
             </div>

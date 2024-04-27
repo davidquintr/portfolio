@@ -1,8 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
-import en from "../sources/en";
-import Link from "next/link";
-
 interface IdetailItem {
   title: string;
   description: string;
