@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import BoxContent from "../../components/boxContent";
 import Project from "../../components/project";
-import { MetadataProjects } from "../../sources/metadata_en";
+import createPageMetadata from "../../sources/metadata";
 import { getDictionary } from "../dictionaries";
 
 export default function Projects({ params: { lang } } : {params: { lang: string}}) {
@@ -31,4 +31,19 @@ export default function Projects({ params: { lang } } : {params: { lang: string}
   );
 }
 
-export const metadata: Metadata = MetadataProjects;
+export async function generateMetadata({
+  params: { lang },
+}: {
+  params: { lang: string };
+}): Promise<Metadata> {
+  const dict = getDictionary(lang);
+
+  return createPageMetadata({
+    title: dict.metadata.title,
+    thumbnail: dict.metadata.thumbnail,
+    page: {
+      title: dict.metadata.projects.title,
+      description: dict.metadata.projects.description,
+    },
+  });
+}

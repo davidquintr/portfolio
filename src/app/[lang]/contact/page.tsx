@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { MetadataContact } from "../../sources/metadata_en";
 import BoxContent from "../../components/boxContent";
 import Form from "../../components/form";
 import external from "../../sources/external";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getDictionary } from "../dictionaries";
+import createPageMetadata from "@/app/sources/metadata";
 
 export default function Contact({
   params: { lang },
@@ -49,4 +49,19 @@ export default function Contact({
   );
 }
 
-export const metadata: Metadata = MetadataContact;
+export async function generateMetadata({
+  params: { lang },
+}: {
+  params: { lang: string };
+}): Promise<Metadata> {
+  const dict = getDictionary(lang);
+
+  return createPageMetadata({
+    title: dict.metadata.title,
+    thumbnail: dict.metadata.thumbnail,
+    page: {
+      title: dict.metadata.contact.title,
+      description: dict.metadata.contact.description,
+    },
+  });
+}

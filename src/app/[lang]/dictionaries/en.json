@@ -177,5 +177,29 @@
       "text": "Back to Blog Posts",
       "link": "/blog"
     }
+  },
+  "metadata": {
+    "title": "David Quintanilla's Portfolio",
+    "thumbnail": "thumbnail.webp",
+    "home": {
+      "title": "Home",
+      "description": "Hello! I'm a programmer with design skills. Experienced in web development and design, proficient in communication and adept at team leadership and great making captivating user interfaces and enhancing user experiences."
+    },
+    "experience": {
+      "title": "Experience",
+      "description": "Explore a comprehensive overview of my professional journey in the dynamic realm of web development."
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Discover through stories and technical articles from my experience as a software developer."
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "Explore a diverse array of my personal, professional, and academic projects, spanning desktop, web, and mobile applications."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Hello! David Quintanilla Ruiz here, a programmer with design skills. Experienced in web development and design, proficient in communication and adept at team leadership and great making captivating user interfaces and enhancing user experiences."
+    }
   }
 }

@@ -1,6 +1,8 @@
+import { getDictionary } from "../[lang]/dictionaries";
 import { getPostMetadata } from "../utils/postMetaData";
 import external from "./external";
-const PAGE_PREFIX = "DavidQuint's Portfolio";
+const en = getDictionary('en')
+const PAGE_PREFIX = en.metadata.title;
 
 export const PostMetadata = (slug?: string): any => {
   const posts = getPostMetadata();
