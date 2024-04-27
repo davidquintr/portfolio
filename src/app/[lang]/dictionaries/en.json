@@ -168,6 +168,7 @@
     "share": "Share my post!"
   },
   "not_found": {
+    "thumbnail": "thumbnail-404.webp",
     "joke": "Shhh... the cat is",
     "pages": {
       "text" : "Back to Home",

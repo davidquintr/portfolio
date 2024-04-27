@@ -168,6 +168,7 @@
     "share": "Comparte mi publicación!"
   },
   "not_found": {
+    "thumbnail": "thumbnail-404-es.webp",
     "joke": "Silencio... el gato está haciendo",
     "pages": {
       "text" : "Volver al Inicio",
