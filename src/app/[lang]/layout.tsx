@@ -19,7 +19,7 @@ export async function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'es' }]
 }
 
-export default async function RootLayout({ children, params: { lang } }: { children: React.ReactNode, params: { lang: string } }) {
+export default async function LangLayout({ children, params: { lang } }: { children: React.ReactNode, params: { lang: string } }) {
 
   return (
     <html lang={lang}>

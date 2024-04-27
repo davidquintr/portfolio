@@ -166,5 +166,16 @@
   "post": {
     "author": "Autor",
     "share": "Comparte mi publicación!"
+  },
+  "not_found": {
+    "joke": "Silencio... el gato está haciendo",
+    "pages": {
+      "text" : "Volver al Inicio",
+      "link": "/"
+    },
+    "blog": {
+      "text": "Volver a los Posts",
+      "link": "/blog"
+    }
   }
 }

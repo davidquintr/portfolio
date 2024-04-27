@@ -166,5 +166,16 @@
   "post": {
     "author": "Author",
     "share": "Share my post!"
+  },
+  "not_found": {
+    "joke": "Shhh... the cat is",
+    "pages": {
+      "text" : "Back to Home",
+      "link": "/"
+    },
+    "blog": {
+      "text": "Back to Blog Posts",
+      "link": "/blog"
+    }
   }
 }
