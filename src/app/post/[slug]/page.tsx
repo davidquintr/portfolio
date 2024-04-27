@@ -10,6 +10,7 @@ import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 let slug = '';
 const en = getDictionary('en')
@@ -34,7 +35,14 @@ export default function BlogPage(props: any) {
   const BLOG_PATH = "/blog";
   const POST_PATH = "post"
   const IMG_EXT = ".png";
-  const post = getPostContent(slug);
+  let post : matter.GrayMatterFile<string>
+
+  try {
+    post = getPostContent(slug);
+  } catch(err) {
+    notFound();
+  }
+
   const dateFormated = date({
     dateTarget: new Date(post.data.date),
     language: "en",

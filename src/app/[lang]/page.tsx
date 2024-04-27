@@ -8,9 +8,9 @@ import techStack from "../sources/techStack";
 
 export const metadata: Metadata = MetadataHome;
 
-const tech = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const tech = [0, 1, 2, 23, 3, 13, 6, 7, 24, 5, 19];
 
-const applications = [10, 11, 12, 13, 14];
+const applications = [8, 9, 10, 11, 12];
 
 export default async function Home({
   params: { lang },

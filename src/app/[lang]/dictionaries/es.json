@@ -54,7 +54,7 @@
         ],
         "location": "Managua, Nicaragua",
         "time": "Septiembre de 2022 - Agosto de 2022",
-        "tech": [0, 1, 2, 4, 19]
+        "tech": [0, 1, 2, 4, 18]
       },
       {
         "place": "OOQIA",
@@ -71,10 +71,7 @@
         ],
         "location": "Managua, Nicaragua",
         "time": "Septiembre de 2023 - Presente",
-        "tech": [
-          11, 23, 3, 2, 4, 0, 1, 8, 9, 17, 15, 16, 13, 12, 14, 7, 18, 20, 19,
-          21, 10, 22, 24
-        ]
+        "tech": [24, 0, 1, 2, 5, 22, 6, 20, 25, 19]
       }
     ]
   },
@@ -86,17 +83,17 @@
     "list": [
       {
          "title": "Blog - JavaScript / JQuery",
-         "description": "Creado para el Desarrollo de Aplicaciones Web en 2S-2022",
-         "techs": [3, 2],
-         "gallery": ["/blog-1.png", "/expedoc-1.png"],
+         "description": "Creado para Desarrollo de Aplicaciones Web en 2S-2022 en la Universidad Centroamericana",
+         "techs": [0, 1],
+         "gallery": ["/blog-1.png"],
          "sourceLink": "https://github.com/davidquintr/whatsapp-reader.github.io",
          "onlineLink": "https://davidquintr.github.io/teamfactorizacion-blog/",
          "moreLink": ""
       },
       {
          "title": "BrainView - 3D",
-         "description": "Creado por encargo - Vista básica de puntos limitados del cerebro, internos y externos.",
-         "techs": [16, 15],
+         "description": "Creado por comisión - Vista básica de puntos limitados del cerebro, internos y externos.",
+         "techs": [13, 15],
          "gallery": ["/brainview-1.png"],
          "sourceLink": "https://github.com/davidquintr/brain-3d",
          "onlineLink": "",
@@ -105,25 +102,25 @@
       {
          "title": "Expediente Docente",
          "description": "Mi primera experiencia laboral en Desarrollo de Software. Funciona como un gestor de profesores o una red social interna para una universidad, incluyendo un sistema de retroalimentación propia y un registro histórico de profesores.",
-         "techs": [1, 0, 3, 2, 12],
+         "techs": [0, 1, 2, 13, 18],
          "gallery": ["/expedoc-1.png"],
          "sourceLink": "",
          "onlineLink": "",
-         "moreLink": "https://davidquintr.github.io/portfolio/blog/expedoc-development"
+         "moreLink": "/post/expedoc-development"
       },
       {
-         "title": "Antiguo Portafolio",
+         "title": "Old Portafolio",
          "description": "Creado para recopilar mis proyectos en el desarrollo de mi carrera universitaria y autodidacta.",
-         "techs": [5, 4, 9, 8],
+         "techs": [7, 6, 9, 8],
          "gallery": ["/portafolio-1.png"],
          "sourceLink": "https://github.com/davidquintr/old-portfolio",
          "onlineLink": "https://davidquintr.github.io/old-portfolio/",
          "moreLink": ""
       },
       {
-         "title": "Documentación Simple",
+         "title": "Simple Documentation",
          "description": "Proyecto personal, para crear documentación simple a través de Markdown. Puede interpretar líneas de código y no requiere recarga de página para cambiar de artículo.",
-         "techs": [3, 2, 5, 17],
+         "techs": [0, 1, 2, 3, 22],
          "gallery": ["/simple-documentation-1.png"],
          "sourceLink": "https://github.com/davidquintr/simple-documentation",
          "onlineLink": "https://davidquintr.github.io/simple-documentation/",
@@ -131,7 +128,7 @@
       },
       {
          "title": "Taskitty",
-         "description": "Creado para Desarrollo de Aplicaciones Móviles I en 1S-2022, desarrollado con Kotlin en Android Studio.",
+         "description": "Creado para Desarrollo de Aplicaciones Móviles I en 1S-2022 para la Universidad Centroamericana.",
          "techs": [19, 9, 8],
          "gallery": ["/taskitty-1.png"],
          "sourceLink": "https://github.com/VarEros/TasKitty",

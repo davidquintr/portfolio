@@ -20,7 +20,7 @@ export default async function RootLayout({ children}: { children: React.ReactNod
       <body
         className={`flex flex-col ${poppins.variable} bg-light-background dark:bg-dark-background min-h-screen mx-auto flex-grow relative`}
       >
-        <main className="max-w-[1400px] w-full mx-auto flex-1 z-10 px-4">
+        <main className="flex flex-col max-w-[1400px] w-full mx-auto flex-1 z-10 px-4">
           {children}
         </main>
         <span className="bg-light-blue-400 size-60 sm:size-80 rounded-full absolute right-0 z-0 blur-[256px] animate-pulse animate-duration-[5000ms]"></span>
