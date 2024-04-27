@@ -19,7 +19,7 @@ export default function NotFoundCat({lang, type}: Props) {
             <p className="text-3xl dark:text-dark-blue-100 max-w-56 text-center">{dict.not_found.joke}</p>
             <p className="text-9xl leading-[0.7] font-bold dark:text-dark-blue-400">404</p>
           </div>
-          <Link className="px-8 w-full text-center py-2 rounded-lg dark:bg-dark-blue-700 dark:hover:bg-dark-blue-650 dark:text-dark-blue-200 bg-dark-blue-200 active:scale-95 hover:bg-dark-blue-500 transition-all" href={context.link}>{context.text}</Link>
+          <Link className="inline-flex w-full justify-center items-center gap-2 px-4 py-2 rounded-md bg-light-blue-150 text-light-primary hover:bg-light-blue-200 active:scale-95 dark:bg-dark-blue-600 dark:hover:bg-dark-blue-700 dark:text-dark-blue-100 transition-all" href={context.link}>{context.text}</Link>
         </div>
       </div>
     </section>
