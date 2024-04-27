@@ -22,10 +22,10 @@ export async function generateMetadata({
   const dict = getDictionary(lang);
 
   return createPageMetadata({
-    title: dict.not_found.joke + ' 404',
-    thumbnail: 'thumbnail-404.webp',
+    title: dict.not_found.joke + ' mewing',
+    thumbnail: dict.not_found.thumbnail,
     page: {
-      title: dict.not_found.joke + ' 404',
+      title: '404',
       description: '',
     },
   });

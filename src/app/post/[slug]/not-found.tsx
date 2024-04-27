@@ -13,10 +13,10 @@ export async function generateMetadata(): Promise<Metadata> {
   const dict = getDictionary('en');
 
   return createPageMetadata({
-    title: dict.not_found.joke + ' 404',
+    title: dict.not_found.joke + ' mewing',
     thumbnail: dict.not_found.thumbnail,
     page: {
-      title: dict.not_found.joke + ' 404',
+      title: '404',
       description: '',
     },
   });
