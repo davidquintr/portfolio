@@ -2,7 +2,7 @@ import BoxContent from "../../components/boxContent";
 import Post from "../../components/post";
 import { getPostMetadata } from "../../utils/postMetaData";
 import type { Metadata } from "next";
-import { MetadataBlog } from "../../sources/metadata_en";
+import createPageMetadata from "../../sources/metadata";
 import { getDictionary } from "../dictionaries";
 
 export default function Blog() {
@@ -24,4 +24,19 @@ export default function Blog() {
   );
 }
 
-export const metadata: Metadata = MetadataBlog;
+export async function generateMetadata({
+  params: { lang },
+}: {
+  params: { lang: string };
+}): Promise<Metadata> {
+  const dict = getDictionary(lang);
+
+  return createPageMetadata({
+    title: dict.metadata.title,
+    thumbnail: dict.metadata.thumbnail,
+    page: {
+      title: dict.metadata.blog.title,
+      description: dict.metadata.blog.description,
+    },
+  });
+}

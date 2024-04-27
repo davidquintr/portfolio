@@ -1,7 +1,7 @@
 import BoxContent from "../../components/boxContent";
 import TechItem from "../../components/tech_item";
 import Image from "next/image";
-import { MetadataExperience } from "../../sources/metadata_en";
+import createPageMetadata from "../../sources/metadata";
 import { Metadata } from "next";
 import { getDictionary } from "../dictionaries";
 import techStack from "../../sources/techStack";
@@ -75,4 +75,19 @@ const Position = ({ name, tasks }: IPositions) => {
   );
 };
 
-export const metadata: Metadata = MetadataExperience;
+export async function generateMetadata({
+  params: { lang },
+}: {
+  params: { lang: string };
+}): Promise<Metadata> {
+  const dict = getDictionary(lang);
+
+  return createPageMetadata({
+    title: dict.metadata.title,
+    thumbnail: dict.metadata.thumbnail,
+    page: {
+      title: dict.metadata.experience.title,
+      description: dict.metadata.experience.description,
+    },
+  });
+}

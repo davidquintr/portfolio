@@ -1,12 +1,27 @@
 import { Metadata } from "next";
 import BoxContent from "../components/boxContent";
 import DetailItem from "../components/detailItem";
-import { MetadataHome } from "../sources/metadata_en";
 import TechItem from "../components/tech_item";
+import createPageMetadata from "../sources/metadata";
 import { getDictionary } from "./dictionaries";
 import techStack from "../sources/techStack";
 
-export const metadata: Metadata = MetadataHome;
+export async function generateMetadata({
+  params: { lang },
+}: {
+  params: { lang: string };
+}): Promise<Metadata> {
+  const dict = getDictionary(lang);
+
+  return createPageMetadata({
+    title: dict.metadata.title,
+    thumbnail: dict.metadata.thumbnail,
+    page: {
+      title: dict.metadata.home.title,
+      description: dict.metadata.home.description,
+    },
+  });
+}
 
 const tech = [0, 1, 2, 23, 3, 13, 6, 7, 24, 5, 19];
 
@@ -61,7 +76,12 @@ export default async function Home({
         >
           <ul className="flex flex-wrap gap-2">
             {tech.map((el, index) => (
-              <TechItem height={16} icon={techStack[el].icon} text={techStack[el].text} key={index} />
+              <TechItem
+                height={16}
+                icon={techStack[el].icon}
+                text={techStack[el].text}
+                key={index}
+              />
             ))}
           </ul>
         </BoxContent>
@@ -71,7 +91,12 @@ export default async function Home({
         >
           <ul className="flex flex-wrap gap-2">
             {applications.map((el, index) => (
-              <TechItem height={16} icon={techStack[el].icon} text={techStack[el].text} key={index} />
+              <TechItem
+                height={16}
+                icon={techStack[el].icon}
+                text={techStack[el].text}
+                key={index}
+              />
             ))}
           </ul>
         </BoxContent>
