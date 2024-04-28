@@ -4,7 +4,7 @@ let locales = ['en', 'es']
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
-  const allowedFileExtensions = /\.(png|jpg|jpeg|webp|xml|txt|svg|ico|pdf)$/i;
+  const allowedFileExtensions = /\.(png|jpg|jpeg|webp|xml|txt|svg|ico|pdf|mp4)$/i;
 
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
