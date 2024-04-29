@@ -36,7 +36,7 @@ export default function Navigation({lang} : {lang : string}) {
             </Link>
           );
         })}
-        <DropdownButton elementsClass="text-xs sm:text-base dark:bg-dark-blue-650" className=" h-full !bg-light-blue-100 dark:!bg-transparent px-2 dark:hover:!bg-dark-blue-500 dark:text-dark-blue-200 hover:!bg-light-blue-150 !rounded-none *:text-xs *:sm:text-base" name={dict.lang} elements={language} />
+        <DropdownButton elementsClass="text-xs text-center sm:text-base dark:bg-dark-blue-650" className=" h-full !bg-light-blue-100 dark:!bg-transparent px-2 dark:hover:!bg-dark-blue-500 dark:text-dark-blue-200 hover:!bg-light-blue-150 !rounded-none *:text-xs *:sm:text-base" name={dict.lang} elements={language} />
       </header>
     </>
   );
