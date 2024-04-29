@@ -1,20 +1,13 @@
-import PersonInit from "./components/person_init";
-import NavBar from "./nav_bar";
 import Head from "next/head";
-import ContactForm from './components/contact_form'
-import PageWrapper from "./components/page_wrapper";
-import { useConfigContext } from "./components/config_provider";
 import Redirect from "./components/redirect";
 
 
 export default function Contact() {
-  // @ts-ignore
-  const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
-  
+
   return (
     <>
       <Head>
-        <title>{language == "es" ? "Contacto" : "Contact"}</title>
+        <title>{"Contact"}</title>
         <meta name="description" content="A media to contact and social medias."></meta>
         <meta property="og:url" content="https://davidquintr.github.io/portfolio/"></meta>
         <meta property="og:type" content="website"></meta>
@@ -30,9 +23,7 @@ export default function Contact() {
 
       </Head>
       <article className="article article-base extended">
-        <PageWrapper>
           <Redirect href="contact" />
-        </PageWrapper>
       </article>
     </>
   );

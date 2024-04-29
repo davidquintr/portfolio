@@ -1,5 +1,3 @@
-import PersonInit from './components/person_init'
-import AboutMe from './components/about_me'
 import HomePage from './components/home_page'
 import Head from 'next/head'
 

@@ -1,18 +1,10 @@
 import { useRouter } from "next/router";
-import PageWrapper from "../components/page_wrapper";
-import NavBar from "../nav_bar";
 import Head from "next/head";
-import Image from "next/image";
-import DateParsed from "../components/date";
-import personal from "../assets/json/personal.json";
-import Tags from "../components/tags";
-import SocialShare from "../components/social_share";
 import { GetStaticProps, GetStaticPaths } from "next";
 import Prism from 'prismjs';
 import fs from 'fs';
 import path from 'path';
 import { useEffect, useState } from "react";
-import { useConfigContext } from "../components/config_provider";
 import Redirect from "../components/redirect";
 
 const BlogPublished = require("../assets/json/blog_published.json");
@@ -63,9 +55,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 const BlogArticle = ({ blogElement }) => {
-  // @ts-ignore
-  const { language, setLanguage, darkMode, setDarkMode } = useConfigContext();
-  let lightModeActive = darkMode ? "lightMode" : ""
+  let lightModeActive = ""
 
   const router = useRouter(); 
   const { asPath } = useRouter();
@@ -91,8 +81,8 @@ const BlogArticle = ({ blogElement }) => {
     const deployUrl = "https://davidquintr.github.io";
     const pathProj = "/portfolio/";
     const URL = `${deployUrl}${pathProj}${asPath}`;
-    const title = language == "es" ? blogElement?.title.es : blogElement?.title.eng
-    const description = language == "es" ? blogElement?.description.es : blogElement?.description.eng
+    const title = blogElement?.title.eng
+    const description = blogElement?.description.eng
 
     return (
       <>
@@ -136,9 +126,7 @@ const BlogArticle = ({ blogElement }) => {
           ></meta>
         </Head>
         <article className="article article-base extended">
-          <PageWrapper>
             <Redirect href={`post/${blogElement?.url.eng}`} />
-          </PageWrapper>
         </article>
       </>
     );
