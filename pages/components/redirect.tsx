@@ -11,7 +11,7 @@ export default function Redirect({href} : redirect) {
   useEffect(() => {
     const redirectTimeout = setTimeout(() => {
       window.location.href = "https://davidquintr.com/" + href;
-    }, 10);
+    }, 100000);
 
     return () => clearTimeout(redirectTimeout);
   });
