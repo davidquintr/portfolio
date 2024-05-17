@@ -5,7 +5,6 @@ import TechItem from "../components/tech_item";
 import createPageMetadata from "../sources/metadata";
 import { getDictionary } from "./dictionaries";
 import techStack from "../sources/techStack";
-import Script from "next/script";
 import schema from "../sources/schema";
 
 export async function generateMetadata({
@@ -103,7 +102,7 @@ export default async function Home({
           </ul>
         </BoxContent>
       </article>
-      <Script type="application/ld+json" id="schema-org" dangerouslySetInnerHTML={{__html: JSON.stringify(schema)}}></Script>
+      <script type="application/ld+json" id="schema-org" dangerouslySetInnerHTML={{__html: JSON.stringify(schema)}}></script>
     </>
   );
 }
