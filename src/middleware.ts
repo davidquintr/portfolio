@@ -14,10 +14,15 @@ export function middleware(request: NextRequest) {
   const isPostPath = pathname.startsWith('/post/')
   
   const isPublic = allowedFileExtensions.test(pathname);
+
+  if (pathname === '/') {
+    request.nextUrl.pathname = `/${isSpanish ? locales[1] : locales[0]}`
+    return NextResponse.rewrite(request.nextUrl)
+  }  
   
   if (pathnameHasLocale || isPostPath || isPublic) return
  
-  const locale = isSpanish ? 'es' : 'en'
+  const locale = isSpanish ? locales[1] : locales[0]
 
   request.nextUrl.pathname = `/${locale}/${pathname}`
   

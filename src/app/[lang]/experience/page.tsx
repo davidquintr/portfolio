@@ -83,7 +83,7 @@ export async function generateMetadata({
   const dict = getDictionary(lang);
 
   return createPageMetadata({
-    title: dict.metadata.title,
+    title: dict.metadata.type,
     thumbnail: dict.metadata.thumbnail,
     page: {
       title: dict.metadata.experience.title,

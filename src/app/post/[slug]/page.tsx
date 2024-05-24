@@ -60,7 +60,7 @@ export default function BlogPage(props: any) {
 
   return (
     <BoxContent title="" className="">
-      <Link href="/blog" className="inline-flex mt-4 items-center gap-2 px-4 py-2 rounded-md bg-light-blue-150 text-light-primary hover:bg-light-blue-200 active:scale-95 dark:bg-dark-blue-600 dark:hover:bg-dark-blue-700 dark:text-dark-blue-100 transition-all">
+      <Link href="/blog" className="inline-flex mt-4 items-center gap-2 px-4 lg:px-12 py-2 rounded-md bg-light-blue-150 text-light-primary hover:bg-light-blue-200 active:scale-95 dark:bg-dark-blue-600 dark:hover:bg-dark-blue-700 dark:text-dark-blue-100 transition-all">
         <FontAwesomeIcon icon={faAnglesLeft} className="size-3" />
         <span>Back to Blog Posts</span>
       </Link>
@@ -80,7 +80,7 @@ export default function BlogPage(props: any) {
             <ul className="flex flex-wrap gap-1">
               {post.data.tags.map((tag: any, index: any) => (
                 <li
-                  className="px-2.5 py-[5px] bg-light-gray rounded-lg text-black text-xs bg-white dark:bg-dark-background dark:text-dark-gray-100"
+                  className="px-2.5 py-[5px] bg-light-gray rounded-[4px] text-black text-xs bg-white dark:bg-dark-blue-700 dark:text-dark-gray-100"
                   key={index}
                 >
                   {tag}

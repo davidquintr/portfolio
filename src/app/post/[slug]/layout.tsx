@@ -4,7 +4,6 @@ import { poppins } from "../../utils/fonts";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from "@vercel/analytics/react"
 import Script from "next/script";
-import schema from "../../sources/schema";
 
 export const viewport = {
   themeColor: [
@@ -20,7 +19,7 @@ export default async function RootLayout({ children}: { children: React.ReactNod
       <body
         className={`flex flex-col ${poppins.variable} bg-light-background dark:bg-dark-background min-h-screen mx-auto flex-grow relative`}
       >
-        <main className="flex flex-col max-w-[1400px] w-full mx-auto flex-1 z-10 px-4">
+        <main className="flex flex-col max-w-[1400px] w-full mx-auto flex-1 z-10 px-4 lg:px-12">
           {children}
         </main>
         <span className="bg-light-blue-400 size-60 sm:size-80 rounded-full absolute right-0 z-0 blur-[256px] animate-pulse animate-duration-[5000ms]"></span>
@@ -29,7 +28,6 @@ export default async function RootLayout({ children}: { children: React.ReactNod
         <Footer lang="en"/>
         <SpeedInsights />
         <Analytics />
-        <Script type="application/ld+json" id="schema-org" dangerouslySetInnerHTML={{__html: JSON.stringify(schema)}}></Script>
       </body>
     </html>
   );

@@ -3,7 +3,7 @@ import external from "./external";
 const PAGE_URL = external.domain;
 
 interface Props {
-  title: string
+  title?: string
   thumbnail: string
   page: {
     title: string
@@ -13,7 +13,7 @@ interface Props {
 
 function createPageMetadata({title, thumbnail, page}: Props){
   return {
-    title: `${title} | ${page.title}`,
+    title: `${title ? title + " - " : ""}${page.title}`,
     metadataBase: new URL(PAGE_URL),
     description: page.description,
     icons: {
@@ -23,7 +23,7 @@ function createPageMetadata({title, thumbnail, page}: Props){
       ],
     },
     openGraph: {
-      title: `${title} | ${page.title}`,
+      title: `${title ? title + " - " : ""}${page.title}`,
       description: page.description,
       url: PAGE_URL,
       sitename: page.title,
@@ -35,7 +35,7 @@ function createPageMetadata({title, thumbnail, page}: Props){
       type: "website",
     },
     twitter: {
-      title: `${title} | ${page.title}`,
+      title: `${title ? title + " - " : ""}${page.title}`,
       card: "summary_large_image",
       description: page.description,
       images: [`${PAGE_URL}${thumbnail}`],

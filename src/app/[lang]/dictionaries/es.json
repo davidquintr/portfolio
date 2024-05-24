@@ -139,7 +139,7 @@
          "title": "WhatsApp Reader Next",
          "description": "Proyecto personal remasterizado, interpreta el mensaje exportado del chat de WhatsApp y lo muestra en un formato familiar para una mejor lectura.",
          "techs": [16, 23],
-         "gallery": ["/wreader-1.png"],
+         "gallery": ["/wareadernext-1.png"],
          "sourceLink": "https://github.com/davidquintr/whatsapp-reader-next",
          "onlineLink": "https://whatsapp-reader-next.vercel.app/",
          "moreLink": ""
@@ -180,10 +180,11 @@
     }
   },
   "metadata": {
-    "title": "Portafolio David Quintanilla",
+    "title": "David Quintanilla Ruiz",
     "thumbnail": "thumbnail-es.webp",
+    "type": "Portafolio",
     "home": {
-      "title": "Inicio",
+      "title": "Portafolio",
       "description": "¡Hola! Soy David Quintanilla Ruiz, un programador con habilidades de diseño. Con experiencia en desarrollo web y diseño, competente en comunicación y hábil en liderazgo de equipos y en la creación de interfaces de usuario cautivadoras y en mejorar las experiencias de usuario."
     },
     "experience": {
