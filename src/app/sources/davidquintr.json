@@ -1,0 +1,24 @@
+{
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+        "@type": "Person",
+        "name": "David Quintanilla Ruiz",
+        "url": "https://www.davidquintr.com/",
+        "image": "https://www.davidquintr.com/davidquint-photo.png",
+        "sameAs": [
+        "https://github.com/davidquintr",
+        "https://www.linkedin.com/in/david-quintanilla-ruiz-a41044231/"
+        ],
+        "jobTitle": "Software Consultant",
+        "worksFor": { "@type": "Organization", "name": "OOQIA" },
+        "knowsAbout": ["Software Development", "Web Development"],
+        "gender": "Male",
+        "knowsLanguage": ["English", "Spanish"],
+        "alumniOf": {
+        "@type": "Organization",
+        "name": "Universidad Centroamericana"
+        },
+        "birthDate": "2004-04-19"
+    }
+}

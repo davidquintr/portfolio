@@ -40,7 +40,7 @@ export default function Post({ post, index }: IPost) {
             <ul className="flex gap-0.5 py-0.5 flex-wrap">
               {post.tags.map((tag, index) => (
                 <li
-                  className="px-1.5 py-1 bg-white dark:bg-dark-blue-700 dark:text-dark-gray-100 rounded-[2px] text-black text-xs"
+                  className="px-1.5 py-1 bg-white dark:bg-dark-background/35 dark:text-dark-gray-100 rounded-[2px] text-black text-xs"
                   key={index}
                 >
                   {tag}

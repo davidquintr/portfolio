@@ -3,7 +3,6 @@ import Footer from "../../components/footer";
 import { poppins } from "../../utils/fonts";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from "@vercel/analytics/react"
-import Script from "next/script";
 
 export const viewport = {
   themeColor: [

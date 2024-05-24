@@ -28,4 +28,4 @@ const person: Person = {
     birthDate: "2004-04-19",
 };
 
-export default person;
+export default person
