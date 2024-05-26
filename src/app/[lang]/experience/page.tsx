@@ -8,7 +8,9 @@ import techStack from "../../sources/techStack";
 
 interface IPositions {
   name: string;
-  tasks: string;
+  tasks: string[];
+  index: number;
+  max: number;
 }
 
 export default function Experience({ params: { lang } } : {params: { lang: string}}) {
@@ -49,9 +51,9 @@ export default function Experience({ params: { lang } } : {params: { lang: strin
                   />
                 ))}
               </ul>
-              <ul>
-                {ex.positions.reverse().map((pos, index) => (
-                  <Position key={index} name={pos.name} tasks={pos.tasks} />
+              <ul className="flex flex-col">
+                {ex.positions.map((pos, index) => (
+                  <Position max={ex.positions.length} key={index} index={index} name={pos.name} tasks={pos.tasks} />
                 ))}
               </ul>
             </div>
@@ -62,12 +64,16 @@ export default function Experience({ params: { lang } } : {params: { lang: strin
   );
 }
 
-const Position = ({ name, tasks }: IPositions) => {
+const Position = ({ name, tasks, index, max}: IPositions) => {
   return (
-    <li className="mb-2 pl-4">
-      <h4 className="font-semibold text-lg dark:text-white">{name}</h4>
-      <ul className="list-disc pl-4">
-        {tasks.split("\n").map((task, index) => (
+    <li className="pl-6 relative">
+      <span className={`w-1 h-full top-[calc(50%_+_12px)] rounded-full -translate-y-1/2 dark:bg-dark-blue-700 bg-light-blue-200 absolute left-1.5 ${index > 0 || max == 1 ? 'hidden' : 'block'} `}></span>
+      <div className="relative">
+        <span className={`size-2.5 rounded-full bg-light-blue-300 dark:bg-dark-blue-100 absolute left-[-21px] top-[10px] ${max == 1 ? 'hidden' : 'block'}`}></span>
+        <h4 className="font-semibold text-lg dark:text-white">{name}</h4>
+      </div>
+      <ul className="list-disc pl-8">
+        {tasks.map((task, index) => (
           <li key={index}>{task}</li>
         ))}
       </ul>

@@ -80,7 +80,7 @@ export default function BlogPage(props: any) {
             <ul className="flex flex-wrap gap-1">
               {post.data.tags.map((tag: any, index: any) => (
                 <li
-                  className="px-2.5 py-[5px] bg-light-gray rounded-[4px] text-black text-xs bg-white dark:bg-dark-blue-700 dark:text-dark-gray-100"
+                  className="px-2.5 py-[5px] bg-light-gray rounded-[4px] text-black text-xs bg-white dark:bg-dark-blue-700/35 dark:text-dark-gray-100"
                   key={index}
                 >
                   {tag}

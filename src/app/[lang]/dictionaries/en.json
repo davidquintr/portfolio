@@ -49,7 +49,12 @@
         "positions": [
           {
             "name": "Project Manager",
-            "tasks": "Development of the 'Expediente Docente' system was an entire system designed for the management of college teachers, which included their personal information and academic records.\nLeading a team and managing task schedules to deliver results to the final client.\nStandardization of mechanism, styles and documentation for future projects on the University.\nTotal freedom with the UI/UX design, the result is a fluent, clean and modern view to the final user."
+            "tasks": [
+              "Development of the 'Expediente Docente' system was an entire system designed for the management of college teachers, which included their personal information and academic records.",
+              "Leading a team and managing task schedules to deliver results to the final client.",
+              "Standardization of mechanism, styles and documentation for future projects on the University.",
+              "Total freedom with the UI/UX design, the result is a fluent, clean and modern view to the final user."
+            ]
           }
         ],
         "location": "Managua, Nicaragua",
@@ -61,12 +66,20 @@
         "image": "/experience/OOQIA.jpeg",
         "positions": [
           {
-            "name": "Web Development Intern",
-            "tasks": "Development of WordPress themes and templates from scratch tailored to meet client needs, creation of plugins, and standardization of processes for future projects.\nSupport past projects, implement new features, optimize website performance, conduct code reviews, and address design issues, ensuring quality and UI/UX efficiency.\nCompany website remodeling, focusing on proof of concept and implementation of new features, SEO enhancements, and integration of filters for use in Google Analytics.\nUI/UX development using Figma, based on designs and styles predetermined by the client."
+            "name": "Software Consultant",
+            "tasks": [
+              "Automated 'graphic design system' for developing new pages based on client requirements.",
+              "UI/UX development using Figma, based on designs and styles predetermined by the client."
+            ]
           },
           {
-            "name": "Software Consultant",
-            "tasks": "Automated 'graphic design system' for developing new pages based on client requirements.\nUI/UX development using Figma, based on designs and styles predetermined by the client."
+            "name": "Web Development Intern",
+            "tasks": [
+              "Development of WordPress themes and templates from scratch tailored to meet client needs, creation of plugins, and standardization of processes for future projects.",
+              "Support past projects, implement new features, optimize website performance, conduct code reviews, and address design issues, ensuring quality and UI/UX efficiency.",
+              "Company website remodeling, focusing on proof of concept and implementation of new features, SEO enhancements, and integration of filters for use in Google Analytics.",
+              "UI/UX development using Figma, based on designs and styles predetermined by the client."
+            ]
           }
         ],
         "location": "Managua, Nicaragua",
