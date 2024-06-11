@@ -4,7 +4,7 @@
   "email": "davidquintr@gmail.com",
   "birthday": "2004/04/19",
   "nationality": "Nicaragüense",
-  "country": "El Salvador",
+  "country": "Nicaragua",
   "cvText": "Currículum",
   "lang": "Español",
   "detail_item": {
@@ -69,7 +69,9 @@
             "name": "Consultor de Software",
             "tasks": [
               "Automatización del 'sistema de diseño gráfico' para desarrollar nuevas páginas basadas en los requisitos del cliente.",
-              "Desarrollo de UI/UX utilizando Figma, basado en diseños y estilos predeterminados por el cliente."
+              "Desarrollo de UI/UX utilizando Figma, basado en diseños y estilos predeterminados por el cliente.",
+              "Elaboración de herramientas internas para optimizar y automatizar procesos de creación de contenido.",
+              "Colaboración en proyectos para clientes interesados en renovar sus sitios web, con un enfoque en la creación de nuevas UI/UX"
             ]
           },
           {

@@ -29,14 +29,14 @@ export default function Navigation({lang} : {lang : string}) {
             <Link
               key={index}
               className={`py-2.5 px-2 text-light-primary dark:text-dark-blue-300 text-base transition-all active:scale-95 ${
-                `/${lang}${link.href}` == path ? "bg-light-blue-200 hover:light-blue-100 dark:bg-dark-blue-500" : "hover:bg-light-blue-150 dark:hover:bg-dark-blue-500"}`}
+                `/${lang}${link.href}` == path || index == 0 && "/" == path ? "bg-light-blue-200 hover:light-blue-100 dark:bg-dark-blue-500" : "hover:bg-light-blue-150 dark:hover:bg-dark-blue-500"}`}
               href={`/${lang}${link.href}`}
             >
               <p className="text-xs sm:text-base">{link.text}</p>
             </Link>
           );
         })}
-        <DropdownButton elementsClass="text-xs text-center sm:text-base dark:bg-dark-blue-650" className=" h-full !bg-light-blue-100 dark:!bg-transparent px-2 dark:hover:!bg-dark-blue-500 dark:text-dark-blue-200 hover:!bg-light-blue-150 !rounded-none *:text-xs *:sm:text-base" name={dict.lang} elements={language} />
+        <DropdownButton activeClass="!bg-light-blue-100 dark:!bg-dark-blue-500 " elementsClass="text-xs text-center sm:text-base dark:bg-dark-blue-500" className=" h-full !bg-light-blue-100 dark:!bg-transparent px-2 dark:hover:!bg-dark-blue-500 dark:text-dark-blue-200 hover:!bg-light-blue-150 !rounded-none *:text-xs *:sm:text-base" name={dict.lang} elements={language} />
       </header>
     </>
   );

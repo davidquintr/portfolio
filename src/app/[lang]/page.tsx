@@ -37,7 +37,7 @@ export default async function Home({
     <>
       <article className="flex flex-col lg:grid lg:grid-cols-6 gap-2.5 sm:gap-6 w-full">
         <BoxContent
-          className="animate-delay-200 lg:animate-delay-0 lg:col-span-4"
+          className="animate-delay-0 lg:col-span-4"
           title={dict.home.about_me.title}
         >
           {dict.home.about_me.description
@@ -50,7 +50,7 @@ export default async function Home({
         </BoxContent>
 
         <BoxContent
-          className="lg:col-span-2 lg:animate-delay-100 animate-delay-100"
+          className="lg:col-span-2 animate-delay-100"
           title={dict.home.personal_info.title}
         >
           <DetailItem
@@ -65,13 +65,9 @@ export default async function Home({
             title={dict.detail_item.nationality}
             description={dict.nationality}
           />
-          <DetailItem
-            title={dict.detail_item.countryText}
-            description={dict.country}
-          />
         </BoxContent>
         <BoxContent
-          className="lg:col-span-3 lg:animate-delay-100 animate-delay-100"
+          className="lg:col-span-3 animate-delay-200"
           title={dict.home.tech_stack.title}
         >
           <ul className="flex flex-wrap gap-2">
@@ -86,7 +82,7 @@ export default async function Home({
           </ul>
         </BoxContent>
         <BoxContent
-          className="lg:col-span-3 lg:animate-delay-100 animate-delay-100"
+          className="lg:col-span-3 animate-delay-300"
           title={dict.home.applications.title}
         >
           <ul className="flex flex-wrap gap-2">

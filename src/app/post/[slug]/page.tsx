@@ -46,6 +46,7 @@ export default function BlogPage(props: any) {
   try {
     post = getPostContent(slug);
   } catch(err) {
+    console.log("not-found")
     notFound();
   }
 

@@ -4,7 +4,7 @@
   "email": "davidquintr@gmail.com",
   "birthday": "2004/04/19",
   "nationality": "Nicaraguan",
-  "country": "El Salvador",
+  "country": "Nicaragua",
   "cvText": "Curriculum",
   "lang": "English",
   "detail_item": {
@@ -69,7 +69,9 @@
             "name": "Software Consultant",
             "tasks": [
               "Automated 'graphic design system' for developing new pages based on client requirements.",
-              "UI/UX development using Figma, based on designs and styles predetermined by the client."
+              "UI/UX development using Figma, based on designs and styles predetermined by the client.",
+              "Elaboration of internal tools to automate and optimize content creation processes.",
+              "Collaboration on projects for clients interested in renewing their websites, focusing on the creation of new UI/UX."
             ]
           },
           {

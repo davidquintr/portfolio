@@ -5,7 +5,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { getDictionary } from "../[lang]/dictionaries";
 
-export default function Form({lang} : {lang: string}) {
+export default function Form({lang, className} : {lang: string, className? : string}) {
   const dict = getDictionary(lang);
 
   const form = useRef<HTMLFormElement>(null);
@@ -53,7 +53,7 @@ export default function Form({lang} : {lang: string}) {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="md:col-span-4"
+        className={`md:col-span-4 ${className}`}
       >
         <div className="flex flex-col mb-2">
           <label className="hidden">{dict.contact.form.names}</label>

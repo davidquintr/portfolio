@@ -17,8 +17,8 @@ export default function Contact({
   return (
     <BoxContent title={dict.contact.title} className="">
       <div className="flex flex-col-reverse md:grid md:grid-cols-7 gap-8 text-center md:text-left">
-        <Form lang={lang} />
-        <div className="flex flex-col justify-center md:col-span-3">
+        <Form className="animate-fade-right animate-linear animate-duration-500 animate-delay-100" lang={lang} />
+        <div className="flex flex-col justify-center md:col-span-3 animate-fade-right animate-linear animate-duration-500 animate-delay-200">
           <p className="font-medium text-pretty dark:text-white text-2xl mb-2">
             {dict.contact.cta}
           </p>
