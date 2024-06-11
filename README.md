@@ -50,6 +50,6 @@ You can only access [davidquint.com](http://davidquintr.com/), or if I've lost a
         <img src="https://img.shields.io/badge/Portfolio-Visit-0067c7">
     </a>
     <a href="https://www.wikiwand.com/es/Universidad_Centroamericana">
-        <img src="https://img.shields.io/badge/🇳🇮%20SOMOS%20UCA-002044">
+        <img src="https://img.shields.io/badge/🇳🇮%20Somos%20UCA-002044">
     </a>
 </div>
