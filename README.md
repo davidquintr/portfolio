@@ -1,34 +1,25 @@
 <div align="center">
     <img src="./public/davidquint-photo.png"  width="128px"></img>
-    <h1>David Quintanilla - Portfolio</h1>
-    <p>Collection of all my progress in System Engineering</p>
-    <a href="https://github.com/davidquintr/portfolio/blob/main/LICENSE">
-        <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
-    </a>
+    <h1>David Quintanilla Ruiz Portfolio</h1>
+    <p>Collection of all my progress in System Engineering and my professional career as Web Developer and UI/UX Designer</p>
 </div>
 
-<br>
 
 <div align="center">
-    <p>Used technologies</p>
     <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next JS">
-    <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SASS">
-    <img src="https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white" alt="Adobe Photoshop">
-    <img src="https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white" alt="Adobe Illustrator">
-    <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white">
+    <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&color=black" alt="tailwind">
+    <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&color=black" alt="Figma">
+    <img src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdow">
+
 </div>
 
-## Free use
+## About this
 
-I able the fork of my portfolio, obviously leaving credits and direct link to my repository.
-
-## Details
-
-This is a collection of all my progress in my college career and self learn, this represents my peak as developer and designer, also the sense of everything related to Software Development.
+This is a collection of all my progress in my college career, self learn and professional career, this represents my peak as developer and designer, also the sense of everything related to Software Development.
 
 Also, a blog where i will be commenting all my progress in long projects or tiny functions that can be interesting.
 
-I open to work. :D
+Im open to work. :D
 
 ## Local install
 
@@ -36,23 +27,29 @@ I uses a series of packages for enhance my portfolio.
 For all this, `npm install` and continue for each item.
 
 ## To do
+1. 📕 Remove the blog HAHAHAHA.
 
-1. ☀️ Switch to Light Mode. (It's almost ready, but it's not what I expected. When it surpasses my standards, I will publish it).
 
 ## Completed
+1. ☀️ Light Mode.
+2. 📕 Blog for long projects.
+3. 📘 Introduce `EXPEDOC`, actually im not abled to put anything.
+5. 🇳🇮 Switch to Spanish as Language.
 
-1. 📕 Blog for long projects.
-2. 📘 Introduce `EXPEDOC`, actually im not abled to put anything.
-3. 🔎 Search in `Project` tab.
-4. 🇳🇮 Switch to Spanish as Language.
+## View on Live
 
-I will do this in this year, i promise.
+You can only access [davidquint.com](http://davidquintr.com/), or if I've lost access to the domain, use [davidquintr.vercel.app](https://davidquintr.vercel.app/).
 
-## View online
 
 <div align="center">
-    <p>You can see the result online:</p>
+    <a href="https://github.com/davidquintr/portfolio/blob/main/LICENSE">
+        <img src="https://img.shields.io/badge/License-MIT-orange.svg">
+    </a>
+    <img src="https://img.shields.io/badge/Open%20to%20Work-IDK-orange">  
     <a href="https://davidquintr.github.io/portfolio/">
-        <img src="./public/portfolio-icon.png" height="48">
+        <img src="https://img.shields.io/badge/Portfolio-Visit-0067c7">
+    </a>
+    <a href="https://www.wikiwand.com/es/Universidad_Centroamericana">
+        <img src="https://img.shields.io/badge/🇳🇮%20SOMOS%20UCA-002044">
     </a>
 </div>
