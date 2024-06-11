@@ -41,7 +41,7 @@ For all this, `npm install` and continue for each item.
 You can only access [davidquint.com](http://davidquintr.com/), or if I've lost access to the domain, use [davidquintr.vercel.app](https://davidquintr.vercel.app/).
 
 
-<div align="center">
+<div >
     <a href="https://github.com/davidquintr/portfolio/blob/main/LICENSE">
         <img src="https://img.shields.io/badge/License-MIT-orange.svg">
     </a>
