@@ -4,7 +4,6 @@
     <p>Collection of all my progress in System Engineering and my professional career as Web Developer and UI/UX Designer</p>
 </div>
 
-
 <div align="center">
     <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next JS">
     <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&color=black" alt="tailwind">
@@ -46,7 +45,7 @@ You can only access [davidquint.com](http://davidquintr.com/), or if I've lost a
         <img src="https://img.shields.io/badge/License-MIT-orange.svg">
     </a>
     <img src="https://img.shields.io/badge/Open%20to%20Work-IDK-orange">  
-    <a href="https://davidquintr.github.io/portfolio/">
+    <a href="https://www.davidquintr.com/">
         <img src="https://img.shields.io/badge/Portfolio-Visit-0067c7">
     </a>
     <a href="https://www.wikiwand.com/es/Universidad_Centroamericana">
