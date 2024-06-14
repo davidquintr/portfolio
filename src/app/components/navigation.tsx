@@ -51,7 +51,7 @@ export default function Navigation({ lang }: { lang: string }) {
           );
         })}
         <DropdownButton
-          activeClass="dark:bg-dark-blue-500"
+          activeClass="!bg-light-blue-200 dark:bg-dark-blue-500"
           elementsClass="text-xs text-center sm:text-base dark:!bg-dark-blue-500 dark:hover:!bg-dark-blue-650 "
           className="h-full bg-light-blue-100 px-2 dark:hover:bg-dark-blue-500 bg-transparent dark:text-dark-blue-200 hover:bg-light-blue-150 !rounded-none *:text-xs *:sm:text-base"
           name={dict.lang}

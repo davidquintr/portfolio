@@ -97,16 +97,16 @@
     "moreText": "Saber más",
     "list": [
       {
-        "title": "Blog - JavaScript / JQuery",
+        "title": "Blog Team Factorización",
         "description": "Creado para Desarrollo de Aplicaciones Web en 2S-2022 en la Universidad Centroamericana",
         "techs": [0, 1],
-        "gallery": ["/blog-1.png"],
+        "gallery": ["/blog-team-factorizacion-1.png"],
         "sourceLink": "https://github.com/davidquintr/whatsapp-reader.github.io",
         "onlineLink": "https://davidquintr.github.io/teamfactorizacion-blog/",
         "moreLink": ""
       },
       {
-        "title": "BrainView - 3D",
+        "title": "BrainView",
         "description": "Creado por comisión - Vista básica de puntos limitados del cerebro, internos y externos.",
         "techs": [13, 15],
         "gallery": ["/brainview-1.png"],
@@ -127,7 +127,7 @@
         "title": "Old Portafolio",
         "description": "Creado para recopilar mis proyectos en el desarrollo de mi carrera universitaria y autodidacta.",
         "techs": [7, 6, 9, 8],
-        "gallery": ["/portafolio-1.png"],
+        "gallery": ["/old-portfolio-1.png"],
         "sourceLink": "https://github.com/davidquintr/old-portfolio",
         "onlineLink": "https://davidquintr.github.io/old-portfolio/",
         "moreLink": ""
@@ -145,7 +145,7 @@
         "title": "Taskitty",
         "description": "Creado para Desarrollo de Aplicaciones Móviles I en 1S-2022 para la Universidad Centroamericana.",
         "techs": [19, 9, 8],
-        "gallery": ["/taskitty-1.png"],
+        "gallery": ["/taskitty-app-1.png"],
         "sourceLink": "https://github.com/VarEros/TasKitty",
         "onlineLink": "https://poncka.github.io/tasKitty-web.github.io/",
         "moreLink": ""
@@ -154,7 +154,7 @@
         "title": "WhatsApp Reader Next",
         "description": "Proyecto personal remasterizado, interpreta el mensaje exportado del chat de WhatsApp y lo muestra en un formato familiar para una mejor lectura.",
         "techs": [16, 23],
-        "gallery": ["/wareadernext-1.png"],
+        "gallery": ["/whatsapp-reader-next-1.png"],
         "sourceLink": "https://github.com/davidquintr/whatsapp-reader-next",
         "onlineLink": "https://whatsapp-reader-next.vercel.app/",
         "moreLink": ""
