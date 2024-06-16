@@ -45,7 +45,7 @@
     "list": [
       {
         "place": "Universidad Centroamericana",
-        "image": "/experience/Universidad-Centroamericana.png",
+        "image": "/experience/universidad-centroamericana.svg",
         "positions": [
           {
             "name": "Gerente de Proyectos",
@@ -63,7 +63,7 @@
       },
       {
         "place": "OOQIA",
-        "image": "/experience/OOQIA.jpeg",
+        "image": "/experience/ooqia-sa.svg",
         "positions": [
           {
             "name": "Consultor de Software",
