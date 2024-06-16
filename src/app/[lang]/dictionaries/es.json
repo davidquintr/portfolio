@@ -158,6 +158,14 @@
         "sourceLink": "https://github.com/davidquintr/whatsapp-reader-next",
         "onlineLink": "https://whatsapp-reader-next.vercel.app/",
         "moreLink": ""
+      },
+      {
+        "title": "Website Team Factorización",
+        "description": "Creada por motivos de aprendizaje, buscamos una forma de presentarnos de alguna manera como grupo, en el marco de la realización de actividades académicas.",
+        "techs": [27, 23],
+        "gallery": ["/web-team-factorizacion-1.png"],
+        "onlineLink": "https://team-factorizacion.vercel.app/",
+        "moreLink": ""
       }
     ]
   },

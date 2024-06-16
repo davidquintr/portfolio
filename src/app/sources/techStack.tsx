@@ -22,6 +22,7 @@ import {
   SiAdobepremierepro,
   SiFigma,
   SiAzuredevops,
+  SiAstro
 } from "react-icons/si";
 import { TbBrandCSharp, TbBrandKotlin, TbBrandNextjs } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
@@ -135,6 +136,10 @@ const techStack: TechStack[] = [
   {
     text: "Nuxt.js",
     icon: SiNuxtdotjs,
+  },
+  {
+    text: "Astro",
+    icon: SiAstro
   }
 ];
 
