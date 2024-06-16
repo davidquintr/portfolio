@@ -164,6 +164,7 @@
         "description": "Creada por motivos de aprendizaje, buscamos una forma de presentarnos de alguna manera como grupo, en el marco de la realización de actividades académicas.",
         "techs": [27, 23],
         "gallery": ["/web-team-factorizacion-1.png"],
+        "sourceLink": "",
         "onlineLink": "https://team-factorizacion.vercel.app/",
         "moreLink": ""
       }
