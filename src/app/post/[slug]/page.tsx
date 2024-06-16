@@ -1,5 +1,6 @@
 import { getDictionary } from "@/app/[lang]/dictionaries";
 import BoxContent from "@/app/components/boxContent";
+import PreBlock from "@/app/components/preBlock";
 import external from "@/app/sources/external";
 import { PostMetadata } from "@/app/sources/post_metadata";
 import date from "@/app/utils/date";
@@ -61,12 +62,12 @@ export default function BlogPage(props: any) {
 
   return (
     <BoxContent title="" className="">
-      <Link href="/blog" className="inline-flex mt-4 items-center gap-2 px-4 lg:px-12 py-2 rounded-md bg-light-blue-150 text-light-primary hover:bg-light-blue-200 active:scale-95 dark:bg-dark-blue-600 dark:hover:bg-dark-blue-700 dark:text-dark-blue-100 transition-all">
+      <Link href="/blog" className="inline-flex mt-4 items-center gap-2 px-4 py-2 rounded-md bg-light-blue-150 text-light-primary hover:bg-light-blue-200 active:scale-95 dark:bg-dark-blue-600 dark:hover:bg-dark-blue-700 dark:text-dark-blue-100 transition-all">
         <FontAwesomeIcon icon={faAnglesLeft} className="size-3" />
         <span>Back to Blog Posts</span>
       </Link>
       <div className="flex flex-col xl:flex-row gap-4 my-4">
-        <picture className="xl:max-w-[50%] animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-0 xl:animate-delay-100 animate-once">
+        <picture className="xl:max-w-[50%] animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-0 animate-once">
             <Image
               className="aspect-video rounded-md border border- border-light-blue-200 dark:border-dark-blue-500 drop-shadow-xl mx-auto"
               alt=""
@@ -76,7 +77,7 @@ export default function BlogPage(props: any) {
               priority={true}
             />
           </picture>
-        <div className="flex flex-col gap-1 flex-1 animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-100 xl:animate-delay-0 animate-once">
+        <div className="flex flex-col gap-1 flex-1 animate-fade-right animate-ease-in-out animate-duration-500 animate-delay-100 animate-once">
           <div className="flex flex-col gap-1.5 text-light-black dark:text-dark-gray">
             <ul className="flex flex-wrap gap-1">
               {post.data.tags.map((tag: any, index: any) => (
@@ -110,7 +111,7 @@ export default function BlogPage(props: any) {
               </div>
             </div>
             <div className="dark:text-dark-gray">
-              <p className="text-center font-semibold pb-1">{en.post.share}</p>
+              <p className="font-semibold pb-1">{en.post.share}</p>
               <div className="flex gap-3 justify-center">
                 {external.social_api.map((media, index) => (
                   <Link
@@ -133,12 +134,35 @@ export default function BlogPage(props: any) {
           </div>
         </div>
       </div>
-      <article className="prose max-w-max dark:prose-a:text-white prose-li:my-0.5 prose-headings:text-light-primary dark:prose-headings:text-dark-blue-100 prose-img:rounded-lg prose-video:rounded-lg *:accent-light-blue-400  dark:*:accent-dark-blue-100 dark:*:text-dark-gray">
-        {<Markdown>{post.content}</Markdown>}
+      <article className="prose mt-8 md:mt-16 max-w-max dark:prose-a:text-white prose-li:my-0.5 prose-headings:text-light-primary prose-headings:mb-0 prose-p:mt-2 dark:prose-headings:text-dark-blue-100 prose-img:rounded-lg prose-video:rounded-lg *:accent-light-blue-400  dark:*:accent-dark-blue-100 dark:*:text-dark-gray">
+        {<Markdown options={{overrides: {pre: {component: PreBlock}}}}>{post.content}</Markdown>}
       </article>
     </BoxContent>
   );
 }
+
+/*
+const PreBlock = ({ children, ...props }: any) => {
+  let lang = (children.props.className as string).replace("lang-", "");
+  let currentLang : null | any
+  switch(lang){
+    case "js":
+      lang = "javascript"
+      currentLang = Prism.languages.javascript
+    case "css":
+      currentLang = Prism.languages.css
+    break;
+  }
+  console.log(children.props)
+  const __html = Prism.highlight(children.props.children as string, currentLang, lang);
+  console.log(__html)
+  return(
+  <pre {...props}>
+    <code className={`${children.props.className}`} dangerouslySetInnerHTML={{__html}}></code>
+  </pre>
+  )
+}
+*/
 
 type genMetadata = {
   params: {slug: string}

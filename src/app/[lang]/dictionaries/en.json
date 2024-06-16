@@ -180,7 +180,11 @@
   },
   "post": {
     "author": "Author",
-    "share": "Share my post!"
+    "share": "Share my post!",
+    "language": "Language: ",
+    "copy_code": "Copy the code",
+    "copy_code_success": "Copied!",
+    "copy_code_failed": "Something went wrong..."
   },
   "not_found": {
     "thumbnail": "thumbnail-404.webp",

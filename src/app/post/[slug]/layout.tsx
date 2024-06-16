@@ -1,4 +1,5 @@
 import "../../style/globals.css";
+import "../../style/atom-one.css"
 import Footer from "../../components/footer";
 import { poppins } from "../../utils/fonts";
 import { SpeedInsights } from '@vercel/speed-insights/next';

@@ -180,7 +180,11 @@
   },
   "post": {
     "author": "Autor",
-    "share": "Comparte mi publicación!"
+    "share": "Comparte mi publicación!",
+    "language": "Lenguaje: ",
+    "copy_code": "Copiar código",
+    "copy_code_success": "¡Copiado!",
+    "copy_code_failed": "Algo salió mal..."
   },
   "not_found": {
     "thumbnail": "thumbnail-404-es.webp",
