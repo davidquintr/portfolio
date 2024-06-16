@@ -45,8 +45,8 @@
     "list": [
       {
         "place": "Universidad Centroamericana",
-        "image": "/experience/Universidad-Centroamericana.png",
-        "positions": [
+        "image": "/experience/universidad-centroamericana.svg",
+         "positions": [
           {
             "name": "Project Manager",
             "tasks": [
@@ -62,8 +62,8 @@
         "tech": [0, 1, 2, 4, 18]
       },
       {
-        "place": "OOQIA",
-        "image": "/experience/OOQIA.jpeg",
+        "place": "OOQIA SA",
+        "image": "/experience/ooqia-sa.svg",
         "positions": [
           {
             "name": "Software Consultant",
