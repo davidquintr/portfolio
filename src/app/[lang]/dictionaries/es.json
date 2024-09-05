@@ -45,7 +45,7 @@
     "list": [
       {
         "place": "Universidad Centroamericana",
-        "image": "/experience/Universidad-Centroamericana.png",
+        "image": "/experience/universidad-centroamericana.svg",
         "positions": [
           {
             "name": "Gerente de Proyectos",
@@ -62,8 +62,8 @@
         "tech": [0, 1, 2, 4, 18]
       },
       {
-        "place": "OOQIA",
-        "image": "/experience/OOQIA.jpeg",
+        "place": "OOQIA SA",
+        "image": "/experience/ooqia-sa.svg",
         "positions": [
           {
             "name": "Consultor de Software",
@@ -164,6 +164,7 @@
         "description": "Creada por motivos de aprendizaje, buscamos una forma de presentarnos de alguna manera como grupo, en el marco de la realización de actividades académicas.",
         "techs": [27, 23],
         "gallery": ["/web-team-factorizacion-1.png"],
+        "sourceLink": "",
         "onlineLink": "https://team-factorizacion.vercel.app/",
         "moreLink": ""
       }

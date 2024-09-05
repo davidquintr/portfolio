@@ -45,8 +45,8 @@
     "list": [
       {
         "place": "Universidad Centroamericana",
-        "image": "/experience/Universidad-Centroamericana.png",
-        "positions": [
+        "image": "/experience/universidad-centroamericana.svg",
+         "positions": [
           {
             "name": "Project Manager",
             "tasks": [
@@ -62,8 +62,8 @@
         "tech": [0, 1, 2, 4, 18]
       },
       {
-        "place": "OOQIA",
-        "image": "/experience/OOQIA.jpeg",
+        "place": "OOQIA SA",
+        "image": "/experience/ooqia-sa.svg",
         "positions": [
           {
             "name": "Software Consultant",
@@ -164,6 +164,7 @@
         "description": "Created for learning purposes, we are looking for a way to present ourselves as a group in the context of conducting academic activities.",
         "techs": [27, 23],
         "gallery": ["/web-team-factorizacion-1.png"],
+        "sourceLink": "",
         "onlineLink": "https://team-factorizacion.vercel.app/",
         "moreLink": ""
       }
