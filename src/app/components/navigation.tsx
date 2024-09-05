@@ -39,7 +39,7 @@ export default function Navigation({ lang }: { lang: string }) {
           return (
             <Link
               key={index}
-              className={`py-2.5 px-2 text-light-primary dark:text-dark-blue-300 text-base transition-all active:scale-95 ${
+              className={`py-2.5 px-4 text-light-primary dark:text-dark-blue-300 text-base transition-all active:scale-95 ${
                 `/${lang}${link.href}` == path || (index == 0 && "/" == path)
                   ? "bg-light-blue-200 hover:light-blue-100 dark:!bg-dark-blue-500"
                   : "hover:bg-light-blue-150 dark:hover:bg-dark-blue-500"

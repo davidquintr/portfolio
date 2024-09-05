@@ -76,7 +76,7 @@ export default function DropdownButton({
         }`}
         style={{ height: elements.length * 40 }}
       >
-        <div className="bg-light-blue-100 dark:bg-dark-blue-600 dark:text-dark-blue-100 shadow-md">
+        <div className="bg-light-blue-100 dark:bg-dark-blue-600 dark:text-dark-blue-100 shadow-md rounded-b-md">
           {elements.map((el, index) =>
               <a
                 target={isExternal(el.link) ? "_blank" : "_self"}

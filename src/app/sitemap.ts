@@ -34,22 +34,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   external.pages.forEach((page) => {
-    const languages = external.languages.reduce(
-      (acc: { [key: string]: string }, lang: string) => {
-        const langKey = lang.replace("/", "");
-        acc[langKey] = `${external.domain}${lang}${page}`;
-        return acc;
-      },
-      {}
-    );
-
     parsedPages.push({
       url: external.domain + page,
       lastModified: new Date(),
       changeFrequency: "yearly",
-      alternates: {
-        languages: languages,
-      },
     });
   });
 

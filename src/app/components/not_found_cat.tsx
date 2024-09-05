@@ -17,7 +17,7 @@ export default function NotFoundCat({lang, type}: Props) {
         <div className="flex flex-col items-center gap-4 md:items-start justify-center text-light-blue-500 text-left dark:text-dark-gray ">
           <div>
             <p className="text-3xl dark:text-dark-blue-100 max-w-56 text-center">{dict.not_found.joke}</p>
-            <p className="text-9xl leading-[0.7] font-bold dark:text-dark-blue-400">404</p>
+            <h2 className="text-9xl font-bold dark:text-dark-blue-400">404</h2>
           </div>
           <Link className="inline-flex w-full justify-center items-center gap-2 px-4 lg:px-12 py-2 rounded-md bg-light-blue-150 text-light-primary hover:bg-light-blue-200 active:scale-95 dark:bg-dark-blue-600 dark:hover:bg-dark-blue-700 dark:text-dark-blue-100 transition-all" href={context.link}>{context.text}</Link>
         </div>
