@@ -7,12 +7,14 @@
   "country": "Nicaragua",
   "cvText": "Currículum",
   "lang": "Español",
+  "number": "+505 77488103",
   "detail_item": {
     "open": "Abrir",
     "emailText": "Email",
     "birthdayText": "Cumpleaños",
     "countryText": "País",
-    "nationality": "Nacionalidad"
+    "nationality": "Nacionalidad",
+    "phone": "Teléfono"
   },
   "navigation": {
     "home": "Inicio",
@@ -158,15 +160,6 @@
         "sourceLink": "https://github.com/davidquintr/whatsapp-reader-next",
         "onlineLink": "https://whatsapp-reader-next.vercel.app/",
         "moreLink": ""
-      },
-      {
-        "title": "Website Team Factorización",
-        "description": "Creada por motivos de aprendizaje, buscamos una forma de presentarnos de alguna manera como grupo, en el marco de la realización de actividades académicas.",
-        "techs": [27, 23],
-        "gallery": ["/web-team-factorizacion-1.png"],
-        "sourceLink": "",
-        "onlineLink": "https://team-factorizacion.vercel.app/",
-        "moreLink": ""
       }
     ]
   },
@@ -192,7 +185,7 @@
     "share": "Comparte mi publicación!",
     "language": "Lenguaje: ",
     "copy_code": "Copiar código",
-    "copy_code_success": "¡Copiado!",
+    " ": "¡Copiado!",
     "copy_code_failed": "Algo salió mal..."
   },
   "not_found": {

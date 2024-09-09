@@ -65,6 +65,10 @@ export default async function Home({
             title={dict.detail_item.nationality}
             description={dict.nationality}
           />
+          <DetailItem
+            title={dict.detail_item.phone}
+            description={dict.number}
+          />
         </BoxContent>
         <BoxContent
           className="lg:col-span-3 animate-delay-200"

@@ -12,7 +12,7 @@ export default function Personal({lang}: {lang: string}) {
   
   return (
     <section className="w-full mx-auto mb-12 px-4 lg:px-12 z-20">
-      <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center gap-2">
+      <div className="flex flex-col sm:flex-row items-center sm:items-center justify-center gap-2">
         <picture className="relative">
           <SpecialDays />
           <Image
