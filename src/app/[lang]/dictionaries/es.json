@@ -185,7 +185,7 @@
     "share": "Comparte mi publicación!",
     "language": "Lenguaje: ",
     "copy_code": "Copiar código",
-    " ": "¡Copiado!",
+    "copy_code_success": "¡Copiado!",
     "copy_code_failed": "Algo salió mal..."
   },
   "not_found": {
