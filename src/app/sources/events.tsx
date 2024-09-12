@@ -2,7 +2,7 @@
 const events = [
     {
         "name": "I'ts my birthday",
-        "image": "/cap.webp",
+        "image": "/events/cap.webp",
         "size": 30,
         "style": {
             top: '-18%',
@@ -16,7 +16,7 @@ const events = [
     },
     {
         "name": "Nicaragua",
-        "image": "/nicaragua_2018.svg",
+        "image": "/events/nicaragua_2018.svg",
         "size": 120,
         "style": {
             top: 'auto',
@@ -29,8 +29,8 @@ const events = [
         "dayRange": [18, 21]
     },
     {
-        "name": "Christmassssss",
-        "image": "/nicaragua_2018.svg",
+        "name": "Nicaragua Independence",
+        "image": "/events/nicargua_independence.svg",
         "size": 120,
         "style": {
             top: 'auto',
@@ -39,8 +39,8 @@ const events = [
             right: 'auto',
             zIndex: 0,
         },
-        "month": 12,
-        "dayRange": [1, 31]
+        "month": 9,
+        "dayRange": [1, 30]
     }
 ]
 
