@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/react"
 import Navigation from "../components/navigation";
 import Personal from "../components/personal";
 import davidquintr from "../sources/davidquintr.json"
+import Snow from "../components/Snow";
 
 export const viewport = {
   themeColor: [
@@ -37,6 +38,7 @@ export default async function LangLayout({ children, params: { lang } }: { child
         <Footer lang={lang}/>
         <SpeedInsights />
         <Analytics />
+        <Snow />
       </body>
     </html>
   );
