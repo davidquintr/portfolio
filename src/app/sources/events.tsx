@@ -15,20 +15,6 @@ const events = [
         "dayRange": 19
     },
     {
-        "name": "Nicaragua",
-        "image": "/events/nicaragua_2018.svg",
-        "size": 120,
-        "style": {
-            top: 'auto',
-            bottom: 'auto',
-            left: 'auto',
-            right: 'auto',
-            zIndex: 0,
-        },
-        "month": 4,
-        "dayRange": [18, 21]
-    },
-    {
         "name": "Nicaragua Independence",
         "image": "/events/nicargua_independence.svg",
         "size": 120,
@@ -41,6 +27,20 @@ const events = [
         },
         "month": 9,
         "dayRange": [1, 30]
+    }, 
+    {
+        "name": "Christmas",
+        "image": "/events/christmas.webp",
+        "size": 100,
+        "style": {
+            top: '-18%',
+            bottom: 'auto',
+            left: '20%',
+            right: 'auto',
+            zIndex: 10,
+        },
+        "month": 12,
+        "dayRange": [1, 31]
     }
 ]
 
