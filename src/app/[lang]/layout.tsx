@@ -24,7 +24,7 @@ export default async function LangLayout({ children, params: { lang } }: { child
   return (
     <html lang={lang}>
       <body
-        className={`flex flex-col ${poppins.variable} bg-light-background dark:bg-dark-background min-h-screen mx-auto flex-grow relative`}
+        className={`flex flex-col ${poppins.className} bg-light-background dark:bg-dark-background min-h-screen mx-auto flex-grow relative`}
       >
         <script type="application/ld+json" id="schema-org" dangerouslySetInnerHTML={{__html: JSON.stringify(davidquintr)}}></script>
         <Navigation lang={lang}/>
