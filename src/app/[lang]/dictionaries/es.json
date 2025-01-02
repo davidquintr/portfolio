@@ -126,6 +126,15 @@
         "moreLink": "/post/expedoc-development"
       },
       {
+        "title": "Gabsters Clothing",
+        "description": "Página web para la venta de artículos artesanales.",
+        "techs": [25, 1, 2],
+        "gallery": ["/web-gabsters-1.png"],
+        "sourceLink": "",
+        "onlineLink": "https://gabsters.co/",
+        "moreLink": ""
+      },
+      {
         "title": "Old Portafolio",
         "description": "Creado para recopilar mis proyectos en el desarrollo de mi carrera universitaria y autodidacta.",
         "techs": [7, 6, 9, 8],
