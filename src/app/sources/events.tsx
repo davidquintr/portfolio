@@ -41,7 +41,21 @@ const events = [
         },
         "month": 12,
         "dayRange": [1, 31]
-    }
+    },
+    {
+        "name": "JuanDaniel",
+        "image": "/events/juandaniel.webp",
+        "size": 100,
+        "style": {
+            top: 'auto',
+            bottom: '0',
+            left: 'auto',
+            right: '0',
+            zIndex: 10,
+        },
+        "month": 3,
+        "dayRange": [1, 31]
+    },
 ]
 
 export default events
